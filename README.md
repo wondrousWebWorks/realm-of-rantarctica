@@ -8,4 +8,4 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
 
 ## UX (User Experience)
 ### Project Goals
-This project was created to offer the user a simple, yet engaging and visually appealing gaming experince. The game is geared more towards users with a passion for the fantasy genre, but is intended to be accessible and fun for any user at the same time. A combination of strategy and an interactive and animated game space needs to offer the user a satisfactory user experience whilst generating interest for continued use of the site and other future offerings from the developer. 
+This project was created to offer the user a simple, yet engaging and visually appealing gaming experience. The game is geared more towards users with a passion for the fantasy genre, but is intended to be accessible and fun for any user at the same time. A combination of strategy and an interactive and animated game space needs to offer the user a satisfactory user experience whilst generating interest for continued use of the site and other future offerings from the developer. 
