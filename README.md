@@ -4,3 +4,4 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
 
 ## Contents:
 * UX
+  * Project Goals
