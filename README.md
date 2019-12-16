@@ -5,6 +5,14 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
 ## Contents
 * UX
   * Project Goals
+    * User Goals
+    * User Stories
+    * Site Owner Goals
+  * User Requirements and Expectations
+    * Requirements
+    * Expectations
+  * Design Choices
+    * Fonts
 
 ## UX (User Experience)
 ### Project Goals
