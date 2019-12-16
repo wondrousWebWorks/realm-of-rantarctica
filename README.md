@@ -82,3 +82,6 @@ In order to fit the fantasy nature of the game, unconventional fonts were select
 * [Girassol](https://fonts.google.com/specimen/Girassol) - used for the game title and character display names
 * [Acme](https://fonts.google.com/specimen/Acme) - used for character and game stats
 * [Mansalva](https://fonts.google.com/specimen/Mansalva) - used for buttons, alerts and all other game text
+
+#### Icons
+All icons used in the Realm of Rantarctica were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>, where I have a paid subscription. Although some content on **CraftPix** is free, the majority of icons require a paid subscription to access.  The license allows me to use and modify any images from **CraftPix** in any number of projects, but not to resell it.  
