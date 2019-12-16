@@ -65,3 +65,6 @@ This project was created to offer the user a simple, yet engaging and visually a
 * The User Interface (UI) should be clean and easy to understand and use
 * Users expect statistics to be displayed at the end of the match
 * Users would like the option to play again at the end of a match, without having to go back to the landing page
+
+### Design Choices
+Realm of Rantarctica is a game in the fantasy genre. As such, the overall style of the game reflects that in terms of colour, graphical style, font type and page layout. Knowledge gained from previous projects, coupled with user feedback, heavily influenced my decisions for this project.
