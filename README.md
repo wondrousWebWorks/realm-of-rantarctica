@@ -13,6 +13,9 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
     * Expectations
   * Design Choices
     * Fonts
+    * Icons
+    * Images
+    * Colours
 
 ## UX (User Experience)
 ### Project Goals
@@ -124,3 +127,4 @@ I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b
 * Border colour for level names on the **Battleground Selection** screen
 * Font colour for the AI character name on the **Battle** screen
 * Font colour for AI stats on the **Battle** screen
+
