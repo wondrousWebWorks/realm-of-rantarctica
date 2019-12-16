@@ -2,7 +2,7 @@
 
 Welcome to my project! Realm of Rantarctica is an interactive game based on the classic card game called **Top Trumps**.  I hope you enjoy reading about the project below.  Please feel free to contact me for any further information or to offer any suggestions. My contact details can be found on my github page.
 
-## Contents:
+## Contents
 * UX
   * Project Goals
 
@@ -10,7 +10,7 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
 ### Project Goals
 This project was created to offer the user a simple, yet engaging and visually appealing gaming experience. The game is geared more towards users with a passion for the fantasy genre, but is intended to be accessible and fun for any user at the same time. A combination of strategy and an interactive and animated game space needs to offer the user a satisfactory user experience whilst generating interest for continued use of the site and other future offerings from the developer. 
 
-#### User Goals:
+#### User Goals
 * A single page site that displays all game content without needing to navigate elsewhere
 * A range of character types to play as
 * Various selectable fullscreen backgrounds with vibrant colours
@@ -20,25 +20,25 @@ This project was created to offer the user a simple, yet engaging and visually a
 * A summary of the match's most interesting statistics when done
 * Playable on all screen sizes and devices
 
-#### User Stories:
+#### User Stories
 
-##### Ms A Stark: 
+##### Ms A Stark 
 <em>"I'd like to be able to play the game on any any device with the same level of User Experience, irrespective of screen size. It would also be nice to play in either portrait or landscape mode on mobile devices."</em>
 
-##### Mr Ollivander: 
+##### Mr Ollivander
 <em>"A fantasy game needs a good variety of characters to allow immersion for the user. I'd like to see at least 10 characters with which to start, with future expansion packs being a bonus. All characters should be nicely balanced in terms of their stats, with no obviously overpowered characters being virtually unbeatable. I would also like the opportunity to set a difficulty level at the beginning of each match to increase replayability."</em>
 
-##### Dr Perilous: 
+##### Dr Perilous
 <em>"The underlying gameplay is of course important, though I believe it must be coupled with a vibrant colour scheme to suit the fantasy genre. It would be limiting to play with the same background all the time, so selectable background would be a very nice addition. If at all posiible, some basic character animations would make the game less static and lend more credibilty to the claim of it being a fighting game, albeit with what basically amounts to a card game."</em>
 
-#### Site Owner Goals:
+#### Site Owner Goals
 * Deliver on User Stories as far as possible
 * Create an engaging and enjoyable fantasy game with replay value
 * Gain sufficient user interest to ensure a user base for future releases
 * Add more character content and features in future expansions
 
-### User Requirements and Expectations:
-#### Requirements:
+### User Requirements and Expectations
+#### Requirements
 * A visually striking landing page
 * The option to view information about the game before playing
 * Selectable background images to act as battlegrounds
@@ -50,3 +50,18 @@ This project was created to offer the user a simple, yet engaging and visually a
 * A counter to show how the player is faring vs the AI
 * A summary with various match stats once the game is finished
 * The option to replay without having to reload the page
+
+#### Expectations
+* Landing page to be engaging and visually striking
+* Background information about the game and the world in which it takes place 
+* Clear instructions on how to play the game
+* A screen where selectable backgrounds are displayed
+* The option to scroll through or navigate through backgrounds on smaller screens
+* A nice range of fantasy characters with no clear emphasis on a particular type
+* The option to set a difficulty level by adjusting the amount of time the user has to choose a statistic for any given round of the game
+* Characters that have basic animations to be displayed at appropriate times, such as idle, attack and death
+* Easy to read stats for all characters, allowing the user to make a quick decision when making their selection
+* A display area dedicated to keeping the user informed of their progress throughout the game
+* The User Interface (UI) should be clean and easy to understand and use
+* Users expect statistics to be displayed at the end of the match
+* Users would like the option to play again at the end of a match, without having to go back to the landing page
