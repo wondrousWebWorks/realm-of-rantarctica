@@ -30,3 +30,9 @@ This project was created to offer the user a simple, yet engaging and visually a
 
 ##### Dr Perilous: 
 <em>"The underlying gameplay is of course important, though I believe it must be coupled with a vibrant colour scheme to suit the fantasy genre. It would be limiting to play with the same background all the time, so selectable background would be a very nice addition. If at all posiible, some basic character animations would make the game less static and lend more credibilty to the claim of it being a fighting game, albeit with what basically amounts to a card game."</em>
+
+#### Site Owner Goals:
+* Deliver on User Stories as far as possible
+* Create an engaging and enjoyable fantasy game with replay value
+* Gain sufficient user interest to ensure a user base for future releases
+* Add more character content and features in future expansions
