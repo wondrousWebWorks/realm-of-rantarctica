@@ -85,3 +85,6 @@ In order to fit the fantasy nature of the game, unconventional fonts were select
 
 #### Icons
 All icons used in the Realm of Rantarctica were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>, where I have a paid subscription. Although some content on **CraftPix** is free, the majority of icons require a paid subscription to access.  The license allows me to use and modify any images from **CraftPix** in any number of projects, but not to resell it.  
+
+#### Images
+All images, including backgrounds and character sprites were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>. I have a paid subscription with **CraftPix**, and the majority of images and sprites used require a paid subscription to download and use. The license allows me to use and edit images as I wish, though the only changes made were resizing, applying filters and joining sprites to allow animation of characters.
