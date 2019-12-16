@@ -36,3 +36,17 @@ This project was created to offer the user a simple, yet engaging and visually a
 * Create an engaging and enjoyable fantasy game with replay value
 * Gain sufficient user interest to ensure a user base for future releases
 * Add more character content and features in future expansions
+
+### User Requirements and Expectations:
+#### Requirements:
+* A visually striking landing page
+* The option to view information about the game before playing
+* Selectable background images to act as battlegrounds
+* A range of characters with varying strengths and weaknesses
+* Different difficulty levels by means of an adjustable countdown timer
+* Basic character animations
+* User friendly UI
+* Clearly visible character stats
+* A counter to show how the player is faring vs the AI
+* A summary with various match stats once the game is finished
+* The option to replay without having to reload the page
