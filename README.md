@@ -68,3 +68,9 @@ This project was created to offer the user a simple, yet engaging and visually a
 
 ### Design Choices
 Realm of Rantarctica is a game in the fantasy genre. As such, the overall style of the game reflects that in terms of colour, graphical style, font type and page layout. Knowledge gained from previous projects, coupled with user feedback, heavily influenced my decisions for this project.
+
+#### Fonts
+In order to fit the fantasy nature of the game, unconventional fonts were selected from **Google Fonts**.  The selected fonts have to be slighty quirky and more cartoony in design, while still being legible. Sample phrases featured in the game were entered in **Google Fonts** to see how they were displayed. Ultimately, the fonts below were selected to be used in clearly defined areas in the game.
+* [Girassol](https://fonts.google.com/specimen/Girassol) - used for the game title and character display names
+* [Acme](https://fonts.google.com/specimen/Acme) - used for character and game stats
+* [Mansalva](https://fonts.google.com/specimen/Mansalva) - used for buttons, alerts and all other game text
