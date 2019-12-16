@@ -84,7 +84,43 @@ In order to fit the fantasy nature of the game, unconventional fonts were select
 * [Mansalva](https://fonts.google.com/specimen/Mansalva) - used for buttons, alerts and all other game text
 
 #### Icons
-All icons used in the Realm of Rantarctica were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>, where I have a paid subscription. Although some content on **CraftPix** is free, the majority of icons require a paid subscription to access.  The license allows me to use and modify any images from **CraftPix** in any number of projects, but not to resell it.  
+All icons used in the Realm of Rantarctica were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>, where I have a paid subscription.  Although some content on **CraftPix** is free, the majority of icons require a paid subscription to access.  The license allows me to use and modify any images from **CraftPix** in any number of projects, but not to resell it.  
 
 #### Images
-All images, including backgrounds and character sprites were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>. I have a paid subscription with **CraftPix**, and the majority of images and sprites used require a paid subscription to download and use. The license allows me to use and edit images as I wish, though the only changes made were resizing, applying filters and joining sprites to allow animation of characters.
+All images, including backgrounds and character sprites were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>.  I have a paid subscription with **CraftPix**, and the majority of images and sprites used require a paid subscription to download and use. The license allows me to use and edit images as I wish, though the only changes made were resizing, applying filters and joining sprites to allow animation of characters.
+
+#### Colours
+I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7" target="_blank">this</a> colour palette from **coolors.co**.  All five colours complement each other very well, and provide a good level of contrast to increase legibility and clearly define different areas of the game display.  A lighter shade of *Prussian Blue* was also selected to add to the colour palette.  The colours and there uses are listed below:
+
+##### #003049 (Prussian Blue)
+* Background colour in text areas displaying character and game stats and data
+* Background colour for level names on the **Battleground Selection** screen
+
+##### #D62828 (Amaranth Red)
+* Border colour for text areas with the Prussian Blue background colour
+* Upper and lower border colours for the **VS** text on the battle screen
+* Background colour to highlight the players chosen stat with which to battle
+* Background colour for the **No** button in the **Replay Match** option box
+
+##### #F77F00 (University of Tennessee Orange)
+* Font colour of the game title on the landing page
+* Font colour of the **Battleground Selection** heading on the **Battleground Selection** screen
+* Font colour of the *Fight!!!*, *AI Wins* and *Player Wins* text on the **Battle** screen
+
+##### #FCBF49 (Maximum Yellow Red)
+* Font colour for the level names on the **Battleground Selection** screen
+* Background colour for the *Random Level*, *Previous* and *Next* buttons on the **Battleground Selection** screen
+* Font colour for *VS* text on the **Battle** screen
+* Font colour for the names of the character stats on the **Battle** screen
+* Font colour for the names of the match stats on the **Results** screen
+
+##### #EAE2B7 (Dutch White)
+* Font colour for the player's character name on the **Battle** screen
+* Font colour for the player's stats on the **Battle** screen
+* Font colour for the countdown timer on the **Battle** screen
+* Font color for the match stats on the **Results** screen
+
+##### #80D2FF (Light Prussian Blue)
+* Border colour for level names on the **Battleground Selection** screen
+* Font colour for the AI character name on the **Battle** screen
+* Font colour for AI stats on the **Battle** screen
