@@ -16,6 +16,7 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
     * Icons
     * Images
     * Colours
+* Wireframes
 
 ## UX (User Experience)
 ### Project Goals
