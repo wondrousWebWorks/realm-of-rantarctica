@@ -93,11 +93,12 @@ All icons used in the Realm of Rantarctica were taken from <a href="https://craf
 All images, including backgrounds and character sprites were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>.  I have a paid subscription with **CraftPix**, and the majority of images and sprites used require a paid subscription to download and use. The license allows me to use and edit images as I wish, though the only changes made were resizing, applying filters and joining sprites to allow animation of characters.
 
 #### Colours
-I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7" target="_blank">this</a> colour palette from **coolors.co**.  All five colours complement each other very well, and provide a good level of contrast to increase legibility and clearly define different areas of the game display.  A lighter shade of *Prussian Blue* was also selected to add to the colour palette.  The colours and there uses are listed below:
+I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7" target="_blank">this</a> colour palette from **coolors.co**.  All five colours complement each other very well, and should provide a good level of contrast to increase legibility and clearly define different areas of the game display.  A lighter shade of *Prussian Blue* was also selected to add to the colour palette.  The colours and their *intended* uses are listed below:
 
 ##### #003049 (Prussian Blue)
+* Background colour in text areas displaying information on the **How to Play** screens
 * Background colour in text areas displaying character and game stats and data
-* Background colour for level names on the **Battleground Selection** screen
+* Background colour for level names on the **Select Battleground** screen
 
 ##### #D62828 (Amaranth Red)
 * Border colour for text areas with the Prussian Blue background colour
@@ -107,24 +108,28 @@ I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b
 
 ##### #F77F00 (University of Tennessee Orange)
 * Font colour of the game title on the landing page
-* Font colour of the **Battleground Selection** heading on the **Battleground Selection** screen
+* Font colour of the **Select Battleground** heading on the **Select Battleground** screens
 * Font colour of the *Fight!!!*, *AI Wins* and *Player Wins* text on the **Battle** screen
 
 ##### #FCBF49 (Maximum Yellow Red)
-* Font colour for the level names on the **Battleground Selection** screen
-* Background colour for the *Random Level*, *Previous* and *Next* buttons on the **Battleground Selection** screen
+* Font colour for the level names on the **Select Battleground** screen
+* Background colour for the *Random Level*, *Previous* and *Next* buttons on the **Select Battleground** screens
+* Background colour for the *Next* buttons on the **How to Play** screens
+* Background colour for the *Close Window* buttons on the **How to Play** screens
 * Font colour for *VS* text on the **Battle** screen
 * Font colour for the names of the character stats on the **Battle** screen
 * Font colour for the names of the match stats on the **Results** screen
 
 ##### #EAE2B7 (Dutch White)
+* Font colour for all the instructional text on the **How to Play** screens
 * Font colour for the player's character name on the **Battle** screen
 * Font colour for the player's stats on the **Battle** screen
 * Font colour for the countdown timer on the **Battle** screen
 * Font color for the match stats on the **Results** screen
 
 ##### #80D2FF (Light Prussian Blue)
-* Border colour for level names on the **Battleground Selection** screen
+* Border colour for example information on the **How to Play** screens
+* Border colour for level names on the **Select Battleground** screen
 * Font colour for the AI character name on the **Battle** screen
 * Font colour for AI stats on the **Battle** screen
 
