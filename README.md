@@ -33,14 +33,23 @@ This project was created to offer the user a simple, yet engaging and visually a
 
 #### User Stories
 
-##### Ms A Stark 
-<em>"I'd like to be able to play the game on any any device with the same level of User Experience, irrespective of screen size. It would also be nice to play in either portrait or landscape mode on mobile devices."</em>
+##### User Story A
+<em>"As a first time player fo the game, I want to be able to access gameplay instructions easily so that I can get start playing with a clear understanding of gameplay mechanics straight away."</em>
 
-##### Mr Ollivander
-<em>"A fantasy game needs a good variety of characters to allow immersion for the user. I'd like to see at least 10 characters with which to start, with future expansion packs being a bonus. All characters should be nicely balanced in terms of their stats, with no obviously overpowered characters being virtually unbeatable. I would also like the opportunity to set a difficulty level at the beginning of each match to increase replayability."</em>
+##### User Story B
+<em>"As a repeat player of the game, I want the ability to choose different backgrounds so as to keep the gameplay environment interesting and varied."</em>
 
-##### Dr Perilous
-<em>"The underlying gameplay is of course important, though I believe it must be coupled with a vibrant colour scheme to suit the fantasy genre. It would be limiting to play with the same background all the time, so selectable background would be a very nice addition. If at all posiible, some basic character animations would make the game less static and lend more credibilty to the claim of it being a fighting game, albeit with what basically amounts to a card game."</em>
+##### User Story C
+<em>"As an experienced gamer, I want a way to increase the difficulty level so that I can continually be challenged while playing the game."</em>
+
+##### User Story D
+<em>"As a great fan of the fantasy genre, I want a varied selection of characters so that I can get a asense of immersion when playing the game."</em>
+
+##### User Story E
+<em>"As someone with a keen interest in statistics, I want the ability to view match statistics at the end of the match so that I can appreciate my level of performance and try to improve in future matches."</em>
+
+##### User Story F
+<em>"As a user with multiple devices - both mobile and static - I want the game to display correctly on any screen size so I can play the game on any device wherever I am."</em>
 
 #### Site Owner Goals
 * Deliver on User Stories as far as possible
