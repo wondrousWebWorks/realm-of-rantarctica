@@ -15,6 +15,12 @@ body {
     background-size: cover;
 }
 
+#audio-controls-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #audio-controls-toggle {
     text-align: center;
     width: 300px;
@@ -31,4 +37,32 @@ body {
 
 #audio-controls {
     display: none;
+}
+
+#game-title-and-icons-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#game-title {
+    font-family: 'Girassol', cursive;
+    font-size: 10rem;
+    text-align: center;
+    color: #F77F00;
+    text-shadow: 4px 4px #003049;
+    margin-top: 15vh;
+}
+
+#landing-page-icons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#info-icon {
+    width: 100px;
+    margin-left: 2rem;
 }
