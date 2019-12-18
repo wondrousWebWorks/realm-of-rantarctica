@@ -66,3 +66,12 @@ body {
     width: 100px;
     margin-left: 2rem;
 }
+
+.landing-page-icon {
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+.landing-page-icon:hover {
+    transform: scale(1.2);
+}
