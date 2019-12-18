@@ -1,40 +1,88 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>Realm of Rantarctica | A Fantasy Card Battle Game</title>
-  </head>
-  <body>
-    <div id="full-screen-game-container" class="container-fluid">
-      <div id="landing-page-row" class="row">
-        <div id="landing-page-col" class="col-12">
-          <div id="audio-controls-container">
-            <p id="audio-controls-toggle">Toggle Audio Controls</p>
-            <audio id="audio-controls" controls loop>
-              <source src="assets/audio/2019-07-06_-_New_Heights_-_David_Fesliyan.mp3" type="audio/mpeg">
-            </audio>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <title>Realm of Rantarctica | A Fantasy Card Battle Game</title>
+</head>
+
+<body>
+  <div id="full-screen-game-container" class="container-fluid">
+    <div id="landing-page-row" class="row">
+      <div id="landing-page-col" class="col-12">
+        <div id="audio-controls-container">
+          <p id="audio-controls-toggle">Toggle Audio Controls</p>
+          <audio id="audio-controls" controls loop>
+            <source src="assets/audio/2019-07-06_-_New_Heights_-_David_Fesliyan.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div id="game-title-and-icons-container">
+          <h1 id="game-title">RealM of RantarcticA</h1>
+          <div id="landing-page-icons">
+            <img id="play-icon" class="landing-page-icon"
+              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
+              alt="play button">
+            <img id="info-icon" class="landing-page-icon"
+              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
+              alt="play button">
           </div>
-          <div id="game-title-and-icons-container">
-            <h1 id="game-title">RealM of RantarcticA</h1>
-            <div id="landing-page-icons">
-              <img id="play-icon" class="landing-page-icon" src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png" alt="play button">
-              <img id="info-icon" class="landing-page-icon" src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png" alt="play button">
-            </div>
-          </div>
-          <a id="wondrouswebworks-logo" href="https://github.com/wondrousWebWorks" target="_blank"><img src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699539/mp1-cape-safari/wondrous-large_rrqmc8.png" alt="wondrousWebWorks logo"></a>
+        </div>
+        <a id="wondrouswebworks-logo" href="https://github.com/wondrousWebWorks" target="_blank"><img
+            src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699539/mp1-cape-safari/wondrous-large_rrqmc8.png"
+            alt="wondrousWebWorks logo"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Information Modal -->
+  <div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Lore</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Rantarctica... The most prized of all the realms in Lefluatan. A place of magic, warriors and riches beyond imagining! Whoever rules Rantarctica, rules the whole Lefluatanian continent.
+          </p>
+          <p>
+            For thousands of years, a constant battle has raged for dominion over the realm, with creatures from all races pitting their skills against the best Rantarctica has to offer.  Only 
+            the strongest can rule, and there can only ever be one. No single ruler has ever managed to reign for any length of time, but that might be about to change...
+          </p>
+          <p>
+            A new commander has emerged in Rantarctica. An outsider, able to unite those who were previously locked in continuous mortal combat.  Are things about to change? Will you 
+            be the Battle Lord to rule them all?  Will you rule the Realm of Rantarctica?
+          </p>          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Next</button>
         </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/app.js" type="text/JavaScript"></script>
-  </body>
+  </div>
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="js/app.js" type="text/JavaScript"></script>
+</body>
+
 </html>
