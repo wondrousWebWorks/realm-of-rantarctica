@@ -1,6 +1,11 @@
 /********************** Import fonts from Google Fonts **************************/
 @import url('https://fonts.googleapis.com/css?family=Acme|Girassol|Mansalva&display=swap');
 
+/********************** Body **************************/
+body {
+    font-size: 16px;
+}
+
 /********************** Landing Page **************************/
 #landing-page-col {
     height: 100vh;
@@ -8,4 +13,22 @@
     background: url("https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png");
     background-position: center;
     background-size: cover;
+}
+
+#audio-controls-toggle {
+    text-align: center;
+    width: 300px;
+    background-color: #FCBF49;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    color: #003049;
+    font-family: 'Mansalva', cursive;
+    font-size: 1.8rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+#audio-controls {
+    display: none;
 }
