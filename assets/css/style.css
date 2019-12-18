@@ -1,2 +1,11 @@
 /********************** Import fonts from Google Fonts **************************/
 @import url('https://fonts.googleapis.com/css?family=Acme|Girassol|Mansalva&display=swap');
+
+/********************** Landing Page **************************/
+#landing-page-col {
+    height: 100vh;
+    width: 100vw;
+    background: url("https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png");
+    background-position: center;
+    background-size: cover;
+}
