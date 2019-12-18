@@ -75,3 +75,13 @@ body {
 .landing-page-icon:hover {
     transform: scale(1.2);
 }
+
+#wondrouswebworks-logo {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+#wondrouswebworks-logo img {
+    width: 18vw;
+}
