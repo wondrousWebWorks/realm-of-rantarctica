@@ -135,7 +135,8 @@ body {
 }
 
 #info-modal .modal-footer button {
-    padding: 0;
+    padding: 5px;
+    margin: auto;
 }
 
 .modal-btn {
