@@ -150,3 +150,39 @@ body {
     color: #003049;
     font-size: 2rem;
 }
+
+
+/********************** Select Level Screen **************************/
+#select-level-heading {
+    font-family: 'Girassol', cursive;
+    font-size: 7rem;
+    text-align: center;
+    color: #F77F00;
+    text-shadow: 4px 4px #003049;
+}
+
+.level-select-buttons-container {
+    position: absolute;
+    bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    /* text-align: center; */
+}
+
+.level-btn {
+    background-color: #FCBF49;
+    color: #003049;
+    font-size: 1.5rem;
+}
+
+/* .next-level-btn {
+    right: 5vw;
+} */
+
+.level-icon {
+    height: 45px;
+    width: 45px;
+}
