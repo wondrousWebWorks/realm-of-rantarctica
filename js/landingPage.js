@@ -1,0 +1,1 @@
+/* The html code for the Landing Page stored as a string literal and to be loaded by jQuery */
