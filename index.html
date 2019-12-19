@@ -16,6 +16,7 @@
   <div id="full-screen-game-container" class="container-fluid">
     <div id="full-screen-game-container-row" class="row">
       <div id="full-screen-game-container-col" class="col-12">
+        <!-- Audio controls will remain static throught the game and won't be replaced with new content -->
         <div id="audio-controls-container">
           <img id="audio-controls-toggle"
             src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
@@ -25,22 +26,8 @@
           </audio>
         </div>
 
-        <div id="full-screen-game">
-          <div id="game-title-and-icons-container">
-            <h1 id="game-title">RealM of RantarcticA</h1>
-            <div id="landing-page-icons">
-              <img id="play-icon" class="landing-page-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
-                alt="play button">
-              <img id="info-icon" class="landing-page-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
-                alt="play button">
-            </div>
-          </div>
-          <a id="wondrouswebworks-logo" href="https://github.com/wondrousWebWorks" target="_blank"><img
-            src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699539/mp1-cape-safari/wondrous-large_rrqmc8.png"
-            alt="wondrousWebWorks logo"></a>
-        </div>
+        <!-- This is where all game content will be loaded using jQuery -->
+        <div id="full-screen-game"></div>
 
       </div>
     </div>
@@ -96,6 +83,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+  <script src="js/landingPage.js" type="text/JavaScript"></script>
   <script src="js/app.js" type="text/JavaScript"></script>
 </body>
 
