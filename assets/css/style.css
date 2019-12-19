@@ -13,6 +13,11 @@ body {
     background: url("https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png");
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #audio-controls-container {
@@ -22,16 +27,10 @@ body {
 }
 
 #audio-controls-toggle {
-    text-align: center;
-    width: 300px;
-    background-color: #FCBF49;
-    padding: 5px 10px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
     margin-bottom: 5px;
-    color: #003049;
-    font-family: 'Mansalva', cursive;
-    font-size: 1.8rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
     cursor: pointer;
 }
 
@@ -41,7 +40,7 @@ body {
 
 #game-title-and-icons-container {
     width: 90%;
-    margin: 0 auto;
+    margin: 20vh auto;
 }
 
 #game-title {
@@ -50,15 +49,15 @@ body {
     text-align: center;
     color: #F77F00;
     text-shadow: 4px 4px #003049;
-    margin-top: 15vh;
+    margin-bottom: 5vh;
 }
 
 #landing-page-icons {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 0;
     right: 0;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     text-align: center;
 }
 
@@ -111,9 +110,10 @@ body {
 }
 
 #info-modal .modal-title {
-    color: #FCBF49;
+    color: #F77F00;
+    text-shadow: 2px 2px #111;
     font-family: 'Girassol', cursive;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -122,6 +122,7 @@ body {
     color: #EAE2B7;
     font-family: 'Acme', sans-serif;
     font-size: 1.3rem;
+    padding: 0 20px;
 }
 
 .modal-close-icon {
