@@ -12,7 +12,7 @@ body {
     width: 100vw;
     background: url("https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png");
     background-position: center;
-    background-size: cover;
+    background-size: auto 100%;
     -webkit-animation: slide 120s linear infinite;
 
     display: flex;
@@ -26,7 +26,7 @@ body {
     to { background-position: -1920px 0; }
 }
 
-#full-screen-game {
+#landing-page, #level-select-page {
     height: 100vh;
     width: 100vw;
 }
@@ -154,6 +154,9 @@ body {
 
 
 /********************** Select Level Screen **************************/
+#level-select-page {
+    display: none;
+}
 #select-level-heading {
     font-family: 'Girassol', cursive;
     font-size: 7rem;
@@ -170,23 +173,16 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    z-index: 5;
     /* text-align: center; */
 }
 
 .level-btn {
-    position: relative;
     background-color: #FCBF49;
     color: #003049;
     font-size: 1.5rem;
-    z-index: 6;
 }
 
 .level-icon {
     height: 45px;
     width: 45px;
 }
-
-/* .level-btn {
-    z-index: 2;
-} */
