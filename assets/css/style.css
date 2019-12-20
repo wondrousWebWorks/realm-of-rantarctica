@@ -13,11 +13,17 @@ body {
     background: url("https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png");
     background-position: center;
     background-size: cover;
+    -webkit-animation: slide 120s linear infinite;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1920px 0; }
 }
 
 #full-screen-game {
@@ -58,11 +64,6 @@ body {
 }
 
 #landing-page-icons {
-    /* position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%); */
     text-align: center;
 }
 
@@ -169,20 +170,23 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100vw;
+    z-index: 5;
     /* text-align: center; */
 }
 
 .level-btn {
+    position: relative;
     background-color: #FCBF49;
     color: #003049;
     font-size: 1.5rem;
+    z-index: 6;
 }
-
-/* .next-level-btn {
-    right: 5vw;
-} */
 
 .level-icon {
     height: 45px;
     width: 45px;
 }
+
+/* .level-btn {
+    z-index: 2;
+} */
