@@ -76,22 +76,22 @@
 				"Range": "10"
 			},
 			"Troll": {
-				"Hit Points": "",
-				"Damage": "",
-				"Armour": "",
-				"Regeneration": "",
-				"Evasion": "",
-				"Magic": "",
-				"Range": ""
+				"Hit Points": "60",
+				"Damage": "40",
+				"Armour": "65",
+				"Regeneration": "5",
+				"Evasion": "15",
+				"Magic": "5",
+				"Range": "18"
 			},
 			"Dragon": {
-				"Hit Points": "",
-				"Damage": "",
-				"Armour": "",
-				"Regeneration": "",
-				"Evasion": "",
-				"Magic": "",
-				"Range": ""
+				"Hit Points": "91",
+				"Damage": "100",
+				"Armour": "86",
+				"Regeneration": "17",
+				"Evasion": "3",
+				"Magic": "34",
+				"Range": "100"
 			},
 			"Cyclops": {
 				"Hit Points": "",
