@@ -58,13 +58,13 @@
 				"Range": "69"
 			},
 			"Demon": {
-				"Hit Points": "",
-				"Damage": "",
-				"Armour": "",
-				"Regeneration": "",
-				"Evasion": "",
-				"Magic": "",
-				"Range": ""
+				"Hit Points": "82",
+				"Damage": "89",
+				"Armour": "43",
+				"Regeneration": "79",
+				"Evasion": "46",
+				"Magic": "33",
+				"Range": "24"
 			},
 			"Elemental": {
 				"Hit Points": "",
