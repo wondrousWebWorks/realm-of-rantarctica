@@ -49,13 +49,13 @@
 				"Range": "100"
 			},
 			"Necromancer": {
-				"Hit Points": "",
-				"Damage": "",
-				"Armour": "",
-				"Regeneration": "",
-				"Evasion": "",
-				"Magic": "",
-				"Range": ""
+				"Hit Points": "32",
+				"Damage": "78",
+				"Armour": "14",
+				"Regeneration": "90",
+				"Evasion": "28",
+				"Magic": "96",
+				"Range": "69"
 			},
 			"Demon": {
 				"Hit Points": "",
