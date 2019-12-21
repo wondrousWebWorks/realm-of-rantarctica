@@ -94,13 +94,13 @@
 				"Range": "100"
 			},
 			"Cyclops": {
-				"Hit Points": "",
-				"Damage": "",
-				"Armour": "",
-				"Regeneration": "",
-				"Evasion": "",
-				"Magic": "",
-				"Range": ""
+				"Hit Points": "53",
+				"Damage": "36",
+				"Armour": "67",
+				"Regeneration": "6",
+				"Evasion": "17",
+				"Magic": "8",
+				"Range": "22"
 			},
 			"Zombie": {
 				"Hit Points": "",
