@@ -31,13 +31,13 @@
 				"Range": "67"
 			},
 			"Minotaur": {
-				"Hit Points": "",
-				"Damage": "",
-				"Armour": "",
-				"Regeneration": "",
-				"Evasion": "",
-				"Magic": "",
-				"Range": ""
+				"Hit Points": "63",
+				"Damage": "44",
+				"Armour": "58",
+				"Regeneration": "6",
+				"Evasion": "24",
+				"Magic": "3",
+				"Range": "20"
 			},
 			"Wizard": {
 				"Hit Points": "",
