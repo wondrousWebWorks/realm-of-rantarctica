@@ -103,13 +103,13 @@
 				"Range": "22"
 			},
 			"Zombie": {
-				"Hit Points": "",
-				"Damage": "",
-				"Armour": "",
-				"Regeneration": "",
-				"Evasion": "",
-				"Magic": "",
-				"Range": ""
+				"Hit Points": "75",
+				"Damage": "49",
+				"Armour": "2",
+				"Regeneration": "68",
+				"Evasion": "4",
+				"Magic": "27",
+				"Range": "12"
 			}
 		}
 	}
