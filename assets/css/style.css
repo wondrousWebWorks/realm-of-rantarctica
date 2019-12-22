@@ -85,6 +85,7 @@ body {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+    cursor: pointer;
 }
 
 #wondrouswebworks-logo img {
@@ -167,7 +168,7 @@ body {
 
 .level-select-buttons-container {
     position: absolute;
-    bottom: 5vh;
+    bottom: 2vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -180,6 +181,7 @@ body {
     background-color: #FCBF49;
     color: #003049;
     font-size: 1.5rem;
+    margin: 0;
 }
 
 .level-icon {
