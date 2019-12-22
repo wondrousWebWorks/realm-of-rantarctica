@@ -323,3 +323,7 @@ body {
     margin: 0 auto;
     font-family: 'Mansalva', cursive;
 }
+
+#level-cards-container .card:hover {
+    transform: scale(1.1);
+}
