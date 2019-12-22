@@ -342,3 +342,9 @@ body {
         width: 40px;
     }
 }
+
+@media(max-width: 768px) {
+    #select-level-heading {
+        font-size: 5.5rem;
+    }
+}
