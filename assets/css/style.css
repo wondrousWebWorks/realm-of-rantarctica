@@ -167,6 +167,40 @@ body {
     }
 }
 
+@media(max-width: 576px) {
+    #game-title {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #play-icon {
+        width: 80px;
+    }
+
+    #info-icon {
+        width: 50px;
+        margin-left: 1rem;
+    }
+
+    #wondrouswebworks-logo img {
+        width: 40vw;
+    }
+
+    #wondrouswebworks-logo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    #audio-controls-toggle {
+        width: 75px;
+        height: 75px;
+    }
+}
+
 /********************** Landing Page Information Modal **************************/
 #info-modal .modal-header, #info-modal .modal-body, #info-modal .modal-footer {
     background-color: #003049;
