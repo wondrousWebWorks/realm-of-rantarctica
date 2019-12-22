@@ -327,3 +327,18 @@ body {
 #level-cards-container .card:hover {
     transform: scale(1.1);
 }
+
+@media(max-width: 1450px) {
+    #select-level-heading {
+        font-size: 4rem;
+    }
+
+    .level-btn {
+        font-size: 1.2rem;
+    }
+
+    .level-icon {
+        height: 40px;
+        width: 40px;
+    }
+}
