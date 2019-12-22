@@ -297,3 +297,16 @@ body {
     height: 45px;
     width: 45px;
 }
+
+#level-cards-container {
+    margin: 0 40px;
+}
+
+#level-cards-container .card {
+    display: none;
+    /* padding: 0 20px; */
+    background: transparent;
+    border: none;
+    text-align: center;
+    transition: transform .5s ease-in-out;
+}
