@@ -310,3 +310,16 @@ body {
     text-align: center;
     transition: transform .5s ease-in-out;
 }
+
+#level-cards-container .card img {
+    width: 80%;
+}
+ 
+#level-cards-container .card h5 {
+    color: #003049;
+    background-color: #FCBF49;
+    padding: 5px;
+    width: 65%;
+    margin: 0 auto;
+    font-family: 'Mansalva', cursive;
+}
