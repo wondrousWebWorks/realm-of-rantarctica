@@ -92,6 +92,25 @@ body {
     width: 18vw;
 }
 
+@media(max-width: 1450px) {
+    #game-title {
+        font-size: 5.5rem;
+    }
+
+    #play-icon {
+        width: 100px;
+    }
+
+    #info-icon {
+        width: 70px;
+        margin-left: 2rem;
+    }
+
+    #wondrouswebworks-logo img {
+        width: 30vw;
+    }
+}
+
 /********************** Landing Page Information Modal **************************/
 #info-modal .modal-header, #info-modal .modal-body, #info-modal .modal-footer {
     background-color: #003049;
