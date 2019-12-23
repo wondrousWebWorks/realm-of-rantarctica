@@ -49,9 +49,7 @@ $(document).ready(function() {
 
     /* Loads Select Level screen */
     $( "#play-icon" ).click(function() {
-        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/bg-4_ox6ev7.png')");
-        $( "#landing-page" ).hide();
-        $( "#level-select-page" ).show();
+        loadLevelSelectScreen();
     });
 
     $( "#target" ).click(function() {
