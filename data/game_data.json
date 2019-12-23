@@ -1,116 +1,112 @@
-[
-	{
-		"backgrounds": {
-			"Enchanted Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620177/realm-of-rantarctica/backgrounds/forest-bg-2_ejj3k5.png",
-			"Mountainous Lake": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png",
-			"Eerie Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-3_ecjt19.png",
-			"Haunted House": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/halloween-bg-1_xrqvp7.png",
-			"Bamboo Falls": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620174/realm-of-rantarctica/backgrounds/fairy-tale-bg-1_x1gfrz.png",
-			"Psychadelic Woods": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/fairy-tale-bg-2_ydbcyx.png",
-			"Rainbow Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-3_acup8c.png",
-			"Twisted Trunks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/fairy-tale-bg-3_f8zygx.png",
-			"Shipwrecked Sands": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/desert-bg-3_xdanir.png",
-			"Sunset Rock": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/stones-bg-1_kbm0bc.png",
-			"Spider's Nest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/halloween-bg-2_vzndet.png",
-			"Cactus Crater": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png",
-			"Mossy Rocks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/stones-bg-4_r6ucew.png",
-			"Cactus Canyons": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/desert-bg-1_ovnsjn.png",
-			"Perilous Peaks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png",
-			"Oasis Mirage": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png"
-		}
-	},
-	{
-		"characters": {
-			"Ent": {
-				"Hit Points": "92",
-				"Damage": "88",
-				"Armour": "74",
-				"Regeneration": "4",
-				"Evasion": "18",
-				"Magic": "12",
-				"Range": "67"
-			},
-			"Minotaur": {
-				"Hit Points": "63",
-				"Damage": "44",
-				"Armour": "58",
-				"Regeneration": "6",
-				"Evasion": "24",
-				"Magic": "3",
-				"Range": "20"
-			},
-			"Wizard": {
-				"Hit Points": "36",
-				"Damage": "92",
-				"Armour": "8",
-				"Regeneration": "42",
-				"Evasion": "36",
-				"Magic": "100",
-				"Range": "100"
-			},
-			"Necromancer": {
-				"Hit Points": "32",
-				"Damage": "78",
-				"Armour": "14",
-				"Regeneration": "90",
-				"Evasion": "28",
-				"Magic": "96",
-				"Range": "69"
-			},
-			"Demon": {
-				"Hit Points": "82",
-				"Damage": "89",
-				"Armour": "43",
-				"Regeneration": "79",
-				"Evasion": "46",
-				"Magic": "33",
-				"Range": "24"
-			},
-			"Elemental": {
-				"Hit Points": "65",
-				"Damage": "86",
-				"Armour": "6",
-				"Regeneration": "91",
-				"Evasion": "75",
-				"Magic": "72",
-				"Range": "10"
-			},
-			"Troll": {
-				"Hit Points": "60",
-				"Damage": "40",
-				"Armour": "65",
-				"Regeneration": "5",
-				"Evasion": "15",
-				"Magic": "5",
-				"Range": "18"
-			},
-			"Dragon": {
-				"Hit Points": "91",
-				"Damage": "100",
-				"Armour": "86",
-				"Regeneration": "17",
-				"Evasion": "3",
-				"Magic": "34",
-				"Range": "100"
-			},
-			"Cyclops": {
-				"Hit Points": "53",
-				"Damage": "36",
-				"Armour": "67",
-				"Regeneration": "6",
-				"Evasion": "17",
-				"Magic": "8",
-				"Range": "22"
-			},
-			"Zombie": {
-				"Hit Points": "75",
-				"Damage": "49",
-				"Armour": "2",
-				"Regeneration": "68",
-				"Evasion": "4",
-				"Magic": "27",
-				"Range": "12"
-			}
+{
+	"lg-backgrounds": [
+		{"Enchanted Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620177/realm-of-rantarctica/backgrounds/forest-bg-2_ejj3k5.png"},
+		{"Mountainous Lake": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png"},
+		{"Eerie Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-3_ecjt19.png"},
+		{"Haunted House": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/halloween-bg-1_xrqvp7.png"},
+		{"Bamboo Falls": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620174/realm-of-rantarctica/backgrounds/fairy-tale-bg-1_x1gfrz.png"},
+		{"Psychadelic Woods": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/fairy-tale-bg-2_ydbcyx.png"},
+		{"Rainbow Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-3_acup8c.png"},
+		{"Twisted Trunks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/fairy-tale-bg-3_f8zygx.png"},
+		{"Shipwrecked Sands": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/desert-bg-3_xdanir.png"},
+		{"Sunset Rock": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/stones-bg-1_kbm0bc.png"},
+		{"Spider's Nest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/halloween-bg-2_vzndet.png"},
+		{"Cactus Crater": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png"},
+		{"Mossy Rocks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/stones-bg-4_r6ucew.png"},
+		{"Cactus Canyons": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/desert-bg-1_ovnsjn.png"},
+		{"Perilous Peaks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png"},
+		{"Oasis Mirage": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png"}
+	],
+	"characters": {
+		"Ent": {
+			"Hit Points": "92",
+			"Damage": "88",
+			"Armour": "74",
+			"Regeneration": "4",
+			"Evasion": "18",
+			"Magic": "12",
+			"Range": "67"
+		},
+		"Minotaur": {
+			"Hit Points": "63",
+			"Damage": "44",
+			"Armour": "58",
+			"Regeneration": "6",
+			"Evasion": "24",
+			"Magic": "3",
+			"Range": "20"
+		},
+		"Wizard": {
+			"Hit Points": "36",
+			"Damage": "92",
+			"Armour": "8",
+			"Regeneration": "42",
+			"Evasion": "36",
+			"Magic": "100",
+			"Range": "100"
+		},
+		"Necromancer": {
+			"Hit Points": "32",
+			"Damage": "78",
+			"Armour": "14",
+			"Regeneration": "90",
+			"Evasion": "28",
+			"Magic": "96",
+			"Range": "69"
+		},
+		"Demon": {
+			"Hit Points": "82",
+			"Damage": "89",
+			"Armour": "43",
+			"Regeneration": "79",
+			"Evasion": "46",
+			"Magic": "33",
+			"Range": "24"
+		},
+		"Elemental": {
+			"Hit Points": "65",
+			"Damage": "86",
+			"Armour": "6",
+			"Regeneration": "91",
+			"Evasion": "75",
+			"Magic": "72",
+			"Range": "10"
+		},
+		"Troll": {
+			"Hit Points": "60",
+			"Damage": "40",
+			"Armour": "65",
+			"Regeneration": "5",
+			"Evasion": "15",
+			"Magic": "5",
+			"Range": "18"
+		},
+		"Dragon": {
+			"Hit Points": "91",
+			"Damage": "100",
+			"Armour": "86",
+			"Regeneration": "17",
+			"Evasion": "3",
+			"Magic": "34",
+			"Range": "100"
+		},
+		"Cyclops": {
+			"Hit Points": "53",
+			"Damage": "36",
+			"Armour": "67",
+			"Regeneration": "6",
+			"Evasion": "17",
+			"Magic": "8",
+			"Range": "22"
+		},
+		"Zombie": {
+			"Hit Points": "75",
+			"Damage": "49",
+			"Armour": "2",
+			"Regeneration": "68",
+			"Evasion": "4",
+			"Magic": "27",
+			"Range": "12"
 		}
 	}
-]
+}
