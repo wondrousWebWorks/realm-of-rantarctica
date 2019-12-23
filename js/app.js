@@ -30,6 +30,13 @@ $(document).ready(function() {
             });
     }
 
+    /* Hides Landing Page and shows Level Select Page without any Level Select Cards */
+    function loadLevelSelectScreen() {
+        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/bg-4_ox6ev7.png')");
+        $( "#landing-page" ).hide();
+        $( "#level-select-page" ).show();  
+    }
+
     /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
