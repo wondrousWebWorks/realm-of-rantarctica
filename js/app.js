@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    /* Get window dimensions and return as an array [width, length] */
+    function getWindowDimensions() {
+        return [$(window).width(), $(window).height()];
+    }
+
     /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
