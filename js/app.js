@@ -37,6 +37,28 @@ $(document).ready(function() {
         $( "#level-select-page" ).show();  
     }
 
+    /* Loads the correct number of Level Select cards based on screen size - gets called as a callback in getData() */
+    function loadLevelSelectCards(gameData) {
+        let windowDimensions = getWindowDimensions();
+        let cardCount = setLevelCardDisplayCount(windowDimensions); 
+        for (let i = 1; i <= cardCount; i++) {
+            $( `#bg-card-${i} img` ).attr("src", Object.values(gameData["md-backgrounds"][i - 1]));
+            $( `#bg-card-${i} h5` ).text(Object.keys(gameData["md-backgrounds"][i - 1]));
+            
+  
+            if(cardCount === 6) {
+                $( `#bg-card-${i}` ).addClass("col-4");
+            } else if (cardCount === 4) {
+                $( `#bg-card-${i}` ).addClass("col-6");
+            } else {
+                $( `#bg-card-${i}` ).addClass("col-12");
+            }
+            $( `#bg-card-${i}` ).css("display", "inline-block");
+            $( `#bg-card-${i}` ).show();
+  
+        }    
+    }
+
     /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
