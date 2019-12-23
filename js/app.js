@@ -1,7 +1,22 @@
 $(document).ready(function() {
-    /* Get window dimensions and return as an array [width, length] */
+    /* Gets window dimensions and return as an array [width, length] */
     function getWindowDimensions() {
         return [$(window).width(), $(window).height()];
+    }
+
+    /* Fetches game data from json file and takes a callback to do something with retrieved data */
+    function getGameData(callback) {
+        fetch("data/game_data.json")
+            .then(response => {
+                return response.json();
+            })
+            .then(gameData => {
+                callback(gameData);
+            })
+            .catch(error => {
+                alert("Failed to get game data.");
+                console.log(error);
+            });
     }
 
     /* Toggles the html audio control's visibility on clicking */
