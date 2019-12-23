@@ -72,6 +72,7 @@ $(document).ready(function() {
     /* Loads Select Level screen */
     $( "#play-icon" ).click(function() {
         loadLevelSelectScreen();
+        getGameData(loadLevelSelectCards);
     });
 
     $( "#target" ).click(function() {
