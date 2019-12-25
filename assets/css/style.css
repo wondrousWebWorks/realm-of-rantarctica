@@ -29,6 +29,10 @@ body {
 #landing-page, #level-select-page {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #audio-controls-container {
