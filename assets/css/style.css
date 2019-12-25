@@ -64,7 +64,6 @@ body {
     text-align: center;
     color: #F77F00;
     text-shadow: 4px 4px #003049;
-    margin-bottom: 5vh;
 }
 
 #landing-page-icons {
@@ -86,7 +85,7 @@ body {
 }
 
 #wondrouswebworks-logo {
-
+    margin-bottom: 2rem;
     cursor: pointer;
 }
 
