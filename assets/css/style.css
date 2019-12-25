@@ -64,11 +64,12 @@ body {
     text-align: center;
     color: #F77F00;
     text-shadow: 4px 4px #003049;
+    margin-top: 9rem;
 }
 
-#landing-page-icons {
+/* #landing-page-icons {
     text-align: center;
-}
+} */
 
 #info-icon {
     width: 100px;
