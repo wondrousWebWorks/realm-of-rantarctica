@@ -322,6 +322,7 @@ body {
     width: 65%;
     margin: 0 auto;
     font-family: 'Mansalva', cursive;
+    border-radius: 7px;
 }
 
 #level-cards-container .card:hover {
