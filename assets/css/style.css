@@ -305,7 +305,6 @@ body {
 
 #level-cards-container .card {
     display: none;
-    /* padding: 0 20px; */
     background: transparent;
     border: none;
     text-align: center;
