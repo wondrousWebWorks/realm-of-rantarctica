@@ -378,4 +378,8 @@ body {
     #level-cards-container .card img {
         width: 100%;
     }
+
+    #level-cards-container .card h5 {
+        width: 90%;
+    }
 }
