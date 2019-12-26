@@ -374,4 +374,8 @@ body {
         width: 95%;
         padding: 0;
     }
+
+    #level-cards-container .card img {
+        width: 100%;
+    }
 }
