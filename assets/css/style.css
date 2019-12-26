@@ -354,10 +354,11 @@ body {
     #level-cards-container {
         margin: 0 10px;
     }
-    
+
     #select-level-heading {
+        margin-top: 2rem;
         font-size: 3rem;
-        margin-bottom: 2rem;
+        line-height: .9;
         }
 
     .level-btn {
