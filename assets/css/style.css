@@ -171,16 +171,16 @@ body {
 
 @media(max-width: 576px) {
     #game-title {
-        font-size: 3rem;
-        margin-bottom: 5rem;
+        font-size: 4rem;
+        margin-top: 4.5rem;
     }
 
     #play-icon {
-        width: 80px;
+        width: 120px;
     }
 
     #info-icon {
-        width: 50px;
+        width: 90px;
         margin-left: 1rem;
     }
 
@@ -355,7 +355,7 @@ body {
     #select-level-heading {
         font-size: 3rem;
         margin-bottom: 2rem;
-    }
+        }
 
     .level-btn {
         font-size: 1rem;
