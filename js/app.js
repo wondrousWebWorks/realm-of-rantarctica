@@ -63,6 +63,11 @@ $(document).ready(function() {
         }    
     }
 
+    /* Generates a random integer between 1 and 12 to select a random level to be loaded if the user chooses the Tandom Level option*/
+    function generateRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min) ) + min;
+    }
+
     /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
