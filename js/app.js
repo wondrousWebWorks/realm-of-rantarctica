@@ -84,7 +84,7 @@ $(document).ready(function() {
         getGameData(loadLevelSelectCards);
     });
 
-    $( "#target" ).click(function() {
+    $( "#home-btn" ).click(function() {
         $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png')");
         $( "#level-select-page" ).hide();
         $( "#landing-page" ).show();
