@@ -351,6 +351,10 @@ body {
 }
 
 @media(max-width: 576px) {
+    #level-cards-container {
+        margin: 0 10px;
+    }
+    
     #select-level-heading {
         font-size: 3rem;
         margin-bottom: 2rem;
