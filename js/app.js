@@ -91,4 +91,8 @@ $(document).ready(function() {
         $( "#level-select-page" ).hide();
         $( "#landing-page" ).show();
     });
+
+    $( ".card ").click(function() {
+        setChosenBattleBackground($(this));
+    });
 });
