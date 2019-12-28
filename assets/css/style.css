@@ -315,7 +315,7 @@ body {
     background: transparent;
     border: none;
     text-align: center;
-    transition: transform .5s ease-in-out;
+    transition: transform .8s ease-in-out;
 }
 
 #level-cards-container .card img {
