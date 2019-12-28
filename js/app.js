@@ -47,6 +47,7 @@ $(document).ready(function() {
         let cardCount = setLevelCardDisplayCount(windowDimensions); 
         for (let i = 1; i <= cardCount; i++) {
             $( `#bg-card-${i} img` ).attr("src", Object.values(gameData["md-backgrounds"][i - 1]));
+            $( `#bg-card-${i}` ).attr("name", Object.keys(gameData["md-backgrounds"][i - 1]));
             $( `#bg-card-${i} h5` ).text(Object.keys(gameData["md-backgrounds"][i - 1]));
             
   
