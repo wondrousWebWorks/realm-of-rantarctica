@@ -92,6 +92,7 @@ $(document).ready(function() {
         $( "#landing-page" ).show();
     });
 
+    /* Sets the chosen background for the Battle Screen when clicked */
     $( ".card ").click(function() {
         setChosenBattleBackground($(this));
     });
