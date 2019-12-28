@@ -82,6 +82,7 @@ $(document).ready(function() {
         return Math.floor(Math.random() * (max - min) ) + min;
     }
 
+    /* Sets a random background for the Battle screen */
     function setRandomBattleBackground() {
         let randomLevelInt = generateRandomInt(0, 11);
         getGameData(gameData => {
