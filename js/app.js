@@ -64,6 +64,7 @@ $(document).ready(function() {
         }    
     }
 
+    /* Sets the user's chosen background for the Battle screen */
     function setChosenBattleBackground($element) {
         console.log($element[0].attributes.name.value);
     }
