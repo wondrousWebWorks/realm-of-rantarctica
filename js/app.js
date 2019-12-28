@@ -111,6 +111,7 @@ $(document).ready(function() {
         setChosenBattleBackground($(this));
     });
 
+    /* Sets a random background for the Battle Screen when clicked */
     $( ".random-level-btn" ).click(() => {
        
     });
