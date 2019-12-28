@@ -334,8 +334,8 @@ body {
     border-radius: 7px;
 }
 
-#level-cards-container .card:hover {
-    transform: scale(1.1);
+#level-cards-container .card:hover img {
+    border: 4px solid #EAE2B7;
 }
 
 @media(max-width: 1450px) {
