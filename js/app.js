@@ -115,12 +115,11 @@ $(document).ready(function() {
 
     /* Sets the chosen background for the Battle Screen when clicked */
     $( ".card ").click(function() {
-        // getGameData(setChosenBattleBackground);
         setChosenBattleBackground($(this));
     });
 
     /* Sets a random background for the Battle Screen when clicked */
     $( ".random-level-btn" ).click(() => {
-       
+        setRandomBattleBackground();
     });
 });
