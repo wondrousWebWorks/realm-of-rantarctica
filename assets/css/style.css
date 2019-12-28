@@ -392,3 +392,11 @@ body {
         width: 90%;
     }
 }
+
+/********************** Battle Screen **************************/
+.set-flex-display-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
