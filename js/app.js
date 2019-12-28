@@ -82,6 +82,13 @@ $(document).ready(function() {
         return Math.floor(Math.random() * (max - min) ) + min;
     }
 
+    function setRandomBattleBackground() {
+        let randomLevelInt = generateRandomInt(0, 11);
+        getGameData(gameData => {
+            $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][randomLevelInt])})`);
+        })
+    }
+
     /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
