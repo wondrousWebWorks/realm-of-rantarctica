@@ -35,10 +35,7 @@ $(document).ready(function() {
         $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/bg-4_ox6ev7.png')");
         $( "#landing-page" ).hide();
         $( "#level-select-page" ).show();  
-        $( "#level-select-page" ).css("display", "flex");
-        $( "#level-select-page" ).css("flex-direction", "column");    
-        $( "#level-select-page" ).css("justify-content", "space-between");
-        $( "#level-select-page" ).css("align-items", "center");    
+        $( "#level-select-page" ).toggleClass("set-flex-display-column"); 
     }
 
     /* Loads the correct number of Level Select cards based on screen size - gets called as a callback in getData() */
