@@ -4,6 +4,7 @@
 /********************** Body **************************/
 body {
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 /********************** Landing Page **************************/
@@ -292,11 +293,17 @@ body {
     color: #003049;
     font-size: 1.5rem;
     margin: 0;
+    transition: background-color .5s ease-in-out;
 }
 
 .level-icon {
     height: 45px;
     width: 45px;
+}
+
+
+.level-btn:hover {
+    background-color: #F77F00;
 }
 
 #level-cards-container {
