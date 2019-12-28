@@ -67,7 +67,7 @@ $(document).ready(function() {
     /* Sets the user's chosen background for the Battle screen */
     function setChosenBattleBackground($element) {
         let chosenBattleGround = $element[0].attributes.name.value;
-        
+
         getGameData(gameData => {
             for (i = 0; i < 12; i++) {
                 if(chosenBattleGround == Object.keys(gameData["lg-backgrounds"][i])) {
@@ -109,5 +109,9 @@ $(document).ready(function() {
     $( ".card ").click(function() {
         // getGameData(setChosenBattleBackground);
         setChosenBattleBackground($(this));
+    });
+
+    $( ".random-level-btn" ).click(() => {
+       
     });
 });
