@@ -469,3 +469,8 @@ body {
     color: #EAE2B7;
     padding-right: 20px;
 }
+
+.ai-attribute-value, .card-count-ai-value {
+    color: #80D2FF;
+    padding-right: 20px;
+}
