@@ -87,6 +87,12 @@ $(document).ready(function() {
         })
     }
 
+    function loadBattleScreen() {
+        $( "#level-select-page" ).hide();
+        $( "#battle-page" ).show();  
+        $( "#battle-page" ).toggleClass("set-flex-display-column"); 
+    }
+
      /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
