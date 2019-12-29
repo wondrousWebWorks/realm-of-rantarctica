@@ -474,3 +474,7 @@ body {
     color: #80D2FF;
     padding-right: 20px;
 }
+
+.player-attribute, .card-count-item, .ai-attribute {
+    color: #FCBF49;
+}
