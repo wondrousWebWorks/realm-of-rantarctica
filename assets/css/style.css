@@ -433,3 +433,10 @@ body {
     justify-content: space-between;
     transition: background-color .5s ease-in-out;
 }
+
+.card-count-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
