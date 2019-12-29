@@ -464,3 +464,8 @@ body {
 .player-attribute-name, .card-count-player, .card-count-ai, .ai-attribute-name {
     padding-left: 20px;
 }
+
+.player-attribute-value, .card-count-player-value {
+    color: #EAE2B7;
+    padding-right: 20px;
+}
