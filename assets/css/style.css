@@ -407,3 +407,9 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+
+#battle-page {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
