@@ -125,5 +125,6 @@ $(document).ready(function() {
     /* Sets a random background for the Battle Screen when clicked and launches Battle Screen*/
     $( ".random-level-btn" ).click(() => {
         setRandomBattleBackground();
+        loadBattleScreen();
     });
 });
