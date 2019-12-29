@@ -460,3 +460,7 @@ body {
     font-weight: bold;
     margin: 0;
 }
+
+.player-attribute-name, .card-count-player, .card-count-ai, .ai-attribute-name {
+    padding-left: 20px;
+}
