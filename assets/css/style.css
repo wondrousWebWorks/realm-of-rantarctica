@@ -400,3 +400,10 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.set-flex-display-column-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
