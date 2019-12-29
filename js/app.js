@@ -119,6 +119,7 @@ $(document).ready(function() {
     /* Sets the chosen background for the Battle Screen when clicked and launches Battle Screen*/
     $( ".card ").click(function() {
         setChosenBattleBackground($(this));
+        loadBattleScreen();
     });
 
     /* Sets a random background for the Battle Screen when clicked and launches Battle Screen*/
