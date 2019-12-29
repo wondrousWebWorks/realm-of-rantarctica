@@ -453,3 +453,10 @@ body {
     border: 4px solid #D62828;
     border-radius: 14px;
 }
+
+.player-attribute p, .card-count-item p, .ai-attribute p {
+    font-family: 'Acme', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
