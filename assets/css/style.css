@@ -490,3 +490,9 @@ body {
     text-align: center;
     overflow: hidden;
 }
+
+#player-sprite-and-name-container img {
+    width: 50%;
+    height: auto;
+    padding-top: 30px;
+}
