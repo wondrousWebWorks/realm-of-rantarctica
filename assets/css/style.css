@@ -478,3 +478,9 @@ body {
 .player-attribute, .card-count-item, .ai-attribute {
     color: #FCBF49;
 }
+
+#card-count {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
