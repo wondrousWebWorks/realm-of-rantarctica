@@ -87,7 +87,7 @@ $(document).ready(function() {
         })
     }
 
-    /* Toggles the html audio control's visibility on clicking */
+     /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
     });
@@ -110,12 +110,12 @@ $(document).ready(function() {
         $( "#landing-page" ).show();
     });
 
-    /* Sets the chosen background for the Battle Screen when clicked */
+    /* Sets the chosen background for the Battle Screen when clicked and launches Battle Screen*/
     $( ".card ").click(function() {
         setChosenBattleBackground($(this));
     });
 
-    /* Sets a random background for the Battle Screen when clicked */
+    /* Sets a random background for the Battle Screen when clicked and launches Battle Screen*/
     $( ".random-level-btn" ).click(() => {
         setRandomBattleBackground();
     });
