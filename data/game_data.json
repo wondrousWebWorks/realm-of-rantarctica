@@ -51,15 +51,18 @@
 			]
 		},
 		{
-			"Minotaur": {
-			"Hit Points": "63",
-			"Damage": "44",
-			"Armour": "58",
-			"Regeneration": "6",
-			"Evasion": "24",
-			"Magic": "3",
-			"Range": "20"
-			}
+			"Minotaur": [
+				{
+					"Hit Points": "63",
+					"Damage": "44",
+					"Armour": "58",
+					"Regeneration": "6",
+					"Evasion": "24",
+					"Magic": "3",
+					"Range": "20"
+				},
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577913926/realm-of-rantarctica/characters/IDLE_000_tapoev.png"
+			]
 		},
 		{
 			"Wizard": {
