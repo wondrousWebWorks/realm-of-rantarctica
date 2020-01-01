@@ -35,17 +35,23 @@
 		{"Perilous Peaks": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png"},
 		{"Oasis Mirage": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png"}
 	],
-	"characters": {
-		"Ent": {
-			"Hit Points": "92",
-			"Damage": "88",
-			"Armour": "74",
-			"Regeneration": "4",
-			"Evasion": "18",
-			"Magic": "12",
-			"Range": "67"
+	"characters": [
+		{
+			"Ent": [
+				{
+					"Hit Points": "92",
+					"Damage": "88",
+					"Armour": "74",
+					"Regeneration": "4",
+					"Evasion": "18",
+					"Magic": "12",
+					"Range": "67"
+				},
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914113/realm-of-rantarctica/characters/1_IDLE_000_pzzv1c.png"
+			]
 		},
-		"Minotaur": {
+		{
+			"Minotaur": {
 			"Hit Points": "63",
 			"Damage": "44",
 			"Armour": "58",
@@ -53,8 +59,10 @@
 			"Evasion": "24",
 			"Magic": "3",
 			"Range": "20"
+			}
 		},
-		"Wizard": {
+		{
+			"Wizard": {
 			"Hit Points": "36",
 			"Damage": "92",
 			"Armour": "8",
@@ -62,8 +70,10 @@
 			"Evasion": "36",
 			"Magic": "100",
 			"Range": "100"
+			}
 		},
-		"Necromancer": {
+		{
+			"Necromancer": {
 			"Hit Points": "32",
 			"Damage": "78",
 			"Armour": "14",
@@ -71,8 +81,10 @@
 			"Evasion": "28",
 			"Magic": "96",
 			"Range": "69"
+			}
 		},
-		"Demon": {
+		{
+			"Demon": {
 			"Hit Points": "82",
 			"Damage": "89",
 			"Armour": "43",
@@ -80,8 +92,10 @@
 			"Evasion": "46",
 			"Magic": "33",
 			"Range": "24"
+			}
 		},
-		"Elemental": {
+		{
+			"Elemental": {
 			"Hit Points": "65",
 			"Damage": "86",
 			"Armour": "6",
@@ -89,8 +103,10 @@
 			"Evasion": "75",
 			"Magic": "72",
 			"Range": "10"
+			}
 		},
-		"Troll": {
+		{
+			"Troll": {
 			"Hit Points": "60",
 			"Damage": "40",
 			"Armour": "65",
@@ -98,8 +114,10 @@
 			"Evasion": "15",
 			"Magic": "5",
 			"Range": "18"
+			}
 		},
-		"Dragon": {
+		{
+			"Dragon": {
 			"Hit Points": "91",
 			"Damage": "100",
 			"Armour": "86",
@@ -107,8 +125,10 @@
 			"Evasion": "3",
 			"Magic": "34",
 			"Range": "100"
+			}
 		},
-		"Cyclops": {
+		{
+			"Cyclops": {
 			"Hit Points": "53",
 			"Damage": "36",
 			"Armour": "67",
@@ -116,8 +136,10 @@
 			"Evasion": "17",
 			"Magic": "8",
 			"Range": "22"
+			}
 		},
-		"Zombie": {
+		{
+			"Zombie": {
 			"Hit Points": "75",
 			"Damage": "49",
 			"Armour": "2",
@@ -125,6 +147,7 @@
 			"Evasion": "4",
 			"Magic": "27",
 			"Range": "12"
+			}
 		}
-	}
+	]
 }
