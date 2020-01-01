@@ -149,15 +149,18 @@
 			]
 		},
 		{
-			"Cyclops": {
-			"Hit Points": "53",
-			"Damage": "36",
-			"Armour": "67",
-			"Regeneration": "6",
-			"Evasion": "17",
-			"Magic": "8",
-			"Range": "22"
-			}
+			"Cyclops": [
+				{
+					"Hit Points": "53",
+					"Damage": "36",
+					"Armour": "67",
+					"Regeneration": "6",
+					"Evasion": "17",
+					"Magic": "8",
+					"Range": "22"
+				},
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914015/realm-of-rantarctica/characters/IDLE_000_nsbxqp.png"
+			]
 		},
 		{
 			"Zombie": {
