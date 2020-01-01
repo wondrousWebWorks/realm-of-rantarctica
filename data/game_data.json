@@ -79,15 +79,18 @@
 			]
 		},
 		{
-			"Necromancer": {
-			"Hit Points": "32",
-			"Damage": "78",
-			"Armour": "14",
-			"Regeneration": "90",
-			"Evasion": "28",
-			"Magic": "96",
-			"Range": "69"
-			}
+			"Necromancer": [
+				{
+					"Hit Points": "32",
+					"Damage": "78",
+					"Armour": "14",
+					"Regeneration": "90",
+					"Evasion": "28",
+					"Magic": "96",
+					"Range": "69"
+				},
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914095/realm-of-rantarctica/characters/1_IDLE_000_atlduc.png"
+			]
 		},
 		{
 			"Demon": {
