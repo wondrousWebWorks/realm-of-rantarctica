@@ -107,15 +107,18 @@
 			]
 		},
 		{
-			"Elemental": {
-			"Hit Points": "65",
-			"Damage": "86",
-			"Armour": "6",
-			"Regeneration": "91",
-			"Evasion": "75",
-			"Magic": "72",
-			"Range": "10"
-			}
+			"Elemental": [
+				{
+					"Hit Points": "65",
+					"Damage": "86",
+					"Armour": "6",
+					"Regeneration": "91",
+					"Evasion": "75",
+					"Magic": "72",
+					"Range": "10"
+				},
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914218/realm-of-rantarctica/characters/1_IDLE_000_gy0jdh.png"
+			]
 		},
 		{
 			"Troll": {
