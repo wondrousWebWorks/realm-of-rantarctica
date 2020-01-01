@@ -65,15 +65,18 @@
 			]
 		},
 		{
-			"Wizard": {
-			"Hit Points": "36",
-			"Damage": "92",
-			"Armour": "8",
-			"Regeneration": "42",
-			"Evasion": "36",
-			"Magic": "100",
-			"Range": "100"
-			}
+			"Wizard": [
+				{
+					"Hit Points": "36",
+					"Damage": "92",
+					"Armour": "8",
+					"Regeneration": "42",
+					"Evasion": "36",
+					"Magic": "100",
+					"Range": "100"
+				},
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914165/realm-of-rantarctica/characters/1_IDLE_000_pnbl7h.png"
+			]
 		},
 		{
 			"Necromancer": {
