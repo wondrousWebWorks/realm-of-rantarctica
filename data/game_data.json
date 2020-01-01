@@ -93,15 +93,18 @@
 			]
 		},
 		{
-			"Demon": {
-			"Hit Points": "82",
-			"Damage": "89",
-			"Armour": "43",
-			"Regeneration": "79",
-			"Evasion": "46",
-			"Magic": "33",
-			"Range": "24"
-			}
+			"Demon": [
+				{
+					"Hit Points": "82",
+					"Damage": "89",
+					"Armour": "43",
+					"Regeneration": "79",
+					"Evasion": "46",
+					"Magic": "33",
+					"Range": "24"
+				},
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914194/realm-of-rantarctica/characters/1_IDLE_000_t8xgbn.png"
+			]
 		},
 		{
 			"Elemental": {
