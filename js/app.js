@@ -93,6 +93,19 @@ $(document).ready(function() {
         $( "#battle-page" ).toggleClass("set-flex-display-column"); 
     }
 
+    function shuffleCards(cardArray) {
+        let currentIndex = cardArray.length, temporaryValue, randomIndex;
+        
+        while (0 !== currentIndex) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+        
+            temporaryValue = cardArray[currentIndex];
+            cardArray[currentIndex] = cardArray[randomIndex];
+            cardArray[randomIndex] = temporaryValue;
+        }
+    }
+
      /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
@@ -119,7 +132,7 @@ $(document).ready(function() {
     /* Sets the chosen background for the Battle Screen when clicked and launches Battle Screen*/
     $( ".card ").click(function() {
         setChosenBattleBackground($(this));
-        loadBattleScreen();
+        loadBattleScreen();    
     });
 
     /* Sets a random background for the Battle Screen when clicked and launches Battle Screen*/
