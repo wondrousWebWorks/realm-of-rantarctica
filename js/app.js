@@ -108,7 +108,9 @@ $(document).ready(function() {
     }
 
     function handleCardLogic(gameData) {
-
+        // Retrieve characters from getGameData's json object and assign for player and AI       
+        playerCards = gameData["characters"].slice();
+        aiCards = gameData["characters"].slice();
     }
 
      /* Toggles the html audio control's visibility on clicking */
