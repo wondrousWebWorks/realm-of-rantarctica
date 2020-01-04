@@ -489,9 +489,3 @@ body {
     margin: auto;
     text-align: center;
 }
-
-#player-sprite-and-name-container img {
-    width: 50%;
-    height: auto;
-    padding-top: 30px;
-}
