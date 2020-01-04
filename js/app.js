@@ -107,7 +107,9 @@ $(document).ready(function() {
         }
     }
 
-    
+    function handleCardLogic(gameData) {
+
+    }
 
      /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
