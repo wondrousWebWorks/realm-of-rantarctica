@@ -494,3 +494,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#ai-sprite-and-name-container {
+    transform: scaleX(-1);
+}
