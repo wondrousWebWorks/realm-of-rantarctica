@@ -498,3 +498,7 @@ body {
 #ai-sprite-and-name-container {
     transform: scaleX(-1);
 }
+
+#ai-sprite-name {
+    transform: scaleX(-1);
+}
