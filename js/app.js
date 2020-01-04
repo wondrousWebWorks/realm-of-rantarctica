@@ -93,6 +93,7 @@ $(document).ready(function() {
         $( "#battle-page" ).toggleClass("set-flex-display-column"); 
     }
 
+    // Shuffle a card deck using the Fisher-Yates (aka Knuth) Shuffle
     function shuffleCards(cardArray) {
         let currentIndex = cardArray.length, temporaryValue, randomIndex;
         
