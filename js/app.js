@@ -107,6 +107,7 @@ $(document).ready(function() {
         }
     }
 
+    // Handles all logic related to cards, including shuffling, writing values to cards, timing and displaying sprites
     function handleCardLogic(gameData) {
         // Retrieve characters from getGameData's json object and assign for player and AI       
         playerCards = gameData["characters"].slice();
