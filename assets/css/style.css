@@ -488,7 +488,6 @@ body {
 #player-sprite-and-name-container, #ai-sprite-and-name-container {
     margin: auto;
     text-align: center;
-    overflow: hidden;
 }
 
 #player-sprite-and-name-container img {
