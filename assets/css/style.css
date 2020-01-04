@@ -485,7 +485,7 @@ body {
     transform: translateY(-50%);
 }
 
-#player-sprite-and-name-container {
+#player-sprite-and-name-container, #ai-sprite-and-name-container {
     margin: auto;
     text-align: center;
     overflow: hidden;
