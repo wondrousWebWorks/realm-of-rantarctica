@@ -111,6 +111,10 @@ $(document).ready(function() {
         // Retrieve characters from getGameData's json object and assign for player and AI       
         playerCards = gameData["characters"].slice();
         aiCards = gameData["characters"].slice();
+
+        // Randomize Player and AI decks
+        shuffleCards(playerCards);
+        shuffleCards(aiCards);
     }
 
      /* Toggles the html audio control's visibility on clicking */
