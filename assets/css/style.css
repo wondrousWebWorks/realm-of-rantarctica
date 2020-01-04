@@ -488,4 +488,9 @@ body {
 #player-sprite-and-name-container, #ai-sprite-and-name-container {
     margin: auto;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
