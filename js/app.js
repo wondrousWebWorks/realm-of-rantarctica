@@ -107,6 +107,8 @@ $(document).ready(function() {
         }
     }
 
+    
+
      /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
         $( "#audio-controls" ).toggle();
