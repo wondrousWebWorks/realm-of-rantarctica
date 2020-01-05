@@ -535,3 +535,14 @@ body {
     text-shadow: 3px 3px #003049;
     font-weight: bold;
 }
+
+#vs {
+    font-family: 'Girassol', cursive;
+    font-size: 7rem;
+    text-align: center;
+    color: #FCBF49;
+    text-shadow: 4px 4px 2px #003049;
+    padding: 10px 0;
+    line-height: .8;
+    margin: 0;
+}
