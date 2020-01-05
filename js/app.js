@@ -121,6 +121,19 @@ $(document).ready(function() {
         }
     }
 
+    function displaySprite(deck, playerOrAI) {
+        let firstCharacter = Object.values(deck[0]);
+
+        let urlPrecursor = Object.values(firstCharacter[0]);
+
+        let url = urlPrecursor[1]
+
+        $( `#${playerOrAI}-sprite-name` ).text(Object.keys(deck[0]));
+        $( `#${playerOrAI}-sprite-and-name-container` ).css("background", `url(${url})`);
+        $( `#${playerOrAI}-sprite-and-name-container` ).css("background-repeat", "no-repeat");
+        $( `#${playerOrAI}-sprite-and-name-container` ).css("background-position", "center");
+    }
+
     // Handles all logic related to cards, including shuffling, writing values to cards, timing and displaying sprites
     function handleCardLogic(gameData) {
         // Retrieve characters from getGameData's json object and assign for player and AI       
