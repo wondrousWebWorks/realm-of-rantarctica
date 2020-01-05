@@ -546,3 +546,12 @@ body {
     line-height: .8;
     margin: 0;
 }
+
+.vs-border-block {
+    height: 12px;
+    width: 10vw;
+    margin: auto;
+    background-color: #D62828;
+    border: 3px solid #003049;
+    border-radius: 2px;
+}
