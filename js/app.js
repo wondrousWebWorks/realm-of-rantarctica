@@ -136,6 +136,7 @@ $(document).ready(function() {
         $( `#${playerOrAI}-sprite-and-name-container` ).css("background-position", "center");
     }
 
+    // Handles the countdown for each round and displays the time value on screen
     function countdownTimer() {
         let time = 8;
         let timer = setInterval(function() {
