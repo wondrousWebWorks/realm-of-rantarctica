@@ -91,6 +91,7 @@ $(document).ready(function() {
         $( "#level-select-page" ).hide();
         $( "#battle-page" ).show();  
         $( "#battle-page" ).toggleClass("set-flex-display-column"); 
+        getGameData(handleCardLogic);
     }
 
     // Shuffle a card deck using the Fisher-Yates (aka Knuth) Shuffle
