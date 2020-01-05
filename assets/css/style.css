@@ -526,3 +526,12 @@ body {
     align-items: center;
     height: 100%;
 }
+
+#battle-info {
+    font-family: 'Mansalva', cursive;
+    font-size: 6rem;
+    text-align: center;
+    color: #F77F00;
+    text-shadow: 3px 3px #003049;
+    font-weight: bold;
+}
