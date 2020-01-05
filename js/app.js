@@ -136,6 +136,22 @@ $(document).ready(function() {
         $( `#${playerOrAI}-sprite-and-name-container` ).css("background-position", "center");
     }
 
+    function countdownTimer() {
+        let time = 8;
+        let timer = setInterval(function() {
+            if (time < 1) {
+                $( "#timer" ).text("0");
+                $( "#battle-info" ).text("TIME'S UP");
+                $( "#battle-info" ).css("visibility", "visible");
+                clearInterval(timer);
+                $( "#timer" ).text("0");
+            } else {
+                $( "#timer" ).text(time + "s");
+                time -= 1;
+            }   
+        },1000);
+    }
+
     // Handles all logic related to cards, including shuffling, writing values to cards, timing and displaying sprites
     function handleCardLogic(gameData) {
         // Retrieve characters from getGameData's json object and assign for player and AI       
