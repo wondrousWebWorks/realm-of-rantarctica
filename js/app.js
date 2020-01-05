@@ -151,6 +151,9 @@ $(document).ready(function() {
 
         writeValuesToCard(playerCards, "player");
         writeValuesToCard(aiCards, "ai");
+
+        displaySpriteAndCharacterName(playerCards, "player");
+        displaySpriteAndCharacterName(aiCards, "ai");
     }
 
      /* Toggles the html audio control's visibility on clicking */
