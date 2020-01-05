@@ -87,6 +87,7 @@ $(document).ready(function() {
         })
     }
 
+    // Loads the Battle Screen and related Battle logic
     function loadBattleScreen() {
         $( "#level-select-page" ).hide();
         $( "#battle-page" ).show();  
