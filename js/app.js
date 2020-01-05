@@ -172,6 +172,8 @@ $(document).ready(function() {
 
         displaySpriteAndCharacterName(playerCards, "player");
         displaySpriteAndCharacterName(aiCards, "ai");
+
+        countdownTimer();
     }
 
      /* Toggles the html audio control's visibility on clicking */
