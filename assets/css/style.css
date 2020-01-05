@@ -518,3 +518,11 @@ body {
 #battle-info-and-timer-container {
     padding-top: 3vh;
 }
+
+#battle-info-and-timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
