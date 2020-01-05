@@ -134,6 +134,9 @@ $(document).ready(function() {
         // Write card count for Player and AI to Battle Page
         $( ".card-count-player-value" ).text(playerCards.length);
         $( ".card-count-ai-value" ).text(aiCards.length);
+
+        writeValuesToCard(playerCards, "player");
+        writeValuesToCard(aiCards, "ai");
     }
 
      /* Toggles the html audio control's visibility on clicking */
