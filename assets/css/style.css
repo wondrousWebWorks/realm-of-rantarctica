@@ -502,3 +502,15 @@ body {
 #ai-sprite-name {
     transform: scaleX(-1);
 }
+
+#player-sprite-name, #ai-sprite-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #EAE2B7;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #003049;
+}
