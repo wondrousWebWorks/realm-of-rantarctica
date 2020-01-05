@@ -152,6 +152,17 @@ $(document).ready(function() {
         },1000);
     }
 
+    function displayBattleInfo() {
+        let battleInfoDisplayTime = 2;
+        let battleInfoDisplay = setInterval(function() {
+            battleInfoDisplayTime -= 1;
+            if (battleInfoDisplayTime === 0) {
+                $( "#battle-info" ).css("visibility", "hidden");
+                clearInterval(battleInfoDisplay);
+            }
+        }, 1000);
+    }
+
     // Handles all logic related to cards, including shuffling, writing values to cards, timing and displaying sprites
     function handleCardLogic(gameData) {
         // Retrieve characters from getGameData's json object and assign for player and AI       
