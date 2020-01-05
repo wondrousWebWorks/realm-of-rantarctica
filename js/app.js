@@ -141,11 +141,10 @@ $(document).ready(function() {
         let time = 8;
         let timer = setInterval(function() {
             if (time < 1) {
-                $( "#timer" ).text("0");
-                $( "#battle-info" ).text("TIME'S UP");
-                $( "#battle-info" ).css("visibility", "visible");
+                 $( "#timer" ).text("TIME'S UP");
+                // $( "#battle-info" ).css("visibility", "visible");
                 clearInterval(timer);
-                $( "#timer" ).text("0");
+                // $( "#timer" ).text("0");
             } else {
                 $( "#timer" ).text(time + "s");
                 time -= 1;
