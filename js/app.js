@@ -121,6 +121,7 @@ $(document).ready(function() {
         }
     }
 
+    // Displays either PLAYER or AI sprite and character name
     function displaySprite(deck, playerOrAI) {
         let firstCharacter = Object.values(deck[0]);
 
