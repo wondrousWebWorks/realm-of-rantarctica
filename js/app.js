@@ -108,6 +108,7 @@ $(document).ready(function() {
         }
     }
 
+    // Fetches elements for PLAYER or AI, and sets the attribute values for the appropriate player
     function writeValuesToCard(deck, playerOrAI) {
         let elementstoWriteValuesTo = document.getElementsByClassName(`${playerOrAI}-attribute-value`);
     
