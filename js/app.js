@@ -183,6 +183,7 @@ $(document).ready(function() {
         displaySpriteAndCharacterName(playerCards, "player");
         displaySpriteAndCharacterName(aiCards, "ai");
 
+        displayBattleInfo();
         countdownTimer();
     }
 
