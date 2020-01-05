@@ -116,6 +116,10 @@ $(document).ready(function() {
         // Randomize Player and AI decks
         shuffleCards(playerCards);
         shuffleCards(aiCards);
+
+        // Write card count for Player and AI to Battle Page
+        $( ".card-count-player-value" ).text(playerCards.length);
+        $( ".card-count-ai-value" ).text(aiCards.length);
     }
 
      /* Toggles the html audio control's visibility on clicking */
