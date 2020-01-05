@@ -108,6 +108,18 @@ $(document).ready(function() {
         }
     }
 
+    function writeValuesToCard(deck, playerOrAI) {
+        let elementstoWriteValuesTo = document.getElementsByClassName(`${playerOrAI}-attribute-value`);
+    
+        let firstCharacter = Object.values(deck[0]);
+
+        let shuffledCardValues = Object.values(firstCharacter[0][0]);
+        
+        for (let i = 0; i < elementstoWriteValuesTo.length; i ++ ) {
+            elementstoWriteValuesTo[i].innerText = shuffledCardValues[i];
+        }
+    }
+
     // Handles all logic related to cards, including shuffling, writing values to cards, timing and displaying sprites
     function handleCardLogic(gameData) {
         // Retrieve characters from getGameData's json object and assign for player and AI       
