@@ -303,13 +303,20 @@ body {
 .audio-icon-and-heading {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .audio-modal-heading-icon {
     height: 40px;
     width: 40px;
+}
+
+.audio-modal-sub-heading {
+    color: #EAE2B7;
+    font-family: "Acme", sans-serif;
+    font-size: 2rem;
+    font-weight: bold
 }
 
 /********************** Select Level Screen **************************/
