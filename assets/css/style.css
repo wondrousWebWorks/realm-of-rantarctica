@@ -345,6 +345,10 @@ body {
     transition: transform .5s ease-in-out;
 }
 
+#music-controls img:hover {
+    transform: scale(1.2);
+}
+
 /* Adapted from BrennaOBrien.com */
 input[type=range]{
     -webkit-appearance: none;
