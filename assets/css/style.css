@@ -272,6 +272,10 @@ body {
     background-color: #003049;
 }
 
+#info-modal .modal-header, #info-modal .modal-footer {
+    border: none;
+}
+
 
 /********************** Select Level Screen **************************/
 #level-select-page {
