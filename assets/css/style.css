@@ -320,7 +320,7 @@ body {
     padding-left: 10px;
 }
 
-#music-vol-controls, #sound-fx-vol-controls {
+#music-vol-controls, #sound-fx-vol-controls, #music-controls {
     border: 5px solid #D62828;
     border-radius: 8px;
     padding: 20px 0;
