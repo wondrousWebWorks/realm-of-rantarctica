@@ -287,6 +287,10 @@ body {
     transition: transform .5s ease-in-out;
 }
 
+#audio-modal .modal-header button:hover {
+    transform: scale(1.2);
+}
+
 
 /********************** Select Level Screen **************************/
 #level-select-page {
