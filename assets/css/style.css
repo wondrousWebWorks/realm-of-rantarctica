@@ -307,6 +307,11 @@ body {
     align-items: center;
 }
 
+.audio-modal-heading-icon {
+    height: 40px;
+    width: 40px;
+}
+
 /********************** Select Level Screen **************************/
 #level-select-page {
     display: none;
