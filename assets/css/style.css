@@ -320,6 +320,10 @@ body {
     padding-left: 10px;
 }
 
+#music-vol-control {
+    margin: auto;
+}
+
 /********************** Select Level Screen **************************/
 #level-select-page {
     display: none;
