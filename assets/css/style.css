@@ -270,6 +270,7 @@ body {
 /********************** Sound Settings Modal **************************/
 #audio-modal .modal-header, #audio-modal .modal-body {
     background-color: #003049;
+    text-align: center;
 }
 
 #audio-modal .modal-header {
@@ -303,7 +304,7 @@ body {
 .audio-icon-and-heading {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .audio-modal-heading-icon {
