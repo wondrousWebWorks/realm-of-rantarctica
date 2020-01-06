@@ -314,6 +314,7 @@
               alt="music icon">
               <h5 class="audio-modal-sub-heading">Music Volume</h5>
           </div>
+          <input id="music-vol-control" type="range" min="0" max="100" step="1" oninput="setMusicVolume(this.value)" onchange="setMusicVolume(this.value)"></input>
           <div class="audio-icon-and-heading">
             <img class="audio-modal-heading-icon"
               src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578344474/realm-of-rantarctica/icons/Sound_ON_l6hjwy.png"
