@@ -300,6 +300,12 @@ body {
     margin: 0 auto;
 }
 
+.audio-icon-and-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /********************** Select Level Screen **************************/
 #level-select-page {
