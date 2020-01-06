@@ -308,18 +308,21 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="audio-icon-and-heading">
-            <img class="audio-modal-heading-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
-              alt="music icon">
+          <div id="music-vol-controls">
+            <div class="audio-icon-and-heading">
+              <img class="audio-modal-heading-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
+                alt="music icon">
               <h5 class="audio-modal-sub-heading">Music Volume</h5>
+            </div>
+            <input id="music-vol-control" type="range" min="0" max="100" step="1" oninput="setMusicVolume(this.value)"
+              onchange="setMusicVolume(this.value)"></input>
           </div>
-          <input id="music-vol-control" type="range" min="0" max="100" step="1" oninput="setMusicVolume(this.value)" onchange="setMusicVolume(this.value)"></input>
           <div class="audio-icon-and-heading">
             <img class="audio-modal-heading-icon"
               src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578344474/realm-of-rantarctica/icons/Sound_ON_l6hjwy.png"
               alt="sound icon">
-              <h5 class="audio-modal-sub-heading">Sound Volume</h5>
+            <h5 class="audio-modal-sub-heading">Sound Volume</h5>
           </div>
         </div>
       </div>
