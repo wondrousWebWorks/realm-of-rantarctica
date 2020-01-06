@@ -291,6 +291,15 @@ body {
     transform: scale(1.2);
 }
 
+#audio-modal .modal-title {
+    color: #F77F00;
+    text-shadow: 2px 2px #111;
+    font-family: 'Girassol', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
 
 /********************** Select Level Screen **************************/
 #level-select-page {
