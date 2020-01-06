@@ -9,6 +9,7 @@ body {
 
 /********************** Landing Page **************************/
 #full-screen-game-container-col {
+    position: relative;
     height: 100vh;
     width: 100vw;
     background: url("https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png");
@@ -40,6 +41,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 #audio-controls-toggle {
@@ -263,6 +265,11 @@ body {
     background-color: #FCBF49;
     color: #003049;
     font-size: 2rem;
+}
+
+/********************** Sound Settings Modal **************************/
+#audio-modal .modal-header, #audio-modal .modal-body {
+    background-color: #003049;
 }
 
 
