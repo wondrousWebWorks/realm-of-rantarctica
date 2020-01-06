@@ -331,11 +331,16 @@ body {
     margin: auto;
 }
 
-#music-controls {
+#music-control-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+#music-controls img {
+    width: 80px;
+    height: 80px;
 }
 
 /* Adapted from BrennaOBrien.com */
