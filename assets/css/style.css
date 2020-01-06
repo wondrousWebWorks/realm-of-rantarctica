@@ -272,8 +272,19 @@ body {
     background-color: #003049;
 }
 
-#info-modal .modal-header, #info-modal .modal-footer {
+#audio-modal .modal-header {
     border: none;
+}
+
+#audio-modal .modal-header button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background: transparent;
+    padding: 5px;
+    border: none;
+    transition: transform .5s ease-in-out;
 }
 
 
