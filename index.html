@@ -318,11 +318,15 @@
             <input id="music-vol-control" type="range" min="0" max="100" step="1" oninput="setMusicVolume(this.value)"
               onchange="setMusicVolume(this.value)"></input>
           </div>
-          <div class="audio-icon-and-heading">
-            <img class="audio-modal-heading-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578344474/realm-of-rantarctica/icons/Sound_ON_l6hjwy.png"
-              alt="sound icon">
-            <h5 class="audio-modal-sub-heading">Sound Volume</h5>
+          <div id="sound-fx" class="vol-controls">
+            <div class="audio-icon-and-heading">
+              <img class="audio-modal-heading-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578344474/realm-of-rantarctica/icons/Sound_ON_l6hjwy.png"
+                alt="sound icon">
+              <h5 class="audio-modal-sub-heading">Sound Volume</h5>
+            </div>
+            <input id="sound-fx-vol-control" type="range" min="0" max="100" step="1" oninput="setSoundVolume(this.value)"
+              onchange="setSoundVolume(this.value)"></input>
           </div>
         </div>
       </div>
