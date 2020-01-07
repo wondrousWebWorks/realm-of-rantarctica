@@ -187,6 +187,7 @@ $(document).ready(function() {
         countdownTimer();
     }
 
+    // Saves the default difficulty of EASY in session storage
     function setDefaultDifficulty() {
         sessionStorage.setItem("difficulty", "easy");
     }
