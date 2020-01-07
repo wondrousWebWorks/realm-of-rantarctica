@@ -16,6 +16,10 @@ body {
     background-position: center;
     background-size: auto 100%;
     -webkit-animation: slide 120s linear infinite;
+    -ms-animation: slide 120s linear infinite;
+    -moz-animation: slide 120s linear infinite;
+    -o-animation: slide 120s linear infinite;
+    animation: slide 120s linear infinite;
 
     display: flex;
     flex-direction: column;
@@ -24,6 +28,26 @@ body {
 }
 
 @-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1920px 0; }
+}
+
+@-ms-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1920px 0; }
+}
+
+@-moz-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1920px 0; }
+}
+
+@-o-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1920px 0; }
+}
+
+@keyframes slide {
     from { background-position: 0 0; }
     to { background-position: -1920px 0; }
 }
