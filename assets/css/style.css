@@ -88,6 +88,13 @@ body {
     transform: scale(1.2);
 }
 
+#difficulty-setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 #wondrouswebworks-logo {
     margin-bottom: 2rem;
     cursor: pointer;
