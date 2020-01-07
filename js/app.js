@@ -213,6 +213,7 @@ $(document).ready(function() {
         $( "#info-modal" ).modal();
     });
 
+    // Sets the user's selected difficulty in session storage on click and adds .selected-difficulty-btn
     $( ".difficulty-btn" ).click(function() {
         setSelectedDifficulty($(this)[0].innerText);
         $( ".difficulty-btn" ).removeClass("selected-difficulty-btn");
