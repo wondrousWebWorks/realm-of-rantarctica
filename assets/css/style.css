@@ -151,8 +151,19 @@ body {
     text-shadow: 3px 3px #003049;
 }
 
-.selected-difficulty {
+.selected-difficulty-btn {
     background-color: #F77F00;
+    color: #003049;
+    font-family: "Acme", sans-serif;
+    font-size: 3rem;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 8px;
+    transition: transform .5s ease-in-out;
+}
+
+.selected-difficulty-btn:hover {
+    transform: scale(1.2);
 }
 
 #wondrouswebworks-logo {
