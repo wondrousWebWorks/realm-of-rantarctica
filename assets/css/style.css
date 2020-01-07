@@ -95,6 +95,17 @@ body {
     align-items: center;
 }
 
+#difficulty-setting .difficulty-btn {
+    background-color: #FCBF49;
+    color: #003049;
+    font-family: "Acme", sans-serif;
+    font-size: 3rem;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+
 #wondrouswebworks-logo {
     margin-bottom: 2rem;
     cursor: pointer;
