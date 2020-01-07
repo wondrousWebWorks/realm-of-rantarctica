@@ -152,6 +152,7 @@ $(document).ready(function() {
         },1000);
     }
 
+    // Displays battle information for a limited amount of time, then clear it off the screen
     function displayBattleInfo() {
         let battleInfoDisplayTime = 2;
         let battleInfoDisplay = setInterval(function() {
