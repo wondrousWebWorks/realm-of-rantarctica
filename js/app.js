@@ -193,6 +193,10 @@ $(document).ready(function() {
         sessionStorage.setItem("difficulty", "easy");
     }
 
+    function setSelectedDifficulty(difficulty) {
+        sessionStorage.setItem("difficulty", difficulty);
+    }
+
     // *******************  END OF CUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
