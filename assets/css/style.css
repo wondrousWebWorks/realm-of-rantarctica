@@ -151,6 +151,10 @@ body {
     text-shadow: 3px 3px #003049;
 }
 
+.selected-difficulty {
+    background-color: #F77F00;
+}
+
 #wondrouswebworks-logo {
     margin-bottom: 2rem;
     cursor: pointer;
