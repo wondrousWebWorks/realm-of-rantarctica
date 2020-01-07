@@ -138,7 +138,17 @@ $(document).ready(function() {
 
     // Handles the countdown for each round and displays the time value on screen
     function countdownTimer() {
-        let time = 8;
+        let difficulty = sessionStorage.getItem("difficulty");
+        let time;
+        
+        if (difficulty === "EASY") {
+            time = 8;
+        } else if (difficulty === "MEDIUM") {
+            time = 4;
+        } else if (difficulty === "HARD") {
+            time = 2;
+        }
+
         let timer = setInterval(function() {
             if (time < 1) {
                  $( "#timer" ).text("TIME'S UP");
