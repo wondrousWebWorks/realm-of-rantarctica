@@ -198,7 +198,7 @@ $(document).ready(function() {
         sessionStorage.setItem("difficulty", difficulty);
     }
 
-    // *******************  END OF CUNCTION DECLARATIONS  **********************
+    // *******************  END OF FUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
     console.log(sessionStorage.getItem("difficulty"));
@@ -211,6 +211,12 @@ $(document).ready(function() {
     // Toggles the Information modal
     $( "#info-icon" ).click(function() {
         $( "#info-modal" ).modal();
+    });
+
+    $( ".difficulty-btn" ).click(function() {
+        setSelectedDifficulty($(this)[0].innerText);
+        $( ".difficulty-btn" ).removeClass("selected-difficulty-btn");
+        $(this).addClass("selected-difficulty-btn");
     });
 
     // Loads Select Level screen
