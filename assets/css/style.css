@@ -133,6 +133,14 @@ body {
     margin: 0 30px;
 }
 
+#difficulty-setting-heading {
+    text-align: center;
+    font-family: "Girasol", cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #EAE2B7;
+    text-shadow: 3px 3px #003049;
+}
 
 #wondrouswebworks-logo {
     margin-bottom: 2rem;
