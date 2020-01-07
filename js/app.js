@@ -190,9 +190,10 @@ $(document).ready(function() {
 
     // Saves the default difficulty of EASY in session storage
     function setDefaultDifficulty() {
-        sessionStorage.setItem("difficulty", "easy");
+        sessionStorage.setItem("difficulty", "EASY");
     }
 
+    // Saves the user's choice of difficulty in session storage
     function setSelectedDifficulty(difficulty) {
         sessionStorage.setItem("difficulty", difficulty);
     }
@@ -200,6 +201,7 @@ $(document).ready(function() {
     // *******************  END OF CUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
+    console.log(sessionStorage.getItem("difficulty"));
 
     // Toggles the html audio control's visibility on clicking
     $( "#audio-controls-toggle" ).click(function() {
