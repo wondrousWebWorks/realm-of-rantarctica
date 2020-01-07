@@ -193,6 +193,10 @@ $(document).ready(function() {
         sessionStorage.setItem("difficulty", "easy");
     }
 
+    // *******************  END OF CUNCTION DECLARATIONS  **********************
+
+    setDefaultDifficulty();
+
     // Toggles the html audio control's visibility on clicking
     $( "#audio-controls-toggle" ).click(function() {
         $('#audio-modal').modal('toggle');
