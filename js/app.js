@@ -187,9 +187,13 @@ $(document).ready(function() {
         countdownTimer();
     }
 
+    function setDefaultDifficulty() {
+        sessionStorage.setItem("difficulty", "easy");
+    }
+
      /* Toggles the html audio control's visibility on clicking */
     $( "#audio-controls-toggle" ).click(function() {
-        $( "#audio-controls" ).toggle();
+        $('#audio-modal').modal('toggle');
     });
 
     /* Toggles the Information modal */
@@ -216,9 +220,15 @@ $(document).ready(function() {
         loadBattleScreen();    
     });
 
+    $( ".card ").mouseenter(function() {
+        let audio = new Audio("assets/audio/zapsplat_leisure_toy_gun_shoot_puff_air_001_43142.mp3");
+        audio.play();
+    })
+
     /* Sets a random background for the Battle Screen when clicked and launches Battle Screen*/
     $( ".random-level-btn" ).click(() => {
         setRandomBattleBackground();
         loadBattleScreen();
     });
+
 });
