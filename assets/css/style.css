@@ -134,6 +134,10 @@ body {
     transform: scale(1.2);
 }
 
+#difficulty-setting .difficulty-btn:focus {
+    outline: none;
+}
+
 #medium-difficulty {
     margin: 0 30px;
 }
