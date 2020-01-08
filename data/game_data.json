@@ -47,7 +47,7 @@
 					"Magic": "12",
 					"Range": "67"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914113/realm-of-rantarctica/characters/1_IDLE_000_pzzv1c.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914113/realm-of-rantarctica/characters/1_IDLE_000_pzzv1c.png"
 			]
 		},
 		{
@@ -61,7 +61,7 @@
 					"Magic": "3",
 					"Range": "20"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577913926/realm-of-rantarctica/characters/IDLE_000_tapoev.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577913926/realm-of-rantarctica/characters/IDLE_000_tapoev.png"
 			]
 		},
 		{
@@ -75,7 +75,7 @@
 					"Magic": "100",
 					"Range": "100"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914165/realm-of-rantarctica/characters/1_IDLE_000_pnbl7h.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914165/realm-of-rantarctica/characters/1_IDLE_000_pnbl7h.png"
 			]
 		},
 		{
@@ -89,7 +89,7 @@
 					"Magic": "96",
 					"Range": "69"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914095/realm-of-rantarctica/characters/1_IDLE_000_atlduc.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914095/realm-of-rantarctica/characters/1_IDLE_000_atlduc.png"
 			]
 		},
 		{
@@ -103,7 +103,7 @@
 					"Magic": "33",
 					"Range": "24"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914194/realm-of-rantarctica/characters/1_IDLE_000_t8xgbn.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914194/realm-of-rantarctica/characters/1_IDLE_000_t8xgbn.png"
 			]
 		},
 		{
@@ -117,7 +117,7 @@
 					"Magic": "72",
 					"Range": "10"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914218/realm-of-rantarctica/characters/1_IDLE_000_gy0jdh.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914218/realm-of-rantarctica/characters/1_IDLE_000_gy0jdh.png"
 			]
 		},
 		{
@@ -131,7 +131,7 @@
 					"Magic": "5",
 					"Range": "18"	
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914263/realm-of-rantarctica/characters/IDLE_000_uyihiu.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914263/realm-of-rantarctica/characters/IDLE_000_uyihiu.png"
 			]
 		},
 		{
@@ -145,7 +145,7 @@
 					"Magic": "34",
 					"Range": "100"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914056/realm-of-rantarctica/characters/IDLE_000_tgj6qw.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914056/realm-of-rantarctica/characters/IDLE_000_tgj6qw.png"
 			]
 		},
 		{
@@ -159,7 +159,7 @@
 					"Magic": "8",
 					"Range": "22"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914015/realm-of-rantarctica/characters/IDLE_000_nsbxqp.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914015/realm-of-rantarctica/characters/IDLE_000_nsbxqp.png"
 			]
 		},
 		{
@@ -173,8 +173,15 @@
 					"Magic": "27",
 					"Range": "12"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/v1577914238/realm-of-rantarctica/characters/1_IDLE_000_xzqvum.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914238/realm-of-rantarctica/characters/1_IDLE_000_xzqvum.png"
 			]
 		}
+	],
+	"music": [
+		"assets/audio/2019-07-06_-_New_Heights_-_David_Fesliyan.mp3",
+		"assets/audio/2016-07-07_-_The_Climb_-_David_Fesliyan.mp3",
+		"assets/audio/2017-02-12_-_Born_Again_David_Fesliyan.mp3",
+		"assets/audio/2017-08-11_-_Blue_Skies_-_David_Fesliyan.mp3",
+		"assets/audio/2019-08-17_-_Blood_Pumping_-_David_Fesliyan.mp3"
 	]
 }
