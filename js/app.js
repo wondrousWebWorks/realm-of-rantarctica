@@ -208,6 +208,11 @@ $(document).ready(function() {
         sessionStorage.setItem("difficulty", difficulty);
     }
 
+    function setInitialMusicVol() {
+        let musicElement = document.getElementById("music");
+        musicElement.volume = 0.5; 
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
