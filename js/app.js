@@ -229,6 +229,8 @@ $(document).ready(function() {
     $( "#audio-controls-toggle" ).click(function() {
         $('#audio-modal').modal('toggle');
     });
+    
+    $( "#play-track" ).click(playMusic);
 
     // Toggles the Information modal
     $( "#info-icon" ).click(function() {
