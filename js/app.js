@@ -232,6 +232,11 @@ $(document).ready(function() {
         musicElement.pause();
     }
 
+    function setMusicVolume() {
+        let musicElement = document.getElementById("music");
+        musicElement.volume = $(this)[0].valueAsNumber / 100; 
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
