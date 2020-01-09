@@ -211,7 +211,6 @@ $(document).ready(function() {
     // *******************  END OF FUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
-    console.log(sessionStorage.getItem("difficulty"));
 
     // Toggles the html audio control's visibility on clicking
     $( "#audio-controls-toggle" ).click(function() {
@@ -220,7 +219,7 @@ $(document).ready(function() {
 
     // Toggles the Information modal
     $( "#info-icon" ).click(function() {
-        $( "#info-modal" ).modal();
+        $( "#info-modal" ).modal('toggle');
     });
 
     // Sets the user's selected difficulty in session storage on click and adds .selected-difficulty-btn
