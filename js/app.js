@@ -272,9 +272,10 @@ $(document).ready(function() {
     });
 
     $( ".card ").mouseenter(function() {
-        let audio = new Audio("assets/audio/zapsplat_leisure_toy_gun_shoot_puff_air_001_43142.mp3");
-        audio.play();
-    })
+        let soundFXElement = document.getElementById("sound-fx");
+        soundFXElement.setAttribute("src", "assets/audio/zapsplat_leisure_toy_gun_shoot_puff_air_001_43142.mp3");
+        soundFXElement.play();
+    });
 
     // Sets a random background for the Battle Screen when clicked and launches Battle Screen
     $( ".random-level-btn" ).click(() => {
