@@ -238,6 +238,11 @@ $(document).ready(function() {
         musicElement.volume = $(this)[0].valueAsNumber / 100; 
     }
 
+    function setSoundFXVolume() {
+        let soundFXElement = document.getElementById("sound-fx");
+        soundFXElement.volume = $(this)[0].valueAsNumber / 100; 
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
