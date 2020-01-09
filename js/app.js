@@ -214,6 +214,7 @@ $(document).ready(function() {
         musicElement.volume = 0.5; 
     }
 
+    // Plays the currently loaded track on #music icon click
     function playMusic() {
         let musicElement = document.getElementById("music");
         musicElement.play();
