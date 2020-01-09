@@ -151,7 +151,7 @@ body {
     text-shadow: 3px 3px #003049;
 }
 
-.selected-difficulty-btn {
+#difficulty-setting .selected-difficulty-btn {
     background-color: #F77F00;
     color: #003049;
     font-family: "Acme", sans-serif;
@@ -162,7 +162,7 @@ body {
     transition: transform .5s ease-in-out;
 }
 
-.selected-difficulty-btn:hover {
+#difficulty-setting.selected-difficulty-btn:hover {
     transform: scale(1.2);
 }
 
