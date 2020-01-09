@@ -274,6 +274,7 @@ $(document).ready(function() {
         loadBattleScreen();    
     });
 
+    // Plays a sword swish sound on mouseenter of .card
     $( ".card ").mouseenter(function() {
         let soundFXElement = document.getElementById("sound-fx");
         soundFXElement.setAttribute("src", "assets/audio/zapsplat_leisure_toy_gun_shoot_puff_air_001_43142.mp3");
