@@ -257,6 +257,8 @@ $(document).ready(function() {
 
     $( "#music-vol-control" ).on("input", setMusicVolume);
 
+    $( "#sound-fx-vol-control" ).on("input", setSoundFXVolume);
+
     $( "#play-track" ).click(playMusic);
 
     $( "#pause-track" ).click(pauseMusic);
