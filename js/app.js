@@ -214,12 +214,13 @@ $(document).ready(function() {
         musicElement.volume = 0.5; 
     }
 
-    // Plays the currently loaded track on #music icon click
+    // Plays the currently loaded track on #play-track icon click
     function playMusic() {
         let musicElement = document.getElementById("music");
         musicElement.play();
     }
 
+    // Pauses the track currently playing in #music audio element
     function pauseMusic() {
         let musicElement = document.getElementById("music");
         musicElement.pause();
