@@ -251,6 +251,7 @@ $(document).ready(function() {
         sessionStorage.setItem("currentTrack", 0);
     }
 
+    // Loads the next track in game_data.json and writes the new index to sessionStorage
     function loadNextTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
         let musicElement = document.getElementById("music");
