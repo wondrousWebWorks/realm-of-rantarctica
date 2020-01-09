@@ -251,6 +251,22 @@ $(document).ready(function() {
         sessionStorage.setItem("currentTrack", 0);
     }
 
+    function loadNextTrack(gameData) {
+        let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
+        let musicElement = document.getElementById("music");
+    
+        if (currentIndex < (gameData["music"].length - 1)) {
+            let newIndex = currentIndex + 1;
+            musicElement.setAttribute("src", gameData["music"][newIndex]);
+            sessionStorage.setItem("currentTrack", newIndex);
+        } else {
+            musicElement.setAttribute("src", gameData["music"][0]);
+            sessionStorage.setItem("currentTrack", 0);
+        }
+    
+        musicElement.play();
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
     
     setDefaultDifficulty();
