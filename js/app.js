@@ -287,6 +287,10 @@ $(document).ready(function() {
 
     $( "#pause-track" ).click(pauseMusic);
 
+    $( "#next-track" ).click(function() {
+        getGameData(loadNextTrack);
+    });
+
     // Toggles the Information modal
     $( "#info-icon" ).click(function() {
         $( "#info-modal" ).modal('toggle');
