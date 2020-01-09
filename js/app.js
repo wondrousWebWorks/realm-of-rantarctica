@@ -220,6 +220,11 @@ $(document).ready(function() {
         musicElement.play();
     }
 
+    function pauseMusic() {
+        let musicElement = document.getElementById("music");
+        musicElement.pause();
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
@@ -229,7 +234,7 @@ $(document).ready(function() {
     $( "#audio-controls-toggle" ).click(function() {
         $('#audio-modal').modal('toggle');
     });
-    
+
     $( "#play-track" ).click(playMusic);
 
     // Toggles the Information modal
