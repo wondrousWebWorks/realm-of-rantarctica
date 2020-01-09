@@ -238,6 +238,7 @@ $(document).ready(function() {
         musicElement.volume = $(this)[0].valueAsNumber / 100; 
     }
 
+    // Sets the volume for the #msound-fx audio element based on the #sound-fx-vol-control ranged input
     function setSoundFXVolume() {
         let soundFXElement = document.getElementById("sound-fx");
         soundFXElement.volume = $(this)[0].valueAsNumber / 100; 
