@@ -256,6 +256,7 @@ $(document).ready(function() {
     setDefaultDifficulty();
     setInitialMusicVol();
     setInitialSoundFXVol();
+    getGameData(loadInitialTrack);
 
     // Toggles the html audio control's visibility on clicking
     $( "#audio-controls-toggle" ).click(function() {
