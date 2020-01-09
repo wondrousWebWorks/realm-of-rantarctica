@@ -249,6 +249,8 @@ $(document).ready(function() {
         $('#audio-modal').modal('toggle');
     });
 
+    $( "#music-vol-control" ).on("input", setMusicVolume);
+
     $( "#play-track" ).click(playMusic);
 
     $( "#pause-track" ).click(pauseMusic);
