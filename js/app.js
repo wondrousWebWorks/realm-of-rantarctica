@@ -214,6 +214,11 @@ $(document).ready(function() {
         musicElement.volume = 0.5; 
     }
 
+    function playMusic() {
+        let musicElement = document.getElementById("music");
+        musicElement.play();
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
