@@ -265,7 +265,7 @@ $(document).ready(function() {
         $( "#landing-page" ).show();
     });
 
-    // Sets the chosen background for the Battle Screen when clicked and launches Battle Screen
+    // Sets the chosen background for the Battle Screen when clicked, launches Battle Screen and plays sound
     $( ".card ").click(function() {
         let soundFXElement = document.getElementById("sound-fx");
         soundFXElement.setAttribute("src", "assets/audio/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_003_43812.mp3");
