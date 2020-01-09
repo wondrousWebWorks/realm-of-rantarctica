@@ -244,6 +244,7 @@ $(document).ready(function() {
         soundFXElement.volume = $(this)[0].valueAsNumber / 100; 
     }
 
+    // Loads the first track in game_data.json on page load and writes the index to sessionStorage
     function loadInitialTrack(gameData) {
         let musicElement = document.getElementById("music");
         musicElement.setAttribute("src", gameData["music"][0]);
