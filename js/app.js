@@ -217,6 +217,7 @@ $(document).ready(function() {
     // *******************  END OF FUNCTION DECLARATIONS  **********************
 
     setDefaultDifficulty();
+    setInitialMusicVol();
 
     // Toggles the html audio control's visibility on clicking
     $( "#audio-controls-toggle" ).click(function() {
