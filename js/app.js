@@ -238,6 +238,8 @@ $(document).ready(function() {
 
     $( "#play-track" ).click(playMusic);
 
+    $( "#pause-track" ).click(pauseMusic);
+
     // Toggles the Information modal
     $( "#info-icon" ).click(function() {
         $( "#info-modal" ).modal('toggle');
