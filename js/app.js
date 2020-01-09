@@ -208,6 +208,7 @@ $(document).ready(function() {
         sessionStorage.setItem("difficulty", difficulty);
     }
 
+    // Sets the initial volume for the #music audio component at 50%
     function setInitialMusicVol() {
         let musicElement = document.getElementById("music");
         musicElement.volume = 0.5; 
