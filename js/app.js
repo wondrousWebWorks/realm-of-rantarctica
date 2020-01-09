@@ -214,6 +214,7 @@ $(document).ready(function() {
         musicElement.volume = 0.5; 
     }
 
+    // Sets the initial volume for the #sound-fx element to 20% on page load
     function setInitialSoundFXVol() {
         let soundFXElement = document.getElementById("sound-fx");
         soundFXElement.volume = 0.2; 
