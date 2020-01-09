@@ -76,7 +76,7 @@ body {
     cursor: pointer;
 }
 
-#audio-controls {
+#music, #sound-fx {
     display: none;
 }
 
@@ -162,7 +162,7 @@ body {
     transition: transform .5s ease-in-out;
 }
 
-#difficulty-setting.selected-difficulty-btn:hover {
+#difficulty-setting .selected-difficulty-btn:hover {
     transform: scale(1.2);
 }
 
