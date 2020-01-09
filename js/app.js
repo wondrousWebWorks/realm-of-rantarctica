@@ -267,6 +267,9 @@ $(document).ready(function() {
 
     // Sets the chosen background for the Battle Screen when clicked and launches Battle Screen
     $( ".card ").click(function() {
+        let soundFXElement = document.getElementById("sound-fx");
+        soundFXElement.setAttribute("src", "assets/audio/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_003_43812.mp3");
+        soundFXElement.play();
         setChosenBattleBackground($(this));
         loadBattleScreen();    
     });
