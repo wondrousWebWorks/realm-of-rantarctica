@@ -244,8 +244,14 @@ $(document).ready(function() {
         soundFXElement.volume = $(this)[0].valueAsNumber / 100; 
     }
 
-    // *******************  END OF FUNCTION DECLARATIONS  **********************
+    function loadInitialTrack(gameData) {
+        let musicElement = document.getElementById("music");
+        musicElement.setAttribute("src", gameData["music"][0]);
+        sessionStorage.setItem("currentTrack", 0);
+    }
 
+    // *******************  END OF FUNCTION DECLARATIONS  **********************
+    
     setDefaultDifficulty();
     setInitialMusicVol();
     setInitialSoundFXVol();
