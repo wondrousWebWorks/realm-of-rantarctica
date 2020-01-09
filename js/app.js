@@ -236,6 +236,7 @@ $(document).ready(function() {
 
     setDefaultDifficulty();
     setInitialMusicVol();
+    setInitialSoundFXVol();
 
     // Toggles the html audio control's visibility on clicking
     $( "#audio-controls-toggle" ).click(function() {
