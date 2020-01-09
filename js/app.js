@@ -232,6 +232,7 @@ $(document).ready(function() {
         musicElement.pause();
     }
 
+    // Sets the volume for the #music audio element based on the #music-vol-control ranged input
     function setMusicVolume() {
         let musicElement = document.getElementById("music");
         musicElement.volume = $(this)[0].valueAsNumber / 100; 
