@@ -276,6 +276,22 @@ $(document).ready(function() {
         musicElement.play();
     }
 
+    function loadPreviousTrack(gameData) {
+        let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
+        let musicElement = document.getElementById("music");
+    
+        if (currentIndex >= 1) {
+            let newIndex = currentIndex - 1;
+            musicElement.setAttribute("src", gameData["music"][newIndex]);
+            sessionStorage.setItem("currentTrack", newIndex);
+        } else {
+            musicElement.setAttribute("src", gameData["music"][(gameData["music"].length - 1)]);
+            sessionStorage.setItem("currentTrack", gameData["music"].length - 1);
+        }
+    
+        musicElement.play();
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
     
     setDefaultDifficulty();
