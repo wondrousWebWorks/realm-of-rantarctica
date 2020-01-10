@@ -338,6 +338,7 @@ $(document).ready(function() {
 
     $( "#next-track" ).click(function() {
         getGameData(loadNextTrack);
+        toggleButtonPressAnimation($(this));
     });
 
     $( "#previous-track" ).click(function() {
