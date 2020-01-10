@@ -298,6 +298,7 @@ body {
     border: none;
 }
 
+/* Also styles for #audio-modal */
 .modal-header button {
     position: absolute;
     top: 0;
