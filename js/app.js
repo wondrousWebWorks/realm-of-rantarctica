@@ -275,7 +275,8 @@ $(document).ready(function() {
     
         musicElement.play();
     }
-
+    // Loads the previous track in game_data.json and writes the new index to sessionStorage
+    
     function loadPreviousTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
         let musicElement = document.getElementById("music");
