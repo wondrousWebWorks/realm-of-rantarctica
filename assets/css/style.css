@@ -417,6 +417,15 @@ body {
     align-items: center;
 }
 
+.vol-input-container p {
+    font-family: "Girasol", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #EAE2B7;
+    line-height: .7;
+    margin: 0;
+}
+
 #music-vol-control {
     margin: auto;
 }
