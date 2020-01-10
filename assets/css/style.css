@@ -315,6 +315,10 @@ body {
     border-radius: 25px;
 }
 
+.modal-header, .modal-body, .modal-footer {
+    border-radius: 25px;
+}
+
 .modal-header button:focus {
     outline: none;
 }
