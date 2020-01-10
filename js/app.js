@@ -305,7 +305,7 @@ $(document).ready(function() {
     function toggleButtonPressAnimation(target) {
         target.addClass("button-click");
 
-        $( '.button-click' ).on("animationend", function(){
+        $( '.button-click' ).on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
             target.removeClass("button-click");
         });
     }
