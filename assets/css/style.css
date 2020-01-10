@@ -298,13 +298,13 @@ body {
     border: none;
 }
 
-#info-modal .modal-header button {
+.modal-header button {
     position: absolute;
     top: 0;
     right: 0;
     margin: 0;
     background: transparent;
-    padding: 20px;
+    padding: 10px;
     border: none;
     transition: transform .5s ease-in-out;
 }
