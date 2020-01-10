@@ -310,11 +310,13 @@ body {
     transition: transform .5s ease-in-out;
 }
 
+/* Also styles for #audio-modal */
 .modal-content {
     background-color: #003049;
     border-radius: 25px;
 }
 
+/* Also styles for #audio-modal */
 .modal-header, .modal-body, .modal-footer {
     border-radius: 25px;
 }
