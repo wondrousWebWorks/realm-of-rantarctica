@@ -301,6 +301,14 @@ $(document).ready(function() {
         musicElement.play();
     }
 
+    function toggleButtonPressAnimation(target) {
+        target.addClass("button-click");
+
+        $( '.button-click' ).on("animationend", function(){
+            target.removeClass("button-click");
+        });
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
     
     setDefaultDifficulty();
@@ -319,7 +327,7 @@ $(document).ready(function() {
 
     $( "#play-track" ).click(function() {
         playMusic();
-        
+             
         ($(this)).addClass("button-click");
 
         $( '.button-click' ).on("animationend", function(){
