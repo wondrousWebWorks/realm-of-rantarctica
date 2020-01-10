@@ -458,9 +458,11 @@ body {
 }
 
 #music-controls #currently-loaded-track {
+    position: relative;
     font-family: "Mansalva", cursive;
     font-size: 2rem;
     color: #FCBF49;
+    animation: slide-text 15s linear infinite;
 }
 
 /* Adapted from BrennaOBrien.com */
