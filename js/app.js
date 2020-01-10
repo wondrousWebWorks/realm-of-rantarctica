@@ -219,7 +219,9 @@ $(document).ready(function() {
     // Sets the initial volume for the #sound-fx element to 20% on page load
     function setInitialSoundFXVol() {
         let soundFXElement = document.getElementById("sound-fx");
+        let currentSoundFXVolElement = document.getElementById("current-sound-fx-vol");
         soundFXElement.volume = 0.2; 
+        currentSoundFXVolElement.innerText = "20";
     }
 
     // Plays the currently loaded track on #play-track icon click
