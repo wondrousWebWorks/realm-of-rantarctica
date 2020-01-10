@@ -319,6 +319,7 @@ $(document).ready(function() {
 
     $( "#play-track" ).click(function() {
         playMusic();
+        
         ($(this)).addClass("button-click");
 
         $( '.button-click' ).on("animationend", function(){
@@ -326,7 +327,15 @@ $(document).ready(function() {
         });
     });
 
-    $( "#pause-track" ).click(pauseMusic);
+    $( "#pause-track" ).click(function() {
+        pauseMusic();
+
+        ($(this)).addClass("button-click");
+
+        $( '.button-click' ).on("animationend", function(){
+            $(this).removeClass("button-click");
+        });
+    });
 
     $( "#next-track" ).click(function() {
         getGameData(loadNextTrack);
