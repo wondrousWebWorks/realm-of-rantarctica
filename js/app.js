@@ -343,6 +343,7 @@ $(document).ready(function() {
 
     $( "#previous-track" ).click(function() {
         getGameData(loadPreviousTrack);
+        toggleButtonPressAnimation($(this));
     });
 
     // Toggles the Information modal
