@@ -310,6 +310,11 @@ body {
     transition: transform .5s ease-in-out;
 }
 
+.modal-content {
+    background-color: #003049;
+    border-radius: 25px;
+}
+
 .modal-header button:focus {
     outline: none;
 }
