@@ -364,17 +364,6 @@ body {
     border: none;
 }
 
-#audio-modal .modal-header button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    background: transparent;
-    padding: 5px;
-    border: none;
-    transition: transform .5s ease-in-out;
-}
-
 #audio-modal .modal-header button:hover {
     transform: scale(1.2);
 }
