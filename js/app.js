@@ -317,7 +317,14 @@ $(document).ready(function() {
 
     $( "#sound-fx-vol-control" ).on("input", setSoundFXVolume);
 
-    $( "#play-track" ).click(playMusic);
+    $( "#play-track" ).click(function() {
+        playMusic();
+        ($(this)).addClass("button-click");
+
+        $( '.button-click' ).on("animationend", function(){
+            $(this).removeClass("button-click");
+        });
+    });
 
     $( "#pause-track" ).click(pauseMusic);
 
