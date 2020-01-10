@@ -309,7 +309,11 @@ body {
     transition: transform .5s ease-in-out;
 }
 
-#info-modal .modal-header button:hover {
+.modal-header button:focus {
+    outline: none;
+}
+
+.modal-header button:hover {
     transform: scale(1.2);
 }
 
