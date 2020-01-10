@@ -461,6 +461,10 @@ body {
     transition: transform .5s ease-in-out;
 }
 
+.rotate-on-click {
+    animation: rotate-on-click .3s linear;
+}
+
 #music-controls img:hover {
     transform: scale(1.2);
 }
