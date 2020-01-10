@@ -247,7 +247,9 @@ $(document).ready(function() {
     // Sets the volume for the #msound-fx audio element based on the #sound-fx-vol-control ranged input
     function setSoundFXVolume() {
         let soundFXElement = document.getElementById("sound-fx");
+        let currentSoundFXVolElement = document.getElementById("current-sound-fx-vol");
         soundFXElement.volume = $(this)[0].valueAsNumber / 100; 
+        currentSoundFXVolElement.innerText = $(this)[0].valueAsNumber;
     }
 
     // Loads the first track in game_data.json on page load and writes the index to sessionStorage
