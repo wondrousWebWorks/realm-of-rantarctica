@@ -301,6 +301,7 @@ $(document).ready(function() {
         musicElement.play();
     }
 
+    // Plays button-click animation on click of target
     function toggleButtonPressAnimation(target) {
         target.addClass("button-click");
 
