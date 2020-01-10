@@ -66,6 +66,11 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
+    transition: transform .5s ease-in-out;
+}
+
+#audio-controls-container:hover {
+    transform: scale(1.2);
 }
 
 #audio-controls-toggle {
