@@ -255,8 +255,8 @@ $(document).ready(function() {
     // Loads the first track in game_data.json on page load and writes the index to sessionStorage
     function loadInitialTrack(gameData) {
         let musicElement = document.getElementById("music");
-        musicElement.setAttribute("src", gameData["music"][0]);
-        sessionStorage.setItem("currentTrack", 0);
+        musicElement.setAttribute("src", gameData["music"][3]);
+        sessionStorage.setItem("currentTrack", 3);
     }
 
     // Loads the next track in game_data.json and writes the new index to sessionStorage
