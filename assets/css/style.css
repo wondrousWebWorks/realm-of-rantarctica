@@ -488,6 +488,14 @@ body {
     to { transform: translateX(-450px); }
 }
 
+#currently-playing-heading {
+    font-family: "Acme", sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #80D2FF;
+    margin-top: 1rem;
+}
+
 /* Adapted from BrennaOBrien.com */
 input[type=range]{
     -webkit-appearance: none;
