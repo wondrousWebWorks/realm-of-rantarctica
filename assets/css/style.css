@@ -426,8 +426,9 @@ body {
     margin: 0;
 }
 
-#music-vol-control {
-    margin: auto;
+#music-vol-control, #sound-fx-vol-control {
+    width: 40%;
+    margin: 0 10px;
 }
 
 #music-control-icons {
