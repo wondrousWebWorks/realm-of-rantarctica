@@ -446,6 +446,10 @@ body {
     align-items: center;
 }
 
+#music-controls {
+    overflow: hidden;
+}
+
 #music-controls img {
     width: 80px;
     height: 80px;
