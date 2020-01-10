@@ -465,6 +465,11 @@ body {
     animation: slide-text 15s linear infinite;
 }
 
+@keyframes slide-text {
+    from { transform: translateX(450px); }
+    to { transform: translateX(-450px); }
+}
+
 /* Adapted from BrennaOBrien.com */
 input[type=range]{
     -webkit-appearance: none;
