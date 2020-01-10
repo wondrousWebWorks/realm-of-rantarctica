@@ -211,7 +211,9 @@ $(document).ready(function() {
     // Sets the initial volume for the #music audio component at 50%
     function setInitialMusicVol() {
         let musicElement = document.getElementById("music");
-        musicElement.volume = 0.5; 
+        let currentMusicVolElement = document.getElementById("current-music-vol");
+        musicElement.volume = 0.5;
+        currentMusicVolElement.innerText = "50";
     }
 
     // Sets the initial volume for the #sound-fx element to 20% on page load
