@@ -265,14 +265,17 @@ $(document).ready(function() {
     function loadNextTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
         let musicElement = document.getElementById("music");
+        let currentlyPlayingTrackElement = document.getElementById("currently-loaded-track");
     
         if (currentIndex < (gameData["music"].length - 1)) {
             let newIndex = currentIndex + 1;
-            musicElement.setAttribute("src", gameData["music"][newIndex]);
+            musicElement.setAttribute("src", Object.values(gameData["music"][newIndex])[0]);
             sessionStorage.setItem("currentTrack", newIndex);
+            currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][newIndex])[0];
         } else {
-            musicElement.setAttribute("src", gameData["music"][0]);
+            musicElement.setAttribute("src", Object.values(gameData["music"][0])[0]);
             sessionStorage.setItem("currentTrack", 0);
+            currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][0])[0];
         }
     
         musicElement.play();
