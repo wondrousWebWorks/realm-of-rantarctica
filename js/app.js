@@ -317,6 +317,10 @@ $(document).ready(function() {
         getGameData(loadNextTrack);
     });
 
+    $( "#previous-track" ).click(function() {
+        getGameData(loadPreviousTrack);
+    });
+
     // Toggles the Information modal
     $( "#info-icon" ).click(function() {
         $( "#info-modal" ).modal('toggle');
