@@ -457,6 +457,12 @@ body {
     transform: scale(1.2);
 }
 
+#music-controls #currently-loaded-track {
+    font-family: "Mansalva", cursive;
+    font-size: 2rem;
+    color: #FCBF49;
+}
+
 /* Adapted from BrennaOBrien.com */
 input[type=range]{
     -webkit-appearance: none;
