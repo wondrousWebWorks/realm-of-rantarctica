@@ -889,5 +889,9 @@ input[type=range]:focus {
 }
 
 @media(max-width: 576px) {
-
+    #vs {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-shadow: 2px 2px #003049; 
+    }
 }
