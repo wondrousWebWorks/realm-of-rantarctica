@@ -686,8 +686,8 @@ input[type=range]:focus {
     }
 
     #select-level-heading {
-        /* width: 60%; */
-        margin-top: 3rem;
+        width: 60%;
+        margin-top: 2rem;
         font-size: 2rem;
         line-height: .9;
         text-shadow: 2px 2px #003049;
