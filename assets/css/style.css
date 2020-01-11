@@ -560,6 +560,10 @@ input[type=range]:focus {
         width: 60px;
         height: 60px;
     }
+
+    #music-controls #currently-loaded-track {
+        font-size: 1.7rem;
+    }
 }
 
 
