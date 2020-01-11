@@ -298,6 +298,12 @@ body {
         padding: 3px 10px;
         border-radius: 6px;
     }
+
+    #difficulty-setting .difficulty-btn {
+        font-size: 1.3rem;
+        padding: 3px 10px;
+        border-radius: 6px;
+    }
 }
 
 /********************** Landing Page Information Modal **************************/
