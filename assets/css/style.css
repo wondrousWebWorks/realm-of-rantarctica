@@ -547,6 +547,11 @@ input[type=range]:focus {
         font-size: 2.6rem;
     }
 
+    .audio-modal-heading-icon {
+        height: 40px;
+        width: 40px;
+    }
+
     .audio-modal-sub-heading {
         font-size: 2rem;
     }
