@@ -556,6 +556,10 @@ input[type=range]:focus {
         font-size: 2rem;
     }
 
+    #audio-modal .modal-header {
+        padding-bottom: 0;
+    }
+
     #music-controls img {
         width: 60px;
         height: 60px;
