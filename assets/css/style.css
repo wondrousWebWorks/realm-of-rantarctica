@@ -910,4 +910,8 @@ input[type=range]:focus {
     #battle-info {
         font-size: 2rem;
     }
+
+    #player-sprite-and-name, #ai-sprite-and-name {
+        padding: 0;
+    }
 }
