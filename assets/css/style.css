@@ -542,6 +542,12 @@ input[type=range]:focus {
 
 /* End of adapted code from BrennaOBrien.com */
 
+@media(max-width: 576px) {
+    #audio-modal .modal-title { 
+        font-size: 2.6rem;
+    }
+}
+
 
 /********************** Select Level Screen **************************/
 #level-select-page {
@@ -646,7 +652,7 @@ input[type=range]:focus {
     }
 
     #select-level-heading {
-        margin-top: 2rem;
+        margin-top: 3rem;
         font-size: 2rem;
         line-height: .9;
         text-shadow: 2px 2px #003049;
