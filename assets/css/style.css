@@ -572,6 +572,10 @@ input[type=range]:focus {
     #currently-playing-heading {
         font-size: 1.8rem;
     }
+
+    #current-music-vol, #current-sound-fx-vol {
+        font-size: 2.2rem;
+    }
 }
 
 
