@@ -887,3 +887,7 @@ input[type=range]:focus {
     text-align: center;
     text-shadow: 5px 3px #003049;
 }
+
+@media(max-width: 576px) {
+
+}
