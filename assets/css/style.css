@@ -894,4 +894,9 @@ input[type=range]:focus {
         font-weight: bold;
         text-shadow: 2px 2px #003049; 
     }
+
+    .vs-border-block {
+        height: 8px;
+        border: 2px solid #003049;
+    }
 }
