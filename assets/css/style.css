@@ -257,8 +257,8 @@ body {
 
 @media(max-width: 576px) {
     #game-title {
-        font-size: 4rem;
-        margin-top: 4.5rem;
+        font-size: 3.5rem;
+        margin-top: 4rem;
     }
 
     #play-icon {
