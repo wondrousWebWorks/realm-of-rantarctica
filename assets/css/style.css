@@ -494,6 +494,7 @@ body {
 }
 
 #music-controls #currently-loaded-track {
+    width: 130%;
     position: relative;
     font-family: "Mansalva", cursive;
     font-size: 2rem;
