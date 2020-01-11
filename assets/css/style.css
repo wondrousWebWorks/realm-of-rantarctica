@@ -287,6 +287,11 @@ body {
         width: 75px;
         height: 75px;
     }
+
+    #difficulty-setting-heading {
+        font-size: 1.7rem;
+        text-shadow: 2px 2px #003049;
+    }
 }
 
 /********************** Landing Page Information Modal **************************/
