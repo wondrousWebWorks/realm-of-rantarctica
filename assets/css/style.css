@@ -555,6 +555,11 @@ input[type=range]:focus {
     .audio-modal-sub-heading {
         font-size: 2rem;
     }
+
+    #music-controls img {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 
