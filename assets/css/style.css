@@ -686,11 +686,12 @@ input[type=range]:focus {
     }
 
     #select-level-heading {
+        /* width: 60%; */
         margin-top: 3rem;
         font-size: 2rem;
         line-height: .9;
         text-shadow: 2px 2px #003049;
-        }
+    }
 
     .level-btn {
         font-size: 1rem;
@@ -913,5 +914,10 @@ input[type=range]:focus {
 
     #player-sprite-and-name, #ai-sprite-and-name {
         padding: 0;
+    }
+
+    #player-sprite-name, #ai-sprite-name {
+        font-size: 1.7rem;
+        text-shadow: 2px 2px #003049;
     }
 }
