@@ -564,6 +564,10 @@ input[type=range]:focus {
     #music-controls #currently-loaded-track {
         font-size: 1.7rem;
     }
+
+    #currently-playing-heading {
+        font-size: 1.8rem;
+    }
 }
 
 
