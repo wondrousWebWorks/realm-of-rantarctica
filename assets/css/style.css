@@ -906,4 +906,8 @@ input[type=range]:focus {
         text-shadow: 2px 2px #003049;
         padding-top: 10px;
     }
+
+    #battle-info {
+        font-size: 2rem;
+    }
 }
