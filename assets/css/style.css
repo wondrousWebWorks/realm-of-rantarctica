@@ -654,6 +654,7 @@ input[type=range]:focus {
 
     .level-btn {
         font-size: 1rem;
+        padding: 3px 6px;
     }
     
     .level-icon {
