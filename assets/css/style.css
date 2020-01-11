@@ -292,6 +292,12 @@ body {
         font-size: 1.7rem;
         text-shadow: 2px 2px #003049;
     }
+
+    #difficulty-setting .selected-difficulty-btn {
+        font-size: 1.3rem;
+        padding: 3px 10px;
+        border-radius: 6px;
+    }
 }
 
 /********************** Landing Page Information Modal **************************/
