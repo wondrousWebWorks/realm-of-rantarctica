@@ -211,6 +211,9 @@ $(document).ready(function() {
         }, 1000);
     }
 
+    // On click of player attribute, displays AI values and sprite, compares
+    // player and AI values, adjusts decks based on outcome, display round
+    // result and plays and appropriate audio file
     function cardValueClickEvent(e) {
         let selectedAttributeName = e.currentTarget.children[0].innerText;
         let selectedAttributeValue = e.currentTarget.children[1].innerText;
