@@ -321,13 +321,10 @@ body {
 .modal-header, .modal-body, .modal-footer {
     background-color: #003049;
     border: none;
+    text-align: center;
 }
 
 /********************** Landing Page Information Modal **************************/
-
-#info-modal .modal-header, #info-modal .modal-footer {
-    border: none;
-}
 
 /* Also styles for #audio-modal */
 .modal-header button {
@@ -398,14 +395,7 @@ body {
 }
 
 /********************** Sound Settings Modal **************************/
-#audio-modal .modal-header, #audio-modal .modal-body {
-    background-color: #003049;
-    text-align: center;
-}
 
-#audio-modal .modal-header {
-    border: none;
-}
 
 #audio-modal .modal-header button:hover {
     transform: scale(1.2);
