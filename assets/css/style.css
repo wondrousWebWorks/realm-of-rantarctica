@@ -318,11 +318,10 @@ body {
 }
 
 /********************** Shared Modal Styling**************************/
-
-/********************** Landing Page Information Modal **************************/
-#info-modal .modal-header, #info-modal .modal-body, #info-modal .modal-footer {
+.modal-header, .modal-body, .modal-footer {
     background-color: #003049;
 }
+/********************** Landing Page Information Modal **************************/
 
 #info-modal .modal-header, #info-modal .modal-footer {
     border: none;
