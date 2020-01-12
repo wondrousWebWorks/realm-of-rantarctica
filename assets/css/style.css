@@ -324,6 +324,15 @@ body {
     text-align: center;
 }
 
+.modal-title {
+    color: #F77F00;
+    text-shadow: 2px 2px #111;
+    font-family: 'Girassol', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
 /********************** Landing Page Information Modal **************************/
 
 /* Also styles for #audio-modal */
@@ -357,14 +366,6 @@ body {
     transform: scale(1.2);
 }
 
-#info-modal .modal-title {
-    color: #F77F00;
-    text-shadow: 2px 2px #111;
-    font-family: 'Girassol', cursive;
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 0 auto;
-}
 
 #info-modal .modal-body p {
     color: #EAE2B7;
@@ -401,14 +402,6 @@ body {
     transform: scale(1.2);
 }
 
-#audio-modal .modal-title {
-    color: #F77F00;
-    text-shadow: 2px 2px #111;
-    font-family: 'Girassol', cursive;
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 0 auto;
-}
 
 .audio-icon-and-heading {
     display: flex;
