@@ -633,6 +633,7 @@ input[type=range]:focus {
 #level-cards-container {
     margin: 0 40px;
     height: 65%;
+    overflow-y: scroll;
 }
 
 #level-cards-container .card {
