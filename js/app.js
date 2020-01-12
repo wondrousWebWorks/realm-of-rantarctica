@@ -164,8 +164,8 @@ $(document).ready(function() {
         }, 1000);
     }
 
-    // Handles all logic related to cards, including shuffling, writing values to cards, timing and displaying sprites
-    function handleCardLogic(gameData) {
+    // Writes shuffled decks entries to external variables for further use
+    function writeShuffledDecksToExternalVariables(gameData) {
         // Retrieve characters from getGameData's json object and assign for player and AI       
         playerCards = gameData["characters"].slice();
         aiCards = gameData["characters"].slice();
@@ -174,18 +174,13 @@ $(document).ready(function() {
         shuffleCards(playerCards);
         shuffleCards(aiCards);
 
-        // Write card count for Player and AI to Battle Page
-        $( ".card-count-player-value" ).text(playerCards.length);
-        $( ".card-count-ai-value" ).text(aiCards.length);
+        playerCards.forEach(card => {
+            playerShuffledDeck.push(card);
+        });
 
-        writeValuesToCard(playerCards, "player");
-        writeValuesToCard(aiCards, "ai");
-
-        displaySpriteAndCharacterName(playerCards, "player");
-        displaySpriteAndCharacterName(aiCards, "ai");
-
-        displayBattleInfo();
-        countdownTimer();
+        aiCards.forEach(card => {
+            aiShuffledDeck.push(card);
+        });
     }
         
     // Saves the default difficulty of EASY in session storage
