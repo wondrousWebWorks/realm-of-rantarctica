@@ -589,6 +589,14 @@ input[type=range]:focus {
     border-radius: 16px;
 }
 
+#sound-info-modal .modal-body p {
+    font-family: "Acme", sans-serif;
+    font-size: 1.4rem;
+    color: #EAE2B7;
+    font-weight: bold;
+    margin: 30px 20px;
+}
+
 /********************** Select Level Screen **************************/
 #level-select-page {
     display: none;
