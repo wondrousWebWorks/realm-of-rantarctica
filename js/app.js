@@ -211,6 +211,41 @@ $(document).ready(function() {
         }, 1000);
     }
 
+    function cardValueClickEvent(e) {
+        let selectedAttributeName = e.currentTarget.children[0].innerText;
+        let selectedAttributeValue = e.currentTarget.children[1].innerText;
+        let selectedAttributeAIValue = Object.values(aiShuffledDeck[0])[0][0][selectedAttributeName];
+
+        writeValuesToCard(aiShuffledDeck, "ai");
+        displaySpriteAndCharacterName(aiShuffledDeck, "ai");
+
+        if (selectedAttributeValue > selectedAttributeAIValue) {
+            displayBattleInfo("YOU WIN!");
+
+            let prize = aiShuffledDeck.shift();
+            playerShuffledDeck.push(prize);
+            
+            displayCardCountValues();
+
+            let soundFXElement = document.getElementById("sound-fx");
+            soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_male_voice_processed_says_you_win_001_21572.mp3");
+            soundFXElement.play();
+        } else if (selectedAttributeValue === selectedAttributeAIValue) {
+            displayBattleInfo("DRAW!");
+        } else if (selectedAttributeValue < selectedAttributeAIValue) {
+            displayBattleInfo("YOU LOSE!");
+
+            let prize = playerShuffledDeck.shift();
+            aiShuffledDeck.push(prize);
+            
+            displayCardCountValues();
+
+            let soundFXElement = document.getElementById("sound-fx");
+            soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_male_voice_processed_says_you_lose_21571.mp3");
+            soundFXElement.play();
+        }
+    }
+
     // Handles the main battle logic
     function battle() {
         getGameData(writeShuffledDecksToExternalVariables);
