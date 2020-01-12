@@ -597,6 +597,12 @@ input[type=range]:focus {
     margin: 30px 20px;
 }
 
+#sound-info-modal .modal-body label {
+    font-family: "Mansalva", cursive;
+    font-size: 1.3rem;
+    color: #FCBF49;
+}
+
 /********************** Select Level Screen **************************/
 #level-select-page {
     display: none;
