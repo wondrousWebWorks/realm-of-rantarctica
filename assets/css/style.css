@@ -253,6 +253,11 @@ body {
         align-items: flex-end;
         text-align: center;
     }
+
+    #audio-controls-toggle {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -494,7 +499,7 @@ body {
 }
 
 #music-controls #currently-loaded-track {
-    width: 160%;
+    width: 100%;
     position: relative;
     font-family: "Mansalva", cursive;
     font-size: 2rem;
