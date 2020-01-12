@@ -4,16 +4,6 @@ $(document).ready(function() {
         return [$(window).width(), $(window).height()];
     }
 
-    // Sets the number of Level Select Cards to be displayed at once on screen based on window dimensions
-    // function setLevelCardDisplayCount(windowDimensions) {
-    //     if(windowDimensions[0] > 1200) {
-    //         return 6;
-    //     } else if (windowDimensions[0] >= 768) {
-    //         return 4;
-    //     } else {
-    //         return 2;
-    //     }
-    // }
 
     // Fetches game data from json file and takes a callback to do something with retrieved data
     function getGameData(callback) {
@@ -42,7 +32,6 @@ $(document).ready(function() {
     // Loads the correct number of Level Select cards based on screen size - gets called as a callback in getData()
     function loadLevelSelectCards(gameData) {
         let windowDimensions = getWindowDimensions();
-        // let cardCount = setLevelCardDisplayCount(windowDimensions); 
         for (let i = 1; i <= gameData["md-backgrounds"].length; i++) {
             $( `#bg-card-${i} img` ).attr("src", Object.values(gameData["md-backgrounds"][i - 1]));
             $( `#bg-card-${i}` ).attr("name", Object.keys(gameData["md-backgrounds"][i - 1]));
