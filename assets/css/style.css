@@ -609,7 +609,7 @@ input[type=range]:focus {
     align-items: center;
     width: 100vw;
     margin-bottom: 1.5rem;
-    height: 15%;
+    height: 10%;
 }
 
 .level-btn {
@@ -632,8 +632,15 @@ input[type=range]:focus {
 
 #level-cards-container {
     margin: 0 40px;
-    height: 65%;
+    height: 70%;
     overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+}
+
+#level-cards-container::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 #level-cards-container .card {
