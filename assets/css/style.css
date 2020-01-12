@@ -599,6 +599,7 @@ input[type=range]:focus {
     color: #F77F00;
     text-shadow: 4px 4px #003049;
     margin-top: 3rem;
+    height: 20%;
 }
 
 .level-select-buttons-container {
@@ -608,6 +609,7 @@ input[type=range]:focus {
     align-items: center;
     width: 100vw;
     margin-bottom: 1.5rem;
+    height: 15%;
 }
 
 .level-btn {
@@ -630,6 +632,7 @@ input[type=range]:focus {
 
 #level-cards-container {
     margin: 0 40px;
+    height: 65%;
 }
 
 #level-cards-container .card {
