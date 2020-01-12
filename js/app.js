@@ -205,6 +205,7 @@ $(document).ready(function() {
         $( ".card-count-ai-value" ).text(aiShuffledDeck.length);
     }
 
+    // Loads all content for first round, except background which is handled elsewhere
     function loadFirstRoundContent() {
         setTimeout(function() {
             displayCardCountValues()
