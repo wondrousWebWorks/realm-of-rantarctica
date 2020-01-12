@@ -112,6 +112,14 @@ $(document).ready(function() {
         }
     }
 
+    function writeHiddenAIValuesToCard() {
+        let aiValueElements = document.getElementsByClassName("ai-attribute-value");
+
+        for (let i = 0; i < aiValueElements.length; i ++ ) {
+            aiValueElements[i].innerText = "?";
+        }
+    }
+
     // Displays either PLAYER or AI sprite and character name
     function displaySpriteAndCharacterName(deck, playerOrAI) {
         let firstCharacter = Object.values(deck[0]);
