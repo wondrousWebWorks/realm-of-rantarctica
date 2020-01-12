@@ -603,12 +603,19 @@ input[type=range]:focus {
     width: 100vw;
     margin-bottom: 1.5rem;
     height: 10%;
+    overflow-y: hidden;
 }
 
 #down-chevron {
+    position: relative;
     height: 90%;
     width: auto;
     animation: chevron-vertical-slide 3s linear infinite;
+}
+
+@keyframes chevron-vertical-slide {
+    from { transform: translateY(-80px); }
+    to { transform: translateY(80px); }
 }
 
 .level-btn {
