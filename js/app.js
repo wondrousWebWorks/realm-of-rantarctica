@@ -4,7 +4,6 @@ $(document).ready(function() {
         return [$(window).width(), $(window).height()];
     }
 
-
     // Fetches game data from json file and takes a callback to do something with retrieved data
     function getGameData(callback) {
         fetch("data/game_data.json")
@@ -32,6 +31,7 @@ $(document).ready(function() {
     // Loads the correct number of Level Select cards based on screen size - gets called as a callback in getData()
     function loadLevelSelectCards(gameData) {
         let windowDimensions = getWindowDimensions();
+
         for (let i = 1; i <= gameData["md-backgrounds"].length; i++) {
             $( `#bg-card-${i} img` ).attr("src", Object.values(gameData["md-backgrounds"][i - 1]));
             $( `#bg-card-${i}` ).attr("name", Object.keys(gameData["md-backgrounds"][i - 1]));
@@ -316,6 +316,9 @@ $(document).ready(function() {
     setInitialMusicVol();
     setInitialSoundFXVol();
     getGameData(loadInitialTrack);
+
+    let playerShuffledDeck = [];
+    let aiShuffledDeck = [];
 
     $("#sound-info-modal").on('hidden.bs.modal', function(){
         let checkedValue = document.getElementById("show-or-hide-sound-info-modal").checked;
