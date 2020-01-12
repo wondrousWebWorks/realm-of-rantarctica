@@ -302,7 +302,6 @@ $(document).ready(function() {
 
     function checkOrSetSoundInfoModalDisplay() {
         let checkedValue = localStorage.getItem("checkBoxValue");
-        console.log(checkedValue);
         
         if (checkedValue === "true") {
             $( "#sound-info-modal" ).modal("hide");
@@ -320,7 +319,6 @@ $(document).ready(function() {
 
     $("#sound-info-modal").on('hidden.bs.modal', function(){
         let checkedValue = document.getElementById("show-or-hide-sound-info-modal").checked;
-        console.log(checkedValue);
         localStorage.setItem("checkBoxValue", checkedValue);
     });
 
@@ -396,6 +394,9 @@ $(document).ready(function() {
 
     // Sets a random background for the Battle Screen when clicked and launches Battle Screen
     $( ".random-level-btn" ).click(() => {
+        let soundFXElement = document.getElementById("sound-fx");
+        soundFXElement.setAttribute("src", "assets/audio/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_003_43812.mp3");
+        soundFXElement.play();
         setRandomBattleBackground();
         loadBattleScreen();
     });
