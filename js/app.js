@@ -300,6 +300,17 @@ $(document).ready(function() {
         });
     }
 
+    function checkOrSetSoundInfoModalDisplay() {
+        let checkedValue = localStorage.getItem("checkBoxValue");
+        console.log(checkedValue);
+        
+        if (checkedValue === "true") {
+            $( "#sound-info-modal" ).modal("hide");
+        } else {
+            $( "#sound-info-modal" ).modal("show");
+        }
+    }
+
     // *******************  END OF FUNCTION DECLARATIONS  **********************
     $( "#sound-info-modal" ).modal("toggle");
     setDefaultDifficulty();
