@@ -603,6 +603,17 @@ input[type=range]:focus {
     color: #FCBF49;
 }
 
+input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  padding: 10px;
+  margin-right: 10px;
+}
+
 /********************** Select Level Screen **************************/
 #level-select-page {
     display: none;
