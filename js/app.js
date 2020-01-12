@@ -373,7 +373,7 @@ $(document).ready(function() {
     // Plays a sword swish sound on mouseenter of .card
     $( ".card img ").mouseenter(function() {
         let soundFXElement = document.getElementById("sound-fx");
-        soundFXElement.setAttribute("src", "assets/audio/zapsplat_leisure_toy_gun_shoot_puff_air_001_43142.mp3");
+        soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_game_sound_single_short_generic_click_pop_001_38516.mp3");
         soundFXElement.play();
     });
 
