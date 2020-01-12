@@ -182,6 +182,12 @@ $(document).ready(function() {
             aiShuffledDeck.push(card);
         });
     }
+
+
+    function displayCardCountValues() {
+        $( ".card-count-player-value" ).text(playerShuffledDeck.length);
+        $( ".card-count-ai-value" ).text(aiShuffledDeck.length);
+    }
         
     // Saves the default difficulty of EASY in session storage
     function setDefaultDifficulty() {
