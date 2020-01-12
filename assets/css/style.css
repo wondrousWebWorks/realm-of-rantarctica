@@ -580,6 +580,14 @@ input[type=range]:focus {
     }
 }
 
+/********************** Sound Info Modal **************************/
+#sound-info-modal .modal-body img {
+    width: 40%;
+    height: auto;
+    border: 4px solid #D62828;
+    padding: 20px;
+    border-radius: 16px;
+}
 
 /********************** Select Level Screen **************************/
 #level-select-page {
