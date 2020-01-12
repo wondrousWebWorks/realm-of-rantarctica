@@ -301,7 +301,7 @@ $(document).ready(function() {
     }
 
     // *******************  END OF FUNCTION DECLARATIONS  **********************
-    
+    $( "#sound-info-modal" ).modal("toggle");
     setDefaultDifficulty();
     setInitialMusicVol();
     setInitialSoundFXVol();
