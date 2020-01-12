@@ -258,7 +258,12 @@ body {
         width: 75px;
         height: 75px;
     }
-}
+
+    #difficulty-setting .selected-difficulty-btn, #difficulty-setting .difficulty-btn {
+        font-size: 2rem;
+        padding: 3px 10px;
+        border-radius: 6px;
+    }
 
 @media(max-width: 576px) {
     #game-title {
