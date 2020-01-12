@@ -215,6 +215,10 @@ $(document).ready(function() {
     function battle() {
         getGameData(writeShuffledDecksToExternalVariables);
         loadFirstRoundContent();
+
+        $( ".player-attribute" ).click((e) => {
+            cardValueClickEvent(e)
+        });
     }
         
     // Saves the default difficulty of EASY in session storage
