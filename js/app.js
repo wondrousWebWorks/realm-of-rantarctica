@@ -312,11 +312,17 @@ $(document).ready(function() {
     }
 
     // *******************  END OF FUNCTION DECLARATIONS  **********************
-    checkOrSetSoundInfoModalDisplay()
+    checkOrSetSoundInfoModalDisplay();
     setDefaultDifficulty();
     setInitialMusicVol();
     setInitialSoundFXVol();
     getGameData(loadInitialTrack);
+
+    $("#sound-info-modal").on('hidden.bs.modal', function(){
+        let checkedValue = document.getElementById("show-or-hide-sound-info-modal").checked;
+        console.log(checkedValue);
+        localStorage.setItem("checkBoxValue", checkedValue);
+    });
 
     // Toggles the html audio control's visibility on clicking
     $( "#audio-controls-toggle" ).click(function() {
