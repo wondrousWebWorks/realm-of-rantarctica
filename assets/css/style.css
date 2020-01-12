@@ -605,6 +605,12 @@ input[type=range]:focus {
     height: 10%;
 }
 
+#down-chevron {
+    height: 90%;
+    width: auto;
+    animation: chevron-vertical-slide 3s linear infinite;
+}
+
 .level-btn {
     background-color: #FCBF49;
     color: #003049;
