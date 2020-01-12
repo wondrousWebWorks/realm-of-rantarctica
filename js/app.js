@@ -191,6 +191,13 @@ $(document).ready(function() {
         });
     }
 
+    function displayHiddenAISpriteAndName() {
+        $( `#ai-sprite-name` ).text("Unknown");
+        $( `#ai-sprite-and-name-container` ).css("background", "url(https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png)");
+        $( `#ai-sprite-and-name-container` ).css("background-repeat", "no-repeat");
+        $( `#ai-sprite-and-name-container` ).css("background-position", "center");
+    }
+
     // Displays the player and ai number of cards in its container
     function displayCardCountValues() {
         $( ".card-count-player-value" ).text(playerShuffledDeck.length);
