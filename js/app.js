@@ -197,6 +197,7 @@ $(document).ready(function() {
         $( ".card-count-ai-value" ).text(aiShuffledDeck.length);
     }
 
+    // Handles the main battle logic
     function battle() {
         getGameData(writeShuffledDecksToExternalVariables);
     }
