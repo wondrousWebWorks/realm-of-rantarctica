@@ -264,6 +264,7 @@ body {
         padding: 3px 10px;
         border-radius: 6px;
     }
+}
 
 @media(max-width: 576px) {
     #game-title {
@@ -315,6 +316,8 @@ body {
         border-radius: 6px;
     }
 }
+
+/********************** Landing Page Information Modal **************************/
 
 /********************** Landing Page Information Modal **************************/
 #info-modal .modal-header, #info-modal .modal-body, #info-modal .modal-footer {
