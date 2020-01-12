@@ -205,6 +205,18 @@ $(document).ready(function() {
         $( ".card-count-ai-value" ).text(aiShuffledDeck.length);
     }
 
+    function loadFirstRoundContent() {
+        setTimeout(function() {
+            displayCardCountValues()
+
+            writeValuesToCard(playerShuffledDeck, "player");
+            writeHiddenAIValuesToCard();
+
+            displaySpriteAndCharacterName(playerShuffledDeck, "player");
+            displayHiddenAISpriteAndName();
+        }, 1000);
+    }
+
     // Handles the main battle logic
     function battle() {
         getGameData(writeShuffledDecksToExternalVariables);
