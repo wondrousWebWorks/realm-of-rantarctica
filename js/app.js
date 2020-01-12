@@ -174,7 +174,7 @@ $(document).ready(function() {
 
     // Writes shuffled decks entries to external variables for further use
     function writeShuffledDecksToExternalVariables(gameData) {
-        // Retrieve characters from getGameData's json object and assign for player and AI       
+             
         playerCards = gameData["characters"].slice();
         aiCards = gameData["characters"].slice();
 
@@ -195,6 +195,10 @@ $(document).ready(function() {
     function displayCardCountValues() {
         $( ".card-count-player-value" ).text(playerShuffledDeck.length);
         $( ".card-count-ai-value" ).text(aiShuffledDeck.length);
+    }
+
+    function battle() {
+        getGameData(writeShuffledDecksToExternalVariables);
     }
         
     // Saves the default difficulty of EASY in session storage
