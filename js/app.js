@@ -221,6 +221,7 @@ $(document).ready(function() {
     // Handles the main battle logic
     function battle() {
         getGameData(writeShuffledDecksToExternalVariables);
+        loadFirstRoundContent();
     }
         
     // Saves the default difficulty of EASY in session storage
