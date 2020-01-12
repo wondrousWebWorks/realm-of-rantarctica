@@ -312,7 +312,7 @@ $(document).ready(function() {
     }
 
     // *******************  END OF FUNCTION DECLARATIONS  **********************
-    $( "#sound-info-modal" ).modal("toggle");
+    checkOrSetSoundInfoModalDisplay()
     setDefaultDifficulty();
     setInitialMusicVol();
     setInitialSoundFXVol();
