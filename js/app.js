@@ -160,16 +160,9 @@ $(document).ready(function() {
         },1000);
     }
 
-    // Displays battle information for a limited amount of time, then clear it off the screen
-    function displayBattleInfo() {
-        let battleInfoDisplayTime = 2;
-        let battleInfoDisplay = setInterval(function() {
-            battleInfoDisplayTime -= 1;
-            if (battleInfoDisplayTime === 0) {
-                $( "#battle-info" ).css("visibility", "hidden");
-                clearInterval(battleInfoDisplay);
-            }
-        }, 1000);
+    // Displays battle information, such as instructions or feedback after each round
+    function displayBattleInfo(info) {
+        $( "#battle-info" ).text(info);
     }
 
     // Writes shuffled decks entries to external variables for further use
