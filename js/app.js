@@ -183,7 +183,7 @@ $(document).ready(function() {
         });
     }
 
-
+    // Displays the player and ai number of cards in its container
     function displayCardCountValues() {
         $( ".card-count-player-value" ).text(playerShuffledDeck.length);
         $( ".card-count-ai-value" ).text(aiShuffledDeck.length);
