@@ -1005,4 +1005,8 @@ input[type=checkbox] {
     .player-attribute p, .card-count-item p, .ai-attribute p {
         font-size: 1rem;
     }
+
+    .battle-screen-bottom-row {
+        width: 100%;
+    }
 }
