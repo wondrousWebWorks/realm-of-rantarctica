@@ -152,7 +152,9 @@
                 src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576838133/realm-of-rantarctica/icons/Exit_rb8mzn.png"
                 alt="exit icon">
             </button>
-            <img id="down-chevron" src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578862789/realm-of-rantarctica/icons/Pngtree_vector_straight_down_arrow_red_3150329_oekwix.png" alt="down chevron">
+            <img id="down-chevron"
+              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578862789/realm-of-rantarctica/icons/Pngtree_vector_straight_down_arrow_red_3150329_oekwix.png"
+              alt="down chevron">
             <button type="button" class="btn level-btn random-level-btn">Random Level <img class="level-icon"
                 src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576770900/realm-of-rantarctica/icons/FAQ_ydfqti.png"
                 alt="random icon">
@@ -192,38 +194,52 @@
               <div id="player-attribute-container" class="battle-screen-bottom-row set-flex-display-column-centered">
                 <div class="player-attribute">
                   <p class="player-attribute-name">HIT POINTS</p>
-                  <p class="player-attribute-value"></p>
-                  <p class="ai-attribute-value-combined-display"></p>
+                  <div class="combined-player-and-ai-attributes">
+                    <p class="player-attribute-value"></p>
+                    <p class="ai-attribute-value-combined-display"></p>
+                  </div>
                 </div>
                 <div class="player-attribute">
                   <p class="player-attribute-name">ATTACK</p>
-                  <p class="player-attribute-value"></p>
-                  <p class="ai-attribute-value-combined-display"></p>
+                  <div class="combined-player-and-ai-attributes">
+                    <p class="player-attribute-value"></p>
+                    <p class="ai-attribute-value-combined-display"></p>
+                  </div>
                 </div>
                 <div class="player-attribute">
                   <p class="player-attribute-name">ARMOUR</p>
-                  <p class="player-attribute-value"></p>
-                  <p class="ai-attribute-value-combined-display"></p>
+                  <div class="combined-player-and-ai-attributes">
+                    <p class="player-attribute-value"></p>
+                    <p class="ai-attribute-value-combined-display"></p>
+                  </div>
                 </div>
                 <div class="player-attribute">
                   <p class="player-attribute-name">REGENERATION</p>
-                  <p class="player-attribute-value"></p>
-                  <p class="ai-attribute-value-combined-display"></p>
+                  <div class="combined-player-and-ai-attributes">
+                    <p class="player-attribute-value"></p>
+                    <p class="ai-attribute-value-combined-display"></p>
+                  </div>
                 </div>
                 <div class="player-attribute">
                   <p class="player-attribute-name">EVASION</p>
-                  <p class="player-attribute-value"></p>
-                  <p class="ai-attribute-value-combined-display"></p>
+                  <div class="combined-player-and-ai-attributes">
+                    <p class="player-attribute-value"></p>
+                    <p class="ai-attribute-value-combined-display"></p>
+                  </div>
                 </div>
                 <div class="player-attribute">
                   <p class="player-attribute-name">MAGIC</p>
-                  <p class="player-attribute-value"></p>
-                  <p class="ai-attribute-value-combined-display"></p>
+                  <div class="combined-player-and-ai-attributes">
+                    <p class="player-attribute-value"></p>
+                    <p class="ai-attribute-value-combined-display"></p>
+                  </div>
                 </div>
                 <div class="player-attribute">
                   <p class="player-attribute-name">RANGE</p>
-                  <p class="player-attribute-value"></p>
-                  <p class="ai-attribute-value-combined-display"></p>
+                  <div class="combined-player-and-ai-attributes">
+                    <p class="player-attribute-value"></p>
+                    <p class="ai-attribute-value-combined-display"></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -381,28 +397,32 @@
     </div>
   </div>
 
-    <!-- Sound Information Modal -->
-    <div class="modal fade" id="sound-info-modal" tabindex="-1" role="dialog" aria-labelledby="soundInfoModal" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="soundInfoModal">Please Note</h5>
-            <button type="button" data-dismiss="modal" aria-label="Close">
-              <img class="modal-close-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
-                alt="close icon">
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png" alt="music icon">
-            <p>For a more immersive experience, please feel free to use the provided music and sound effects.  You can easily access the sound menu at any time 
-              by clicking or tapping the above icon, which is located at the top left of the screen.</p>
-            <input id="show-or-hide-sound-info-modal" type="checkbox">
-            <label for="show-or-hide-sound-info-modal">Do not show again</label>
-          </div>
+  <!-- Sound Information Modal -->
+  <div class="modal fade" id="sound-info-modal" tabindex="-1" role="dialog" aria-labelledby="soundInfoModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="soundInfoModal">Please Note</h5>
+          <button type="button" data-dismiss="modal" aria-label="Close">
+            <img class="modal-close-icon"
+              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
+              alt="close icon">
+          </button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
+            alt="music icon">
+          <p>For a more immersive experience, please feel free to use the provided music and sound effects. You can
+            easily access the sound menu at any time
+            by clicking or tapping the above icon, which is located at the top left of the screen.</p>
+          <input id="show-or-hide-sound-info-modal" type="checkbox">
+          <label for="show-or-hide-sound-info-modal">Do not show again</label>
         </div>
       </div>
     </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
