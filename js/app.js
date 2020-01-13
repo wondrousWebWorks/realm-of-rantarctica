@@ -215,6 +215,14 @@ $(document).ready(function() {
     // player and AI values, adjusts decks based on outcome, display round
     // result and plays and appropriate audio file
     function cardValueClickEvent(e) {
+        setTimeout(function() {
+            let selectedAttributeName = e.currentTarget.children[0].innerText;
+            let selectedAttributeValue = e.currentTarget.children[1].innerText;
+            let selectedAttributeAIValue = Object.values(aiShuffledDeck[0])[0][0][selectedAttributeName];
+    
+            console.log(selectedAttributeValue);
+            console.log(selectedAttributeAIValue);
+        }, 500);
         let selectedAttributeName = e.currentTarget.children[0].innerText;
         let selectedAttributeValue = e.currentTarget.children[1].innerText;
         let selectedAttributeAIValue = Object.values(aiShuffledDeck[0])[0][0][selectedAttributeName];
