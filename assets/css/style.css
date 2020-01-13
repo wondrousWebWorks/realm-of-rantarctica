@@ -980,4 +980,10 @@ input[type=checkbox] {
         font-size: 1.7rem;
         text-shadow: 2px 2px #003049;
     }
+
+    #player-sprite, #ai-sprite {
+        width: 100%;
+        height: auto;
+    }
+
 }
