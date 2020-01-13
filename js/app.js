@@ -219,6 +219,8 @@ $(document).ready(function() {
         let selectedAttributeValue = e.currentTarget.children[1].innerText;
         let selectedAttributeAIValue = Object.values(aiShuffledDeck[0])[0][0][selectedAttributeName];
 
+        console.log(selectedAttributeValue);
+        console.log(selectedAttributeAIValue);
         writeValuesToCard(aiShuffledDeck, "ai");
         displaySpriteAndCharacterName(aiShuffledDeck, "ai");
 
