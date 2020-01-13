@@ -995,4 +995,8 @@ input[type=checkbox] {
     #ai-attributes-col {
         display: none;
     }
+
+    .player-attribute p, .card-count-item p, .ai-attribute p {
+        font-size: 1rem;
+    }
 }
