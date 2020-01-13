@@ -248,7 +248,7 @@ $(document).ready(function() {
                 soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_male_voice_processed_says_you_lose_21571.mp3");
                 soundFXElement.play();
             }
-        }, 500);
+        }, 1000);
        
     }
 
