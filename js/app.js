@@ -129,9 +129,10 @@ $(document).ready(function() {
         let url = urlPrecursor[1]
 
         $( `#${playerOrAI}-sprite-name` ).text(Object.keys(deck[0]));
-        $( `#${playerOrAI}-sprite-and-name-container` ).css("background", `url(${url})`);
-        $( `#${playerOrAI}-sprite-and-name-container` ).css("background-repeat", "no-repeat");
-        $( `#${playerOrAI}-sprite-and-name-container` ).css("background-position", "center");
+        $( `#${playerOrAI}-sprite` ).attr("src", url);
+        // $( `#${playerOrAI}-sprite-and-name-container` ).css("background", `url(${url})`);
+        // $( `#${playerOrAI}-sprite-and-name-container` ).css("background-repeat", "no-repeat");
+        // $( `#${playerOrAI}-sprite-and-name-container` ).css("background-position", "center");
     }
 
     // Handles the countdown for each round and displays the time value on screen
