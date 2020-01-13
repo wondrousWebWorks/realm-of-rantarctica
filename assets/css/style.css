@@ -986,4 +986,9 @@ input[type=checkbox] {
         height: auto;
     }
 
+    #character-display-row {
+        height: 40%;
+        margin: 0;
+        padding: 0 10px;
+    }
 }
