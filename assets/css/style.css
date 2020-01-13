@@ -992,6 +992,12 @@ input[type=checkbox] {
         padding: 0 10px;
     }
 
+    #character-attributes-and-score-card-row {
+        margin: 0;
+        padding: 0;
+        height: 60%;
+    }
+
     #ai-attributes-col {
         display: none;
     }
