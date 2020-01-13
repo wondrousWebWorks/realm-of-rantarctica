@@ -991,4 +991,8 @@ input[type=checkbox] {
         margin: 0;
         padding: 0 10px;
     }
+
+    #ai-attributes-col {
+        display: none;
+    }
 }
