@@ -7,7 +7,7 @@ $(document).ready(function() {
     }
 
     // Fetches game data from json file and takes a callback to do something with retrieved data
-    function getGameData(callback) {
+    function getGameData() {
         fetch("data/game_data.json")
             .then(response => {
                 return response.json();
@@ -40,15 +40,7 @@ $(document).ready(function() {
             $( `#bg-card-${i} h5` ).text(Object.keys(gameData["md-backgrounds"][i - 1]));
             
   
-            if(windowDimensions[0] > 1200) {
-                $( `#bg-card-${i}` ).addClass("col-4");
-            } else if (windowDimensions[0] >= 768) {
-                $( `#bg-card-${i}` ).addClass("col-6");
-            } else {
-                $( `#bg-card-${i}` ).addClass("col-12");
-            }
-            $( `#bg-card-${i}` ).css("display", "inline-block");
-            $( `#bg-card-${i}` ).show();
+
   
         }    
     }
@@ -461,7 +453,7 @@ $(document).ready(function() {
     // Loads Select Level screen
     $( "#play-icon" ).click(function() {
         loadLevelSelectScreen();
-        getGameData(loadLevelSelectCards);
+        loadLevelSelectCards(gameData);
     });
 
     // Returns to Landing Page screen
