@@ -419,12 +419,12 @@ $(document).ready(function() {
     });
 
     $( "#next-track" ).click(function() {
-        getGameData(loadNextTrack);
+        loadNextTrack(gameData);
         toggleButtonPressAnimation($(this));
     });
 
     $( "#previous-track" ).click(function() {
-        getGameData(loadPreviousTrack);
+        loadPreviousTrack(gameData);
         toggleButtonPressAnimation($(this));
     });
 
