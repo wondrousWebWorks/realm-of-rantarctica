@@ -300,7 +300,6 @@ $(document).ready(function() {
 
     // Pauses the track currently playing in #music audio element
     function pauseMusic() {
-        let musicElement = document.getElementById("music");
         musicElement.pause();
     }
 
