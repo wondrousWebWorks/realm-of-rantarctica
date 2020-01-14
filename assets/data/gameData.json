@@ -184,11 +184,11 @@
 		{"Blue Skies - David Fesliyan": "assets/audio/blue-skies.mp3"},
 		{"Blood Pumping - David Fesliyan": "assets/audio/blood-pumping.mp3"}
 	],
-	"sounds": [
-		{"Click Pop Low": "assets/audio/click-pop-low.mp3"},
-		{"Click Pop High": "assets/audio/click-pop-high.mp3"},
-		{"Sword Swing": "assets/audio/sword-swing.mp3"},
-		{"You Win": "assets/audio/you-win.mp3"},
-		{"You Lose": "assets/audio/you-lose.mp3"}
-	]
+	"sounds": {
+		"Click Pop Low": "assets/audio/click-pop-low.mp3",
+		"Click Pop High": "assets/audio/click-pop-high.mp3",
+		"Sword Swing": "assets/audio/sword-swing.mp3",
+		"You Win": "assets/audio/you-win.mp3",
+		"You Lose": "assets/audio/you-lose.mp3"
+	}
 }
