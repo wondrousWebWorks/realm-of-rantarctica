@@ -295,7 +295,6 @@ $(document).ready(function() {
 
     // Plays the currently loaded track on #play-track icon click
     function playMusic() {
-        let musicElement = document.getElementById("music");
         musicElement.play();
     }
 
