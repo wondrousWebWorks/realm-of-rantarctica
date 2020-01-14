@@ -2,6 +2,9 @@ let gameData = [];
 let playerShuffledDeck = [];
 let aiShuffledDeck = [];
 
+let musicElement = $( "#music" );
+let currentMusicVolElement = $( "#current-music-vol" );
+
 $(document).ready(function() {
     // Gets window dimensions and return as an array [width, length]
     function getWindowDimensions() {
@@ -258,7 +261,7 @@ $(document).ready(function() {
 
     // Handles the main battle logic
     function battle() {
-        getGameData(writeShuffledDecksToExternalVariables);
+        writeShuffledDecksToExternalVariables(gameData);
         loadFirstRoundContent();
 
         $( ".player-attribute" ).click((e) => {
@@ -278,10 +281,8 @@ $(document).ready(function() {
 
     // Sets the initial volume for the #music audio component at 50%
     function setInitialMusicVol() {
-        let musicElement = document.getElementById("music");
-        let currentMusicVolElement = document.getElementById("current-music-vol");
         musicElement.volume = 0.5;
-        currentMusicVolElement.innerText = "50";
+        currentMusicVolElement.text("50");
     }
 
     // Sets the initial volume for the #sound-fx element to 20% on page load
