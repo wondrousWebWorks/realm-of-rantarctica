@@ -39,13 +39,13 @@
 		{
 			"Ent": [
 				{
-					"HIT POINTS": "92",
-					"DAMAGE": "88",
-					"ARMOUR": "74",
-					"REGENERATION": "4",
-					"EVASION": "18",
-					"MAGIC": "12",
-					"RANGE": "67"
+					"Hit Points": "92",
+					"Damage": "88",
+					"Armour": "74",
+					"Regeneration": "4",
+					"Evasion": "18",
+					"Magic": "12",
+					"Range": "67"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914113/realm-of-rantarctica/characters/1_IDLE_000_pzzv1c.png"
 			]
@@ -53,13 +53,13 @@
 		{
 			"Minotaur": [
 				{
-					"HIT POINTS": "63",
-					"DAMAGE": "44",
-					"ARMOUR": "58",
-					"REGENERATION": "6",
-					"EVASION": "24",
-					"MAGIC": "3",
-					"RANGE": "20"
+					"Hit Points": "63",
+					"Damage": "44",
+					"Armour": "58",
+					"Regeneration": "6",
+					"Evasion": "24",
+					"Magic": "3",
+					"Range": "20"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577913926/realm-of-rantarctica/characters/IDLE_000_tapoev.png"
 			]
@@ -67,13 +67,13 @@
 		{
 			"Wizard": [
 				{
-					"HIT POINTS": "36",
-					"DAMAGE": "92",
-					"ARMOUR": "8",
-					"REGENERATION": "42",
-					"EVASION": "36",
-					"MAGIC": "100",
-					"RANGE": "100"
+					"Hit Points": "36",
+					"Damage": "92",
+					"Armour": "8",
+					"Regeneration": "42",
+					"Evasion": "36",
+					"Magic": "100",
+					"Range": "100"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914165/realm-of-rantarctica/characters/1_IDLE_000_pnbl7h.png"
 			]
@@ -81,13 +81,13 @@
 		{
 			"Necromancer": [
 				{
-					"HIT POINTS": "32",
-					"DAMAGE": "78",
-					"ARMOUR": "14",
-					"REGENERATION": "90",
-					"EVASION": "28",
-					"MAGIC": "96",
-					"RANGE": "69"
+					"Hit Points": "32",
+					"Damage": "78",
+					"Armour": "14",
+					"Regeneration": "90",
+					"Evasion": "28",
+					"Magic": "96",
+					"Range": "69"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914095/realm-of-rantarctica/characters/1_IDLE_000_atlduc.png"
 			]
@@ -95,13 +95,13 @@
 		{
 			"Demon": [
 				{
-					"HIT POINTS": "82",
-					"DAMAGE": "89",
-					"ARMOUR": "43",
-					"REGENERATION": "79",
-					"EVASION": "46",
-					"MAGIC": "33",
-					"RANGE": "24"
+					"Hit Points": "82",
+					"Damage": "89",
+					"Armour": "43",
+					"Regeneration": "79",
+					"Evasion": "46",
+					"Magic": "33",
+					"Range": "24"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914194/realm-of-rantarctica/characters/1_IDLE_000_t8xgbn.png"
 			]
@@ -109,13 +109,13 @@
 		{
 			"Elemental": [
 				{
-					"HIT POINTS": "65",
-					"DAMAGE": "86",
-					"ARMOUR": "6",
-					"REGENERATION": "91",
-					"EVASION": "75",
-					"MAGIC": "72",
-					"RANGE": "10"
+					"Hit Points": "65",
+					"Damage": "86",
+					"Armour": "6",
+					"Regeneration": "91",
+					"Evasion": "75",
+					"Magic": "72",
+					"Range": "10"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914218/realm-of-rantarctica/characters/1_IDLE_000_gy0jdh.png"
 			]
@@ -123,13 +123,13 @@
 		{
 			"Troll": [
 				{
-					"HIT POINTS": "60",
-					"DAMAGE": "40",
-					"ARMOUR": "65",
-					"REGENERATION": "5",
-					"EVASION": "15",
-					"MAGIC": "5",
-					"RANGE": "18"	
+					"Hit Points": "60",
+					"Damage": "40",
+					"Armour": "65",
+					"Regeneration": "5",
+					"Evasion": "15",
+					"Magic": "5",
+					"Range": "18"	
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914263/realm-of-rantarctica/characters/IDLE_000_uyihiu.png"
 			]
@@ -137,13 +137,13 @@
 		{
 			"Dragon": [
 				{
-					"HIT POINTS": "91",
-					"DAMAGE": "100",
-					"ARMOUR": "86",
-					"REGENERATION": "17",
-					"EVASION": "3",
-					"MAGIC": "34",
-					"RANGE": "100"
+					"Hit Points": "91",
+					"Damage": "100",
+					"Armour": "86",
+					"Regeneration": "17",
+					"Evasion": "3",
+					"Magic": "34",
+					"Range": "100"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914056/realm-of-rantarctica/characters/IDLE_000_tgj6qw.png"
 			]
@@ -151,13 +151,13 @@
 		{
 			"Cyclops": [
 				{
-					"HIT POINTS": "53",
-					"DAMAGE": "36",
-					"ARMOUR": "67",
-					"REGENERATION": "6",
-					"EVASION": "17",
-					"MAGIC": "8",
-					"RANGE": "22"
+					"Hit Points": "53",
+					"Damage": "36",
+					"Armour": "67",
+					"Regeneration": "6",
+					"Evasion": "17",
+					"Magic": "8",
+					"Range": "22"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914015/realm-of-rantarctica/characters/IDLE_000_nsbxqp.png"
 			]
@@ -165,13 +165,13 @@
 		{
 			"Zombie": [
 				{
-					"HIT POINTS": "75",
-					"DAMAGE": "49",
-					"ARMOUR": "2",
-					"REGENERATION": "68",
-					"EVASION": "4",
-					"MAGIC": "27",
-					"RANGE": "12"
+					"Hit Points": "75",
+					"Damage": "49",
+					"Armour": "2",
+					"Regeneration": "68",
+					"Evasion": "4",
+					"Magic": "27",
+					"Range": "12"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914238/realm-of-rantarctica/characters/1_IDLE_000_xzqvum.png"
 			]
@@ -183,9 +183,5 @@
 		{"Born Again - David Fesliyan": "assets/audio/2017-02-12_-_Born_Again_David_Fesliyan.mp3"},
 		{"Blue Skies - David Fesliyan": "assets/audio/2017-08-11_-_Blue_Skies_-_David_Fesliyan.mp3"},
 		{"Blood Pumping - David Fesliyan": "assets/audio/2019-08-17_-_Blood_Pumping_-_David_Fesliyan.mp3"}
-	],
-	"sound-fx": [
-		"assets/audio/zapsplat_multimedia_game_sound_single_short_generic_click_pop_001_38516.mp3",
-		"assets/audio/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_003_43812.mp3"
 	]
 }
