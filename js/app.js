@@ -32,16 +32,11 @@ $(document).ready(function() {
 
     // Loads the correct number of Level Select cards based on screen size - gets called as a callback in getData()
     function loadLevelSelectCards(gameData) {
-        let windowDimensions = getWindowDimensions();
 
         for (let i = 1; i <= gameData["md-backgrounds"].length; i++) {
             $( `#bg-card-${i} img` ).attr("src", Object.values(gameData["md-backgrounds"][i - 1]));
             $( `#bg-card-${i}` ).attr("name", Object.keys(gameData["md-backgrounds"][i - 1]));
             $( `#bg-card-${i} h5` ).text(Object.keys(gameData["md-backgrounds"][i - 1]));
-            
-  
-
-  
         }    
     }
 
@@ -49,13 +44,11 @@ $(document).ready(function() {
     function setChosenBattleBackground($element) {
         let chosenBattleGround = $element[0].attributes.name.value;
 
-        getGameData(gameData => {
-            for (i = 0; i < 12; i++) {
-                if(chosenBattleGround == Object.keys(gameData["lg-backgrounds"][i])) {
-                    $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][i])})`);  
-                }
+        for (i = 0; i < 12; i++) {
+            if(chosenBattleGround == Object.keys(gameData["lg-backgrounds"][i])) {
+                $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][i])})`);  
             }
-        })
+        }
     }
 
     // Generates a random integer between 1 and 12 to select a random level to be loaded if the user chooses the Random Level option
