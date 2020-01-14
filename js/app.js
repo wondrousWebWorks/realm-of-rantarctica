@@ -1,4 +1,6 @@
 let gameData = [];
+let playerShuffledDeck = [];
+let aiShuffledDeck = [];
 
 $(document).ready(function() {
     // Gets window dimensions and return as an array [width, length]
@@ -59,9 +61,8 @@ $(document).ready(function() {
     // Sets a random background for the Battle screen
     function setRandomBattleBackground() {
         let randomLevelInt = generateRandomInt(0, 11);
-        getGameData(gameData => {
-            $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][randomLevelInt])})`);
-        })
+
+        $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][randomLevelInt])})`);
     }
 
     // Loads the Battle Screen and related Battle logic
@@ -394,8 +395,6 @@ $(document).ready(function() {
     setInitialSoundFXVol();
     getGameData(loadInitialTrack);
 
-    let playerShuffledDeck = [];
-    let aiShuffledDeck = [];
 
     $("#sound-info-modal").on('hidden.bs.modal', function(){
         let checkedValue = document.getElementById("show-or-hide-sound-info-modal").checked;
