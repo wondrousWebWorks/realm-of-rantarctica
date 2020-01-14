@@ -305,7 +305,6 @@ $(document).ready(function() {
 
     // Sets the volume for the #music audio element based on the #music-vol-control ranged input
     function setMusicVolume() {
-
         musicElement.volume = $(this)[0].valueAsNumber / 100; 
         currentMusicVolElement.text($(this)[0].valueAsNumber);
     }
@@ -392,7 +391,7 @@ $(document).ready(function() {
     setDefaultDifficulty();
     setInitialMusicVol();
     setInitialSoundFXVol();
-    getGameData(loadInitialTrack);
+    loadInitialTrack(gameData);
 
 
     $("#sound-info-modal").on('hidden.bs.modal', function(){
