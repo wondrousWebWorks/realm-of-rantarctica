@@ -305,10 +305,9 @@ $(document).ready(function() {
 
     // Sets the volume for the #music audio element based on the #music-vol-control ranged input
     function setMusicVolume() {
-        let musicElement = document.getElementById("music");
-        let currentMusicVolElement = document.getElementById("current-music-vol");
+
         musicElement.volume = $(this)[0].valueAsNumber / 100; 
-        currentMusicVolElement.innerText = $(this)[0].valueAsNumber;
+        currentMusicVolElement.text($(this)[0].valueAsNumber);
     }
 
     // Sets the volume for the #msound-fx audio element based on the #sound-fx-vol-control ranged input
