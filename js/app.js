@@ -1,3 +1,5 @@
+let gameData = [];
+
 $(document).ready(function() {
     // Gets window dimensions and return as an array [width, length]
     function getWindowDimensions() {
@@ -10,8 +12,8 @@ $(document).ready(function() {
             .then(response => {
                 return response.json();
             })
-            .then(gameData => {
-                callback(gameData);
+            .then(fetchedData => {
+                gameData = fetchedData;
             })
             .catch(error => {
                 alert("Failed to get game data.");
@@ -82,6 +84,16 @@ $(document).ready(function() {
         $( "#level-select-page" ).hide();
         $( "#battle-page" ).show();  
         $( "#battle-page" ).toggleClass("set-flex-display-column"); 
+
+        let windowDimension = getWindowDimensions();
+
+        if (windowDimension[0] <= 576) {
+            $( "#player-attributes-col" ).removeClass("col-4");
+            $( "#player-attributes-col" ).addClass("col-12");
+
+            $( "#card-count-col" ).removeClass("col-4");
+            $( "#card-count-col" ).addClass("col-12");
+        }
         battle();
     }
 
@@ -130,9 +142,6 @@ $(document).ready(function() {
 
         $( `#${playerOrAI}-sprite-name` ).text(Object.keys(deck[0]));
         $( `#${playerOrAI}-sprite` ).attr("src", url);
-        // $( `#${playerOrAI}-sprite-and-name-container` ).css("background", `url(${url})`);
-        // $( `#${playerOrAI}-sprite-and-name-container` ).css("background-repeat", "no-repeat");
-        // $( `#${playerOrAI}-sprite-and-name-container` ).css("background-position", "center");
     }
 
     // Handles the countdown for each round and displays the time value on screen
@@ -188,9 +197,7 @@ $(document).ready(function() {
     // Displays a question mark as AI sprite and sets the AI character name as UNKNOWN
     function displayHiddenAISpriteAndName() {
         $( `#ai-sprite-name` ).text("Unknown");
-        $( `#ai-sprite-and-name-container` ).css("background", "url(https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png)");
-        $( `#ai-sprite-and-name-container` ).css("background-repeat", "no-repeat");
-        $( `#ai-sprite-and-name-container` ).css("background-position", "center");
+        $( "#ai-sprite" ).attr("src", "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png");
     }
 
     // Displays the player and ai number of cards in its container
