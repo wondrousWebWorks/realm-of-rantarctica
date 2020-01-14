@@ -178,10 +178,10 @@
 		}
 	],
 	"music": [
-		{"New Heights - David Fesliyan": "assets/audio/2019-07-06_-_New_Heights_-_David_Fesliyan.mp3"},
-		{"The Climb - David Fesliyan": "assets/audio/2016-07-07_-_The_Climb_-_David_Fesliyan.mp3"},
-		{"Born Again - David Fesliyan": "assets/audio/2017-02-12_-_Born_Again_David_Fesliyan.mp3"},
-		{"Blue Skies - David Fesliyan": "assets/audio/2017-08-11_-_Blue_Skies_-_David_Fesliyan.mp3"},
-		{"Blood Pumping - David Fesliyan": "assets/audio/2019-08-17_-_Blood_Pumping_-_David_Fesliyan.mp3"}
+		{"New Heights - David Fesliyan": "assets/audio/new-heights.mp3"},
+		{"The Climb - David Fesliyan": "assets/audio/the-climb.mp3"},
+		{"Born Again - David Fesliyan": "assets/audio/born-again.mp3"},
+		{"Blue Skies - David Fesliyan": "assets/audio/blue-skies.mp3"},
+		{"Blood Pumping - David Fesliyan": "assets/audio/blood-pumping.mp3"}
 	]
 }
