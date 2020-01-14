@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     // Fetches game data from json file and takes a callback to do something with retrieved data
     function getGameData() {
-        fetch("data/game_data.json")
+        fetch("data/gameData.json")
             .then(response => {
                 return response.json();
             })
@@ -389,6 +389,7 @@ $(document).ready(function() {
     }
 
     // *******************  END OF FUNCTION DECLARATIONS  **********************
+    getGameData();
     checkOrSetSoundInfoModalDisplay();
     setDefaultDifficulty();
     setInitialMusicVol();
