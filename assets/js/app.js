@@ -2,8 +2,9 @@ let gameData = [];
 let playerShuffledDeck = [];
 let aiShuffledDeck = [];
 
-let musicElement = $( "#music" );
+let musicElement = document.getElementById("music");
 let currentMusicVolElement = $( "#current-music-vol" );
+let currentlyPlayingTrackElement = $( "#currently-loaded-track" );
 
 $(document).ready(function() {
     // Gets window dimensions and return as an array [width, length]
@@ -319,11 +320,9 @@ $(document).ready(function() {
 
     // Loads the first track in game_data.json on page load and writes the index to sessionStorage
     function loadInitialTrack(gameData) {
-        let musicElement = document.getElementById("music");
-        let currentlyPlayingTrackElement = document.getElementById("currently-loaded-track");
         musicElement.setAttribute("src", Object.values(gameData["music"][3])[0]);
         sessionStorage.setItem("currentTrack", 3);
-        currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][3])[0];
+        currentlyPlayingTrackElement.text(Object.keys(gameData["music"][3])[0]);
     }
 
     // Loads the next track in game_data.json and writes the new index to sessionStorage
@@ -391,9 +390,10 @@ $(document).ready(function() {
     setDefaultDifficulty();
     setInitialMusicVol();
     setInitialSoundFXVol();
-    loadInitialTrack(gameData);
-
-
+    setTimeout(function() {
+        loadInitialTrack(gameData);
+    }, 500);
+    
     $("#sound-info-modal").on('hidden.bs.modal', function(){
         let checkedValue = document.getElementById("show-or-hide-sound-info-modal").checked;
         localStorage.setItem("checkBoxValue", checkedValue);
