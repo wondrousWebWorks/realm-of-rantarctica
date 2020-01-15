@@ -2,7 +2,7 @@ let gameData = [];
 let playerShuffledDeck = [];
 let aiShuffledDeck = [];
 
-let musicElement = document.getElementById("music");
+let musicElement = $( "#music" );
 let currentMusicVolElement = $( "#current-music-vol" );
 let currentlyPlayingTrackElement = $( "#currently-loaded-track" );
 
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     // Fetches game data from json file and takes a callback to do something with retrieved data
     function getGameData() {
-        fetch("data/gameData.json")
+        fetch("assets/data/gameData.json")
             .then(response => {
                 return response.json();
             })
