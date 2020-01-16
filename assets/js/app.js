@@ -241,7 +241,6 @@ $(document).ready(function() {
                 
                 displayCardCountValues();
     
-                let soundFXElement = document.getElementById("sound-fx");
                 soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_male_voice_processed_says_you_win_001_21572.mp3");
                 soundFXElement.play();
             } else if (selectedAttributeValue === selectedAttributeAIValue) {
@@ -254,7 +253,6 @@ $(document).ready(function() {
                 
                 displayCardCountValues();
     
-                let soundFXElement = document.getElementById("sound-fx");
                 soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_male_voice_processed_says_you_lose_21571.mp3");
                 soundFXElement.play();
             }
