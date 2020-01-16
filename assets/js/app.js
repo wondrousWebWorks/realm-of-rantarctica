@@ -448,7 +448,7 @@ $(document).ready(function() {
     // Sets the chosen background for the Battle Screen when clicked, launches Battle Screen and plays sound
     $( ".card ").click(function() {
         soundFXElement.attr("src", gameData["sounds"]["Sword Swing"]);
-        soundFXElement.play();
+        soundFXElement[0].play();
         setChosenBattleBackground($(this));
         loadBattleScreen();    
     });
@@ -456,13 +456,13 @@ $(document).ready(function() {
     // Plays a sword swish sound on mouseenter of .card
     $( ".card img ").mouseenter(function() {
         soundFXElement.attr("src", gameData["sounds"]["Click Pop Low"]);
-        soundFXElement.play();
+        soundFXElement[0].play();
     });
 
     // Sets a random background for the Battle Screen when clicked and launches Battle Screen
     $( ".random-level-btn" ).click(() => {
-        soundFXElement.attr("src", "assets/audio/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_003_43812.mp3");
-        soundFXElement.play();
+        soundFXElement.attr("src", gameData["sounds"]["Sword Swing"]);
+        soundFXElement[0].play();
         setRandomBattleBackground();
         loadBattleScreen();
     });
