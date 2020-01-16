@@ -282,13 +282,13 @@ $(document).ready(function() {
 
     // Sets the initial volume for the #music audio component at 50%
     function setInitialMusicVol() {
-        musicElement.volume = 0.5;
+        musicElement[0].volume = 0.5;
         currentMusicVolElement.text("50");
     }
 
     // Sets the initial volume for the #sound-fx element to 20% on page load
     function setInitialSoundFXVol() {        
-        soundFXElement.volume = 0.2; 
+        soundFXElement[0].volume = 0.2; 
         currentSoundFXVolElement.text("20");
     }
 
@@ -304,13 +304,13 @@ $(document).ready(function() {
 
     // Sets the volume for the #music audio element based on the #music-vol-control ranged input
     function setMusicVolume() {
-        musicElement.volume = $(this)[0].valueAsNumber / 100; 
+        musicElement[0].volume = $(this)[0].valueAsNumber / 100; 
         currentMusicVolElement.text($(this)[0].valueAsNumber);
     }
 
     // Sets the volume for the #msound-fx audio element based on the #sound-fx-vol-control ranged input
     function setSoundFXVolume() {
-        soundFXElement.volume = $(this)[0].valueAsNumber / 100; 
+        soundFXElement[0].volume = $(this)[0].valueAsNumber / 100; 
         currentSoundFXVolElement.text($(this)[0].valueAsNumber);
     }
 
