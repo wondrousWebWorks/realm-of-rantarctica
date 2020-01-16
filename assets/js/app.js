@@ -297,12 +297,12 @@ $(document).ready(function() {
 
     // Plays the currently loaded track on #play-track icon click
     function playMusic() {
-        musicElement.play();
+        musicElement[0].play();
     }
 
     // Pauses the track currently playing in #music audio element
     function pauseMusic() {
-        musicElement.pause();
+        musicElement[0].pause();
     }
 
     // Sets the volume for the #music audio element based on the #music-vol-control ranged input
