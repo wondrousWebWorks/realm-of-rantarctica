@@ -885,10 +885,6 @@ input[type=checkbox] {
     transform: scaleX(-1);
 }
 
-#ai-sprite-name {
-    transform: scaleX(-1);
-}
-
 #player-sprite-name, #ai-sprite-name {
     position: absolute;
     bottom: 0;
@@ -899,6 +895,11 @@ input[type=checkbox] {
     font-weight: bold;
     font-size: 2.5rem;
     text-shadow: 2px 2px #003049;
+}
+
+#ai-sprite-name {
+    transform: scaleX(-1);
+    color: #80D2FF;
 }
 
 #battle-info-and-timer-container {
