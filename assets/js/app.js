@@ -312,7 +312,6 @@ $(document).ready(function() {
 
     // Sets the volume for the #msound-fx audio element based on the #sound-fx-vol-control ranged input
     function setSoundFXVolume() {
-        let soundFXElement = document.getElementById("sound-fx");
         soundFXElement.volume = $(this)[0].valueAsNumber / 100; 
         currentSoundFXVolElement.innerText = $(this)[0].valueAsNumber;
     }
@@ -454,7 +453,6 @@ $(document).ready(function() {
 
     // Sets the chosen background for the Battle Screen when clicked, launches Battle Screen and plays sound
     $( ".card ").click(function() {
-        let soundFXElement = document.getElementById("sound-fx");
         soundFXElement.setAttribute("src", "assets/audio/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_003_43812.mp3");
         soundFXElement.play();
         setChosenBattleBackground($(this));
@@ -463,14 +461,12 @@ $(document).ready(function() {
 
     // Plays a sword swish sound on mouseenter of .card
     $( ".card img ").mouseenter(function() {
-        let soundFXElement = document.getElementById("sound-fx");
         soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_game_sound_single_short_generic_click_pop_001_38516.mp3");
         soundFXElement.play();
     });
 
     // Sets a random background for the Battle Screen when clicked and launches Battle Screen
     $( ".random-level-btn" ).click(() => {
-        let soundFXElement = document.getElementById("sound-fx");
         soundFXElement.setAttribute("src", "assets/audio/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_003_43812.mp3");
         soundFXElement.play();
         setRandomBattleBackground();
