@@ -318,7 +318,7 @@ $(document).ready(function() {
 
     // Loads the first track in game_data.json on page load and writes the index to sessionStorage
     function loadInitialTrack(gameData) {
-        musicElement.setAttribute("src", Object.values(gameData["music"][3])[0]);
+        musicElement.attr("src", Object.values(gameData["music"][3])[0]);
         sessionStorage.setItem("currentTrack", 3);
         currentlyPlayingTrackElement.text(Object.keys(gameData["music"][3])[0]);
     }
@@ -331,11 +331,11 @@ $(document).ready(function() {
     
         if (currentIndex < (gameData["music"].length - 1)) {
             let newIndex = currentIndex + 1;
-            musicElement.setAttribute("src", Object.values(gameData["music"][newIndex])[0]);
+            musicElement.aatr("src", Object.values(gameData["music"][newIndex])[0]);
             sessionStorage.setItem("currentTrack", newIndex);
             currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][newIndex])[0];
         } else {
-            musicElement.setAttribute("src", Object.values(gameData["music"][0])[0]);
+            musicElement.attr("src", Object.values(gameData["music"][0])[0]);
             sessionStorage.setItem("currentTrack", 0);
             currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][0])[0];
         }
@@ -351,11 +351,11 @@ $(document).ready(function() {
     
         if (currentIndex >= 1) {
             let newIndex = currentIndex - 1;
-            musicElement.setAttribute("src", Object.values(gameData["music"][newIndex])[0]);
+            musicElement.attr("src", Object.values(gameData["music"][newIndex])[0]);
             sessionStorage.setItem("currentTrack", newIndex);
             currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][newIndex])[0];
         } else {
-            musicElement.setAttribute("src", Object.values(gameData["music"][(gameData["music"].length - 1)])[0]);
+            musicElement.attr("src", Object.values(gameData["music"][(gameData["music"].length - 1)])[0]);
             sessionStorage.setItem("currentTrack", gameData["music"].length - 1);
             currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][(gameData["music"].length - 1)])[0];
         }
