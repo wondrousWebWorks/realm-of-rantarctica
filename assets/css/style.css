@@ -132,6 +132,7 @@ body {
     padding: 5px 15px;
     border: none;
     border-radius: 8px;
+    text-decoration: none;
     transition: transform .5s ease-in-out;
 }
 
