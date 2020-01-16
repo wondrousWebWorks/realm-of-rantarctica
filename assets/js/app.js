@@ -4,6 +4,7 @@ let aiShuffledDeck = [];
 
 let musicElement = $( "#music" );
 let currentMusicVolElement = $( "#current-music-vol" );
+let soundFXElement = $( "#sound-fx" );
 let currentSoundFXVolElement = $( "#current-sound-fx-vol" );
 let currentlyPlayingTrackElement = $( "#currently-loaded-track" );
 
@@ -288,9 +289,7 @@ $(document).ready(function() {
     }
 
     // Sets the initial volume for the #sound-fx element to 20% on page load
-    function setInitialSoundFXVol() {
-        let soundFXElement = document.getElementById("sound-fx");
-        
+    function setInitialSoundFXVol() {        
         soundFXElement.volume = 0.2; 
         currentSoundFXVolElement.innerText = "20";
     }
