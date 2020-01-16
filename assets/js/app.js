@@ -357,6 +357,11 @@ $(document).ready(function() {
         musicElement[0].play();
     }
 
+    function playSoundEffect(path) {
+        soundFXElement.attr("src", path);
+        soundFXElement[0].play();
+    }
+
     // Plays button-click animation on click of target
     function toggleButtonPressAnimation(target) {
         target.addClass("button-click");
@@ -447,22 +452,19 @@ $(document).ready(function() {
 
     // Sets the chosen background for the Battle Screen when clicked, launches Battle Screen and plays sound
     $( ".card ").click(function() {
-        soundFXElement.attr("src", gameData["sounds"]["Sword Swing"]);
-        soundFXElement[0].play();
+        playSoundEffect(gameData["sounds"]["Sword Swing"]);
         setChosenBattleBackground($(this));
         loadBattleScreen();    
     });
 
     // Plays a sword swish sound on mouseenter of .card
     $( ".card img ").mouseenter(function() {
-        soundFXElement.attr("src", gameData["sounds"]["Click Pop Low"]);
-        soundFXElement[0].play();
+       playSoundEffect(gameData["sounds"]["Click Pop Low"]);
     });
 
     // Sets a random background for the Battle Screen when clicked and launches Battle Screen
     $( ".random-level-btn" ).click(() => {
-        soundFXElement.attr("src", gameData["sounds"]["Sword Swing"]);
-        soundFXElement[0].play();
+        playSoundEffect(gameData["sounds"]["Sword Swing"]);
         setRandomBattleBackground();
         loadBattleScreen();
     });
