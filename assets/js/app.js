@@ -2,9 +2,9 @@ let gameData = [];
 let playerShuffledDeck = [];
 let aiShuffledDeck = [];
 
-let musicElement = $( "#music" );
+const musicElement = $( "#music" );
 let currentMusicVolElement = $( "#current-music-vol" );
-let soundFXElement = $( "#sound-fx" );
+const soundFXElement = $( "#sound-fx" );
 let currentSoundFXVolElement = $( "#current-sound-fx-vol" );
 let currentlyPlayingTrackElement = $( "#currently-loaded-track" );
 
@@ -291,7 +291,7 @@ $(document).ready(function() {
     // Sets the initial volume for the #sound-fx element to 20% on page load
     function setInitialSoundFXVol() {        
         soundFXElement.volume = 0.2; 
-        currentSoundFXVolElement.innerText = "20";
+        currentSoundFXVolElement.text("20");
     }
 
     // Plays the currently loaded track on #play-track icon click
@@ -313,7 +313,7 @@ $(document).ready(function() {
     // Sets the volume for the #msound-fx audio element based on the #sound-fx-vol-control ranged input
     function setSoundFXVolume() {
         soundFXElement.volume = $(this)[0].valueAsNumber / 100; 
-        currentSoundFXVolElement.innerText = $(this)[0].valueAsNumber;
+        currentSoundFXVolElement.text($(this)[0].valueAsNumber);
     }
 
     // Loads the first track in game_data.json on page load and writes the index to sessionStorage
