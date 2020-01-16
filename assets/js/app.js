@@ -327,7 +327,6 @@ $(document).ready(function() {
     function loadNextTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
         let musicElement = document.getElementById("music");
-        let currentlyPlayingTrackElement = document.getElementById("currently-loaded-track");
     
         if (currentIndex < (gameData["music"].length - 1)) {
             let newIndex = currentIndex + 1;
@@ -347,7 +346,6 @@ $(document).ready(function() {
     function loadPreviousTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
         let musicElement = document.getElementById("music");
-        let currentlyPlayingTrackElement = document.getElementById("currently-loaded-track");
     
         if (currentIndex >= 1) {
             let newIndex = currentIndex - 1;
