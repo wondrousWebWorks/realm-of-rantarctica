@@ -332,11 +332,11 @@ $(document).ready(function() {
             let newIndex = currentIndex + 1;
             musicElement.aatr("src", Object.values(gameData["music"][newIndex])[0]);
             sessionStorage.setItem("currentTrack", newIndex);
-            currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][newIndex])[0];
+            currentlyPlayingTrackElement.text(Object.keys(gameData["music"][newIndex])[0]);
         } else {
             musicElement.attr("src", Object.values(gameData["music"][0])[0]);
             sessionStorage.setItem("currentTrack", 0);
-            currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][0])[0];
+            currentlyPlayingTrackElement.text(Object.keys(gameData["music"][0])[0]);
         }
     
         musicElement.play();
@@ -351,11 +351,11 @@ $(document).ready(function() {
             let newIndex = currentIndex - 1;
             musicElement.attr("src", Object.values(gameData["music"][newIndex])[0]);
             sessionStorage.setItem("currentTrack", newIndex);
-            currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][newIndex])[0];
+            currentlyPlayingTrackElement.text(Object.keys(gameData["music"][newIndex])[0]);
         } else {
             musicElement.attr("src", Object.values(gameData["music"][(gameData["music"].length - 1)])[0]);
             sessionStorage.setItem("currentTrack", gameData["music"].length - 1);
-            currentlyPlayingTrackElement.innerText = Object.keys(gameData["music"][(gameData["music"].length - 1)])[0];
+            currentlyPlayingTrackElement.text(Object.keys(gameData["music"][(gameData["music"].length - 1)])[0]);
         }
     
         musicElement.play();
