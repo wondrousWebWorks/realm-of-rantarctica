@@ -324,11 +324,10 @@ $(document).ready(function() {
     // Loads the next track in game_data.json and writes the new index to sessionStorage
     function loadNextTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
-        let musicElement = document.getElementById("music");
     
         if (currentIndex < (gameData["music"].length - 1)) {
             let newIndex = currentIndex + 1;
-            musicElement.aatr("src", Object.values(gameData["music"][newIndex])[0]);
+            musicElement.attr("src", Object.values(gameData["music"][newIndex])[0]);
             sessionStorage.setItem("currentTrack", newIndex);
             currentlyPlayingTrackElement.text(Object.keys(gameData["music"][newIndex])[0]);
         } else {
@@ -337,13 +336,12 @@ $(document).ready(function() {
             currentlyPlayingTrackElement.text(Object.keys(gameData["music"][0])[0]);
         }
     
-        musicElement.play();
+        musicElement[0].play();
     }
     // Loads the previous track in game_data.json and writes the new index to sessionStorage
     
     function loadPreviousTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
-        let musicElement = document.getElementById("music");
     
         if (currentIndex >= 1) {
             let newIndex = currentIndex - 1;
@@ -356,7 +354,7 @@ $(document).ready(function() {
             currentlyPlayingTrackElement.text(Object.keys(gameData["music"][(gameData["music"].length - 1)])[0]);
         }
     
-        musicElement.play();
+        musicElement[0].play();
     }
 
     // Plays button-click animation on click of target
