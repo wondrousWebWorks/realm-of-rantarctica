@@ -215,24 +215,18 @@ $(document).ready(function() {
     // player and AI values, adjusts decks based on outcome, display round
     // result and plays and appropriate audio file
     function cardValueClickEvent(e) {
+        writeValuesToCard(aiShuffledDeck, "ai");
+        displaySpriteAndCharacterName(aiShuffledDeck, "ai");
+        const selectedAttributeClass = e.currentTarget.classList[1];
+        const selectedAttributeValue = e.currentTarget.lastElementChild.innerText;
+
         setTimeout(function() {
-            let selectedAttributeName = e.currentTarget.children[0].innerText;
-            let selectedAttributeValue = e.currentTarget.children[1].innerText;
-            let selectedAttributeAIValue = Object.values(aiShuffledDeck[0])[0][0][selectedAttributeName];
+            const targetAIAttribute = $( `#ai-attributes .${selectedAttributeClass}`  );
+            const selectedAttributeAIValue = targetAIAttribute[0].lastElementChild.innerText;
     
             console.log(selectedAttributeValue);
             console.log(selectedAttributeAIValue);
-        }, 500);
-        let selectedAttributeName = e.currentTarget.children[0].innerText;
-        let selectedAttributeValue = e.currentTarget.children[1].innerText;
-        let selectedAttributeAIValue = Object.values(aiShuffledDeck[0])[0][0][selectedAttributeName];
 
-        console.log(selectedAttributeValue);
-        console.log(selectedAttributeAIValue);
-        writeValuesToCard(aiShuffledDeck, "ai");
-        displaySpriteAndCharacterName(aiShuffledDeck, "ai");
-
-        setTimeout(function() {
             if (selectedAttributeValue > selectedAttributeAIValue) {
                 displayBattleInfo("YOU WIN!");
     
@@ -241,8 +235,7 @@ $(document).ready(function() {
                 
                 displayCardCountValues();
     
-                soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_male_voice_processed_says_you_win_001_21572.mp3");
-                soundFXElement.play();
+                playSoundEffect(gameData["sounds"]["You Win"]);
             } else if (selectedAttributeValue === selectedAttributeAIValue) {
                 displayBattleInfo("DRAW!");
             } else if (selectedAttributeValue < selectedAttributeAIValue) {
@@ -253,11 +246,9 @@ $(document).ready(function() {
                 
                 displayCardCountValues();
     
-                soundFXElement.setAttribute("src", "assets/audio/zapsplat_multimedia_male_voice_processed_says_you_lose_21571.mp3");
-                soundFXElement.play();
+                playSoundEffect(gameData["sounds"]["You Lose"]);
             }
-        }, 1000);
-       
+        }, 550);       
     }
 
     // Handles the main battle logic
