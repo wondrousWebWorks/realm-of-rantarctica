@@ -208,10 +208,10 @@ $(document).ready(function() {
         setTimeout(function() {
             displayCardCountValues()
 
-            writeValuesToCard(playerShuffledDeck, "player");
+            writeValuesToCard(playerShuffledDeck, "player", currentPlayerCardIndex);
             writeHiddenAIValuesToCard();
 
-            displaySpriteAndCharacterName(playerShuffledDeck, "player");
+            displaySpriteAndCharacterName(playerShuffledDeck, "player", currentPlayerCardIndex);
             displayHiddenAISpriteAndName();
         }, 1000);
     }
@@ -220,7 +220,7 @@ $(document).ready(function() {
     // player and AI values, adjusts decks based on outcome, display round
     // result and plays and appropriate audio file
     function cardValueClickEvent(e) {
-        writeValuesToCard(aiShuffledDeck, "ai");
+        writeValuesToCard(aiShuffledDeck, "ai", currentAICardIndex);
         displaySpriteAndCharacterName(aiShuffledDeck, "ai");
         const selectedAttributeClass = e.currentTarget.classList[1];
         const selectedAttributeValue = e.currentTarget.lastElementChild.innerText;
@@ -228,9 +228,6 @@ $(document).ready(function() {
         setTimeout(function() {
             const targetAIAttribute = $( `#ai-attributes .${selectedAttributeClass}`  );
             const selectedAttributeAIValue = targetAIAttribute[0].lastElementChild.innerText;
-    
-            console.log(selectedAttributeValue);
-            console.log(selectedAttributeAIValue);
 
             if (selectedAttributeValue > selectedAttributeAIValue) {
                 displayBattleInfo("YOU WIN!");
