@@ -1,6 +1,8 @@
 let gameData = [];
 let playerShuffledDeck = [];
 let aiShuffledDeck = [];
+let currentPlayerCardIndex = 0;
+let currentAICardIndex = 0;
 
 const musicElement = $( "#music" );
 const currentMusicVolElement = $( "#current-music-vol" );
@@ -79,13 +81,13 @@ $(document).ready(function() {
 
         let windowDimension = getWindowDimensions();
 
-        if (windowDimension[0] <= 576) {
-            $( "#player-attributes-col" ).removeClass("col-4");
-            $( "#player-attributes-col" ).addClass("col-12");
+        // if (windowDimension[0] <= 576) {
+        //     $( "#player-attributes-col" ).removeClass("col-4");
+        //     $( "#player-attributes-col" ).addClass("col-12");
 
-            $( "#card-count-col" ).removeClass("col-4");
-            $( "#card-count-col" ).addClass("col-12");
-        }
+        //     $( "#card-count-col" ).removeClass("col-4");
+        //     $( "#card-count-col" ).addClass("col-12");
+        // }
         battle();
     }
 
