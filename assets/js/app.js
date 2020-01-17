@@ -9,6 +9,8 @@ const currentMusicVolElement = $( "#current-music-vol" );
 const soundFXElement = $( "#sound-fx" );
 const currentSoundFXVolElement = $( "#current-sound-fx-vol" );
 const currentlyPlayingTrackElement = $( "#currently-loaded-track" );
+const aiValueElements = $( ".ai-attribute-value" );
+const combinedAIAndPlayerValueElements = $( ".ai-attribute-value-combined-display" );
 
 $(document).ready(function() {
     // Gets window dimensions and return as an array [width, length]
@@ -119,9 +121,8 @@ $(document).ready(function() {
     }
 
     function writeHiddenAIValuesToCard() {
-        let aiValueElements = document.getElementsByClassName("ai-attribute-value");
-
         for (let i = 0; i < aiValueElements.length; i ++ ) {
+            combinedAIAndPlayerValueElements[i].innerText = "?";
             aiValueElements[i].innerText = "?";
         }
     }
