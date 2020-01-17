@@ -3,10 +3,10 @@ let playerShuffledDeck = [];
 let aiShuffledDeck = [];
 
 const musicElement = $( "#music" );
-let currentMusicVolElement = $( "#current-music-vol" );
+const currentMusicVolElement = $( "#current-music-vol" );
 const soundFXElement = $( "#sound-fx" );
-let currentSoundFXVolElement = $( "#current-sound-fx-vol" );
-let currentlyPlayingTrackElement = $( "#currently-loaded-track" );
+const currentSoundFXVolElement = $( "#current-sound-fx-vol" );
+const currentlyPlayingTrackElement = $( "#currently-loaded-track" );
 
 $(document).ready(function() {
     // Gets window dimensions and return as an array [width, length]
