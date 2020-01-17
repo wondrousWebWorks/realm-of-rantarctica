@@ -10,6 +10,7 @@ const soundFXElement = $( "#sound-fx" );
 const currentSoundFXVolElement = $( "#current-sound-fx-vol" );
 const currentlyPlayingTrackElement = $( "#currently-loaded-track" );
 const aiValueElements = $( ".ai-attribute-value" );
+const playerValueElements = $( ".player-attribute-value" );
 const combinedAIAndPlayerValueElements = $( ".ai-attribute-value-combined-display" );
 
 $(document).ready(function() {
@@ -108,15 +109,16 @@ $(document).ready(function() {
     }
 
     // Fetches elements for PLAYER or AI, and sets the attribute values for the appropriate player
-    function writeValuesToCard(deck, playerOrAI) {
-        let elementstoWriteValuesTo = document.getElementsByClassName(`${playerOrAI}-attribute-value`);
-    
-        let firstCharacter = Object.values(deck[0]);
-
-        let shuffledCardValues = Object.values(firstCharacter[0][0]);
+    function writeValuesToCard(deck, playerOrAI, currentIndex) {
+        let cardValues = Object.values(Object.values(deck[currentIndex])[0][0]);
         
-        for (let i = 0; i < elementstoWriteValuesTo.length; i ++ ) {
-            elementstoWriteValuesTo[i].innerText = shuffledCardValues[i];
+        for (let i = 0; i < playerValueElements.length; i ++ ) {
+            if (playerOrAI === "ai") {
+                combinedAIAndPlayerValueElements[i].innerText = cardValues[i];
+                aiValueElements[i].innerText = cardValues[i];
+            } else if (playerOrAI === "player") {
+                playerValueElements[i].innerText = cardValues[i];
+            }
         }
     }
 
