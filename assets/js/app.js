@@ -222,37 +222,78 @@ $(document).ready(function() {
     // result and plays and appropriate audio file
     function cardValueClickEvent(e) {
         writeValuesToCard(aiShuffledDeck, "ai", currentAICardIndex);
-        displaySpriteAndCharacterName(aiShuffledDeck, "ai");
+        displaySpriteAndCharacterName(aiShuffledDeck, "ai", currentAICardIndex);
+      
         const selectedAttributeClass = e.currentTarget.classList[1];
-        const selectedAttributeValue = e.currentTarget.lastElementChild.innerText;
-
-        setTimeout(function() {
-            const targetAIAttribute = $( `#ai-attributes .${selectedAttributeClass}`  );
-            const selectedAttributeAIValue = targetAIAttribute[0].lastElementChild.innerText;
-
-            if (selectedAttributeValue > selectedAttributeAIValue) {
+        const selectedAttributeValue = parseInt(e.currentTarget.lastElementChild.innerText);
+        const targetAIAttribute = $( `#ai-attributes .${selectedAttributeClass}` );
+        const selectedAttributeAIValue = parseInt(targetAIAttribute[0].lastElementChild.innerText);
+      
+        if (selectedAttributeValue > selectedAttributeAIValue) {
+      
+            if (aiShuffledDeck.length > 1) {
                 displayBattleInfo("YOU WIN!");
-    
-                let prize = aiShuffledDeck.shift();
-                playerShuffledDeck.push(prize);
+                let prize = aiShuffledDeck.splice(currentAICardIndex, 1);
+                playerShuffledDeck = playerShuffledDeck.concat(prize);
                 
-                displayCardCountValues();
-    
                 playSoundEffect(gameData["sounds"]["You Win"]);
-            } else if (selectedAttributeValue === selectedAttributeAIValue) {
-                displayBattleInfo("DRAW!");
-            } else if (selectedAttributeValue < selectedAttributeAIValue) {
-                displayBattleInfo("YOU LOSE!");
-    
-                let prize = playerShuffledDeck.shift();
-                aiShuffledDeck.push(prize);
+      
+                currentPlayerCardIndex += 1;
                 
-                displayCardCountValues();
-    
-                playSoundEffect(gameData["sounds"]["You Lose"]);
+                if (currentAICardIndex >= aiShuffledDeck.length - 1) {
+                    currentAICardIndex = 0;
+                } 
+      
+                setTimeout(function() {
+                    loadRoundContent();
+                }, 2000);
+            } else {
+                alert("You Win!");
             }
-        }, 550);       
-    }
+            
+        } else if (selectedAttributeValue === selectedAttributeAIValue) {
+            displayBattleInfo("DRAW!");
+      
+            if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
+                currentPlayerCardIndex = 0;
+            } else {
+                currentPlayerCardIndex += 1;
+            }
+      
+            if (currentAICardIndex >= aiShuffledDeck.length - 1) {
+                currentAICardIndex = 0;
+            } else {
+                currentAICardIndex += 1;
+            }
+      
+            setTimeout(function() {
+                loadRoundContent();
+            }, 2000);
+      
+        } else {
+      
+            if (playerShuffledDeck.length > 1) {
+                displayBattleInfo("YOU LOSE!");
+      
+                let prize = playerShuffledDeck.splice(currentPlayerCardIndex, 1);
+                aiShuffledDeck = aiShuffledDeck.concat(prize);
+                
+                playSoundEffect(gameData["sounds"]["You Lose"]);
+                
+                if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
+                    currentPlayerCardIndex = 0;
+                } 
+      
+                currentAICardIndex += 1;
+      
+                setTimeout(function() {
+                    loadRoundContent();
+                }, 2000);
+            } else {
+                alert("You Lose!!!");
+            }   
+        }
+      }
 
     // Handles the main battle logic
     function battle() {
