@@ -135,7 +135,7 @@ $(document).ready(function() {
 
         let urlPrecursor = Object.values(firstCharacter[0]);
 
-        let url = urlPrecursor[1]
+        let url = urlPrecursor[1];
 
         $( `#${playerOrAI}-sprite-name` ).text(Object.keys(deck[0]));
         $( `#${playerOrAI}-sprite` ).attr("src", url);
@@ -204,7 +204,7 @@ $(document).ready(function() {
     }
 
     // Loads all content for first round, except background which is handled elsewhere
-    function loadFirstRoundContent() {
+    function loadRoundContent() {
         setTimeout(function() {
             displayCardCountValues()
 
@@ -213,6 +213,7 @@ $(document).ready(function() {
 
             displaySpriteAndCharacterName(playerShuffledDeck, "player", currentPlayerCardIndex);
             displayHiddenAISpriteAndName();
+            displayBattleInfo("FIGHT!");
         }, 1000);
     }
 
@@ -256,7 +257,7 @@ $(document).ready(function() {
     // Handles the main battle logic
     function battle() {
         writeShuffledDecksToExternalVariables(gameData);
-        loadFirstRoundContent();
+        loadRoundContent();
 
         $( ".player-attribute" ).click((e) => {
             cardValueClickEvent(e)
