@@ -130,14 +130,14 @@ $(document).ready(function() {
     }
 
     // Displays either PLAYER or AI sprite and character name
-    function displaySpriteAndCharacterName(deck, playerOrAI) {
-        let firstCharacter = Object.values(deck[0]);
-
-        let urlPrecursor = Object.values(firstCharacter[0]);
-
-        let url = urlPrecursor[1];
-
-        $( `#${playerOrAI}-sprite-name` ).text(Object.keys(deck[0]));
+    function displaySpriteAndCharacterName(deck, playerOrAI, currentIndex) {
+        let currentCharacter = Object.values(deck[currentIndex]);
+  
+        let urlPrecursor = Object.values(currentCharacter[0]);
+  
+        let url = urlPrecursor[1]
+  
+        $( `#${playerOrAI}-sprite-name` ).text(Object.keys(deck[currentIndex]));
         $( `#${playerOrAI}-sprite` ).attr("src", url);
     }
 
