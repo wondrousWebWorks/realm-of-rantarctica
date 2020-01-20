@@ -860,6 +860,17 @@ input[type=checkbox] {
     color: #FCBF49;
 }
 
+.combined-player-and-ai-attributes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ai-attribute-value-combined-display {
+    color: #80D2FF;
+}
+
 #card-count {
     position: relative;
     top: 50%;
@@ -999,7 +1010,7 @@ input[type=checkbox] {
         margin: 0;
         padding: 0;
         height: 60%;
-    }
+    } 
 
     #ai-attributes-col {
         display: none;
