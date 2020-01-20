@@ -920,7 +920,7 @@ input[type=checkbox] {
 #battle-info-and-timer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%;
 }
@@ -1031,4 +1031,7 @@ input[type=checkbox] {
 /********************** Post Battle Screen **************************/
 #post-battle-page {
     display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
