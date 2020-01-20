@@ -1023,4 +1023,8 @@ input[type=checkbox] {
     .battle-screen-bottom-row {
         width: 100%;
     }
+
+    .ai-attribute-value-combined-display {
+        padding-right: 20px;
+    }
 }
