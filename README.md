@@ -177,5 +177,5 @@ Realm of Rantarctica was developed in Visual Studio Code, while git and GitHub w
 ## Credits
 * Royalty free music from <a href="https://www.fesliyanstudios.com" target="_blank">Fesliyan Studios</a>
 * Code snippets for styling ranged inputs adapted from <a href="https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html" target="_blank">BrennaOBrien</a>
-* Question Mark png taken from <a href="https://pngtree.com/" target="_blank">PNGTREE</a>
+* Question Mark, Crown and tombstone PNGs taken from <a href="https://pngtree.com/" target="_blank">PNGTREE</a>
 * Sound Effect mp3 files taken from <a href="https://www.zapsplat.com//" target="_blank">ZAPSPLAT</a>
