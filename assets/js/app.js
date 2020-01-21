@@ -339,6 +339,24 @@ $(document).ready(function() {
             cardValueClickEvent(e)
         });
     }
+
+    function loadPostBattleScreen(result) {
+        $( "#battle-page" ).hide();
+        $( "#post-battle-page" ).show(); 
+
+        playerShuffledDeck = [];
+        aiShuffledDeck = [];
+        
+        if (result === "won") {
+            $( "#post-battle-result" ).text("VICTORY!!!");
+            $( "#post-battle-win-message" ).show();
+            $( "#post-battle-win-image" ).show();
+        } else if (result === "lost") {
+            $( "#post-battle-result" ).text("DEFEAT!!!");
+            $( "#post-battle-lose-message" ).show();
+            $( "#post-battle-lose-image" ).show();
+        }
+    }
   
     // Saves the default difficulty of EASY in session storage
     function setDefaultDifficulty() {
