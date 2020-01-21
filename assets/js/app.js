@@ -362,7 +362,9 @@ $(document).ready(function() {
         }
     }
   
-    // Saves the default difficulty of EASY in session storage
+    /**
+     * Sets the default difficulty
+     */
     function setDefaultDifficulty() {
         sessionStorage.setItem("difficulty", "EASY");
     }
