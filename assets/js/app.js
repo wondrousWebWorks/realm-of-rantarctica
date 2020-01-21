@@ -14,12 +14,10 @@ const playerValueElements = $( ".player-attribute-value" );
 const combinedAIAndPlayerValueElements = $( ".ai-attribute-value-combined-display" );
 
 $(document).ready(function() {
-    // Gets window dimensions and return as an array [width, length]
-    function getWindowDimensions() {
-        return [$(window).width(), $(window).height()];
-    }
 
-    // Fetches game data from json file and takes a callback to do something with retrieved data
+    /**
+     * Fetches game data from json file and writes response to global variable
+     */
     function getGameData() {
         fetch("assets/data/gameData.json")
             .then(response => {
@@ -34,7 +32,9 @@ $(document).ready(function() {
             });
     }
 
-    // Hides Landing Page and shows Level Select Page without any Level Select Cards
+    /**
+     * Hides Landing Page and shows Level Select Page
+     */
     function loadLevelSelectScreen() {
         $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/bg-4_ox6ev7.png')");
         $( "#landing-page" ).hide();
@@ -43,7 +43,10 @@ $(document).ready(function() {
         $( "#level-select-page" ).css("display", "flex"); 
     }
 
-    // Loads the correct number of Level Select cards based on screen size - gets called as a callback in getData()
+    /**
+     * Loads Level Select cards
+     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     */
     function loadLevelSelectCards(gameData) {
 
         for (let i = 1; i <= gameData["md-backgrounds"].length; i++) {
@@ -53,9 +56,12 @@ $(document).ready(function() {
         }    
     }
 
-    // Sets the user's chosen background for the Battle screen
-    function setChosenBattleBackground($element) {
-        let chosenBattleGround = $element[0].attributes.name.value;
+    /**
+     * Sets the user's chosen background
+     * @param {jQuery} element 
+     */
+    function setChosenBattleBackground(element) {
+        let chosenBattleGround = element[0].attributes.name.value;
 
         for (i = 0; i < 12; i++) {
             if(chosenBattleGround == Object.keys(gameData["lg-backgrounds"][i])) {
@@ -64,37 +70,39 @@ $(document).ready(function() {
         }
     }
 
-    // Generates a random integer between 1 and 12 to select a random level to be loaded if the user chooses the Random Level option
+    /**
+     * Generates a random integer value between max and min values
+     * @param {number} min 
+     * @param {number} max 
+     */
     function generateRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min) ) + min;
     }
 
-    // Sets a random background for the Battle screen
+    /**
+     * Sets a random background for the Battle screen
+     */
     function setRandomBattleBackground() {
-        let randomLevelInt = generateRandomInt(0, 11);
+        let randomLevelInt = generateRandomInt(0, 15);
 
         $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][randomLevelInt])})`);
     }
 
-    // Loads the Battle Screen and related Battle logic
+    /**
+     * Loads the Battle Screen
+     */
     function loadBattleScreen() {
         $( "#level-select-page" ).hide();
         $( "#battle-page" ).show();  
         $( "#battle-page" ).toggleClass("set-flex-display-column"); 
 
-        let windowDimension = getWindowDimensions();
-
-        // if (windowDimension[0] <= 576) {
-        //     $( "#player-attributes-col" ).removeClass("col-4");
-        //     $( "#player-attributes-col" ).addClass("col-12");
-
-        //     $( "#card-count-col" ).removeClass("col-4");
-        //     $( "#card-count-col" ).addClass("col-12");
-        // }
         battle();
     }
 
-    // Shuffle a card deck using the Fisher-Yates (aka Knuth) Shuffle
+    /**
+     * Shuffle a card deck using the Fisher-Yates (aka Knuth) Shuffle
+     * @param {Array} cardArray 
+     */
     function shuffleCards(cardArray) {
         let currentIndex = cardArray.length, temporaryValue, randomIndex;
         
@@ -108,7 +116,12 @@ $(document).ready(function() {
         }
     }
 
-    // Fetches elements for PLAYER or AI, and sets the attribute values for the appropriate player
+    /**
+     * Writes attribute values to card for Player or AI
+     * @param {Array} deck 
+     * @param {string} playerOrAI 
+     * @param {number} currentIndex 
+     */
     function writeValuesToCard(deck, playerOrAI, currentIndex) {
         let cardValues = Object.values(Object.values(deck[currentIndex])[0][0]);
         
@@ -122,6 +135,9 @@ $(document).ready(function() {
         }
     }
 
+    /**
+     * Writes placeholder values to AI cards
+     */
     function writeHiddenAIValuesToCard() {
         for (let i = 0; i < aiValueElements.length; i ++ ) {
             combinedAIAndPlayerValueElements[i].innerText = "?";
@@ -129,7 +145,12 @@ $(document).ready(function() {
         }
     }
 
-    // Displays either PLAYER or AI sprite and character name
+    /**
+     * Displays either PLAYER or AI sprite and character name
+     * @param {Object} deck 
+     * @param {string} playerOrAI 
+     * @param {number} currentIndex 
+     */
     function displaySpriteAndCharacterName(deck, playerOrAI, currentIndex) {
         let currentCharacter = Object.values(deck[currentIndex]);
   
@@ -167,18 +188,23 @@ $(document).ready(function() {
         },1000);
     }
 
-    // Displays battle information, such as instructions or feedback after each round
+    /**
+     * Displays battle information
+     * @param {string} info 
+     */
     function displayBattleInfo(info) {
         $( "#battle-info" ).text(info);
     }
 
-    // Writes shuffled decks entries to external variables for further use
+    /**
+     * Shuffles card decks and copies them to external variables
+     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     */
     function writeShuffledDecksToExternalVariables(gameData) {
              
-        playerCards = gameData["characters"].slice();
-        aiCards = gameData["characters"].slice();
+        const playerCards = gameData["characters"].slice();
+        const aiCards = gameData["characters"].slice();
 
-        // Randomize Player and AI decks
         shuffleCards(playerCards);
         shuffleCards(aiCards);
 
@@ -191,19 +217,25 @@ $(document).ready(function() {
         });
     }
 
-    // Displays a question mark as AI sprite and sets the AI character name as UNKNOWN
+    /**
+     * Displays a placeholder sprite and name for AI character
+     */
     function displayHiddenAISpriteAndName() {
         $( `#ai-sprite-name` ).text("Unknown");
         $( "#ai-sprite" ).attr("src", "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png");
     }
 
-    // Displays the player and ai number of cards in its container
+    /**
+     * Displays the number if Player and AI cards
+     */
     function displayCardCountValues() {
         $( ".card-count-player-value" ).text(playerShuffledDeck.length);
         $( ".card-count-ai-value" ).text(aiShuffledDeck.length);
     }
 
-    // Loads all content for first round, except background which is handled elsewhere
+    /**
+     * Loads and displays all info for each round
+     */
     function loadRoundContent() {
         setTimeout(function() {
             displayCardCountValues()
@@ -217,9 +249,10 @@ $(document).ready(function() {
         }, 1000);
     }
 
-    // On click of player attribute, displays AI values and sprite, compares
-    // player and AI values, adjusts decks based on outcome, display round
-    // result and plays and appropriate audio file
+    /**
+     * Displays AI values and sprite, compares player and AI values, adjusts decks based on outcome, display round result and plays and appropriate audio file
+     * @param {Event} e 
+     */
     function cardValueClickEvent(e) {
         writeValuesToCard(aiShuffledDeck, "ai", currentAICardIndex);
         displaySpriteAndCharacterName(aiShuffledDeck, "ai", currentAICardIndex);
@@ -295,7 +328,9 @@ $(document).ready(function() {
         }
       }
 
-    // Handles the main battle logic
+    /**
+     * Sets up decks, loads first round content and listens for click event
+     */
     function battle() {
         writeShuffledDecksToExternalVariables(gameData);
         loadRoundContent();
@@ -304,59 +339,80 @@ $(document).ready(function() {
             cardValueClickEvent(e)
         });
     }
-        
+  
     // Saves the default difficulty of EASY in session storage
     function setDefaultDifficulty() {
         sessionStorage.setItem("difficulty", "EASY");
     }
 
-    // Saves the user's choice of difficulty in session storage
+    /**
+     * Saves the user's choice of difficulty to session storage
+     * @param {string} difficulty 
+     */
     function setSelectedDifficulty(difficulty) {
         sessionStorage.setItem("difficulty", difficulty);
     }
 
-    // Sets the initial volume for the #music audio component at 50%
+    /**
+     * Sets the initial music volume to 50%
+     */
     function setInitialMusicVol() {
         musicElement[0].volume = 0.5;
         currentMusicVolElement.text("50");
     }
 
-    // Sets the initial volume for the #sound-fx element to 20% on page load
+    /**
+     * Sets the initial sound effect volume to 20%
+     */
     function setInitialSoundFXVol() {        
         soundFXElement[0].volume = 0.2; 
         currentSoundFXVolElement.text("20");
     }
 
-    // Plays the currently loaded track on #play-track icon click
+    /**
+     * Plays the currently loaded audio track
+     */
     function playMusic() {
         musicElement[0].play();
     }
 
-    // Pauses the track currently playing in #music audio element
+    /**
+     * Pauses the currently playing audio track
+     */
     function pauseMusic() {
         musicElement[0].pause();
     }
 
-    // Sets the volume for the #music audio element based on the #music-vol-control ranged input
+    /**
+     * Changes music volume on user input
+     */
     function setMusicVolume() {
         musicElement[0].volume = $(this)[0].valueAsNumber / 100; 
         currentMusicVolElement.text($(this)[0].valueAsNumber);
     }
 
-    // Sets the volume for the #msound-fx audio element based on the #sound-fx-vol-control ranged input
+    /**
+     * Changes sound effect volume on user input
+     */
     function setSoundFXVolume() {
         soundFXElement[0].volume = $(this)[0].valueAsNumber / 100; 
         currentSoundFXVolElement.text($(this)[0].valueAsNumber);
     }
 
-    // Loads the first track in game_data.json on page load and writes the index to sessionStorage
+    /**
+     * Loads initial audio track
+     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     */
     function loadInitialTrack(gameData) {
         musicElement.attr("src", Object.values(gameData["music"][3])[0]);
         sessionStorage.setItem("currentTrack", 3);
         currentlyPlayingTrackElement.text(Object.keys(gameData["music"][3])[0]);
     }
 
-    // Loads the next track in game_data.json and writes the new index to sessionStorage
+    /**
+     * Loads next audio track
+     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     */
     function loadNextTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
     
@@ -373,8 +429,11 @@ $(document).ready(function() {
     
         musicElement[0].play();
     }
-    // Loads the previous track in game_data.json and writes the new index to sessionStorage
-    
+
+    /**
+     * Loads previous audio track
+     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     */
     function loadPreviousTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
     
