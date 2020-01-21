@@ -281,7 +281,7 @@ $(document).ready(function() {
                     loadRoundContent();
                 }, 2000);
             } else {
-                alert("You Win!");
+                loadPostBattleScreen("won");
             }
             
         } else if (selectedAttributeValue === selectedAttributeAIValue) {
@@ -323,7 +323,7 @@ $(document).ready(function() {
                     loadRoundContent();
                 }, 2000);
             } else {
-                alert("You Lose!!!");
+                loadPostBattleScreen("lost");
             }   
         }
       }
