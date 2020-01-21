@@ -587,4 +587,9 @@ $(document).ready(function() {
         loadBattleScreen();
     });
 
+    $( "#post-battle-result-btn" ).click(function() {
+        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png')");
+        $( "#post-battle-page" ).hide();
+        $( "#landing-page" ).show();
+    });
 });
