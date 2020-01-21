@@ -149,6 +149,30 @@ I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b
 All wireframes were desifned and produced using <a href="https://balsamiq.com/">Balsamiq Mockups 3</a>. Initially, a greyscale layout was created to optimised the position of elements, whereafter colours and imgaes listed in the **Colours** and **Images** sections above were added to deliver a much more defined representation of what the game should look like. Individual wireframes for desktop, mobile and tablet can be viewed <a href="https://github.com/wondrousWebWorks/realm-of-rantarctica/tree/master/wireframes">here</a>.
 
 ## Deployment
+Realm of Rantarctica was developed in Visual Studio Code, while git and GitHub were used for version control and to host the repository respectively.
+
+### The following steps were taken to deploy Realm of Rantarctica on GitHub Pages:
+
+* Navigated to <a href="https://github.com/" target="_blank">https://github.com/</a> in the browser
+* Signed in using my username and password
+* Navigated to <a href=" https://github.com/wondrousWebWorks/realm-of-rantarctica" target="_blank">https://github.com/wondrousWebWorks/realm-of-rantarctica/</a> in the browser
+* Clicked **settings** in the top navigation area
+* Scrolled down to the **GitHub Pages** area
+* From the **Source** dropdown menu, **Master Branch** was selected
+* Confirmed selection by clicking.
+* Following these steps, *Realm of Rantarctica* was live on GitHub Pages <a href=" https://wondrouswebworks.github.io/realm-of-rantarctica/" target="_blank">here</a>
+
+### Cloning Realm of Rantarctica from GitHub to Run Locally:
+
+* Navigate to <a href=" https://github.com/wondrousWebWorks/realm-of-rantarctica" target="_blank">https://github.com/wondrousWebWorks/realm-of-rantarctica/</a> in the browser
+* Click on the green **Clone or Download** button
+* Copy the **URL** in the dropdown box
+* Open your preferred **terminal**
+* Navigate to your chosen **file location**
+* Ensure **git** is installed on your system and install it if necessary
+* Copy and paste the following code into your terminal in order to clone **Realm of Rantarctica**
+
+<pre><code>git clone https://github.com/wondrousWebWorks/realm-of-rantarctica.git</code></pre>
 
 ## Credits
 * Royalty free music from <a href="https://www.fesliyanstudios.com" target="_blank">Fesliyan Studios</a>
