@@ -340,6 +340,10 @@ $(document).ready(function() {
         });
     }
 
+    /**
+     * Loads the Post Battle screen
+     * @param {string} result 
+     */
     function loadPostBattleScreen(result) {
         $( "#battle-page" ).hide();
         $( "#post-battle-page" ).show(); 
