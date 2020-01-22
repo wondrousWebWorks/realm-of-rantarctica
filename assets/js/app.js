@@ -36,7 +36,7 @@ $(document).ready(function() {
      * Hides Landing Page and shows Level Select Page
      */
     function loadLevelSelectScreen() {
-        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/bg-4_ox6ev7.png')");
+        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/mountainous-lake.png')");
         $( "#landing-page" ).hide();
         $( "#level-select-page" ).show();  
         $( "#level-select-page" ).toggleClass("set-flex-display-column");
@@ -63,7 +63,7 @@ $(document).ready(function() {
     function setChosenBattleBackground(element) {
         let chosenBattleGround = element[0].attributes.name.value;
 
-        for (i = 0; i < 12; i++) {
+        for (i = 0; i < 16; i++) {
             if(chosenBattleGround == Object.keys(gameData["lg-backgrounds"][i])) {
                 $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][i])})`);  
             }
@@ -222,7 +222,7 @@ $(document).ready(function() {
      */
     function displayHiddenAISpriteAndName() {
         $( `#ai-sprite-name` ).text("Unknown");
-        $( "#ai-sprite" ).attr("src", "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png");
+        $( "#ai-sprite" ).attr("src", "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/question-mark.png");
     }
 
     /**
@@ -563,7 +563,7 @@ $(document).ready(function() {
 
     // Returns to Landing Page screen
     $( "#home-btn" ).click(function() {
-        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png')");
+        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest.png')");
         $( "#level-select-page" ).hide();
         $( "#landing-page" ).show();
     });
@@ -588,7 +588,7 @@ $(document).ready(function() {
     });
 
     $( "#post-battle-result-btn" ).click(function() {
-        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-1_lqrdux.png')");
+        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest.png')");
         $( "#post-battle-page" ).hide();
         $( "#landing-page" ).show();
     });
