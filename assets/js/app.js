@@ -32,6 +32,12 @@ $(document).ready(function() {
             });
     }
 
+    function loadHomePage() {
+        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest.png')");
+        $( "#post-battle-page, #level-select-page, #battle-page" ).hide();
+        $( "#landing-page" ).show();
+    }
+
     /**
      * Hides Landing Page and shows Level Select Page
      */
@@ -564,11 +570,7 @@ $(document).ready(function() {
     });
 
     // Returns to Landing Page screen
-    $( "#home-btn" ).click(function() {
-        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest.png')");
-        $( "#level-select-page" ).hide();
-        $( "#landing-page" ).show();
-    });
+    $( "#home-btn, #post-battle-result-btn" ).click(loadHomePage);
 
     // Sets the chosen background for the Battle Screen when clicked, launches Battle Screen and plays sound
     $( ".card ").click(function() {
@@ -587,12 +589,6 @@ $(document).ready(function() {
         playSoundEffect(gameData["sounds"]["Sword Swing"]);
         setRandomBattleBackground();
         loadBattleScreen();
-    });
-
-    $( "#post-battle-result-btn" ).click(function() {
-        $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest.png')");
-        $( "#post-battle-page" ).hide();
-        $( "#landing-page" ).show();
     });
 
     $( ".level-btn, #audio-controls-toggle, #post-battle-result-btn ").mouseenter(function() {
