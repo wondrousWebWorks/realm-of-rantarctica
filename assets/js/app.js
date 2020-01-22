@@ -486,12 +486,19 @@ $(document).ready(function() {
         musicElement[0].play();
     }
 
+    /**
+     * Loads given source and plays sound effect
+     * @param {string} path 
+     */
     function playSoundEffect(path) {
         soundFXElement.attr("src", path);
         soundFXElement[0].play();
     }
 
-    // Plays button-click animation on click of target
+    /**
+     * Plays button-click animation on click of target
+     * @param {jQuery} target 
+     */
     function toggleButtonPressAnimation(target) {
         target.addClass("button-click");
 
@@ -500,6 +507,9 @@ $(document).ready(function() {
         });
     }
 
+    /**
+     * Displays Sound Info Modal unless user has set it not to display again
+     */
     function checkOrSetSoundInfoModalDisplay() {
         let checkedValue = localStorage.getItem("checkBoxValue");
         
