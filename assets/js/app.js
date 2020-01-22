@@ -594,4 +594,13 @@ $(document).ready(function() {
         $( "#post-battle-page" ).hide();
         $( "#landing-page" ).show();
     });
+
+    $( ".level-btn, #audio-controls-toggle, #post-battle-result-btn ").mouseenter(function() {
+        playSoundEffect(gameData["sounds"]["Click Pop High"]);
+     });
+
+     $( ".player-attribute ").mouseenter(function() {
+        playSoundEffect(gameData["sounds"]["Tap"]);
+     });
+
 });
