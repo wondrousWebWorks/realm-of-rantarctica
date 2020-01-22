@@ -268,8 +268,6 @@ $(document).ready(function() {
                 displayBattleInfo("YOU WIN!");
                 let prize = aiShuffledDeck.splice(currentAICardIndex, 1);
                 playerShuffledDeck = playerShuffledDeck.concat(prize);
-                
-                playSoundEffect(gameData["sounds"]["You Win"]);
       
                 currentPlayerCardIndex += 1;
                 
@@ -282,6 +280,7 @@ $(document).ready(function() {
                 }, 2000);
             } else {
                 loadPostBattleScreen("won");
+                playSoundEffect(gameData["sounds"]["You Win"]);
             }
             
         } else if (selectedAttributeValue === selectedAttributeAIValue) {
@@ -311,7 +310,6 @@ $(document).ready(function() {
                 let prize = playerShuffledDeck.splice(currentPlayerCardIndex, 1);
                 aiShuffledDeck = aiShuffledDeck.concat(prize);
                 
-                playSoundEffect(gameData["sounds"]["You Lose"]);
                 
                 if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
                     currentPlayerCardIndex = 0;
@@ -323,6 +321,7 @@ $(document).ready(function() {
                     loadRoundContent();
                 }, 2000);
             } else {
+                playSoundEffect(gameData["sounds"]["You Lose"]);
                 loadPostBattleScreen("lost");
             }   
         }
@@ -336,6 +335,7 @@ $(document).ready(function() {
         loadRoundContent();
 
         $( ".player-attribute" ).click((e) => {
+            playSoundEffect(gameData["sounds"]["Sword Swing"]);
             cardValueClickEvent(e)
         });
     }
