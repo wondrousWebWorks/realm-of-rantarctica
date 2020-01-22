@@ -631,7 +631,7 @@ input[type=checkbox] {
 .level-select-buttons-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     margin-bottom: 1.5rem;
@@ -639,16 +639,17 @@ input[type=checkbox] {
     overflow-y: hidden;
 }
 
-#down-chevron {
+#down-arrow {
     position: relative;
-    height: 90%;
+    height: 60%;
     width: auto;
-    animation: chevron-vertical-slide 3s cubic-bezier(.79,0,.27,1) infinite;
+    animation: down-arrow-vertical-slide 1.5s ease-in-out infinite;
+    transform: translateY(-10px);
 }
 
-@keyframes chevron-vertical-slide {
-    from { transform: translateY(-80px); }
-    to { transform: translateY(80px); }
+@keyframes down-arrow-vertical-slide {
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(-10px); }
 }
 
 .level-btn {
@@ -1031,7 +1032,48 @@ input[type=checkbox] {
 /********************** Post Battle Screen **************************/
 #post-battle-page {
     display: none;
+}
+
+#post-battle-col {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+#post-battle-result {
+    font-family: "Girasol", cursive;
+    font-size: 6.5rem;
+    color: #F77F00;
+    margin-top: 3rem;
+    text-shadow: 4px 4px #003049;
+}
+
+#post-battle-win-message, #post-battle-lose-message {
+    display: none;
+    font-family: "Acme", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #EAE2B7;
+    text-shadow: 2px 2px #003049;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#post-battle-win-image, #post-battle-lose-image {
+    display: none;
+    height: 33%;
+    width: auto;
+    margin: 0 auto;
+}
+
+#post-battle-result-btn {
+    background-color: #FCBF49;
+    color: #003049;
+    font-size: 2.5rem;
 }
