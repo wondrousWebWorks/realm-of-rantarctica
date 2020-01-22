@@ -1,39 +1,39 @@
 {
 	"lg-backgrounds": [
-		{"Enchanted Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620177/realm-of-rantarctica/backgrounds/forest-bg-2_ejj3k5.png"},
-		{"Mountainous Lake": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png"},
-		{"Eerie Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-3_ecjt19.png"},
-		{"Haunted House": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/halloween-bg-1_xrqvp7.png"},
-		{"Bamboo Falls": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620174/realm-of-rantarctica/backgrounds/fairy-tale-bg-1_x1gfrz.png"},
-		{"Psychadelic Woods": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/fairy-tale-bg-2_ydbcyx.png"},
-		{"Rainbow Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-3_acup8c.png"},
-		{"Twisted Trunks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/fairy-tale-bg-3_f8zygx.png"},
-		{"Shipwrecked Sands": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/desert-bg-3_xdanir.png"},
-		{"Sunset Rock": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/stones-bg-1_kbm0bc.png"},
-		{"Spider's Nest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/halloween-bg-2_vzndet.png"},
-		{"Cactus Crater": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png"},
-		{"Mossy Rocks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/stones-bg-4_r6ucew.png"},
-		{"Cactus Canyons": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/desert-bg-1_ovnsjn.png"},
-		{"Perilous Peaks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png"},
-		{"Oasis Mirage": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png"}
+		{"Enchanted Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620177/realm-of-rantarctica/backgrounds/enchanted-forest.png"},
+		{"Mountainous Lake": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/mountainous-lake.png"},
+		{"Eerie Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/eerie-forest.png"},
+		{"Haunted House": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/haunted-house.png"},
+		{"Bamboo Falls": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620174/realm-of-rantarctica/backgrounds/bamboo-falls.png"},
+		{"Psychedelic Woods": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/psychedelic-woods.png"},
+		{"Rainbow Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/rainbow-forest.png"},
+		{"Twisted Trunks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/twisted-trunks.png"},
+		{"Shipwrecked Sands": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/shipwrecked-sands.png"},
+		{"Sunset Rock": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/sunset-rock.png"},
+		{"Spider's Nest": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620175/realm-of-rantarctica/backgrounds/spiders-nest.png"},
+		{"Stony Stream": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620173/realm-of-rantarctica/backgrounds/stony-stream.png"},
+		{"Mossy Rocks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/mossy-rocks.png"},
+		{"Cactus Canyons": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/cactus-canyons.png"},
+		{"Perilous Peaks": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620171/realm-of-rantarctica/backgrounds/perilous-peaks.png"},
+		{"Oasis Mirage": "https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620173/realm-of-rantarctica/backgrounds/oasis-mirage.png"}
 	],
 	"md-backgrounds": [
-		{"Enchanted Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620177/realm-of-rantarctica/backgrounds/forest-bg-2_ejj3k5.png"},
-		{"Mountainous Lake": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png"},
-		{"Eerie Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/bg-3_ecjt19.png"},
-		{"Haunted House": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620175/realm-of-rantarctica/backgrounds/halloween-bg-1_xrqvp7.png"},
-		{"Bamboo Falls": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620174/realm-of-rantarctica/backgrounds/fairy-tale-bg-1_x1gfrz.png"},
-		{"Psychadelic Woods": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620175/realm-of-rantarctica/backgrounds/fairy-tale-bg-2_ydbcyx.png"},
-		{"Rainbow Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620176/realm-of-rantarctica/backgrounds/forest-bg-3_acup8c.png"},
-		{"Twisted Trunks": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620175/realm-of-rantarctica/backgrounds/fairy-tale-bg-3_f8zygx.png"},
-		{"Shipwrecked Sands": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620172/realm-of-rantarctica/backgrounds/desert-bg-3_xdanir.png"},
-		{"Sunset Rock": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620176/realm-of-rantarctica/backgrounds/stones-bg-1_kbm0bc.png"},
-		{"Spider's Nest": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620175/realm-of-rantarctica/backgrounds/halloween-bg-2_vzndet.png"},
-		{"Cactus Crater": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png"},
-		{"Mossy Rocks": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/stones-bg-4_r6ucew.png"},
-		{"Cactus Canyons": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620172/realm-of-rantarctica/backgrounds/desert-bg-1_ovnsjn.png"},
-		{"Perilous Peaks": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/bg-1_yfybhf.png"},
-		{"Oasis Mirage": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620173/realm-of-rantarctica/backgrounds/desert-bg-2_empgnm.png"}
+		{"Enchanted Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620177/realm-of-rantarctica/backgrounds/enchanted-forest.png"},
+		{"Mountainous Lake": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/mountainous-lake.png"},
+		{"Eerie Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/eerie-forest.png"},
+		{"Haunted House": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620175/realm-of-rantarctica/backgrounds/haunted-house.png"},
+		{"Bamboo Falls": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620174/realm-of-rantarctica/backgrounds/bamboo-falls.png"},
+		{"Psychedelic Woods": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620175/realm-of-rantarctica/backgrounds/psychedelic-woods.png"},
+		{"Rainbow Forest": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620176/realm-of-rantarctica/backgrounds/rainbow-forest.png"},
+		{"Twisted Trunks": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620175/realm-of-rantarctica/backgrounds/twisted-trunks.png"},
+		{"Shipwrecked Sands": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620172/realm-of-rantarctica/backgrounds/shipwrecked-sands.png"},
+		{"Sunset Rock": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620176/realm-of-rantarctica/backgrounds/sunset-rock.png"},
+		{"Spider's Nest": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620175/realm-of-rantarctica/backgrounds/spiders-nest.png"},
+		{"Stony Stream": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620173/realm-of-rantarctica/backgrounds/stony-stream.png"},
+		{"Mossy Rocks": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/mossy-rocks.png"},
+		{"Cactus Canyons": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620172/realm-of-rantarctica/backgrounds/cactus-canyons.png"},
+		{"Perilous Peaks": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620171/realm-of-rantarctica/backgrounds/perilous-peaks.png"},
+		{"Oasis Mirage": "https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1576620173/realm-of-rantarctica/backgrounds/oasis-mirage.png"}
 	],
 	"characters": [
 		{
@@ -47,7 +47,7 @@
 					"Magic": "12",
 					"Range": "67"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914113/realm-of-rantarctica/characters/1_IDLE_000_pzzv1c.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914113/realm-of-rantarctica/characters/ent.png"
 			]
 		},
 		{
@@ -61,7 +61,7 @@
 					"Magic": "3",
 					"Range": "20"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577913926/realm-of-rantarctica/characters/IDLE_000_tapoev.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577913926/realm-of-rantarctica/characters/minotaur.png"
 			]
 		},
 		{
@@ -75,7 +75,7 @@
 					"Magic": "100",
 					"Range": "100"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914165/realm-of-rantarctica/characters/1_IDLE_000_pnbl7h.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914165/realm-of-rantarctica/characters/wizard.png"
 			]
 		},
 		{
@@ -89,7 +89,7 @@
 					"Magic": "96",
 					"Range": "69"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914095/realm-of-rantarctica/characters/1_IDLE_000_atlduc.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914095/realm-of-rantarctica/characters/necromancer.png"
 			]
 		},
 		{
@@ -103,7 +103,7 @@
 					"Magic": "33",
 					"Range": "24"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914194/realm-of-rantarctica/characters/1_IDLE_000_t8xgbn.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914194/realm-of-rantarctica/characters/demon.png"
 			]
 		},
 		{
@@ -117,7 +117,7 @@
 					"Magic": "72",
 					"Range": "10"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914218/realm-of-rantarctica/characters/1_IDLE_000_gy0jdh.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914218/realm-of-rantarctica/characters/elemental.png"
 			]
 		},
 		{
@@ -131,7 +131,7 @@
 					"Magic": "5",
 					"Range": "18"	
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914263/realm-of-rantarctica/characters/IDLE_000_uyihiu.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914263/realm-of-rantarctica/characters/troll.png"
 			]
 		},
 		{
@@ -145,7 +145,7 @@
 					"Magic": "34",
 					"Range": "100"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914056/realm-of-rantarctica/characters/IDLE_000_tgj6qw.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914056/realm-of-rantarctica/characters/dragon.png"
 			]
 		},
 		{
@@ -159,7 +159,7 @@
 					"Magic": "8",
 					"Range": "22"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914015/realm-of-rantarctica/characters/IDLE_000_nsbxqp.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914015/realm-of-rantarctica/characters/cyclops.png"
 			]
 		},
 		{
@@ -173,7 +173,7 @@
 					"Magic": "27",
 					"Range": "12"
 				},
-				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914238/realm-of-rantarctica/characters/1_IDLE_000_xzqvum.png"
+				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914238/realm-of-rantarctica/characters/zombie.png"
 			]
 		}
 	],
