@@ -350,6 +350,8 @@ $(document).ready(function() {
 
         playerShuffledDeck = [];
         aiShuffledDeck = [];
+        currentPlayerCardIndex = 0;
+        currentAICardIndex = 0;
         
         if (result === "won") {
             $( "#post-battle-result" ).text("VICTORY!!!");
