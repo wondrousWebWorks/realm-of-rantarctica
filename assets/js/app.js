@@ -32,6 +32,9 @@ $(document).ready(function() {
             });
     }
 
+    /**
+     * Loads the Home Page and hides all other screens
+     */
     function loadHomePage() {
         $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest.png')");
         $( "#post-battle-page, #level-select-page, #battle-page" ).hide();
