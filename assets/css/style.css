@@ -644,8 +644,13 @@ input[type=checkbox] {
     font-family: "Acme", sans-serif;
     color: #EAE2B7;
     font-size: 1.4rem;
-    width: 85%;
+    width: 95%;
     margin: auto;
+}
+
+.how-to-play p span {
+    color: #80D2FF;
+    font-weight: bold;
 }
 
 /********************** Select Level Screen **************************/
