@@ -103,9 +103,13 @@ body {
     text-align: center;
 } */
 
-#info-icon {
+#info-icon, #how-to-play-icon {
     width: 100px;
-    margin-left: 2rem;
+}
+
+#play-icon {
+    width: 140px;
+    margin: 0 2rem;
 }
 
 .landing-page-icon {
