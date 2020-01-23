@@ -618,7 +618,7 @@ input[type=checkbox] {
 /********************** How To Play Modal ****************************/
 .how-to-play {
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     border: 3px solid #D62828;
     border-radius: 8px;
 }
@@ -634,7 +634,7 @@ input[type=checkbox] {
     margin-top: 1rem;
 }
 
-.how-to-play ul {
+.how-to-play ul, .how-to-play ol {
     width: 70%;
     margin: 10px auto;
     text-align: left;
