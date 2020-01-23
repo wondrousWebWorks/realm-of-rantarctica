@@ -99,10 +99,6 @@ body {
     margin-top: 9rem;
 }
 
-/* #landing-page-icons {
-    text-align: center;
-} */
-
 #info-icon, #how-to-play-icon {
     width: 100px;
 }
@@ -609,7 +605,7 @@ input[type=range]:focus {
 }
 
 input[type=checkbox] {
-  /* Double-sized Checkboxes */
+  /* Double-sized Checkbox */
   -ms-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
@@ -617,6 +613,39 @@ input[type=checkbox] {
   transform: scale(1.5);
   padding: 10px;
   margin-right: 10px;
+}
+
+/********************** How To Play Modal ****************************/
+.how-to-play {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 3px solid #D62828;
+    border-radius: 8px;
+}
+
+.how-to-play img {
+    border-radius: 8px;
+}
+
+.how-to-play h3 {
+    font-family: "Acme", sans-serif;
+    color: #FCBF49;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.how-to-play ul {
+    width: 70%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.how-to-play p, .how-to-play li {
+    font-family: "Acme", sans-serif;
+    color: #EAE2B7;
+    font-size: 1.4rem;
+    width: 85%;
+    margin: auto;
 }
 
 /********************** Select Level Screen **************************/
