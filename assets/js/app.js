@@ -569,6 +569,11 @@ $(document).ready(function() {
         $( "#info-modal" ).modal('toggle');
     });
 
+    // Toggles the How To Play modal
+    $( "#how-to-play-icon" ).click(function() {
+        $( "#how-to-play-modal" ).modal('toggle');
+    });
+
     // Sets the user's selected difficulty in session storage on click and adds .selected-difficulty-btn
     $( ".difficulty-btn" ).click(function() {
         setSelectedDifficulty($(this)[0].innerText);
