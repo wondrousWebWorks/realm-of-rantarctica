@@ -16,6 +16,7 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
     * Icons
     * Images
     * Colours
+* Technologies Used    
 * Wireframes
 * Deployment
 * Credits
@@ -144,6 +145,19 @@ I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b
 * Border colour for level names on the **Select Battleground** screen
 * Font colour for the AI character name on the **Battle** screen
 * Font colour for AI stats on the **Battle** screen
+
+## Technologies Used
+### Languages
+* HTML
+* CSS
+* JavaScript
+
+### Libraries & Tools
+* Git
+* Bootstrap
+* jQuery
+* Google Fonts
+* Cloudinary
 
 ## Wireframes
 All wireframes were desifned and produced using <a href="https://balsamiq.com/">Balsamiq Mockups 3</a>. Initially, a greyscale layout was created to optimised the position of elements, whereafter colours and imgaes listed in the **Colours** and **Images** sections above were added to deliver a much more defined representation of what the game should look like. Individual wireframes for desktop, mobile and tablet can be viewed <a href="https://github.com/wondrousWebWorks/realm-of-rantarctica/tree/master/wireframes">here</a>.
