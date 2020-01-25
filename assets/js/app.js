@@ -252,29 +252,52 @@ $(document).ready(function() {
             },1000);
         }
 
-        /**
-         * Handles logic when the player wins a round
-         */
-        function handleRoundWin() {
-            if (aiShuffledDeck.length > 1) {
-                displayBattleInfo("YOU WIN!");
-                let prize = aiShuffledDeck.splice(currentAICardIndex, 1);
-                playerShuffledDeck = playerShuffledDeck.concat(prize);
-      
-                currentPlayerCardIndex += 1;
-                
-                if (currentAICardIndex >= aiShuffledDeck.length - 1) {
-                    currentAICardIndex = 0;
-                } 
-      
-                setTimeout(function() {
-                    loadRoundContent();
-                }, 3000);
-            } else {
-                loadPostBattleScreen("won");
-                playSoundEffect(gameData["sounds"]["You Win"]);
-            }
+    /**
+     * Handles logic when the player wins a round
+     */
+    function handleRoundWin() {
+        if (aiShuffledDeck.length > 1) {
+            displayBattleInfo("YOU WIN!");
+            let prize = aiShuffledDeck.splice(currentAICardIndex, 1);
+            playerShuffledDeck = playerShuffledDeck.concat(prize);
+    
+            currentPlayerCardIndex += 1;
+            
+            if (currentAICardIndex >= aiShuffledDeck.length - 1) {
+                currentAICardIndex = 0;
+            } 
+    
+            setTimeout(function() {
+                loadRoundContent();
+            }, 3000);
+        } else {
+            loadPostBattleScreen("won");
+            playSoundEffect(gameData["sounds"]["You Win"]);
         }
+    }
+
+    /**
+     * Handles the logic when the player and AI draw a round
+     */
+    function handleRoundDraw() {
+        displayBattleInfo("DRAW!");
+      
+        if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
+            currentPlayerCardIndex = 0;
+        } else {
+            currentPlayerCardIndex += 1;
+        }
+  
+        if (currentAICardIndex >= aiShuffledDeck.length - 1) {
+            currentAICardIndex = 0;
+        } else {
+            currentAICardIndex += 1;
+        }
+  
+        setTimeout(function() {
+            loadRoundContent();
+        }, 3000);
+    }
 
     /**
      * Displays AI values and sprite, compares player and AI values, adjusts decks based on outcome, display round result and plays and appropriate audio file
@@ -290,26 +313,9 @@ $(document).ready(function() {
         const selectedAttributeAIValue = parseInt(targetAIAttribute[0].lastElementChild.innerText);
       
         if (selectedAttributeValue > selectedAttributeAIValue) {
-            handleRoundWin()
+            handleRoundWin();
         } else if (selectedAttributeValue === selectedAttributeAIValue) {
-            displayBattleInfo("DRAW!");
-      
-            if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
-                currentPlayerCardIndex = 0;
-            } else {
-                currentPlayerCardIndex += 1;
-            }
-      
-            if (currentAICardIndex >= aiShuffledDeck.length - 1) {
-                currentAICardIndex = 0;
-            } else {
-                currentAICardIndex += 1;
-            }
-      
-            setTimeout(function() {
-                loadRoundContent();
-            }, 2000);
-      
+            handleRoundDraw();
         } else {
       
             if (playerShuffledDeck.length > 1) {
