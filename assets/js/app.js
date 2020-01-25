@@ -3,6 +3,9 @@ let playerShuffledDeck = [];
 let aiShuffledDeck = [];
 let currentPlayerCardIndex = 0;
 let currentAICardIndex = 0;
+let difficulty = sessionStorage.getItem("difficulty");
+let time = difficulty === "HARD" ? 2 : difficulty === "MEDIUM" ? 4 : 2;
+let isTimerRunning = true;
 
 const musicElement = $( "#music" );
 const currentMusicVolElement = $( "#current-music-vol" );
@@ -105,7 +108,13 @@ $(document).ready(function() {
         $( "#battle-page" ).show();  
         $( "#battle-page" ).toggleClass("set-flex-display-column"); 
 
-        battle();
+        writeShuffledDecksToExternalVariables(gameData);
+        loadRoundContent();
+
+        $( ".player-attribute" ).click((e) => {
+            playSoundEffect(gameData["sounds"]["Sword Swing"]);
+            cardValueClickEvent(e)
+        });
     }
 
     /**
@@ -171,32 +180,6 @@ $(document).ready(function() {
         $( `#${playerOrAI}-sprite` ).attr("src", url);
     }
 
-    // Handles the countdown for each round and displays the time value on screen
-    function countdownTimer() {
-        let difficulty = sessionStorage.getItem("difficulty");
-        let time;
-        
-        if (difficulty === "EASY") {
-            time = 8;
-        } else if (difficulty === "MEDIUM") {
-            time = 4;
-        } else if (difficulty === "HARD") {
-            time = 2;
-        }
-
-        let timer = setInterval(function() {
-            if (time < 1) {
-                 $( "#timer" ).text("TIME'S UP");
-                // $( "#battle-info" ).css("visibility", "visible");
-                clearInterval(timer);
-                // $( "#timer" ).text("0");
-            } else {
-                $( "#timer" ).text(time + "s");
-                time -= 1;
-            }   
-        },1000);
-    }
-
     /**
      * Displays battle information
      * @param {string} info 
@@ -246,17 +229,28 @@ $(document).ready(function() {
      * Loads and displays all info for each round
      */
     function loadRoundContent() {
-        setTimeout(function() {
-            displayCardCountValues()
+        displayCardCountValues()
 
-            writeValuesToCard(playerShuffledDeck, "player", currentPlayerCardIndex);
-            writeHiddenAIValuesToCard();
+        writeValuesToCard(playerShuffledDeck, "player", currentPlayerCardIndex);
+        writeHiddenAIValuesToCard();
 
-            displaySpriteAndCharacterName(playerShuffledDeck, "player", currentPlayerCardIndex);
-            displayHiddenAISpriteAndName();
-            displayBattleInfo("FIGHT!");
-        }, 1000);
+        displaySpriteAndCharacterName(playerShuffledDeck, "player", currentPlayerCardIndex);
+        displayHiddenAISpriteAndName();
+        displayBattleInfo("FIGHT!");
     }
+
+        // Handles the countdown for each round and displays the time value on screen
+        function countdownTimer() {
+            let timer = setInterval(function() {
+                if (time < 1) {
+                     $( "#timer" ).text("TIME'S UP");
+                    clearInterval(timer);
+                } else {
+                    $( "#timer" ).text(time + "s");
+                    time -= 1;
+                }   
+            },1000);
+        }
 
     /**
      * Displays AI values and sprite, compares player and AI values, adjusts decks based on outcome, display round result and plays and appropriate audio file
@@ -335,19 +329,6 @@ $(document).ready(function() {
             }   
         }
       }
-
-    /**
-     * Sets up decks, loads first round content and listens for click event
-     */
-    function battle() {
-        writeShuffledDecksToExternalVariables(gameData);
-        loadRoundContent();
-
-        $( ".player-attribute" ).click((e) => {
-            playSoundEffect(gameData["sounds"]["Sword Swing"]);
-            cardValueClickEvent(e)
-        });
-    }
 
     /**
      * Loads the Post Battle screen
