@@ -300,6 +300,32 @@ $(document).ready(function() {
     }
 
     /**
+     * Handles the logic when a player loses a round
+     */
+    function handleRoundLose() {
+        if (playerShuffledDeck.length > 1) {
+            displayBattleInfo("YOU LOSE!");
+  
+            let prize = playerShuffledDeck.splice(currentPlayerCardIndex, 1);
+            aiShuffledDeck = aiShuffledDeck.concat(prize);
+            
+            
+            if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
+                currentPlayerCardIndex = 0;
+            } 
+  
+            currentAICardIndex += 1;
+  
+            setTimeout(function() {
+                loadRoundContent();
+            }, 3000);
+        } else {
+            playSoundEffect(gameData["sounds"]["You Lose"]);
+            loadPostBattleScreen("lost");
+        }
+    }
+
+    /**
      * Displays AI values and sprite, compares player and AI values, adjusts decks based on outcome, display round result and plays and appropriate audio file
      * @param {Event} e 
      */
@@ -317,27 +343,7 @@ $(document).ready(function() {
         } else if (selectedAttributeValue === selectedAttributeAIValue) {
             handleRoundDraw();
         } else {
-      
-            if (playerShuffledDeck.length > 1) {
-                displayBattleInfo("YOU LOSE!");
-      
-                let prize = playerShuffledDeck.splice(currentPlayerCardIndex, 1);
-                aiShuffledDeck = aiShuffledDeck.concat(prize);
-                
-                
-                if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
-                    currentPlayerCardIndex = 0;
-                } 
-      
-                currentAICardIndex += 1;
-      
-                setTimeout(function() {
-                    loadRoundContent();
-                }, 2000);
-            } else {
-                playSoundEffect(gameData["sounds"]["You Lose"]);
-                loadPostBattleScreen("lost");
-            }   
+            handleRoundLose();
         }
       }
 
