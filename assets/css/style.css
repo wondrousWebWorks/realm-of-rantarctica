@@ -267,6 +267,52 @@ body {
     }
 }
 
+@media(max-width: 900px) and (max-height: 550px) {
+    #game-title {
+        font-size: 3.3rem;
+        margin-top: 1rem;
+    }
+
+    #play-icon {
+        width: 80px;
+        margin: 0 1.3rem;
+    }
+
+    #info-icon, #how-to-play-icon {
+        width: 60px;
+        margin: 0;
+    }
+
+    #wondrouswebworks-logo img {
+        width: 30vw;
+    }
+
+    #wondrouswebworks-logo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    #audio-controls-toggle {
+        width: 65px;
+        height: 65px;
+    }
+
+    #difficulty-setting-heading {
+        font-size: 1.7rem;
+        text-shadow: 2px 2px #003049;
+    }
+
+    #difficulty-setting .selected-difficulty-btn, #difficulty-setting .difficulty-btn {
+        font-size: 1.1rem;
+        padding: 3px 10px;
+        border-radius: 6px;
+    }
+}
+
 @media(max-width: 576px) {
     #game-title {
         font-size: 3.5rem;
