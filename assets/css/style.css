@@ -275,11 +275,12 @@ body {
 
     #play-icon {
         width: 100px;
+        margin: 0 1.3rem;
     }
 
-    #info-icon {
+    #info-icon, #how-to-play-icon {
         width: 70px;
-        margin-left: 1rem;
+        margin: 0;
     }
 
     #wondrouswebworks-logo img {
@@ -924,6 +925,10 @@ input[type=checkbox] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#player-sprite-and-name, #ai-sprite-and-name {
+    height: 100%;
 }
 
 #player-sprite, #ai-sprite {
