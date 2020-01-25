@@ -252,6 +252,30 @@ $(document).ready(function() {
             },1000);
         }
 
+        /**
+         * Handles logic when the player wins a round
+         */
+        function handleRoundWin() {
+            if (aiShuffledDeck.length > 1) {
+                displayBattleInfo("YOU WIN!");
+                let prize = aiShuffledDeck.splice(currentAICardIndex, 1);
+                playerShuffledDeck = playerShuffledDeck.concat(prize);
+      
+                currentPlayerCardIndex += 1;
+                
+                if (currentAICardIndex >= aiShuffledDeck.length - 1) {
+                    currentAICardIndex = 0;
+                } 
+      
+                setTimeout(function() {
+                    loadRoundContent();
+                }, 3000);
+            } else {
+                loadPostBattleScreen("won");
+                playSoundEffect(gameData["sounds"]["You Win"]);
+            }
+        }
+
     /**
      * Displays AI values and sprite, compares player and AI values, adjusts decks based on outcome, display round result and plays and appropriate audio file
      * @param {Event} e 
@@ -266,26 +290,7 @@ $(document).ready(function() {
         const selectedAttributeAIValue = parseInt(targetAIAttribute[0].lastElementChild.innerText);
       
         if (selectedAttributeValue > selectedAttributeAIValue) {
-      
-            if (aiShuffledDeck.length > 1) {
-                displayBattleInfo("YOU WIN!");
-                let prize = aiShuffledDeck.splice(currentAICardIndex, 1);
-                playerShuffledDeck = playerShuffledDeck.concat(prize);
-      
-                currentPlayerCardIndex += 1;
-                
-                if (currentAICardIndex >= aiShuffledDeck.length - 1) {
-                    currentAICardIndex = 0;
-                } 
-      
-                setTimeout(function() {
-                    loadRoundContent();
-                }, 2000);
-            } else {
-                loadPostBattleScreen("won");
-                playSoundEffect(gameData["sounds"]["You Win"]);
-            }
-            
+            handleRoundWin()
         } else if (selectedAttributeValue === selectedAttributeAIValue) {
             displayBattleInfo("DRAW!");
       
