@@ -3,8 +3,6 @@ let playerShuffledDeck = [];
 let aiShuffledDeck = [];
 let currentPlayerCardIndex = 0;
 let currentAICardIndex = 0;
-let difficulty = sessionStorage.getItem("difficulty");
-let time = difficulty === "HARD" ? 2 : difficulty === "MEDIUM" ? 4 : 2;
 let isTimerRunning = true;
 
 const musicElement = $( "#music" );
@@ -229,6 +227,7 @@ $(document).ready(function() {
      * Loads and displays all info for each round
      */
     function loadRoundContent() {
+        isTimerRunning = true;
         displayCardCountValues()
 
         writeValuesToCard(playerShuffledDeck, "player", currentPlayerCardIndex);
@@ -237,20 +236,38 @@ $(document).ready(function() {
         displaySpriteAndCharacterName(playerShuffledDeck, "player", currentPlayerCardIndex);
         displayHiddenAISpriteAndName();
         displayBattleInfo("FIGHT!");
+        countdownTimer();
     }
 
-        // Handles the countdown for each round and displays the time value on screen
-        function countdownTimer() {
-            let timer = setInterval(function() {
-                if (time < 1) {
-                     $( "#timer" ).text("TIME'S UP");
-                    clearInterval(timer);
-                } else {
-                    $( "#timer" ).text(time + "s");
-                    time -= 1;
-                }   
-            },1000);
+    /**
+     * Handles the countdown for each round and displays the time value on screen
+     */
+    function countdownTimer() {
+        let time;
+        let difficulty = sessionStorage.getItem("difficulty");
+
+        
+        if (difficulty === "HARD") {
+            time = 2.0;
+        } else if (difficulty === "MEDIUM") {
+            time = 4.0;
+        } else if (difficulty === "EASY") {
+            time = 8.0;
         }
+
+        let timer = setInterval(function() {
+            if (time < 0.1) {
+                $( "#timer" ).text("TIME'S UP");
+                handleRoundLose();
+                clearInterval(timer);
+            } else if (isTimerRunning === false) {
+                clearInterval(timer);
+            } else {
+                $( "#timer" ).text(time.toFixed(1) + "s");
+                time -= 0.1;
+            }  
+        },100);
+    }
 
     /**
      * Handles logic when the player wins a round
@@ -258,6 +275,7 @@ $(document).ready(function() {
     function handleRoundWin() {
         if (aiShuffledDeck.length > 1) {
             displayBattleInfo("YOU WIN!");
+            
             let prize = aiShuffledDeck.splice(currentAICardIndex, 1);
             playerShuffledDeck = playerShuffledDeck.concat(prize);
     
@@ -281,7 +299,7 @@ $(document).ready(function() {
      */
     function handleRoundDraw() {
         displayBattleInfo("DRAW!");
-      
+        
         if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
             currentPlayerCardIndex = 0;
         } else {
@@ -330,6 +348,7 @@ $(document).ready(function() {
      * @param {Event} e 
      */
     function cardValueClickEvent(e) {
+        isTimerRunning = false;
         writeValuesToCard(aiShuffledDeck, "ai", currentAICardIndex);
         displaySpriteAndCharacterName(aiShuffledDeck, "ai", currentAICardIndex);
       
