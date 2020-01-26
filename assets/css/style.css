@@ -572,6 +572,32 @@ input[type=range]::-webkit-slider-runnable-track {
     border-radius: 6px;
 }
 
+input[type=range]::-moz-range-track {
+    height: 5px;
+    background: #80D2FF;
+    border: none;
+    border-radius: 6px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
@@ -582,8 +608,41 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: -9px;
 }
 
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #FCBF49;
+    margin-top: -9px;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 25px;
+    width: 125px;
+    border-radius: 50%;
+    background: #FCBF49;
+}
+
 input[type=range]:focus {
     outline: none;
+}
+
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #ccc;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
 }
 
 /* End of adapted code from BrennaOBrien.com */
