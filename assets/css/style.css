@@ -1450,6 +1450,21 @@ input[type=checkbox] {
     }
 }
 
+@media(max-width: 800px) {
+    #post-battle-result {
+        margin-top: 2rem;
+        font-size: 4rem;
+        text-shadow: 2px 2px #003049;
+    }
+
+    #post-battle-win-image, #post-battle-lose-image {
+        display: none;
+        height: 20%;
+        width: auto;
+        margin: 50px auto;
+    }
+}
+
 @media(max-width: 550px) {
     #post-battle-result {
         margin-top: 0;
