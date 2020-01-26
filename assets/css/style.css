@@ -1175,7 +1175,7 @@ input[type=checkbox] {
 
 @media(max-width: 900px) and (max-height: 550px) {
     #post-battle-result {
-        margin-top: 0;
+        margin-top: 1rem;
         font-size: 3rem;
         text-shadow: 2px 2px #003049;
     }
@@ -1201,5 +1201,35 @@ input[type=checkbox] {
         color: #003049;
         font-size: 1.3rem;
         padding: 5px;
+    }
+}
+
+@media(max-width: 550px) {
+    #post-battle-result {
+        margin-top: 0;
+        font-size: 3rem;
+        text-shadow: 2px 2px #003049;
+    }
+    
+    #post-battle-win-message, #post-battle-lose-message {
+        font-size: 1.3rem;
+        text-shadow: 2px 2px #003049;
+        text-align: center;
+        width: 85%;
+        margin: 0 auto 10px;
+    }
+
+    #post-battle-win-image, #post-battle-lose-image {
+        height: 25%;
+        width: auto;
+        margin: 2rem auto;
+    }
+
+    #post-battle-result-btn {
+        background-color: #FCBF49;
+        color: #003049;
+        font-size: 1.3rem;
+        padding: 10px;
+        margin-top: 1rem;
     }
 }
