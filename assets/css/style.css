@@ -1054,6 +1054,69 @@ input[type=checkbox] {
     text-shadow: 5px 3px #003049;
 }
 
+@media(max-width: 900px) and (max-height: 550px) {
+    #character-display-row {
+        margin: 0;
+        padding: 0;
+        height: 40%;
+    }
+
+    #player-sprite, #ai-sprite {
+        width: auto;
+        height: 75%;
+    }
+
+    #player-sprite-name, #ai-sprite-name {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    #battle-info-and-timer {
+        height: 85%;
+    }
+    
+    #vs {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-shadow: 2px 2px #003049; 
+        line-height: .6;
+        padding: 8px 0;
+    }
+
+    #battle-info {
+        font-size: 2rem;
+        text-shadow: 2px 2px #003049;
+        margin: 1rem 0 0;
+    }
+
+    #timer {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px #003049;
+        margin-top: 0.3rem;
+    }
+
+    #character-attributes-and-score-card-row {
+        height: 60%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #player-attribute-container, #card-count, #ai-attributes {
+        margin: 0;
+        padding: 5px 0;
+        width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .player-attribute p, .card-count-item p, .ai-attribute p {
+        font-size: 1rem;
+        /* padding-left: 20px; */
+    }
+}
+
 @media(max-width: 576px) {
     #vs {
         font-size: 1.8rem;
