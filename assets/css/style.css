@@ -70,6 +70,10 @@ body {
 }
 
 #audio-controls-container:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -114,6 +118,10 @@ body {
 }
 
 .landing-page-icon:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -137,6 +145,10 @@ body {
 }
 
 #difficulty-setting .difficulty-btn:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -169,6 +181,10 @@ body {
 }
 
 #difficulty-setting .selected-difficulty-btn:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -411,6 +427,10 @@ body {
 }
 
 .modal-header button:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -447,6 +467,10 @@ body {
 
 
 #audio-modal .modal-header button:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -529,12 +553,34 @@ body {
 }
 
 @keyframes button-click {
-    0% { transform: scale(1.2); }
-    50% { transform: scale(.9); }
-    100% { transform: scale(1.2); }
+    0% { 
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2); 
+    }
+    50% { 
+        -ms-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -webkit-transform: scale(.9);
+        -o-transform: scale(.9);
+        transform: scale(.9); 
+    }
+    100% { 
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2); 
+    }
 }
 
 #music-controls img:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -548,8 +594,19 @@ body {
 }
 
 @keyframes slide-text {
-    from { transform: translateX(450px); }
-    to { transform: translateX(-450px); }
+    from { 
+        -ms-transform: translateX(450px);
+        -moz-transform: translateX(450px);
+        -webkit-transform: translateX(450px);
+        -o-transform: translateX(450px);
+        transform: translateX(450px); 
+    }
+    to { 
+        -ms-transform: translateX(-450px);
+        -moz-transform: translateX(-450px);
+        -webkit-transform: translateX(-450px);
+        -o-transform: translateX(-450px);
+        transform: translateX(-450px); }
 }
 
 #currently-playing-heading {
@@ -779,8 +836,8 @@ input[type=checkbox] {
     align-items: center;
     width: 100vw;
     margin-bottom: 1.5rem;
-    height: 10%;
-    overflow-y: hidden;
+    /* height: 10%;
+    overflow-y: hidden; */
 }
 
 #down-arrow {
@@ -788,12 +845,28 @@ input[type=checkbox] {
     height: 60%;
     width: auto;
     animation: down-arrow-vertical-slide 1.5s ease-in-out infinite;
+    -ms-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
     transform: translateY(-10px);
 }
 
 @keyframes down-arrow-vertical-slide {
-    50% { transform: translateY(10px); }
-    100% { transform: translateY(-10px); }
+    50% { 
+        -ms-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        transform: translateY(10px); 
+    }
+    100% { 
+        -ms-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px); 
+    }
 }
 
 .level-btn {
@@ -878,6 +951,19 @@ input[type=checkbox] {
 @media(max-width: 768px) {
     #select-level-heading {
         font-size: 3.5rem;
+    }
+}
+
+@media(max-width: 900px) and (max-height: 550px) {
+    #level-cards-container {
+        margin: 0 10px;
+    }
+
+    #select-level-heading {
+        margin-top: .8rem;
+        font-size: 2rem;
+        line-height: .9;
+        text-shadow: 2px 2px #003049;
     }
 }
 
@@ -1018,6 +1104,10 @@ input[type=checkbox] {
 #card-count {
     position: relative;
     top: 50%;
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -1042,6 +1132,10 @@ input[type=checkbox] {
 }
 
 #ai-sprite-and-name-container {
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
     transform: scaleX(-1);
 }
 
@@ -1058,6 +1152,10 @@ input[type=checkbox] {
 }
 
 #ai-sprite-name {
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
     transform: scaleX(-1);
     color: #80D2FF;
 }
@@ -1142,6 +1240,10 @@ input[type=checkbox] {
         width: 100%;
         position: relative;
         top: 50%;
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
@@ -1198,6 +1300,10 @@ input[type=checkbox] {
         width: 100%;
         position: relative;
         top: 50%;
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
@@ -1260,6 +1366,10 @@ input[type=checkbox] {
         width: 100%;
         position: relative;
         top: 50%;
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
