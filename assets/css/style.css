@@ -891,11 +891,11 @@ input[type=checkbox] {
     margin: 0 40px;
     height: 70%;
     overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
     -ms-overflow-style: none;
 }
 
-#level-cards-container::-webkit-scrollbar { /* WebKit */
+#level-cards-container::-webkit-scrollbar { 
     width: 0;
     height: 0;
 }
@@ -996,11 +996,21 @@ input[type=checkbox] {
     }
 
     #level-cards-container .card img {
-        width: 90%;
+        width: 100%;
     }
 
     #level-cards-container .card h5 {
-        width: 90%;
+        width: 100%;
+    }
+
+    #down-arrow {
+        /* position: relative; */
+        height: 50%;
+        width: auto;
+    }
+
+    .level-select-buttons-container {
+        height: 10%;
     }
 }
 
