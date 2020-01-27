@@ -72,8 +72,8 @@
 					"Armour": "8",
 					"Regeneration": "42",
 					"Evasion": "36",
-					"Magic": "100",
-					"Range": "100"
+					"Magic": "93",
+					"Range": "82"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914165/realm-of-rantarctica/characters/wizard.png"
 			]
@@ -84,9 +84,9 @@
 					"Hit Points": "32",
 					"Damage": "78",
 					"Armour": "14",
-					"Regeneration": "90",
+					"Regeneration": "89",
 					"Evasion": "28",
-					"Magic": "96",
+					"Magic": "86",
 					"Range": "69"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914095/realm-of-rantarctica/characters/necromancer.png"
@@ -96,10 +96,10 @@
 			"Demon": [
 				{
 					"Hit Points": "82",
-					"Damage": "89",
+					"Damage": "83",
 					"Armour": "43",
-					"Regeneration": "79",
-					"Evasion": "46",
+					"Regeneration": "54",
+					"Evasion": "32",
 					"Magic": "33",
 					"Range": "24"
 				},
@@ -114,7 +114,7 @@
 					"Armour": "6",
 					"Regeneration": "91",
 					"Evasion": "75",
-					"Magic": "72",
+					"Magic": "46",
 					"Range": "10"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914218/realm-of-rantarctica/characters/elemental.png"
@@ -138,12 +138,12 @@
 			"Dragon": [
 				{
 					"Hit Points": "91",
-					"Damage": "100",
-					"Armour": "86",
+					"Damage": "88",
+					"Armour": "81",
 					"Regeneration": "17",
 					"Evasion": "3",
 					"Magic": "34",
-					"Range": "100"
+					"Range": "78"
 				},
 				"https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1577914056/realm-of-rantarctica/characters/dragon.png"
 			]
@@ -189,6 +189,7 @@
 		"Click Pop High": "assets/audio/click-pop-high.mp3",
 		"Sword Swing": "assets/audio/sword-swing.mp3",
 		"You Win": "assets/audio/you-win.mp3",
-		"You Lose": "assets/audio/you-lose.mp3"
+		"You Lose": "assets/audio/you-lose.mp3",
+		"Tap": "assets/audio/tap.mp3"
 	}
 }
