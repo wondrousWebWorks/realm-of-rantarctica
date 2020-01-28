@@ -4,23 +4,41 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
 
 ## Contents
 
-* UX
-  * Project Goals
-    * User Goals
-    * User Stories
-    * Site Owner Goals
-  * User Requirements and Expectations
-    * Requirements
-    * Expectations
-  * Design Choices
-    * Fonts
-    * Icons
-    * Images
-    * Colours
-* Technologies Used
-* Wireframes
-* Deployment
-* Credits
+- [Realm Of Rantarctica](#realm-of-rantarctica)
+  - [Contents](#contents)
+  - [UX (User Experience)](#ux-user-experience)
+    - [Project Goals](#project-goals)
+      - [User Goals](#user-goals)
+      - [User Stories](#user-stories)
+        - [User Story A](#user-story-a)
+        - [User Story B](#user-story-b)
+        - [User Story C](#user-story-c)
+        - [User Story D](#user-story-d)
+        - [User Story E](#user-story-e)
+        - [User Story F](#user-story-f)
+      - [Site Owner Goals](#site-owner-goals)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+      - [Requirements](#requirements)
+      - [Expectations](#expectations)
+    - [Design Choices](#design-choices)
+      - [Fonts](#fonts)
+      - [Icons](#icons)
+      - [Images](#images)
+      - [Colours](#colours)
+        - [#003049 (Prussian Blue)](#003049-prussian-blue)
+        - [#D62828 (Amaranth Red)](#d62828-amaranth-red)
+        - [#F77F00 (University of Tennessee Orange)](#f77f00-university-of-tennessee-orange)
+        - [#FCBF49 (Maximum Yellow Red)](#fcbf49-maximum-yellow-red)
+        - [#EAE2B7 (Dutch White)](#eae2b7-dutch-white)
+        - [#80D2FF (Light Prussian Blue)](#80d2ff-light-prussian-blue)
+  - [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Libraries & Tools](#libraries--tools)
+  - [Wireframes](#wireframes)
+  - [Deployment](#deployment)
+    - [The following steps were taken to deploy Realm of Rantarctica on GitHub Pages](#the-following-steps-were-taken-to-deploy-realm-of-rantarctica-on-github-pages)
+    - [Cloning Realm of Rantarctica from GitHub to Run Locally](#cloning-realm-of-rantarctica-from-github-to-run-locally)
+  - [Credits](#credits)
 
 ## UX (User Experience)
 
