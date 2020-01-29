@@ -188,7 +188,11 @@ $(document).ready(function() {
 
     /**
      * Shuffles card decks and copies them to external variables
-     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     * @param {{"lg-backgrounds": Array,
+     * "md-backgrounds": Array,
+     * "characters": Array,
+     * "music": Array,
+     * "sounds": Object}} gameData
      */
     function writeShuffledDecksToExternalVariables(gameData) {
              
@@ -244,15 +248,20 @@ $(document).ready(function() {
      */
     function countdownTimer() {
         let time;
-        let difficulty = sessionStorage.getItem("difficulty");
+        let difficulty = sessionStorage.getItem("difficulty").toLowerCase();
 
-        
-        if (difficulty === "HARD") {
-            time = 2.0;
-        } else if (difficulty === "MEDIUM") {
-            time = 4.0;
-        } else if (difficulty === "EASY") {
-            time = 8.0;
+        switch(difficulty) {
+            case "easy":
+                time = 10.0;
+                break;
+            case "medium":
+                time = 7.0;
+                break;
+            case "hard":
+                time = 4.0;
+                break;
+            default:
+                time = 10.0;
         }
 
         let timer = setInterval(function() {
@@ -344,7 +353,9 @@ $(document).ready(function() {
     }
 
     /**
-     * Displays AI values and sprite, compares player and AI values, adjusts decks based on outcome, display round result and plays and appropriate audio file
+     * Displays AI values and sprite, compares player and AI values, 
+     * adjusts decks based on outcome, display round result and 
+     * plays an appropriate audio file
      * @param {Event} e 
      */
     function cardValueClickEvent(e) {
@@ -453,7 +464,11 @@ $(document).ready(function() {
 
     /**
      * Loads initial audio track
-     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     * @param {{"lg-backgrounds": Array,
+     * "md-backgrounds": Array,
+     * "characters": Array,
+     * "music": Array,
+     * "sounds": Object}} gameData
      */
     function loadInitialTrack(gameData) {
         musicElement.attr("src", Object.values(gameData["music"][3])[0]);
@@ -463,7 +478,11 @@ $(document).ready(function() {
 
     /**
      * Loads next audio track
-     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     * @param {{"lg-backgrounds": Array,
+     * "md-backgrounds": Array,
+     * "characters": Array,
+     * "music": Array,
+     * "sounds": Object}} gameData
      */
     function loadNextTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
@@ -484,7 +503,11 @@ $(document).ready(function() {
 
     /**
      * Loads previous audio track
-     * @param {{"lg-backgrounds": Array, "md-backgrounds": Array, "characters": Array, "music": Array, "sounds": Object}} gameData 
+     * @param {{"lg-backgrounds": Array,
+     * "md-backgrounds": Array,
+     * "characters": Array,
+     * "music": Array,
+     * "sounds": Object}} gameData
      */
     function loadPreviousTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
@@ -537,7 +560,8 @@ $(document).ready(function() {
         }
     }
 
-    // *******************  END OF FUNCTION DECLARATIONS  **********************
+    // END OF FUNCTION DECLARATIONS
+    
     getGameData();
     checkOrSetSoundInfoModalDisplay();
     setDefaultDifficulty();
