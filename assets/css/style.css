@@ -78,9 +78,9 @@ body {
 }
 
 #audio-controls-toggle {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+    width: 6.25rem;
+    height: 6.25rem;
+    padding: .625rem;
     margin-bottom: 5px;
     cursor: pointer;
 }
@@ -104,11 +104,11 @@ body {
 }
 
 #info-icon, #how-to-play-icon {
-    width: 100px;
+    width: 6.25rem;
 }
 
 #play-icon {
-    width: 140px;
+    width: 8.75px;
     margin: 0 2rem;
 }
 
@@ -137,9 +137,9 @@ body {
     color: #003049;
     font-family: "Acme", sans-serif;
     font-size: 3rem;
-    padding: 5px 15px;
+    padding: 5px .95rem;
     border: none;
-    border-radius: 8px;
+    border-radius: .5rem;
     text-decoration: none;
     transition: transform .5s ease-in-out;
 }
@@ -157,7 +157,7 @@ body {
 }
 
 #medium-difficulty {
-    margin: 0 30px;
+    margin: 0 1.875rem;
 }
 
 #difficulty-setting-heading {
@@ -174,9 +174,9 @@ body {
     color: #003049;
     font-family: "Acme", sans-serif;
     font-size: 3rem;
-    padding: 5px 15px;
+    padding: 5px .95rem;
     border: none;
-    border-radius: 8px;
+    border-radius: .5rem;
     transition: transform .5s ease-in-out;
 }
 
@@ -203,11 +203,11 @@ body {
     }
 
     #play-icon {
-        width: 100px;
+        width: 6.25rem;
     }
 
     #info-icon {
-        width: 70px;
+        width: 4.375rem;
         margin-left: 2rem;
     }
 
@@ -222,11 +222,11 @@ body {
     }
 
     #play-icon {
-        width: 100px;
+        width: 6.25rem;
     }
 
     #info-icon {
-        width: 70px;
+        width: 4.375rem;
         margin-left: 2rem;
     }
 
@@ -250,11 +250,11 @@ body {
     }
 
     #play-icon {
-        width: 130px;
+        width: 8.125rem;
     }
 
     #info-icon {
-        width: 100px;
+        width: 6.25rem;
         margin-left: 2rem;
     }
 
@@ -272,14 +272,14 @@ body {
     }
 
     #audio-controls-toggle {
-        width: 75px;
-        height: 75px;
+        width: 4.7rem;
+        height: 4.7rem;
     }
 
     #difficulty-setting .selected-difficulty-btn, #difficulty-setting .difficulty-btn {
         font-size: 2rem;
-        padding: 3px 10px;
-        border-radius: 6px;
+        padding: 3px .625rem;
+        border-radius: .375rem;
     }
 }
 
@@ -290,12 +290,12 @@ body {
     }
 
     #play-icon {
-        width: 80px;
+        width: 5rem;
         margin: 0 1.3rem;
     }
 
     #info-icon, #how-to-play-icon {
-        width: 60px;
+        width: 3.75rem;
         margin: 0;
     }
 
@@ -313,8 +313,8 @@ body {
     }
 
     #audio-controls-toggle {
-        width: 65px;
-        height: 65px;
+        width: 4rem;
+        height: 4rem;
     }
 
     #difficulty-setting-heading {
@@ -324,8 +324,8 @@ body {
 
     #difficulty-setting .selected-difficulty-btn, #difficulty-setting .difficulty-btn {
         font-size: 1.1rem;
-        padding: 3px 10px;
-        border-radius: 6px;
+        padding: 3px .625rem;
+        border-radius: .375rem;
     }
 }
 
@@ -336,12 +336,12 @@ body {
     }
 
     #play-icon {
-        width: 100px;
+        width: 6.25rem;
         margin: 0 1.3rem;
     }
 
     #info-icon, #how-to-play-icon {
-        width: 70px;
+        width: 4.375rem;
         margin: 0;
     }
 
@@ -359,8 +359,8 @@ body {
     }
 
     #audio-controls-toggle {
-        width: 75px;
-        height: 75px;
+        width: 4.7rem;
+        height: 4.7rem;
     }
 
     #difficulty-setting-heading {
@@ -370,14 +370,14 @@ body {
 
     #difficulty-setting .selected-difficulty-btn {
         font-size: 1.3rem;
-        padding: 3px 10px;
-        border-radius: 6px;
+        padding: 3px .625rem;
+        border-radius: .375rem;
     }
 
     #difficulty-setting .difficulty-btn {
         font-size: 1.3rem;
-        padding: 3px 10px;
-        border-radius: 6px;
+        padding: 3px .625rem;
+        border-radius: .375rem;
     }
 }
 
@@ -406,7 +406,7 @@ body {
     right: 0;
     margin: 0;
     background: transparent;
-    padding: 10px;
+    padding: .625rem;
     border: none;
     transition: transform .5s ease-in-out;
 }
@@ -414,12 +414,12 @@ body {
 /* Also styles for #audio-modal */
 .modal-content {
     background-color: #003049;
-    border-radius: 25px;
+    border-radius: 1.56rem;
 }
 
 /* Also styles for #audio-modal */
 .modal-header, .modal-body, .modal-footer {
-    border-radius: 25px;
+    border-radius: 1.56rem;
 }
 
 .modal-header button:focus {
@@ -439,17 +439,17 @@ body {
     color: #EAE2B7;
     font-family: 'Acme', sans-serif;
     font-size: 1.3rem;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .modal-close-icon {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 #info-modal .modal-footer #next-icon {
-    height: 45px;
-    width: 45px;
+    height: 2.8rem;
+    width: 2.8rem;
 }
 
 #info-modal .modal-footer button {
@@ -464,7 +464,6 @@ body {
 }
 
 /* Sound Settings Modal */
-
 
 #audio-modal .modal-header button:hover {
     -ms-transform: scale(1.2);
@@ -482,8 +481,8 @@ body {
 }
 
 .audio-modal-heading-icon {
-    height: 55px;
-    width: 55px;
+    height: 3.4rem;
+    width: 3.4rem;
 }
 
 .audio-modal-sub-heading {
@@ -491,14 +490,14 @@ body {
     font-family: "Acme", sans-serif;
     font-size: 3rem;
     font-weight: bold;
-    padding-left: 10px;
+    padding-left: .625rem;
 }
 
 #music-vol-controls, #sound-fx-vol-controls, #music-controls {
     border: 5px solid #D62828;
-    border-radius: 8px;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    border-radius: .5rem;
+    padding: 1.25rem 0;
+    margin-bottom: 1.25rem;
 }
 
 .vol-input-container {
@@ -519,7 +518,7 @@ body {
 
 #music-vol-control, #sound-fx-vol-control {
     width: 40%;
-    margin: 0 10px;
+    margin: 0 .625rem;
 }
 
 #current-music-vol, #current-sound-fx-vol {
@@ -542,8 +541,8 @@ body {
 }
 
 #music-controls img {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     cursor: pointer;
     transition: transform .5s ease-in-out;
 }
@@ -595,18 +594,18 @@ body {
 
 @keyframes slide-text {
     from { 
-        -ms-transform: translateX(450px);
-        -moz-transform: translateX(450px);
-        -webkit-transform: translateX(450px);
-        -o-transform: translateX(450px);
-        transform: translateX(450px); 
+        -ms-transform: translateX(28.125rem);
+        -moz-transform: translateX(28.125rem);
+        -webkit-transform: translateX(28.125rem);
+        -o-transform: translateX(28.125rem);
+        transform: translateX(28.125rem); 
     }
     to { 
-        -ms-transform: translateX(-450px);
-        -moz-transform: translateX(-450px);
-        -webkit-transform: translateX(-450px);
-        -o-transform: translateX(-450px);
-        transform: translateX(-450px); }
+        -ms-transform: translateX(-28.125rem);
+        -moz-transform: translateX(-28.125rem);
+        -webkit-transform: translateX(-28.125rem);
+        -o-transform: translateX(-28.125rem);
+        transform: translateX(-28.125rem); }
 }
 
 #currently-playing-heading {
@@ -626,58 +625,58 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 5px;
     background: #80D2FF;
     border: none;
-    border-radius: 6px;
+    border-radius: .375rem;
 }
 
 input[type=range]::-moz-range-track {
     height: 5px;
     background: #80D2FF;
     border: none;
-    border-radius: 6px;
+    border-radius: .375rem;
 }
 
 input[type=range]::-ms-track {
-    width: 300px;
+    width: 18.75rem;
     height: 5px;
     background: transparent;
     border-color: transparent;
-    border-width: 6px 0;
+    border-width: .375rem 0;
     color: transparent;
 }
 
 input[type=range]::-ms-fill-lower {
     background: #777;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 input[type=range]::-ms-fill-upper {
     background: #ddd;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
-    height: 25px;
-    width: 25px;
+    height: 1.5625rem;
+    width: 1.5625rem;
     border-radius: 50%;
     background: #FCBF49;
-    margin-top: -9px;
+    margin-top: -.5625rem;
 }
 
 input[type=range]::-moz-range-thumb {
     border: none;
-    height: 25px;
-    width: 25px;
+    height: 1.5625rem;
+    width: 1.5625rem;
     border-radius: 50%;
     background: #FCBF49;
-    margin-top: -9px;
+    margin-top: -.5625rem;
 }
 
 input[type=range]::-ms-thumb {
     border: none;
-    height: 25px;
-    width: 125px;
+    height: 1.5625rem;
+    width: 1.5625rem;
     border-radius: 50%;
     background: #FCBF49;
 }
@@ -709,8 +708,8 @@ input[type=range]:focus::-ms-fill-upper {
     }
 
     .audio-modal-heading-icon {
-        height: 40px;
-        width: 40px;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 
     .audio-modal-sub-heading {
@@ -722,8 +721,8 @@ input[type=range]:focus::-ms-fill-upper {
     }
 
     #music-controls img {
-        width: 60px;
-        height: 60px;
+        width: 3.75rem;
+        height: 3.75rem;
     }
 
     #music-controls #currently-loaded-track {
@@ -748,8 +747,8 @@ input[type=range]:focus::-ms-fill-upper {
     width: 40%;
     height: auto;
     border: 4px solid #D62828;
-    padding: 20px;
-    border-radius: 16px;
+    padding: 1.25rem;
+    border-radius: 1rem;
 }
 
 #sound-info-modal .modal-body p {
@@ -757,7 +756,7 @@ input[type=range]:focus::-ms-fill-upper {
     font-size: 1.4rem;
     color: #EAE2B7;
     font-weight: bold;
-    margin: 30px 20px;
+    margin: 1.875rem 1.25rem;
 }
 
 #sound-info-modal .modal-body label {
@@ -772,20 +771,20 @@ input[type=checkbox] {
   -webkit-transform: scale(1.5);
   -o-transform: scale(1.5);
   transform: scale(1.5);
-  padding: 10px;
-  margin-right: 10px;
+  padding: .625rem;
+  margin-right: .625rem;
 }
 
 /* How To Play Modal */
 .how-to-play {
-    padding: 20px;
-    margin-bottom: 45px;
+    padding: 1.25rem;
+    margin-bottom: 2.81rem;
     border: 3px solid #D62828;
-    border-radius: 8px;
+    border-radius: .5rem;
 }
 
 .how-to-play img {
-    border-radius: 8px;
+    border-radius: .5rem;
 }
 
 .how-to-play h3 {
@@ -797,7 +796,7 @@ input[type=checkbox] {
 
 .how-to-play ul, .how-to-play ol {
     width: 70%;
-    margin: 10px auto;
+    margin: .625rem auto;
     text-align: left;
 }
 
@@ -824,7 +823,7 @@ input[type=checkbox] {
     text-align: center;
     color: #F77F00;
     text-shadow: 4px 4px #003049;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .level-select-buttons-container {
@@ -834,8 +833,8 @@ input[type=checkbox] {
     align-items: center;
     width: 100vw;
     margin-bottom: 1.5rem;
-    /* height: 10%;
-    overflow-y: hidden; */
+    height: 10%;
+    overflow-y: hidden;
 }
 
 #down-arrow {
@@ -843,27 +842,27 @@ input[type=checkbox] {
     height: 60%;
     width: auto;
     animation: down-arrow-vertical-slide 1.5s ease-in-out infinite;
-    -ms-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px);
+    -ms-transform: translateY(-.625rem);
+    -moz-transform: translateY(-.625rem);
+    -webkit-transform: translateY(-.625rem);
+    -o-transform: translateY(-.625rem);
+    transform: translateY(-.625rem);
 }
 
 @keyframes down-arrow-vertical-slide {
     50% { 
-        -ms-transform: translateY(10px);
-        -moz-transform: translateY(10px);
-        -webkit-transform: translateY(10px);
-        -o-transform: translateY(10px);
-        transform: translateY(10px); 
+        -ms-transform: translateY(.625rem);
+        -moz-transform: translateY(.625rem);
+        -webkit-transform: translateY(.625rem);
+        -o-transform: translateY(.625rem);
+        transform: translateY(.625rem); 
     }
     100% { 
-        -ms-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -webkit-transform: translateY(-10px);
-        -o-transform: translateY(-10px);
-        transform: translateY(-10px); 
+        -ms-transform: translateY(-.625rem);
+        -moz-transform: translateY(-.625rem);
+        -webkit-transform: translateY(-.625rem);
+        -o-transform: translateY(-.625rem);
+        transform: translateY(-.625rem); 
     }
 }
 
@@ -876,8 +875,8 @@ input[type=checkbox] {
 }
 
 .level-icon {
-    height: 45px;
-    width: 45px;
+    height: 2.81rem;
+    width: 2.81rem;
 }
 
 
@@ -886,7 +885,7 @@ input[type=checkbox] {
 }
 
 #level-cards-container {
-    margin: 0 40px;
+    margin: 0 2.5rem;
     height: 70%;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -912,7 +911,7 @@ input[type=checkbox] {
 
 #level-cards-container .card img {
     width: 80%;
-    border-radius: 8px;
+    border-radius: .5rem;
     border: 4px solid transparent;
     margin: auto;
 }
@@ -924,7 +923,7 @@ input[type=checkbox] {
     width: 65%;
     margin: 0 auto;
     font-family: 'Mansalva', cursive;
-    border-radius: 7px;
+    border-radius: .5rem;
 }
 
 #level-cards-container .card img:hover  {
@@ -941,8 +940,8 @@ input[type=checkbox] {
     }
 
     .level-icon {
-        height: 40px;
-        width: 40px;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 }
 
@@ -954,7 +953,7 @@ input[type=checkbox] {
 
 @media(max-width: 900px) and (max-height: 550px) {
     #level-cards-container {
-        margin: 0 10px;
+        margin: 0 .625rem;
     }
 
     #select-level-heading {
@@ -967,7 +966,7 @@ input[type=checkbox] {
 
 @media(max-width: 576px) {
     #level-cards-container {
-        margin: 0 10px;
+        margin: 0 .625rem;
     }
 
     #select-level-heading {
@@ -980,12 +979,12 @@ input[type=checkbox] {
 
     .level-btn {
         font-size: 1rem;
-        padding: 3px 6px;
+        padding: 3px .375rem;
     }
     
     .level-icon {
-        height: 30px;
-        width: 30px;
+        height: 1.875rem;
+        width: 1.875rem;
     }
 
     .card {
@@ -1034,7 +1033,7 @@ input[type=checkbox] {
 }
 
 #character-display-row {
-    padding: 20px 40px;
+    padding: 1.25rem 2.5rem;
     width: 100%;
     height: 50%;
 }
@@ -1042,7 +1041,7 @@ input[type=checkbox] {
 #character-attributes-and-score-card-row {
     height: 50%;
     width: 100%;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 .player-attribute, .ai-attribute {
@@ -1066,11 +1065,11 @@ input[type=checkbox] {
 
 .battle-screen-bottom-row {
     background-color: #003049;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     width: 70%;
     margin: auto;
     border: 4px solid #D62828;
-    border-radius: 14px;
+    border-radius: .875rem;
 }
 
 .player-attribute p, .card-count-item p, .ai-attribute p {
@@ -1081,17 +1080,17 @@ input[type=checkbox] {
 }
 
 .player-attribute-name, .card-count-player, .card-count-ai, .ai-attribute-name {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .player-attribute-value, .card-count-player-value {
     color: #EAE2B7;
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 
 .ai-attribute-value, .card-count-ai-value {
     color: #80D2FF;
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 
 .player-attribute, .card-count-item, .ai-attribute {
@@ -1196,13 +1195,13 @@ input[type=checkbox] {
     text-align: center;
     color: #FCBF49;
     text-shadow: 4px 4px 2px #003049;
-    padding: 10px 0;
+    padding: .625rem 0;
     line-height: .8;
     margin: 0;
 }
 
 .vs-border-block {
-    height: 12px;
+    height: .75rem;
     width: 10vw;
     margin: auto;
     background-color: #D62828;
@@ -1233,7 +1232,7 @@ input[type=checkbox] {
         font-size: 3.5rem;
         text-shadow: 2px 2px #003049; 
         line-height: .8;
-        padding: 8px 0;
+        padding: .5rem 0;
     }
 
     #timer {
@@ -1286,7 +1285,7 @@ input[type=checkbox] {
         font-size: 4rem;
         text-shadow: 2px 2px #003049; 
         line-height: .8;
-        padding: 8px 0;
+        padding: .5rem 0;
     }
 
     #timer {
@@ -1346,7 +1345,7 @@ input[type=checkbox] {
         font-weight: bold;
         text-shadow: 2px 2px #003049; 
         line-height: .6;
-        padding: 8px 0;
+        padding: .5rem 0;
     }
 
     #battle-info {
@@ -1395,14 +1394,14 @@ input[type=checkbox] {
     }
 
     .vs-border-block {
-        height: 8px;
+        height: .5rem;
         border: 2px solid #003049;
     }
 
     #timer {
         font-size: 1.8rem;
         text-shadow: 2px 2px #003049;
-        padding-top: 10px;
+        padding-top: .625rem;
     }
 
     #battle-info {
@@ -1430,7 +1429,7 @@ input[type=checkbox] {
     #character-display-row {
         height: 40%;
         margin: 0;
-        padding: 0 10px;
+        padding: 0 .625rem;
     }
 
     #character-attributes-and-score-card-row {
@@ -1453,7 +1452,7 @@ input[type=checkbox] {
     }
 
     .ai-attribute-value-combined-display {
-        padding-right: 20px;
+        padding-right: 1.25rem;
     }
 }
 
@@ -1490,7 +1489,7 @@ input[type=checkbox] {
     text-shadow: 2px 2px #003049;
     text-align: center;
     width: 50%;
-    margin: 0 auto 20px;
+    margin: 0 auto 1.25rem;
 }
 
 #post-battle-win-image, #post-battle-lose-image {
@@ -1519,7 +1518,7 @@ input[type=checkbox] {
         text-shadow: 2px 2px #003049;
         text-align: center;
         width: 65%;
-        margin: 20px auto 40px;
+        margin: 1.25rem auto 2.5rem;
     }
 
     #post-battle-win-image, #post-battle-lose-image {
@@ -1533,7 +1532,7 @@ input[type=checkbox] {
         background-color: #FCBF49;
         color: #003049;
         font-size: 2rem;
-        padding: 8px;
+        padding:.5rem;
     }
 }
 
@@ -1550,7 +1549,7 @@ input[type=checkbox] {
         text-shadow: 2px 2px #003049;
         text-align: center;
         width: 85%;
-        margin: 0 auto 10px;
+        margin: 0 auto .625rem;
     }
 
     #post-battle-win-image, #post-battle-lose-image {
@@ -1579,7 +1578,7 @@ input[type=checkbox] {
         display: none;
         height: 20%;
         width: auto;
-        margin: 50px auto;
+        margin: 3.125rem auto;
     }
 }
 
@@ -1595,7 +1594,7 @@ input[type=checkbox] {
         text-shadow: 2px 2px #003049;
         text-align: center;
         width: 85%;
-        margin: 0 auto 10px;
+        margin: 0 auto .625rem;
     }
 
     #post-battle-win-image, #post-battle-lose-image {
@@ -1608,7 +1607,7 @@ input[type=checkbox] {
         background-color: #FCBF49;
         color: #003049;
         font-size: 1.3rem;
-        padding: 10px;
+        padding: .625rem;
         margin-top: 1rem;
     }
 }
