@@ -108,7 +108,7 @@ body {
 }
 
 #play-icon {
-    width: 8.75px;
+    width: 8.75rem;
     margin: 0 2rem;
 }
 
@@ -813,91 +813,33 @@ input[type=checkbox] {
     font-weight: bold;
 }
 
-/* Select Level Screen */
-#level-select-page {
+/* Select Battleground Screen */
+#select-battleground-screen {
     display: none;
 }
-#select-level-heading {
+#select-battleground-heading {
     font-family: 'Girassol', cursive;
     font-size: 7rem;
     text-align: center;
     color: #F77F00;
     text-shadow: 4px 4px #003049;
-    margin-top: 2rem;
+    margin: 2rem 0 0 0;
 }
 
-.level-select-buttons-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    margin-bottom: 1.5rem;
-    height: 10%;
-    overflow-y: hidden;
-}
-
-#down-arrow {
-    position: relative;
-    height: 60%;
-    width: auto;
-    animation: down-arrow-vertical-slide 1.5s ease-in-out infinite;
-    -ms-transform: translateY(-.625rem);
-    -moz-transform: translateY(-.625rem);
-    -webkit-transform: translateY(-.625rem);
-    -o-transform: translateY(-.625rem);
-    transform: translateY(-.625rem);
-}
-
-@keyframes down-arrow-vertical-slide {
-    50% { 
-        -ms-transform: translateY(.625rem);
-        -moz-transform: translateY(.625rem);
-        -webkit-transform: translateY(.625rem);
-        -o-transform: translateY(.625rem);
-        transform: translateY(.625rem); 
-    }
-    100% { 
-        -ms-transform: translateY(-.625rem);
-        -moz-transform: translateY(-.625rem);
-        -webkit-transform: translateY(-.625rem);
-        -o-transform: translateY(-.625rem);
-        transform: translateY(-.625rem); 
-    }
-}
-
-.level-btn {
-    background-color: #FCBF49;
-    color: #003049;
-    font-size: 1.5rem;
-    margin: 0;
-    transition: background-color .5s ease-in-out;
-}
-
-.level-icon {
-    height: 2.81rem;
-    width: 2.81rem;
-}
-
-
-.level-btn:hover {
-    background-color: #F77F00;
-}
-
-#level-cards-container {
+#select-battleground-cards-container {
     margin: 0 2.5rem;
-    height: 70%;
+    height: 85vh;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
 
-#level-cards-container::-webkit-scrollbar { 
+#select-battleground-cards-container::-webkit-scrollbar { 
     width: 0;
     height: 0;
 }
 
-#level-cards-container .card {
+#select-battleground-cards-container .card {
 
     background: transparent;
     border: none;
@@ -905,86 +847,75 @@ input[type=checkbox] {
     transition: transform .8s ease-in-out;
 }
 
-#level-cards-container .card .card-body {
+#select-battleground-cards-container .card .card-body {
     padding-top: 5px;
 }
 
-#level-cards-container .card img {
+#select-battleground-cards-container .card img {
     width: 80%;
     border-radius: .5rem;
     border: 4px solid transparent;
     margin: auto;
 }
  
-#level-cards-container .card h5 {
+#select-battleground-cards-container .card h5 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
     color: #003049;
     background-color: #FCBF49;
     padding: 5px;
-    width: 65%;
-    margin: 0 auto;
+    width: 40%;
+    margin: auto;
     font-family: 'Mansalva', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
     border-radius: .5rem;
 }
 
-#level-cards-container .card img:hover  {
+#select-battleground-cards-container .card img:hover  {
     border: 4px solid #EAE2B7;
 }
 
 @media(max-width: 1450px) {
-    #select-level-heading {
+    #select-battleground-heading {
         font-size: 4rem;
     }
 
-    .level-btn {
-        font-size: 1.2rem;
-    }
-
-    .level-icon {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
 }
 
 @media(max-width: 768px) {
-    #select-level-heading {
+    #select-battleground-heading {
         font-size: 3.5rem;
     }
 }
 
 @media(max-width: 900px) and (max-height: 550px) {
-    #level-cards-container {
-        margin: 0 .625rem;
-    }
-
-    #select-level-heading {
-        margin-top: .8rem;
+    #select-battleground-heading {
+        margin: .8rem 0 1rem;
         font-size: 2rem;
         line-height: .9;
         text-shadow: 2px 2px #003049;
+    }
+
+    #select-battleground-cards-container .card img {
+        width: 100%;
     }
 }
 
 @media(max-width: 576px) {
-    #level-cards-container {
+    #select-battleground-cards-container {
         margin: 0 .625rem;
     }
 
-    #select-level-heading {
+    #select-battleground-heading {
         width: 60%;
-        margin-top: 2rem;
+        margin: 2rem 0;
         font-size: 2rem;
         line-height: .9;
         text-shadow: 2px 2px #003049;
-    }
-
-    .level-btn {
-        font-size: 1rem;
-        padding: 3px .375rem;
-    }
-    
-    .level-icon {
-        height: 1.875rem;
-        width: 1.875rem;
     }
 
     .card {
@@ -992,22 +923,12 @@ input[type=checkbox] {
         padding: 0;
     }
 
-    #level-cards-container .card img {
+    #select-battleground-cards-container .card img {
         width: 100%;
     }
 
-    #level-cards-container .card h5 {
-        width: 100%;
-    }
-
-    #down-arrow {
-        /* position: relative; */
-        height: 50%;
-        width: auto;
-    }
-
-    .level-select-buttons-container {
-        height: 10%;
+    #select-battleground-cards-container .card h5 {
+        width: 60%;
     }
 }
 
