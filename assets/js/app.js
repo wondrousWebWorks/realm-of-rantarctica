@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 let gameData = [];
 let playerShuffledDeck = [];
 let aiShuffledDeck = [];
@@ -48,9 +50,9 @@ $(document).ready(function() {
     function loadLevelSelectScreen() {
         $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/mountainous-lake.png')");
         $( "#landing-page" ).hide();
-        $( "#level-select-page" ).show();  
-        $( "#level-select-page" ).toggleClass("set-flex-display-column");
-        $( "#level-select-page" ).css("display", "flex"); 
+        $( "#select-battleground-screen" ).show();  
+        $( "#select-battleground-screen" ).toggleClass("set-flex-display-column");
+        // $( "#select-battleground-screen" ).css("display", "flex"); 
     }
 
     /**
@@ -102,7 +104,7 @@ $(document).ready(function() {
      * Loads the Battle Screen
      */
     function loadBattleScreen() {
-        $( "#level-select-page" ).hide();
+        $( "#select-battleground-screen" ).hide();
         $( "#battle-page" ).show();  
         $( "#battle-page" ).toggleClass("set-flex-display-column"); 
 
@@ -110,8 +112,8 @@ $(document).ready(function() {
         loadRoundContent();
 
         $( ".player-attribute" ).click((e) => {
-            playSoundEffect(gameData["sounds"]["Sword Swing"]);
-            cardValueClickEvent(e)
+            playSoundEffect(gameData.sounds["Sword Swing"]);
+            cardValueClickEvent(e);
         });
     }
 
@@ -172,7 +174,7 @@ $(document).ready(function() {
   
         let urlPrecursor = Object.values(currentCharacter[0]);
   
-        let url = urlPrecursor[1]
+        let url = urlPrecursor[1];
   
         $( `#${playerOrAI}-sprite-name` ).text(Object.keys(deck[currentIndex]));
         $( `#${playerOrAI}-sprite` ).attr("src", url);
@@ -196,8 +198,8 @@ $(document).ready(function() {
      */
     function writeShuffledDecksToExternalVariables(gameData) {
              
-        const playerCards = gameData["characters"].slice();
-        const aiCards = gameData["characters"].slice();
+        const playerCards = gameData.characters.slice();
+        const aiCards = gameData.characters.slice();
 
         shuffleCards(playerCards);
         shuffleCards(aiCards);
@@ -232,7 +234,7 @@ $(document).ready(function() {
      */
     function loadRoundContent() {
         isTimerRunning = true;
-        displayCardCountValues()
+        displayCardCountValues();
 
         writeValuesToCard(playerShuffledDeck, "player", currentPlayerCardIndex);
         writeHiddenAIValuesToCard();
@@ -299,7 +301,7 @@ $(document).ready(function() {
             }, 3000);
         } else {
             loadPostBattleScreen("won");
-            playSoundEffect(gameData["sounds"]["You Win"]);
+            playSoundEffect(gameData.sounds["You Win"]);
         }
     }
 
@@ -347,7 +349,7 @@ $(document).ready(function() {
                 loadRoundContent();
             }, 3000);
         } else {
-            playSoundEffect(gameData["sounds"]["You Lose"]);
+            playSoundEffect(gameData.sounds["You Lose"]);
             loadPostBattleScreen("lost");
         }
     }
@@ -471,9 +473,9 @@ $(document).ready(function() {
      * "sounds": Object}} gameData
      */
     function loadInitialTrack(gameData) {
-        musicElement.attr("src", Object.values(gameData["music"][3])[0]);
+        musicElement.attr("src", Object.values(gameData.music[3])[0]);
         sessionStorage.setItem("currentTrack", 3);
-        currentlyPlayingTrackElement.text(Object.keys(gameData["music"][3])[0]);
+        currentlyPlayingTrackElement.text(Object.keys(gameData.music[3])[0]);
     }
 
     /**
@@ -487,15 +489,15 @@ $(document).ready(function() {
     function loadNextTrack(gameData) {
         let currentIndex = parseInt(sessionStorage.getItem("currentTrack"));
     
-        if (currentIndex < (gameData["music"].length - 1)) {
+        if (currentIndex < (gameData.music.length - 1)) {
             let newIndex = currentIndex + 1;
-            musicElement.attr("src", Object.values(gameData["music"][newIndex])[0]);
+            musicElement.attr("src", Object.values(gameData.music[newIndex])[0]);
             sessionStorage.setItem("currentTrack", newIndex);
-            currentlyPlayingTrackElement.text(Object.keys(gameData["music"][newIndex])[0]);
+            currentlyPlayingTrackElement.text(Object.keys(gameData.music[newIndex])[0]);
         } else {
-            musicElement.attr("src", Object.values(gameData["music"][0])[0]);
+            musicElement.attr("src", Object.values(gameData.music[0])[0]);
             sessionStorage.setItem("currentTrack", 0);
-            currentlyPlayingTrackElement.text(Object.keys(gameData["music"][0])[0]);
+            currentlyPlayingTrackElement.text(Object.keys(gameData.music[0])[0]);
         }
     
         musicElement[0].play();
@@ -514,13 +516,13 @@ $(document).ready(function() {
     
         if (currentIndex >= 1) {
             let newIndex = currentIndex - 1;
-            musicElement.attr("src", Object.values(gameData["music"][newIndex])[0]);
+            musicElement.attr("src", Object.values(gameData.music[newIndex])[0]);
             sessionStorage.setItem("currentTrack", newIndex);
-            currentlyPlayingTrackElement.text(Object.keys(gameData["music"][newIndex])[0]);
+            currentlyPlayingTrackElement.text(Object.keys(gameData.music[newIndex])[0]);
         } else {
-            musicElement.attr("src", Object.values(gameData["music"][(gameData["music"].length - 1)])[0]);
-            sessionStorage.setItem("currentTrack", gameData["music"].length - 1);
-            currentlyPlayingTrackElement.text(Object.keys(gameData["music"][(gameData["music"].length - 1)])[0]);
+            musicElement.attr("src", Object.values(gameData.music[(gameData.music.length - 1)])[0]);
+            sessionStorage.setItem("currentTrack", gameData.music.length - 1);
+            currentlyPlayingTrackElement.text(Object.keys(gameData.music[(gameData.music.length - 1)])[0]);
         }
     
         musicElement[0].play();
@@ -570,6 +572,8 @@ $(document).ready(function() {
     setTimeout(function() {
         loadInitialTrack(gameData);
     }, 500);
+
+    $('[data-toggle="tooltip"]').tooltip();
     
     $("#sound-info-modal").on('hidden.bs.modal', function(){
         let checkedValue = document.getElementById("show-or-hide-sound-info-modal").checked;
@@ -633,29 +637,29 @@ $(document).ready(function() {
 
     // Sets the chosen background for the Battle Screen when clicked, launches Battle Screen and plays sound
     $( ".card ").click(function() {
-        playSoundEffect(gameData["sounds"]["Sword Swing"]);
+        playSoundEffect(gameData.sounds["Sword Swing"]);
         setChosenBattleBackground($(this));
         loadBattleScreen();    
     });
 
     // Plays a sword swish sound on mouseenter of .card
-    $( ".card img ").mouseenter(function() {
-       playSoundEffect(gameData["sounds"]["Click Pop Low"]);
+    $( ".card img, .landing-page-icon ").mouseenter(function() {
+       playSoundEffect(gameData.sounds["Click Pop Low"]);
     });
 
     // Sets a random background for the Battle Screen when clicked and launches Battle Screen
     $( ".random-level-btn" ).click(() => {
-        playSoundEffect(gameData["sounds"]["Sword Swing"]);
+        playSoundEffect(gameData.sounds["Sword Swing"]);
         setRandomBattleBackground();
         loadBattleScreen();
     });
 
-    $( ".level-btn, #audio-controls-toggle, #post-battle-result-btn ").mouseenter(function() {
-        playSoundEffect(gameData["sounds"]["Click Pop High"]);
+    $( ".level-btn, #audio-controls-toggle, #post-battle-result-btn, .difficulty-btn ").mouseenter(function() {
+        playSoundEffect(gameData.sounds["Click Pop High"]);
      });
 
      $( ".player-attribute ").mouseenter(function() {
-        playSoundEffect(gameData["sounds"]["Tap"]);
+        playSoundEffect(gameData.sounds.Tap);
      });
 
 });
