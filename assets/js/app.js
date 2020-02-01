@@ -72,12 +72,18 @@ $(document).ready(function() {
      * Sets the user's chosen background
      * @param {jQuery} element 
      */
-    function setChosenBattleBackground(element) {
+    function setBattleBackground(element) {
         let chosenBattleGround = element[0].attributes.name.value;
 
-        for (i = 0; i < 16; i++) {
-            if(chosenBattleGround == Object.keys(gameData["lg-backgrounds"][i])) {
-                $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][i])})`);  
+        if (chosenBattleGround === "Random Level") {
+            let randomLevelInt = generateRandomInt(0, 15);
+
+            $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][randomLevelInt])})`);
+        } else {
+            for (i = 0; i < 16; i++) {
+                if(chosenBattleGround == Object.keys(gameData["lg-backgrounds"][i])) {
+                    $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][i])})`);  
+                }
             }
         }
     }
@@ -89,15 +95,6 @@ $(document).ready(function() {
      */
     function generateRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min) ) + min;
-    }
-
-    /**
-     * Sets a random background for the Battle screen
-     */
-    function setRandomBattleBackground() {
-        let randomLevelInt = generateRandomInt(0, 15);
-
-        $( "#full-screen-game-container-col" ).css("background", `url(${Object.values(gameData["lg-backgrounds"][randomLevelInt])})`);
     }
 
     /**
@@ -638,20 +635,13 @@ $(document).ready(function() {
     // Sets the chosen background for the Battle Screen when clicked, launches Battle Screen and plays sound
     $( ".card ").click(function() {
         playSoundEffect(gameData.sounds["Sword Swing"]);
-        setChosenBattleBackground($(this));
+        setBattleBackground($(this));
         loadBattleScreen();    
     });
 
     // Plays a sword swish sound on mouseenter of .card
     $( ".card img, .landing-page-icon ").mouseenter(function() {
        playSoundEffect(gameData.sounds["Click Pop Low"]);
-    });
-
-    // Sets a random background for the Battle Screen when clicked and launches Battle Screen
-    $( ".random-level-btn" ).click(() => {
-        playSoundEffect(gameData.sounds["Sword Swing"]);
-        setRandomBattleBackground();
-        loadBattleScreen();
     });
 
     $( ".level-btn, #audio-controls-toggle, #post-battle-result-btn, .difficulty-btn ").mouseenter(function() {
