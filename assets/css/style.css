@@ -77,13 +77,22 @@ body {
     transform: scale(1.2);
 }
 
-#audio-controls-toggle {
+#exit-button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: transform .5s ease-in-out;
+}
+
+.fixed-icon {
     width: 6.25rem;
     height: 6.25rem;
     padding: .625rem;
     margin-bottom: 5px;
     cursor: pointer;
 }
+
 
 #music, #sound-fx {
     display: none;
@@ -249,6 +258,13 @@ body {
         font-size: 5.5rem;
     }
 
+    .fixed-icon {
+        width: 4rem;
+        height: 4rem;
+        padding: .625rem;
+        cursor: pointer;
+    }
+
     #play-icon {
         width: 8.125rem;
     }
@@ -271,11 +287,6 @@ body {
         text-align: center;
     }
 
-    #audio-controls-toggle {
-        width: 4.7rem;
-        height: 4.7rem;
-    }
-
     #difficulty-setting .selected-difficulty-btn, #difficulty-setting .difficulty-btn {
         font-size: 2rem;
         padding: 3px .625rem;
@@ -287,6 +298,13 @@ body {
     #game-title {
         font-size: 3.3rem;
         margin-top: 1rem;
+    }
+
+    .fixed-icon {
+        width: 4rem;
+        height: 4rem;
+        padding: .625rem;
+        cursor: pointer;
     }
 
     #play-icon {
@@ -335,6 +353,13 @@ body {
         margin-top: 4rem;
     }
 
+    .fixed-icon {
+        width: 4rem;
+        height: 4rem;
+        padding: .625rem;
+        cursor: pointer;
+    }
+
     #play-icon {
         width: 6.25rem;
         margin: 0 1.3rem;
@@ -356,11 +381,6 @@ body {
         justify-content: center;
         align-items: flex-end;
         text-align: center;
-    }
-
-    #audio-controls-toggle {
-        width: 4.7rem;
-        height: 4.7rem;
     }
 
     #difficulty-setting-heading {
