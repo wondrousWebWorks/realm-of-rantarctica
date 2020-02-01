@@ -890,7 +890,6 @@ input[type=checkbox] {
     width: 40%;
     margin: auto;
     font-family: 'Mansalva', cursive;
-    font-weight: bold;
     font-size: 1.5rem;
     border-radius: .5rem;
 }
@@ -904,11 +903,51 @@ input[type=checkbox] {
         font-size: 4rem;
     }
 
+    #select-battleground-cards-container .card {
+        padding: 0;
+    }
+
+    #select-battleground-cards-container .card img {
+        width: 100%;
+    }
+
+    #select-battleground-cards-container .card h5 {
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media(max-width: 1200px) and (max-height: 850px) {
+    #select-battleground-cards-container .card {
+        padding: 0;
+    }
+
+    #select-battleground-cards-container .card img {
+        width: 100%;
+    }
+
+    #select-battleground-cards-container .card h5 {
+        width: 70%;
+    }
 }
 
 @media(max-width: 768px) {
     #select-battleground-heading {
         font-size: 3.5rem;
+    }
+
+    #select-battleground-cards-container .card {
+        padding: 0;
+    }
+
+    #select-battleground-cards-container .card img {
+        width: 100%;
+    }
+
+    #select-battleground-cards-container .card h5 {
+        width: 70%;
+        font-size: 1.3rem;
     }
 }
 
