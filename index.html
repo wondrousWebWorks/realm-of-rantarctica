@@ -20,7 +20,7 @@
     <div id="full-screen-game-container-row" class="row">
       <div id="full-screen-game-container-col" class="col-12">
 
-        <!-- Audio controls will remain static throught the game and won't be replaced with new content -->
+        <!-- Audio controls -->
         <div id="audio-controls-container">
           <a id="audio-controls-toggle" href="#">
             <img class="fixed-icon"
@@ -29,6 +29,7 @@
           </a>
         </div>
 
+        <!-- Exit button -->
         <div id="exit-button-container">
           <a id="home-btn" href="index.html">
             <img class="fixed-icon"
@@ -49,20 +50,44 @@
         <!-- Landing Page -->
         <div id="landing-page">
           <h1 id="game-title">RealM of RantarcticA</h1>
-          <div id="landing-page-icons">
-            <img id="how-to-play-icon" class="landing-page-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576770900/realm-of-rantarctica/icons/FAQ_ydfqti.png"
-              alt="how to play button" data-toggle="tooltip" data-placement="top" title="How to Play">
-            <img id="play-icon" class="landing-page-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
-              alt="play button" data-toggle="tooltip" data-placement="top" title="Play Game">
-            <img id="info-icon" class="landing-page-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
-              alt="info button" data-toggle="tooltip" data-placement="top" title="Lore">
-          </div>
-          <div id="difficulty-setting-container">
-            <h2 id="difficulty-setting-heading">SELECT DIFFICULTY</h2>
-            <div id="difficulty-setting">
+          <div id="landing-page-menu">
+            <a href="#" id="menu-option-play">
+              <img class="landing-page-icon play-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
+                alt="play image">
+              <span>PLAY</span>
+              <img class="landing-page-icon play-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
+                alt="play image">
+            </a>
+            <a href="#" id="menu-option-lore">
+              <img class="landing-page-icon info-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
+                alt="info image">
+              <span>LORE</span>
+              <img class="landing-page-icon info-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
+                alt="info image">
+            </a>
+            <a href="#" id="menu-option-tutorial">
+              <img class="landing-page-icon how-to-play-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576770900/realm-of-rantarctica/icons/FAQ_ydfqti.png"
+                alt="how to play image">
+              <span>TUTORIAL</span>
+              <img class="landing-page-icon how-to-play-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576770900/realm-of-rantarctica/icons/FAQ_ydfqti.png"
+                alt="how to play image">
+            </a>
+            <a href="#" id="menu-option-difficulty">
+              <img class="landing-page-icon difficulty-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580636581/realm-of-rantarctica/icons/Upgrade_s2pmig.png"
+                alt="set difficulty image">
+              <span>DIFFICULTY</span>
+              <img class="landing-page-icon difficulty-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580636581/realm-of-rantarctica/icons/Upgrade_s2pmig.png"
+                alt="set difficulty image">
+            </a>
+            <div id="difficulty-setting-container">
               <a id="easy-difficulty" href="#" class="difficulty-btn selected-difficulty-btn">EASY</a>
               <a id="medium-difficulty" href="#" class="difficulty-btn">MEDIUM</a>
               <a id="hard-difficulty" href="#" class="difficulty-btn">HARD</a>
