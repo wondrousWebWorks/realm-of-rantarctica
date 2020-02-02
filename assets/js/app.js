@@ -607,12 +607,12 @@ $(document).ready(function() {
     });
 
     // Toggles the Information modal
-    $( "#info-icon" ).click(function() {
+    $( "#menu-option-lore" ).click(function() {
         $( "#info-modal" ).modal('toggle');
     });
 
     // Toggles the How To Play modal
-    $( "#how-to-play-icon" ).click(function() {
+    $( "#menu-option-tutorial" ).click(function() {
         $( "#how-to-play-modal" ).modal('toggle');
     });
 
@@ -621,12 +621,19 @@ $(document).ready(function() {
         setSelectedDifficulty($(this)[0].innerText);
         $( ".difficulty-btn" ).removeClass("selected-difficulty-btn");
         $(this).addClass("selected-difficulty-btn");
+        setTimeout(function() {
+            $( "#difficulty-setting-container" ).css("visibility", "hidden");
+        }, 1000);
     });
 
     // Loads Select Level screen
-    $( "#play-icon" ).click(function() {
+    $( "#menu-option-play" ).click(function() {
         loadLevelSelectScreen();
         loadLevelSelectCards(gameData);
+    });
+
+    $( "#menu-option-difficulty" ).click(function() {
+        $( "#difficulty-setting-container" ).css("visibility", "visible");
     });
 
     // Returns to Landing Page screen
@@ -640,7 +647,7 @@ $(document).ready(function() {
     });
 
     // Plays a sword swish sound on mouseenter of .card
-    $( ".card img, .landing-page-icon ").mouseenter(function() {
+    $( ".card img, #landing-page-menu a ").mouseenter(function() {
        playSoundEffect(gameData.sounds["Click Pop Low"]);
     });
 
