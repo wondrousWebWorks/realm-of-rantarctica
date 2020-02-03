@@ -192,6 +192,7 @@ body {
 #wondrouswebworks-logo {
     position: absolute;
     bottom: .3rem;
+    left: .5rem;
     cursor: pointer;
 }
 
@@ -363,7 +364,7 @@ body {
     }
 
     #landing-page-menu {
-        width: 65%;
+        width: 75%;
     }
     
     #landing-page-menu a {
@@ -399,6 +400,7 @@ body {
 .modal-header, .modal-body, .modal-footer {
     background-color: #003049;
     border: none;
+    border-radius: 1.56rem;
     text-align: center;
 }
 
@@ -411,9 +413,6 @@ body {
     margin: 0 auto;
 }
 
-/* Information Modal */
-
-/* Also styles for #audio-modal */
 .modal-header button {
     position: absolute;
     top: 0;
@@ -425,21 +424,6 @@ body {
     transition: transform .5s ease-in-out;
 }
 
-/* Also styles for #audio-modal */
-.modal-content {
-    background-color: #003049;
-    border-radius: 1.56rem;
-}
-
-/* Also styles for #audio-modal */
-.modal-header, .modal-body, .modal-footer {
-    border-radius: 1.56rem;
-}
-
-.modal-header button:focus {
-    outline: none;
-}
-
 .modal-header button:hover {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -448,12 +432,13 @@ body {
     transform: scale(1.2);
 }
 
+.modal-header button:focus {
+    outline: none;
+}
 
-#info-modal .modal-body p {
-    color: #EAE2B7;
-    font-family: 'Acme', sans-serif;
-    font-size: 1.3rem;
-    padding: 0 1.25rem;
+.modal-content {
+    background-color: #003049;
+    border-radius: 1.56rem;
 }
 
 .modal-close-icon {
@@ -461,33 +446,15 @@ body {
     width: 2.5rem;
 }
 
-#info-modal .modal-footer #next-icon {
-    height: 2.8rem;
-    width: 2.8rem;
-}
-
-#info-modal .modal-footer button {
-    padding: 5px;
-    margin: auto;
-}
-
-.modal-btn {
-    background-color: #FCBF49;
-    color: #003049;
-    font-size: 2rem;
+/* Information Modal */
+#info-modal .modal-body p {
+    color: #EAE2B7;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.3rem;
+    padding: 0 1.25rem;
 }
 
 /* Sound Settings Modal */
-
-#audio-modal .modal-header button:hover {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-
 .audio-icon-and-heading {
     display: flex;
     flex-direction: row;
@@ -507,7 +474,7 @@ body {
     padding-left: .625rem;
 }
 
-#music-vol-controls, #sound-fx-vol-controls, #music-controls {
+.audio-red-border {
     border: 5px solid #D62828;
     border-radius: .5rem;
     padding: 1.25rem 0;
@@ -765,14 +732,6 @@ input[type=range]:focus::-ms-fill-upper {
     border-radius: 1rem;
 }
 
-#sound-info-modal .modal-body p {
-    font-family: "Acme", sans-serif;
-    font-size: 1.4rem;
-    color: #EAE2B7;
-    font-weight: bold;
-    margin: 1.875rem 1.25rem;
-}
-
 #sound-info-modal .modal-body label {
     font-family: "Mansalva", cursive;
     font-size: 1.3rem;
@@ -799,6 +758,7 @@ input[type=checkbox] {
 
 .how-to-play img {
     border-radius: .5rem;
+    width: 90%;
 }
 
 .how-to-play h3 {
