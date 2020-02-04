@@ -14,7 +14,6 @@ const currentSoundFXVolElement = $( "#current-sound-fx-vol" );
 const currentlyPlayingTrackElement = $( "#currently-loaded-track" );
 const aiValueElements = $( ".ai-attribute-value" );
 const playerValueElements = $( ".player-attribute-value" );
-const combinedAIAndPlayerValueElements = $( ".ai-attribute-value-combined-display" );
 
 $(document).ready(function() {
 
@@ -40,7 +39,7 @@ $(document).ready(function() {
      */
     function loadHomePage() {
         $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620176/realm-of-rantarctica/backgrounds/forest.png')");
-        $( "#post-battle-page, #level-select-page, #battle-page" ).hide();
+        $( "#post-battle-page, #level-select-page, #battle-screen" ).hide();
         $( "#landing-page" ).show();
     }
 
@@ -51,8 +50,6 @@ $(document).ready(function() {
         $( "#full-screen-game-container-col" ).css("background", "url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1576620172/realm-of-rantarctica/backgrounds/mountainous-lake.png')");
         $( "#landing-page" ).hide();
         $( "#select-battleground-screen" ).show();  
-        $( "#select-battleground-screen" ).toggleClass("set-flex-display-column");
-        // $( "#select-battleground-screen" ).css("display", "flex"); 
     }
 
     /**
@@ -102,8 +99,7 @@ $(document).ready(function() {
      */
     function loadBattleScreen() {
         $( "#select-battleground-screen" ).hide();
-        $( "#battle-page" ).show();  
-        $( "#battle-page" ).toggleClass("set-flex-display-column"); 
+        $( "#battle-screen" ).show();  
 
         writeShuffledDecksToExternalVariables(gameData);
         loadRoundContent();
@@ -116,6 +112,9 @@ $(document).ready(function() {
 
     /**
      * Shuffle a card deck using the Fisher-Yates (aka Knuth) Shuffle
+     * 
+     * Function taken from Daplie Labs on GitHub and adapted for own use
+     * 
      * @param {Array} cardArray 
      */
     function shuffleCards(cardArray) {
@@ -142,7 +141,6 @@ $(document).ready(function() {
         
         for (let i = 0; i < playerValueElements.length; i ++ ) {
             if (playerOrAI === "ai") {
-                combinedAIAndPlayerValueElements[i].innerText = cardValues[i];
                 aiValueElements[i].innerText = cardValues[i];
             } else if (playerOrAI === "player") {
                 playerValueElements[i].innerText = cardValues[i];
@@ -155,7 +153,6 @@ $(document).ready(function() {
      */
     function writeHiddenAIValuesToCard() {
         for (let i = 0; i < aiValueElements.length; i ++ ) {
-            combinedAIAndPlayerValueElements[i].innerText = "?";
             aiValueElements[i].innerText = "?";
         }
     }
@@ -266,12 +263,14 @@ $(document).ready(function() {
         let timer = setInterval(function() {
             if (time < 0.1) {
                 $( "#timer" ).text("TIME'S UP");
+                writeValuesToCard(aiShuffledDeck, "ai", currentAICardIndex);
+                displaySpriteAndCharacterName(aiShuffledDeck, "ai", currentAICardIndex);
                 handleRoundLose();
                 clearInterval(timer);
             } else if (isTimerRunning === false) {
                 clearInterval(timer);
             } else {
-                $( "#timer" ).text(time.toFixed(1) + "s");
+                $( "#timer" ).text(time.toFixed(1));
                 time -= 0.1;
             }  
         },100);
@@ -362,9 +361,9 @@ $(document).ready(function() {
         writeValuesToCard(aiShuffledDeck, "ai", currentAICardIndex);
         displaySpriteAndCharacterName(aiShuffledDeck, "ai", currentAICardIndex);
       
-        const selectedAttributeClass = e.currentTarget.classList[1];
+        const selectedAttributeClass = e.currentTarget.classList[2];
         const selectedAttributeValue = parseInt(e.currentTarget.lastElementChild.innerText);
-        const targetAIAttribute = $( `#ai-attributes .${selectedAttributeClass}` );
+        const targetAIAttribute = $( `#ai-attribute-container .${selectedAttributeClass}` );
         const selectedAttributeAIValue = parseInt(targetAIAttribute[0].lastElementChild.innerText);
       
         if (selectedAttributeValue > selectedAttributeAIValue) {
@@ -381,7 +380,7 @@ $(document).ready(function() {
      * @param {string} result 
      */
     function loadPostBattleScreen(result) {
-        $( "#battle-page" ).hide();
+        $( "#battle-screen" ).hide();
         $( "#post-battle-page" ).show(); 
 
         playerShuffledDeck = [];
@@ -577,7 +576,6 @@ $(document).ready(function() {
         localStorage.setItem("checkBoxValue", checkedValue);
     });
 
-    // Toggles the html audio control's visibility on clicking
     $( "#audio-controls-toggle" ).click(function() {
         $('#audio-modal').modal('toggle');
     });
@@ -606,17 +604,14 @@ $(document).ready(function() {
         toggleButtonPressAnimation($(this));
     });
 
-    // Toggles the Information modal
     $( "#menu-option-lore" ).click(function() {
         $( "#info-modal" ).modal('toggle');
     });
 
-    // Toggles the How To Play modal
     $( "#menu-option-tutorial" ).click(function() {
         $( "#how-to-play-modal" ).modal('toggle');
     });
 
-    // Sets the user's selected difficulty in session storage on click and adds .selected-difficulty-btn
     $( ".difficulty-btn" ).click(function() {
         setSelectedDifficulty($(this)[0].innerText);
         $( ".difficulty-btn" ).removeClass("selected-difficulty-btn");
@@ -626,7 +621,6 @@ $(document).ready(function() {
         }, 1000);
     });
 
-    // Loads Select Level screen
     $( "#menu-option-play" ).click(function() {
         loadLevelSelectScreen();
         loadLevelSelectCards(gameData);
@@ -636,22 +630,19 @@ $(document).ready(function() {
         $( "#difficulty-setting-container" ).css("visibility", "visible");
     });
 
-    // Returns to Landing Page screen
     $( "#home-btn, #post-battle-result-btn" ).click(loadHomePage);
 
-    // Sets the chosen background for the Battle Screen when clicked, launches Battle Screen and plays sound
     $( ".card ").click(function() {
         playSoundEffect(gameData.sounds["Sword Swing"]);
         setBattleBackground($(this));
         loadBattleScreen();    
     });
 
-    // Plays a sword swish sound on mouseenter of .card
     $( ".card img, #landing-page-menu a ").mouseenter(function() {
        playSoundEffect(gameData.sounds["Click Pop Low"]);
     });
 
-    $( ".level-btn, #audio-controls-toggle, #post-battle-result-btn, .difficulty-btn ").mouseenter(function() {
+    $( ".level-btn, #audio-controls-toggle, #exit-button-container, #post-battle-result-btn, .difficulty-btn ").mouseenter(function() {
         playSoundEffect(gameData.sounds["Click Pop High"]);
      });
 
