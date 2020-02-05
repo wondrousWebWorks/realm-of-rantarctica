@@ -17,6 +17,7 @@ In order to ensure the desired level of functionality, a rigarous testing progra
     - [Verdict](#verdict-2)
   - [Behaviour of Site Components](#behaviour-of-site-components)
     - [Landing Page](#landing-page)
+    - [Audio Modal](#audio-modal)
 
 ## Responsiveness
 
@@ -94,3 +95,15 @@ The game was intentionally devided into distinct sections and testing was perfor
 - Clicking/tapping on *wondrousWebWorks()* logo opens GitHub repository in browser  :heavy_check_mark:
 - Clicking/tapping on *Audio* icon launches audio modal :heavy_check_mark:
 - Clicking/tapping on *Exit* icon reloads the page :heavy_check_mark:
+
+### Audio Modal
+
+- Heading displays correctly :heavy_check_mark:
+- Music range input adjusts music volume and displays the current value :heavy_check_mark:
+- Sound Effect range input adjusts sound effects volume and displays the current value :heavy_check_mark:
+- Play button shows animation on click/tap and plays the track currently loaded :heavy_check_mark:
+- Pause button shows animation on click/tap and pauses the track currently loaded :heavy_check_mark:
+- Next button shows animation on click/tap and plays the next audio track :heavy_check_mark:
+- Previous button shows animation on click/tap and plays the previous audio track :heavy_check_mark:
+- Currently loaded audio track name displays and animates correctly :heavy_check_mark:
+- Modal close button closes modal successfully :heavy_check_mark:
