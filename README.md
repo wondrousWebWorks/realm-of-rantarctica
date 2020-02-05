@@ -37,6 +37,7 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
     - [Languages](#languages)
     - [Libraries & Tools](#libraries--tools)
   - [Wireframes](#wireframes)
+  - [Testing](#testing)
   - [Deployment](#deployment)
     - [The following steps were taken to deploy Realm of Rantarctica on GitHub Pages](#the-following-steps-were-taken-to-deploy-realm-of-rantarctica-on-github-pages)
     - [Cloning Realm of Rantarctica from GitHub to Run Locally](#cloning-realm-of-rantarctica-from-github-to-run-locally)
@@ -216,6 +217,10 @@ I decided on using [this](https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7)
 
 All wireframes were designed and produced using [Balsamiq Mockups 3](https://balsamiq.com/). Initially, a greyscale layout was created to optimised the position of elements, whereafter colours and imgaes listed in the **Colours** and **Images** sections above were added to deliver a much more defined representation of what the game should look like. Individual wireframes for desktop, mobile and tablet can be viewed [here](https://github.com/wondrousWebWorks/realm-of-rantarctica/tree/master/wireframes).
 
+## Testing
+
+Testing details can be viewed in the TESTING.md file [here](https://github.com/wondrousWebWorks/realm-of-rantarctica/blob/master/TESTING.md).
+
 ## Deployment
 
 Realm of Rantarctica was developed in Visual Studio Code, while git and GitHub were used for version control and to host the repository respectively.
@@ -258,7 +263,7 @@ When any sound effect is played on click/tap, an error message is logged to the 
 - Code snippets for styling ranged inputs adapted from [BrennaOBrien](https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html)
 - Function to shuffle an array taken from [Daplie Labs](https://github.com/Daplie/knuth-shuffle/blob/master/index.js) on GitHub
 - Question Mark, Crown and Tombstone PNGs taken from [PNGTREE](https://pngtree.com/)
-- Sound Effect mp3 files taken from <[ZAPSPLAT](https://www.zapsplat.com/)
+- Sound Effect mp3 files taken from [ZAPSPLAT](https://www.zapsplat.com/)
 
 ## Disclaimer
 
