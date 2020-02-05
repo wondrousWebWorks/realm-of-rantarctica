@@ -1,5 +1,7 @@
 # Realm Of Rantarctica
 
+[The live site can be viewed here](https://wondrouswebworks.github.io/realm-of-rantarctica/)
+
 Welcome to my project! Realm of Rantarctica is an interactive game based on the classic card game called **Top Trumps**.  I hope you enjoy reading about the project below.  Please feel free to contact me for any further information or to offer any suggestions. My contact details can be found on my github page.
 
 ## Contents
@@ -38,7 +40,9 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
   - [Deployment](#deployment)
     - [The following steps were taken to deploy Realm of Rantarctica on GitHub Pages](#the-following-steps-were-taken-to-deploy-realm-of-rantarctica-on-github-pages)
     - [Cloning Realm of Rantarctica from GitHub to Run Locally](#cloning-realm-of-rantarctica-from-github-to-run-locally)
+  - [Bugs](#bugs)
   - [Credits](#credits)
+  - [Disclaimer](#disclaimer)
 
 ## UX (User Experience)
 
@@ -77,7 +81,9 @@ This project was created to offer the user a simple, yet engaging and visually a
 
 ##### User Story E
 
-*"As someone with a keen interest in statistics, I want the ability to view match statistics at the end of the match so that I can appreciate my level of performance and try to improve in future matches."*
+~~*"As someone with a keen interest in statistics, I want the ability to view match statistics at the end of the match so that I can appreciate my level of performance and try to improve in future matches."*~~
+
+**Not incorporated into the project due to time constraints.**
 
 ##### User Story F
 
@@ -109,7 +115,7 @@ This project was created to offer the user a simple, yet engaging and visually a
 #### Expectations
 
 - Landing page to be engaging and visually striking
-- Background information about the game and the world in which it takes place 
+- Background information about the game and the world in which it takes place
 - Clear instructions on how to play the game
 - A screen where selectable backgrounds are displayed
 - The option to scroll through or navigate through backgrounds on smaller screens
@@ -136,15 +142,15 @@ In order to fit the fantasy nature of the game, unconventional fonts were select
 
 #### Icons
 
-All icons used in the Realm of Rantarctica were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>, where I have a paid subscription.  Although some content on **CraftPix** is free, the majority of icons require a paid subscription to access.  The license allows me to use and modify any images from **CraftPix** in any number of projects, but not to resell it.  
+All icons used in the Realm of Rantarctica were taken from [CraftPix](https://craftpix.net/), where I have a paid subscription.  Although some content on **CraftPix** is free, the majority of icons require a paid subscription to access.  The license allows me to use and modify any images from **CraftPix** in any number of projects, but not to resell it.  
 
 #### Images
 
-All images, including backgrounds and character sprites were taken from <a href="https://craftpix.net/" target="_blank">CraftPix</a>.  I have a paid subscription with **CraftPix**, and the majority of images and sprites used require a paid subscription to download and use. The license allows me to use and edit images as I wish, though the only changes made were resizing, applying filters and joining sprites to allow animation of characters.
+All images, including backgrounds and character sprites were taken from [CraftPix](https://craftpix.net/).  I have a paid subscription with **CraftPix**, and the majority of images and sprites used require a paid subscription to download and use. The license allows me to use and edit images as I wish, though the only changes made were resizing, applying filters and joining sprites to allow animation of characters.
 
 #### Colours
 
-I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7" target="_blank">this</a> colour palette from **coolors.co**.  All five colours complement each other very well, and should provide a good level of contrast to increase legibility and clearly define different areas of the game display.  A lighter shade of *Prussian Blue* was also selected to add to the colour palette.  The colours and their *intended* uses are listed below:
+I decided on using [this](https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7) colour palette from **coolors.co**.  All five colours complement each other very well, and should provide a good level of contrast to increase legibility and clearly define different areas of the game display.  A lighter shade of *Prussian Blue* was also selected to add to the colour palette.  The colours and their *intended* uses are listed below:
 
 ##### #003049 (Prussian Blue)
 
@@ -208,7 +214,7 @@ I decided on using <a href="https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b
 
 ## Wireframes
 
-All wireframes were designed and produced using <a href="https://balsamiq.com/">Balsamiq Mockups 3</a>. Initially, a greyscale layout was created to optimised the position of elements, whereafter colours and imgaes listed in the **Colours** and **Images** sections above were added to deliver a much more defined representation of what the game should look like. Individual wireframes for desktop, mobile and tablet can be viewed <a href="https://github.com/wondrousWebWorks/realm-of-rantarctica/tree/master/wireframes">here</a>.
+All wireframes were designed and produced using [Balsamiq Mockups 3](https://balsamiq.com/). Initially, a greyscale layout was created to optimised the position of elements, whereafter colours and imgaes listed in the **Colours** and **Images** sections above were added to deliver a much more defined representation of what the game should look like. Individual wireframes for desktop, mobile and tablet can be viewed [here](https://github.com/wondrousWebWorks/realm-of-rantarctica/tree/master/wireframes).
 
 ## Deployment
 
@@ -216,30 +222,44 @@ Realm of Rantarctica was developed in Visual Studio Code, while git and GitHub w
 
 ### The following steps were taken to deploy Realm of Rantarctica on GitHub Pages
 
-- Navigated to <a href="https://github.com/" target="_blank">https://github.com/</a> in the browser
-- Signed in using my username and password
-- Navigated to <a href=" https://github.com/wondrousWebWorks/realm-of-rantarctica" target="_blank">https://github.com/wondrousWebWorks/realm-of-rantarctica/</a> in the browser
+- Navigated to [GitHub](https://github.com/) in the browser
+- Signed in to my account
+- Searched for **wondrousWebWorks** under **Users**
+- Clicked on the **wondrousWebWorks** result to take me to its repositories
+- Clicked on the **realm-of-rantarctica** repository to navigate to it
 - Clicked **settings** in the top navigation area
 - Scrolled down to the **GitHub Pages** area
 - From the **Source** dropdown menu, **Master Branch** was selected
 - Confirmed selection by clicking.
-- Following these steps, *Realm of Rantarctica* was live on GitHub Pages <a href=" https://wondrouswebworks.github.io/realm-of-rantarctica/" target="_blank">here</a>
+- Following these steps, *Realm of Rantarctica* was deployed live on GitHub Pages [here](https://wondrouswebworks.github.io/realm-of-rantarctica/)
 
 ### Cloning Realm of Rantarctica from GitHub to Run Locally
 
-- Navigate to <a href=" https://github.com/wondrousWebWorks/realm-of-rantarctica" target="_blank">https://github.com/wondrousWebWorks/realm-of-rantarctica/</a> in the browser
+- Open your favourite browser
+- Navigate to the [GitHub](https://github.com/) homepage
+- Search for **realm-of-rantarctica** in the search bar
+- Click on the only result to be directed to the **realm-of-rantarctica** repository
 - Click on the green **Clone or Download** button
 - Copy the **URL** in the dropdown box
 - Open your preferred **terminal**
-- Navigate to your chosen **file location**
+- Navigate to your chosen **file location** to which you would like to donwload the project
 - Ensure **git** is installed on your system and install it if necessary
 - Copy and paste the following code into your terminal in order to clone **Realm of Rantarctica**
 
 <pre><code>git clone https://github.com/wondrousWebWorks/realm-of-rantarctica.git</code></pre>
 
+## Bugs
+
+When any sound effect is played on click/tap, an error message is logged to the console stating that the play() promise was interrupted by a new load request.  Sounds effect and music playback perform as expected, despite the error log. Catching and handling the error might be incorporated in future.
+
 ## Credits
 
-- Royalty free music from <a href="https://www.fesliyanstudios.com" target="_blank">Fesliyan Studios</a>
-- Code snippets for styling ranged inputs adapted from <a href="https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html" target="_blank">BrennaOBrien</a>
-- Question Mark, Crown and tombstone PNGs taken from <a href="https://pngtree.com/" target="_blank">PNGTREE</a>
-- Sound Effect mp3 files taken from <a href="https://www.zapsplat.com//" target="_blank">ZAPSPLAT</a>
+- Royalty free music from [Fesliyan Studios](https://www.fesliyanstudios.com)
+- Code snippets for styling ranged inputs adapted from [BrennaOBrien](https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html)
+- Function to shuffle an array taken from [Daplie Labs](https://github.com/Daplie/knuth-shuffle/blob/master/index.js) on GitHub
+- Question Mark, Crown and Tombstone PNGs taken from [PNGTREE](https://pngtree.com/)
+- Sound Effect mp3 files taken from <[ZAPSPLAT](https://www.zapsplat.com/)
+
+## Disclaimer
+
+This site is intended for **educational purposes** only, and is not intended for use in any other capacity.
