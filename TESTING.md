@@ -7,6 +7,10 @@ In order to ensure the desired level of functionality, a rigarous testing progra
     - [Desired Result](#desired-result)
     - [Steps Taken to Ensure Result](#steps-taken-to-ensure-result)
     - [Verdict](#verdict)
+  - [Cross-browser Compatability](#cross-browser-compatability)
+    - [Desired Result](#desired-result-1)
+    - [Steps Taken to Ensure Result](#steps-taken-to-ensure-result-1)
+    - [Verdict](#verdict-1)
 
 ## Responsiveness
 
@@ -28,3 +32,26 @@ Devices tested include, but are not limited to:
 ### Verdict
 
 Realm of Rantarctica adapts to all tested screen sizes and devices and displays as expected.
+
+## Cross-browser Compatability
+
+### Desired Result
+
+Display correctly in any browser users are likely to use.
+
+### Steps Taken to Ensure Result
+
+I tested Realm of Rantarctica throroughly using a range of browsers, and where I did not have access to it - such as Safari - I borrowed Apple devices to test for potential bugs.
+
+Browsers tested include:
+
+- Chrome - desktop and mobile
+- Firefox - desktop and mobile
+- Opera - dekstop
+- Opera Mini - mobile
+- Brave - desktop and mobile
+- DuckDuckGo - mobile
+
+### Verdict
+
+No obvious bugs were detected in any of the tested browsers. Initially, some of the animations did not perform as expected in Opera, but this was quickly rectified by adding the appropriate CSS selectors to the style.css file. Although some browsers handle viewport height and scroll behaviour differently, no obvious cutt-offs were observed.
