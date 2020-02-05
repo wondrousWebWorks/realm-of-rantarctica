@@ -21,6 +21,7 @@ In order to ensure the desired level of functionality, a rigarous testing progra
     - [Information Modal](#information-modal)
     - [Select Battleground Screen](#select-battleground-screen)
     - [Battle Screen](#battle-screen)
+    - [Post Battle Result Screen](#post-battle-result-screen)
 
 ## Responsiveness
 
@@ -150,6 +151,18 @@ The game was intentionally devided into distinct sections and testing was perfor
 - Player and AI card count text and values display correctly :heavy_check_mark:
 - Player and AI card count values update as expected after winning or losing a round :heavy_check_mark:
 - Horizontal Rulers display correctly in Player atttributes, AI attributes and Card Count containers :heavy_check_mark:
+- Clicking/tapping on *Audio* icon launches audio modal :heavy_check_mark:
+- Exit icon displays correctly and returns the user to the Landing Page on click/tap :heavy_check_mark:
+- Sounds play on hover of Select Battleground cards, Exit icon and Audio icon :heavy_check_mark:
+
+### Post Battle Result Screen
+
+- Correct sounds play for winning and losing :heavy_check_mark:
+- Result image displays correctly :heavy_check_mark:
+- Result heading displays correctly :heavy_check_mark:
+- Result text displays correctly :heavy_check_mark:
+- Play Again button displays correctly :heavy_check_mark:
+- Play Again button returns the user to the Landing Page :heavy_check_mark:
 - Clicking/tapping on *Audio* icon launches audio modal :heavy_check_mark:
 - Exit icon displays correctly and returns the user to the Landing Page on click/tap :heavy_check_mark:
 - Sounds play on hover of Select Battleground cards, Exit icon and Audio icon :heavy_check_mark:
