@@ -18,6 +18,7 @@ In order to ensure the desired level of functionality, a rigarous testing progra
   - [Behaviour of Site Components](#behaviour-of-site-components)
     - [Landing Page](#landing-page)
     - [Audio Modal](#audio-modal)
+    - [Information Modal](#information-modal)
 
 ## Responsiveness
 
@@ -106,4 +107,11 @@ The game was intentionally devided into distinct sections and testing was perfor
 - Next button shows animation on click/tap and plays the next audio track :heavy_check_mark:
 - Previous button shows animation on click/tap and plays the previous audio track :heavy_check_mark:
 - Currently loaded audio track name displays and animates correctly :heavy_check_mark:
+- Modal close button closes modal successfully :heavy_check_mark:
+
+### Information Modal
+
+- Heading displays correctly :heavy_check_mark:
+- Information text displays correctly :heavy_check_mark:
+- Vertical scrolling works correctly :heavy_check_mark:
 - Modal close button closes modal successfully :heavy_check_mark:
