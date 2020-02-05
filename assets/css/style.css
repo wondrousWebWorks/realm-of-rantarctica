@@ -436,6 +436,10 @@ body {
     outline: none;
 }
 
+.modal-body {
+    color: #EAE2B7;
+}
+
 .modal-content {
     background-color: #003049;
     border-radius: 1.56rem;
@@ -1304,7 +1308,7 @@ hr {
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -1316,90 +1320,137 @@ hr {
     text-shadow: 4px 4px #003049;
 }
 
-#post-battle-win-message, #post-battle-lose-message {
+.post-battle-message {
     display: none;
     font-family: "Acme", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
     color: #EAE2B7;
     text-shadow: 2px 2px #003049;
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: 0 auto 1.25rem;
 }
 
-#post-battle-win-image, #post-battle-lose-image {
+.post-battle-image {
     display: none;
-    height: 33%;
+    height: 27%;
     width: auto;
     margin: 0 auto;
 }
 
-#post-battle-result-btn {
+#play-again-button {
     background-color: #FCBF49;
     color: #003049;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: .7rem;
+    padding: .6rem 1.4rem;
+    border-radius: .825rem;
+    font-family: "Acme", sans-serif;
+    transition: all .5s ease-in-out;
+}
+
+#play-again-button img {
+    height: 3.5rem;
+    width: auto;
+}
+
+#play-again-button:hover {
+    background-color: #F77F00;
 }
 
 @media(max-width: 1400px) and (max-height: 1050px)  {
     #post-battle-result {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 4rem;
         text-shadow: 2px 2px #003049;
     }
     
-    #post-battle-win-message, #post-battle-lose-message {
+   .post-battle-message {
         display: none;
-        font-size: 2rem;
-        text-shadow: 2px 2px #003049;
-        text-align: center;
+        font-size: 1.9rem;
         width: 65%;
         margin: 1.25rem auto 2.5rem;
     }
 
-    #post-battle-win-image, #post-battle-lose-image {
+    .post-battle-image {
         display: none;
-        height: 30%;
-        width: auto;
-        margin: 0 auto;
+        height: 27%;
     }
 
-    #post-battle-result-btn {
-        background-color: #FCBF49;
-        color: #003049;
-        font-size: 2rem;
-        padding:.5rem;
+    #play-again-button {
+        width: 30%;
+    }
+}
+
+@media(max-width: 1400px) {
+    #post-battle-result {
+        font-size: 5rem;
+        text-shadow: 2px 2px #003049;
+    }
+
+    #play-again-button {
+        margin-top: 4rem;
+        width: 40%;
+    }
+}
+
+@media(max-width: 1200px) and (max-height: 850px) {
+    #post-battle-result {
+        font-size: 4rem;
+        text-shadow: 2px 2px #003049;
+    }
+
+    .post-battle-message {
+        font-size: 1.7rem;
+        width: 65%;
+        margin: 1.25rem auto .5rem;;
+    }
+
+    #play-again-button {
+        width: 40%;
+        font-size: 1.7rem;
+    }
+
+    #play-again-button img {
+        height: 3rem;
     }
 }
 
 @media(max-width: 900px) and (max-height: 550px) {
     #post-battle-result {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-shadow: 2px 2px #003049;
     }
     
-    #post-battle-win-message, #post-battle-lose-message {
-        display: none;
-        font-size: 1.3rem;
-        text-shadow: 2px 2px #003049;
-        text-align: center;
-        width: 85%;
-        margin: 0 auto .625rem;
+    .post-battle-message {
+        font-size: 1.15rem;
+        width: 80%;
+        margin: 0 auto;
     }
 
-    #post-battle-win-image, #post-battle-lose-image {
+    .post-battle-image {
         display: none;
-        height: 25%;
+        height: 20%;
         width: auto;
         margin: 0 auto;
     }
 
-    #post-battle-result-btn {
-        background-color: #FCBF49;
-        color: #003049;
-        font-size: 1.3rem;
-        padding: 5px;
+    #play-again-button {
+        width: 40%;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    #play-again-button img {
+        height: 2rem;
     }
 }
 
@@ -1410,40 +1461,55 @@ hr {
         text-shadow: 2px 2px #003049;
     }
 
-    #post-battle-win-image, #post-battle-lose-image {
+    .post-battle-image {
         display: none;
         height: 20%;
         width: auto;
-        margin: 3.125rem auto;
+        margin: 2rem auto 1rem;;
+    }
+
+    .post-battle-message {
+        font-size: 1.7rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #play-again-button {
+        width: 50%;
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    #play-again-button img {
+        height: 2rem;
     }
 }
 
 @media(max-width: 550px) {
     #post-battle-result {
         margin-top: 0;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-shadow: 2px 2px #003049;
     }
     
-    #post-battle-win-message, #post-battle-lose-message {
+    .post-battle-message {
         font-size: 1.3rem;
-        text-shadow: 2px 2px #003049;
-        text-align: center;
         width: 85%;
-        margin: 0 auto .625rem;
     }
 
-    #post-battle-win-image, #post-battle-lose-image {
+    .post-battle-image {
         height: 25%;
         width: auto;
-        margin: 2rem auto;
+        margin: 2rem auto 1rem;
     }
 
-    #post-battle-result-btn {
-        background-color: #FCBF49;
-        color: #003049;
-        font-size: 1.3rem;
-        padding: .625rem;
-        margin-top: 1rem;
+    #play-again-button {
+        width: 85%;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    #play-again-button img {
+        height: 2rem;
     }
 }
