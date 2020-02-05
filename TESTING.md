@@ -15,6 +15,8 @@ In order to ensure the desired level of functionality, a rigarous testing progra
     - [Desired Result](#desired-result-2)
     - [Steps Taken to Ensure Result](#steps-taken-to-ensure-result-2)
     - [Verdict](#verdict-2)
+  - [Behaviour of Site Components](#behaviour-of-site-components)
+    - [Landing Page](#landing-page)
 
 ## Responsiveness
 
@@ -77,3 +79,18 @@ Where full-screen images were not required, such as on the Select Level screen, 
 Acceptable load times were experienced at various connection speeds, with the slowest connection tested being 2 Mb/s in a school with limited speeds for students.  Large background images resulted in a noticable delay in loading the page of about two seconds. However, according to feedback from testers, did not affect the gameplay experience once the background has loaded and no further lenghty load times are required.
 
 On the slowest connection tested, music playback also suffered on occasion, though sound effects worked perfectly on any connection speed.
+
+## Behaviour of Site Components
+
+The game was intentionally devided into distinct sections and testing was performed on each section to confirm the intended behaviour of everything related to a specific section of the site.  Testing information and results for each section is detailed below.
+
+### Landing Page
+
+- Game title displays correctly :heavy_check_mark:
+- *Audio* and *Exit* icons scale on hover :heavy_check_mark:
+- *Menu* items change background colour on hover/tap :heavy_check_mark:
+- All icons and menu items play the expected sound effect on hover :heavy_check_mark:
+- Background colour of *Select Difficulty* buttons changes on click/tap :heavy_check_mark:
+- Clicking/tapping on *wondrousWebWorks()* logo opens GitHub repository in browser  :heavy_check_mark:
+- Clicking/tapping on *Audio* icon launches audio modal :heavy_check_mark:
+- Clicking/tapping on *Exit* icon reloads the page :heavy_check_mark:
