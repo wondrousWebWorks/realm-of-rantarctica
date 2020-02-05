@@ -11,6 +11,10 @@ In order to ensure the desired level of functionality, a rigarous testing progra
     - [Desired Result](#desired-result-1)
     - [Steps Taken to Ensure Result](#steps-taken-to-ensure-result-1)
     - [Verdict](#verdict-1)
+  - [Load Times](#load-times)
+    - [Desired Result](#desired-result-2)
+    - [Steps Taken to Ensure Result](#steps-taken-to-ensure-result-2)
+    - [Verdict](#verdict-2)
 
 ## Responsiveness
 
@@ -55,3 +59,21 @@ Browsers tested include:
 ### Verdict
 
 No obvious bugs were detected in any of the tested browsers. Initially, some of the animations did not perform as expected in Opera, but this was quickly rectified by adding the appropriate CSS selectors to the style.css file. Although some browsers handle viewport height and scroll behaviour differently, no obvious cutt-offs were observed.
+
+## Load Times
+
+### Desired Result
+
+Load images within 1.5 seconds regardless of connection speed.
+
+### Steps Taken to Ensure Result
+
+Full screen background images were initially compressed to allow for faster load times, but the loss of quality and definition was so profound that the original high-definition images were used instead.
+
+Where full-screen images were not required, such as on the Select Level screen, smaller images are fetched from Cloudinary to improve load times.
+
+### Verdict
+
+Acceptable load times were experienced at various connection speeds, with the slowest connection tested being 2 Mb/s in a school with limited speeds for students.  Large background images resulted in a noticable delay in loading the page of about two seconds. However, according to feedback from testers, did not affect the gameplay experience once the background has loaded and no further lenghty load times are required.
+
+On the slowest connection tested, music playback also suffered on occasion, though sound effects worked perfectly on any connection speed.
