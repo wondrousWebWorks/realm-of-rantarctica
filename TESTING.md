@@ -20,6 +20,7 @@ In order to ensure the desired level of functionality, a rigarous testing progra
     - [Audio Modal](#audio-modal)
     - [Information Modal](#information-modal)
     - [Select Battleground Screen](#select-battleground-screen)
+    - [Battle Screen](#battle-screen)
 
 ## Responsiveness
 
@@ -125,5 +126,30 @@ The game was intentionally devided into distinct sections and testing was perfor
 - Select Battleground card text and background colour display correctly :heavy_check_mark:
 - Clicking/tapping on Select Battleground card takes the user to the Battle screen and loads the selected or random background :heavy_check_mark:
 - Vertical scroll to display all levels works as expected :heavy_check_mark:
+- Exit icon displays correctly and returns the user to the Landing Page on click/tap :heavy_check_mark:
+- Sounds play on hover of Select Battleground cards, Exit icon and Audio icon :heavy_check_mark:
+
+### Battle Screen
+
+- Player and AI images display correctly :heavy_check_mark:
+- AI placeholder image displays correctly :heavy_check_mark:
+- Player and AI character names display correctly :heavy_check_mark:
+- AI placeholder name displays correctly :heavy_check_mark:
+- Battle Info text displays correctly with the appropriate information :heavy_check_mark:
+- Timer starts at the correct value to match the player's chosen difficulty :heavy_check_mark:
+- Timer counts down as expected :heavy_check_mark:
+- Timer pauses on selection of player attribute :heavy_check_mark:
+- Timer resets for each round :heavy_check_mark:
+- Timer displays correct message when the time is up :heavy_check_mark:
+- Player atribute names and values display correctly :heavy_check_mark:
+- AI attribute names and values display correctly :heavy_check_mark:
+- AI attribute value placeholder displays correctly :heavy_check_mark:
+- Player attribute background colour changes on hover/tap :heavy_check_mark:
+- Correct sound plays on hover/tap of Player attribute :heavy_check_mark:
+- AI attribute values, image and name are displayed when user clicks/taps on selected attribute :heavy_check_mark:
+- Player and AI card count text and values display correctly :heavy_check_mark:
+- Player and AI card count values update as expected after winning or losing a round :heavy_check_mark:
+- Horizontal Rulers display correctly in Player atttributes, AI attributes and Card Count containers :heavy_check_mark:
+- Clicking/tapping on *Audio* icon launches audio modal :heavy_check_mark:
 - Exit icon displays correctly and returns the user to the Landing Page on click/tap :heavy_check_mark:
 - Sounds play on hover of Select Battleground cards, Exit icon and Audio icon :heavy_check_mark:
