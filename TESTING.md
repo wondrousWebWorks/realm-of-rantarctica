@@ -19,6 +19,7 @@ In order to ensure the desired level of functionality, a rigarous testing progra
     - [Landing Page](#landing-page)
     - [Audio Modal](#audio-modal)
     - [Information Modal](#information-modal)
+    - [Select Battleground Screen](#select-battleground-screen)
 
 ## Responsiveness
 
@@ -115,3 +116,14 @@ The game was intentionally devided into distinct sections and testing was perfor
 - Information text displays correctly :heavy_check_mark:
 - Vertical scrolling works correctly :heavy_check_mark:
 - Modal close button closes modal successfully :heavy_check_mark:
+
+### Select Battleground Screen
+
+- Heading displays correctly :heavy_check_mark:
+- Select Battleground card images display correctly :heavy_check_mark:
+- Select Battleground card borders display correctly on hover :heavy_check_mark:
+- Select Battleground card text and background colour display correctly :heavy_check_mark:
+- Clicking/tapping on Select Battleground card takes the user to the Battle screen and loads the selected or random background :heavy_check_mark:
+- Vertical scroll to display all levels works as expected :heavy_check_mark:
+- Exit icon displays correctly and returns the user to the Landing Page on click/tap :heavy_check_mark:
+- Sounds play on hover of Select Battleground cards, Exit icon and Audio icon :heavy_check_mark:
