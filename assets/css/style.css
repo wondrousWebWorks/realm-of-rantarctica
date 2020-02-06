@@ -493,7 +493,7 @@ body {
 }
 
 .vol-input-container p {
-    font-family: "Girasol", cursive;
+    font-family: "Girassol", cursive;
     font-size: 2rem;
     font-weight: bold;
     color: #EAE2B7;
@@ -753,32 +753,32 @@ input[type=checkbox] {
 }
 
 /* How To Play Modal */
-.how-to-play {
+.tutorial {
     padding: 1.25rem;
     margin-bottom: 2.81rem;
     border: 3px solid #D62828;
     border-radius: .5rem;
 }
 
-.how-to-play img {
+.tutorial img {
     border-radius: .5rem;
     width: 90%;
 }
 
-.how-to-play h3 {
+.tutorial h3 {
     font-family: "Acme", sans-serif;
     color: #FCBF49;
     font-size: 1.8rem;
     margin-top: 1rem;
 }
 
-.how-to-play ul, .how-to-play ol {
+.tutorial ul, .tutorial ol {
     width: 70%;
     margin: .625rem auto;
     text-align: left;
 }
 
-.how-to-play p, .how-to-play li {
+.tutorial p, .tutorial li {
     font-family: "Acme", sans-serif;
     color: #EAE2B7;
     font-size: 1.4rem;
@@ -786,7 +786,7 @@ input[type=checkbox] {
     margin: auto;
 }
 
-.how-to-play p span {
+.tutorial p span {
     color: #80D2FF;
     font-weight: bold;
 }
@@ -1307,7 +1307,7 @@ hr {
 }
 
 #post-battle-result {
-    font-family: "Girasol", cursive;
+    font-family: "Girassol", cursive;
     font-size: 6.5rem;
     color: #F77F00;
     margin-top: 3rem;
