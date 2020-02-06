@@ -13,7 +13,7 @@ const soundFXElement = $( "#sound-fx" );
 const currentSoundFXVolElement = $( "#current-sound-fx-vol" );
 const currentlyPlayingTrackElement = $( "#currently-loaded-track" );
 const aiValueElements = $( ".ai-attribute-value" );
-const playerValueElements = $( ".player-attribute-value" );
+const playerValueElements = $( ".player-attribute-value" );                           
 
 $(document).ready(function() {
 
@@ -567,7 +567,7 @@ $(document).ready(function() {
     setInitialSoundFXVol();
     setTimeout(function() {
         loadInitialTrack(gameData);
-    }, 500);
+    }, 850);
 
     $('[data-toggle="tooltip"]').tooltip();
     
@@ -609,7 +609,7 @@ $(document).ready(function() {
     });
 
     $( "#menu-option-tutorial" ).click(function() {
-        $( "#how-to-play-modal" ).modal('toggle');
+        $( "#tutorial-modal" ).modal('toggle');
     });
 
     $( ".difficulty-btn" ).click(function() {
@@ -630,7 +630,7 @@ $(document).ready(function() {
         $( "#difficulty-setting-container" ).css("visibility", "visible");
     });
 
-    $( "#home-btn, #post-battle-result-btn" ).click(loadHomePage);
+    $( "#home-btn, #play-again-button" ).click(loadHomePage);
 
     $( ".card ").click(function() {
         playSoundEffect(gameData.sounds["Sword Swing"]);
@@ -638,11 +638,11 @@ $(document).ready(function() {
         loadBattleScreen();    
     });
 
-    $( ".card img, #landing-page-menu a ").mouseenter(function() {
+    $( ".click-pop-low" ).mouseenter(function() {
        playSoundEffect(gameData.sounds["Click Pop Low"]);
     });
 
-    $( ".level-btn, #audio-controls-toggle, #exit-button-container, #post-battle-result-btn, .difficulty-btn ").mouseenter(function() {
+    $( ".click-pop-high ").mouseenter(function() {
         playSoundEffect(gameData.sounds["Click Pop High"]);
      });
 
