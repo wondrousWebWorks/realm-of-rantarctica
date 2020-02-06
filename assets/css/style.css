@@ -111,7 +111,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    min-width: 22rem;
 }
 
 #landing-page-menu a {
@@ -205,9 +205,9 @@ body {
         font-size: 8rem;
     }
 
-    #landing-page-menu {
+    /* #landing-page-menu {
         width: 30%;
-    }
+    } */
 }
 
 @media(max-width: 1100px) {
@@ -216,9 +216,9 @@ body {
         font-size: 7rem;
     }
 
-    #landing-page-menu {
-        width: 50%;
-    }
+    /* #landing-page-menu {
+        width: 25rem;
+    } */
     
     #landing-page-menu a {
         margin: .5rem;
@@ -255,7 +255,7 @@ body {
     }
 
     #landing-page-menu {
-        width: 50%;
+        min-width: 20rem;
     }
     
     #landing-page-menu a {
@@ -291,7 +291,7 @@ body {
     }
 
     #landing-page-menu {
-        width: 30%;
+        min-width: 18rem;
     }
     
     #landing-page-menu a {
@@ -328,7 +328,7 @@ body {
     }
 
     #landing-page-menu {
-        width: 35%;
+        min-width: 15rem;
     }
     
     #landing-page-menu a {
@@ -364,7 +364,7 @@ body {
     }
 
     #landing-page-menu {
-        width: 75%;
+        min-width: 15rem;
     }
     
     #landing-page-menu a {
@@ -998,6 +998,13 @@ input[type=checkbox] {
     margin: 0;
 }
 
+.attributes-and-score-card-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .battle-screen-info-item {
     width: 100%;
     display: flex;
@@ -1031,7 +1038,7 @@ hr {
 
 .battle-screen-bottom-row-paragraph {
     font-family: 'Acme', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin: 0;
     padding-left: 1.25rem;
@@ -1048,22 +1055,11 @@ hr {
     padding-right: 1.25rem;
 }
 
-#card-count-container {
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: .3rem 0;
-}
-
 .sprite-name {
     text-align: center;
     color: #EAE2B7;
     font-weight: bold;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     text-shadow: 2px 2px #003049;
     padding: .3rem 0;
 }
@@ -1080,13 +1076,6 @@ hr {
     .battle-screen-bottom-row {
         padding: 0;
         width: 100%;
-        position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
     }
 
     .sprite-name {
@@ -1132,6 +1121,17 @@ hr {
     .sprite {
         height: 90%;
         width: auto;
+    }
+}
+
+@media(max-width: 1200px) and (max-height: 850px) {
+    .sprite-name {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .battle-screen-bottom-row-paragraph {
+        font-size: 1.2rem;
     }
 }
 
@@ -1219,12 +1219,6 @@ hr {
 
     hr {
         width: 65%;
-    }
-
-    #card-count-container {
-        position: relative;
-        top: 50%;
-        transform: translatey(-50%);
     }
 
     #attributes-and-score-card-row .col-sm-4 {
