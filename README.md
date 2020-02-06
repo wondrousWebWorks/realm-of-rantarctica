@@ -155,47 +155,54 @@ I decided on using [this](https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7)
 
 ##### #003049 (Prussian Blue)
 
-- Background colour in text areas displaying information on the **How to Play** screens
-- Background colour in text areas displaying character and game stats and data
-- Background colour for level names on the **Select Battleground** screen
+- Background colour for all modals
+- Background colour in containers displaying character attributes and card count values
+- Font colour for level names on the **Select Battleground** screen
 
 ##### #D62828 (Amaranth Red)
 
-- Border colour for text areas with the Prussian Blue background colour
-- Upper and lower border colours for the **VS** text on the battle screen
+- Border colour for sections in modals
+- Border colour for *Player Attributes, AI Attributes* and *Card Counts*
 - Background colour to highlight the players chosen stat with which to battle
-- Background colour for the **No** button in the **Replay Match** option box
 
 ##### #F77F00 (University of Tennessee Orange)
 
 - Font colour of the game title on the landing page
-- Font colour of the **Select Battleground** heading on the **Select Battleground** screens
-- Font colour of the *Fight!!!*, *AI Wins* and *Player Wins* text on the **Battle** screen
+- Font colour of the **Select Battleground** heading on the **Select Battleground** screen
+- Font colour of the *Battle Info* text on the **Battle** screen
+- Background colour for *buttons* which are not icons only on hover/tap
+- Font colour of main *modal headings*
+- Font colour of the *Post Battle Result* text
 
 ##### #FCBF49 (Maximum Yellow Red)
 
-- Font colour for the level names on the **Select Battleground** screen
-- Background colour for the *Random Level*, *Previous* and *Next* buttons on the **Select Battleground** screens
-- Background colour for the *Next* buttons on the **How to Play** screens
-- Background colour for the *Close Window* buttons on the **How to Play** screens
-- Font colour for *VS* text on the **Battle** screen
-- Font colour for the names of the character stats on the **Battle** screen
-- Font colour for the names of the match stats on the **Results** screen
+- Background colour for all buttons which are not icons only
+- Font colour of *Currently Playing Track* text
+- Colour of **Audio** modal's ranged input thumb slider
+- Font colour of **Sound Info** modal checkbox label
+- Font colour of the **Tutorial** modal section headers
+- Background colour of **Select Battleground** card headers
+- Font colour of *Attribute* names and player or AI text in *Card Count* containers on **Battle** screen
 
 ##### #EAE2B7 (Dutch White)
 
-- Font colour for all the instructional text on the **How to Play** screens
-- Font colour for the player's character name on the **Battle** screen
-- Font colour for the player's stats on the **Battle** screen
-- Font colour for the countdown timer on the **Battle** screen
-- Font color for the match stats on the **Results** screen
+- Font colour of all modal body text which aren't headings
+- Font colour of minimum and maximum volume ranged input values in **Audio** modal
+- Border colour of **Select Battleground** card images on hover/tap
+- Font colour of *Timer* text on **Battle** screen
+- Font colour of *Player Attribute* values
+- Font colour of *Player Card Count* value
+- Font colour of the player's *Character Name*
+- Font colour of the **Post Battle Result** win/lose message
 
 ##### #80D2FF (Light Prussian Blue)
 
-- Border colour for example information on the **How to Play** screens
-- Border colour for level names on the **Select Battleground** screen
-- Font colour for the AI character name on the **Battle** screen
-- Font colour for AI stats on the **Battle** screen
+- Font colour of the heading for the *Currently Play Track* in the **Audio** modal
+- Colour of **Audio** modal's ranged input thumb track
+- Font colour of AI-related text in **Tutorial** modal
+- Font colour of *AI Attribute* values
+- Font colour of *AI Card Count* value
+- Font colour of the AI's *Character Name*
 
 ## Technologies Used
 
