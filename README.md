@@ -137,9 +137,9 @@ Realm of Rantarctica is a game in the fantasy genre. As such, the overall style 
 
 In order to fit the fantasy nature of the game, unconventional fonts were selected from **Google Fonts**.  The selected fonts have to be slighty quirky and more cartoony in design, while still being legible. Sample phrases featured in the game were entered in **Google Fonts** to see how they were displayed. Ultimately, the fonts below were selected to be used in clearly defined areas in the game.
 
-- [Girassol](https://fonts.google.com/specimen/Girassol) - used for the game title and character display names
-- [Acme](https://fonts.google.com/specimen/Acme) - used for character and game stats
-- [Mansalva](https://fonts.google.com/specimen/Mansalva) - used for buttons, alerts and all other game text
+- [Girassol](https://fonts.google.com/specimen/Girassol) - used for the game title, modal headings, Select Battleground screen heading and Post Battle screen heading
+- [Acme](https://fonts.google.com/specimen/Acme) - used for all button text, modal body text, timer text, Battle screen bottom row containers and Post Battle screen message
+- [Mansalva](https://fonts.google.com/specimen/Mansalva) - music and sound volume, currently loaded track, Sound Info modal label, Select Battleground card headers and battle info
 
 #### Icons
 
@@ -147,7 +147,7 @@ All icons used in the Realm of Rantarctica were taken from [CraftPix](https://cr
 
 #### Images
 
-All images, including backgrounds and character sprites were taken from [CraftPix](https://craftpix.net/).  I have a paid subscription with **CraftPix**, and the majority of images and sprites used require a paid subscription to download and use. The license allows me to use and edit images as I wish, though the only changes made were resizing, applying filters and joining sprites to allow animation of characters.
+All background and character sprites were taken from [CraftPix](https://craftpix.net/).  I have a paid subscription with **CraftPix**, and the majority of images and sprites used require a paid subscription to download and use. The license allows me to use and edit images as I wish, though the only changes made were resizing, applying filters and joining sprites to allow animation of characters. The question mark image was taken from PNGTREE. See **Credits** section for more details.
 
 #### Colours
 
