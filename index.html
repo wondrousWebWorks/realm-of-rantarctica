@@ -1,639 +1,970 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Realm of Rantarctica | A Fantasy Card Battle Game</title>
+  </head>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-  <title>Realm of Rantarctica | A Fantasy Card Battle Game</title>
-</head>
-
-<body>
-  <div id="full-screen-game-container" class="container-fluid">
-    <div id="full-screen-game-container-row" class="row">
-      <div id="full-screen-game-container-col" class="col-12">
-
-        <!-- Audio controls -->
-        <div id="audio-controls-container" class="click-pop-high">
-          <a id="audio-controls-toggle" href="#">
-            <img class="fixed-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
-              alt="audio controls icon" data-toggle="tooltip" data-placement="top" title="Sound Settings">
-          </a>
-        </div>
-
-        <!-- Exit button -->
-        <div id="exit-button-container" class="click-pop-high">
-          <a id="home-btn" href="index.html">
-            <img class="fixed-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576838133/realm-of-rantarctica/icons/Exit_rb8mzn.png"
-              alt="exit icon" data-toggle="tooltip" title="Exit">
-          </a>
-        </div>
-
-        <audio id="music" src="assets/audio/blue-skies.mp3" loop>
-          Your browser does not support the audio element.
-        </audio>
-
-        <audio id="sound-fx">
-          <source src="assets/audio/click-pop-low.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-
-        <!-- Landing Page -->
-        <div id="landing-page">
-          <h1 id="game-title">RealM of RantarcticA</h1>
-          <div id="landing-page-menu">
-            <a href="#" id="menu-option-play" class="click-pop-low">
-              <img class="landing-page-icon play-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
-                alt="play image">
-              <span>PLAY</span>
-              <img class="landing-page-icon play-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
-                alt="play image">
-            </a>
-            <a href="#" id="menu-option-lore" class="click-pop-low">
-              <img class="landing-page-icon info-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
-                alt="info image">
-              <span>LORE</span>
-              <img class="landing-page-icon info-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
-                alt="info image">
-            </a>
-            <a href="#" id="menu-option-tutorial" class="click-pop-low">
-              <img class="landing-page-icon how-to-play-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576770900/realm-of-rantarctica/icons/FAQ_ydfqti.png"
-                alt="how to play image">
-              <span>TUTORIAL</span>
-              <img class="landing-page-icon how-to-play-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576770900/realm-of-rantarctica/icons/FAQ_ydfqti.png"
-                alt="how to play image">
-            </a>
-            <a href="#" id="menu-option-difficulty" class="click-pop-low">
-              <img class="landing-page-icon difficulty-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580636581/realm-of-rantarctica/icons/Upgrade_s2pmig.png"
-                alt="set difficulty image">
-              <span>DIFFICULTY</span>
-              <img class="landing-page-icon difficulty-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580636581/realm-of-rantarctica/icons/Upgrade_s2pmig.png"
-                alt="set difficulty image">
-            </a>
-            <div id="difficulty-setting-container" class="click-pop-low">
-              <a id="easy-difficulty" href="#" class="difficulty-btn selected-difficulty-btn click-pop-high">EASY</a>
-              <a id="medium-difficulty" href="#" class="difficulty-btn click-pop-high">MEDIUM</a>
-              <a id="hard-difficulty" href="#" class="difficulty-btn click-pop-high">HARD</a>
-            </div>
-          </div>
-          <a id="wondrouswebworks-logo" class="click-pop-high" href="https://github.com/wondrousWebWorks" target="_blank"><img
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699539/mp1-cape-safari/wondrous-large_rrqmc8.png"
-              alt="wondrousWebWorks logo">
-          </a>
-        </div>
-
-        <!-- Select Battleground Screen -->
-        <div id="select-battleground-screen">
-          <div id="select-battleground-heading-row" class="row">
-            <h2 id="select-battleground-heading" class="col-12">SelecT BattlegrounD</h2>
-          </div>
-          <div id="select-battleground-cards-container" class="row">
-            <div id="bg-card-0" class="card col-12 col-md-6 col-xl-4" name="Random Level">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1580554472/realm-of-rantarctica/backgrounds/random-level.png"
-                  alt="darkened image of enchanted forest">
-                <h5 class="card-title">Random Level</h5>
-              </div>
-            </div>
-
-            <div id="bg-card-1" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of forest">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-2" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of mountainous lake">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-3" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of eerie forest">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-4" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of haunted house">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-5" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of bamboo falls">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-6" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of an oasis mirage">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-7" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of a rainbow forest">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-8" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of twisted tree trunks">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-9" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of a dessert with a shipwreck">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-10" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of a rock and a sunset">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-11" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of a forest with a spider's nest">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-12" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of a crater with cactii">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-13" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of mossy rocks">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-14" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of canyons with cactii">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-15" class="card col-12 col-md-6 col-xl-4">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of a perilous mountain peaks">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-
-            <div id="bg-card-16" class="card col-12 col-md-6 d-xl-none">
-              <div class="card-body">
-                <img class="card-img-top click-pop-low"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
-                  alt="image of an oasis mirage">
-                <h5 class="card-title"></h5>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Battle Screen -->
-        <div id="battle-screen">
-          <h2 id="battle-info">FIGHT!!!</h2>
-          <div id="character-display-row" class="row">
-            <div id="player-sprite-col" class="col-5 sprite-col">
-              <img id="player-sprite" class="sprite"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png"
-                alt="player sprite">
-            </div>
-            <div id="timer-col" class="col-2">
-              <h2 id="timer">0.0</h2>
-            </div>
-            <div id="ai-sprite-col" class="col-5 sprite-col">
-              <img id="ai-sprite" class="sprite"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png"
-                alt="AI sprite">
-            </div>
-          </div>
-          <div id="attributes-and-score-card-row" class="row">
-            <div class="col-6 col-sm-4 attributes-and-score-card-col">
-              <div id="player-attribute-container" class="battle-screen-bottom-row">
-                <h3 id="player-sprite-name" class="sprite-name">PLAYER</h3>
-                <div class="player-attribute battle-screen-info-item hit-points">
-                  <p class="player-attribute-name battle-screen-bottom-row-paragraph">HIT POINTS</p>
-                  <p class="player-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="player-attribute battle-screen-info-item attack">
-                  <p class="player-attribute-name battle-screen-bottom-row-paragraph">ATTACK</p>
-                  <p class="player-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="player-attribute battle-screen-info-item armour">
-                  <p class="player-attribute-name battle-screen-bottom-row-paragraph">ARMOUR</p>
-                  <p class="player-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="player-attribute battle-screen-info-item regeneration">
-                  <p class="player-attribute-name battle-screen-bottom-row-paragraph">REGENERATION</p>
-                  <p class="player-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="player-attribute battle-screen-info-item evasion">
-                  <p class="player-attribute-name battle-screen-bottom-row-paragraph">EVASION</p>
-                  <p class="player-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="player-attribute battle-screen-info-item magic">
-                  <p class="player-attribute-name battle-screen-bottom-row-paragraph">MAGIC</p>
-                  <p class="player-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="player-attribute battle-screen-info-item range">
-                  <p class="player-attribute-name battle-screen-bottom-row-paragraph">RANGE</p>
-                  <p class="player-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 order-2 col-sm-4 order-sm-1 attributes-and-score-card-col">
-              <div id="card-count-container" class="battle-screen-bottom-row">
-                <div class="card-count-item battle-screen-info-item">
-                  <p class="card-count-player battle-screen-bottom-row-paragraph">PLAYER CARDS</p>
-                  <p class="card-count-player-value battle-screen-bottom-row-paragraph">10</p>
-                </div>
-                <hr>
-                <div class="card-count-item battle-screen-info-item">
-                  <p class="card-count-ai battle-screen-bottom-row-paragraph">AI CARDS</p>
-                  <p class="card-count-ai-value battle-screen-bottom-row-paragraph">10</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 order-1 col-sm-4 order-sm-2 attributes-and-score-card-col">
-              <div id="ai-attribute-container" class="battle-screen-bottom-row">
-                <h3 id="ai-sprite-name" class="sprite-name">AI</h3>
-                <div class="ai-attribute battle-screen-info-item hit-points">
-                  <p class="ai-attribute-name battle-screen-bottom-row-paragraph">HIT POINTS</p>
-                  <p class="ai-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="ai-attribute battle-screen-info-item attack">
-                  <p class="ai-attribute-name battle-screen-bottom-row-paragraph">ATTACK</p>
-                  <p class="ai-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="ai-attribute battle-screen-info-item armour">
-                  <p class="ai-attribute-name battle-screen-bottom-row-paragraph">ARMOUR</p>
-                  <p class="ai-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="ai-attribute battle-screen-info-item regeneration">
-                  <p class="ai-attribute-name battle-screen-bottom-row-paragraph">REGENERATION</p>
-                  <p class="ai-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="ai-attribute battle-screen-info-item evasion">
-                  <p class="ai-attribute-name battle-screen-bottom-row-paragraph">EVASION</p>
-                  <p class="ai-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="ai-attribute battle-screen-info-item magic">
-                  <p class="ai-attribute-name battle-screen-bottom-row-paragraph">MAGIC</p>
-                  <p class="ai-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-                <hr>
-                <div class="ai-attribute battle-screen-info-item range">
-                  <p class="ai-attribute-name battle-screen-bottom-row-paragraph">RANGE</p>
-                  <p class="ai-attribute-value battle-screen-bottom-row-paragraph"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Post Battle Screen -->
-        <div id="post-battle-page">
-          <div id="post-battle-row" class="row">
-            <div id="post-battle-col" class="col">
-              <img id="post-battle-win-image" class="post-battle-image"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579560006/realm-of-rantarctica/other/crown.png"
-                alt="image of crown">
-              <img id="post-battle-lose-image" class="post-battle-image"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579560007/realm-of-rantarctica/other/tombstone.png"
-                alt="image of tombstone">
-              <h2 id="post-battle-result">...</h2>
-              <p id="post-battle-win-message" class="post-battle-message">
-                Congratulations! You are the undisputed ruler of Rantarctica! How will you use your new-found power?
-                One day, someone will rise up to challenge your rule. Until then, rule wisely!
-              </p>
-              <p id="post-battle-lose-message" class="post-battle-message">
-                You have been crushed by your enemies, and will have to suffer the afterlife with the knowledge that
-                you've
-                been humiliated in the ways of battle. Do not despair, however. Necromancers have been known to bring
-                those worthy back from the dead. You may yet rule the Realm of Rantarctica!
-              </p>
-              <a href="index.html" id="play-again-button" class="click-pop-high">
-                <img class="landing-page-icon"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580933327/realm-of-rantarctica/icons/Replay_rynwku.png"
-                  alt="play again image">
-                <span>PLAY AGAIN</span>
-                <img class="landing-page-icon"
-                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580933327/realm-of-rantarctica/icons/Replay_rynwku.png"
-                  alt="how to play image">
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Information Modal -->
-  <div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="loreModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loreModal">Lore</h5>
-          <button type="button" data-dismiss="modal" aria-label="Close">
-            <img class="modal-close-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
-              alt="close icon">
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>
-            Rantarctica... The most prized of all the realms in Lefluatan. A place of magic, warriors and riches beyond
-            imagining! Whoever rules Rantarctica, rules the whole Lefluatanian continent.
-          </p>
-          <p>
-            For thousands of years, a constant battle has raged for dominion over the realm, with creatures from all
-            races pitting their skills against the best Rantarctica has to offer. Only
-            the strongest can rule, and there can only ever be one. No single ruler has ever managed to reign for any
-            length of time, but that might be about to change...
-          </p>
-          <p>
-            A new commander has emerged in Rantarctica. An outsider, able to unite those who were previously locked in
-            continuous mortal combat. Are things about to change? Will you
-            be the Battle Lord to rule them all? Will you rule the Realm of Rantarctica?
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Audio modal -->
-  <div class="modal fade" id="audio-modal" tabindex="-1" role="dialog" aria-labelledby="audioModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="audioModal">Audio Settings</h5>
-          <button type="button" data-dismiss="modal" aria-label="Close">
-            <img class="modal-close-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
-              alt="close icon">
-          </button>
-        </div>
-        <div class="modal-body">
-          <div id="music-vol-controls" class="audio-red-border">
-            <div class="audio-icon-and-heading">
-              <img class="audio-modal-heading-icon"
+  <body>
+    <div id="full-screen-game-container" class="container-fluid">
+      <div id="full-screen-game-container-row" class="row">
+        <div id="full-screen-game-container-col" class="col-12">
+          <!-- Audio controls -->
+          <div id="audio-controls-container" class="click-pop-high">
+            <a id="audio-controls-toggle" href="#">
+              <img
+                class="fixed-icon"
                 src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
-                alt="music icon">
-              <h5 class="audio-modal-sub-heading">Music Volume</h5>
-            </div>
-            <div class="vol-input-container">
-              <p>0</p>
-              <input id="music-vol-control" type="range" min="0" max="100" step="1">
-              <p>100</p>
-            </div>
-            <h4 id="current-music-vol"></h4>
+                alt="audio controls icon"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Sound Settings"
+              />
+            </a>
           </div>
-          <div id="sound-fx-vol-controls" class="audio-red-border">
-            <div class="audio-icon-and-heading">
-              <img class="audio-modal-heading-icon"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578344474/realm-of-rantarctica/icons/Sound_ON_l6hjwy.png"
-                alt="sound icon">
-              <h5 class="audio-modal-sub-heading">Sound Volume</h5>
-            </div>
-            <div class="vol-input-container">
-              <p>0</p>
-              <input id="sound-fx-vol-control" type="range" min="0" max="100" step="1" value="20">
-              <p>100</p>
-            </div>
-            <h4 id="current-sound-fx-vol"></h4>
+
+          <!-- Exit button -->
+          <div id="exit-button-container" class="click-pop-high">
+            <a id="home-btn" href="index.html">
+              <img
+                class="fixed-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576838133/realm-of-rantarctica/icons/Exit_rb8mzn.png"
+                alt="exit icon"
+                data-toggle="tooltip"
+                title="Exit"
+              />
+            </a>
           </div>
-          <div id="music-controls" class="audio-red-border">
-            <h5 class="audio-modal-sub-heading">Music Controls</h5>
-            <div id="music-control-icons">
-              <img id="previous-track"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576702889/realm-of-rantarctica/icons/Backward_c26yko.png"
-                alt="previous track icon">
-              <img id="play-track"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
-                alt="play track icon">
-              <img id="pause-track"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578344542/realm-of-rantarctica/icons/Pause_tubnpx.png"
-                alt="pause track icon">
-              <img id="next-track"
-                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576702889/realm-of-rantarctica/icons/Forward_yumr3x.png"
-                alt="next track icon">
+
+          <audio id="music" src="assets/audio/blue-skies.mp3" loop>
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio id="sound-fx">
+            <source src="assets/audio/click-pop-low.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <!-- Landing Page -->
+          <div id="landing-page">
+            <h1 id="game-title">RealM of RantarcticA</h1>
+            <div id="landing-page-menu">
+              <a href="#" id="menu-option-play" class="click-pop-low">
+                <img
+                  class="landing-page-icon play-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
+                  alt="play image"
+                />
+                <span>PLAY</span>
+                <img
+                  class="landing-page-icon play-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
+                  alt="play image"
+                />
+              </a>
+              <a href="#" id="menu-option-lore" class="click-pop-low">
+                <img
+                  class="landing-page-icon info-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
+                  alt="info image"
+                />
+                <span>LORE</span>
+                <img
+                  class="landing-page-icon info-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Info_kcqddf.png"
+                  alt="info image"
+                />
+              </a>
+              <a href="#" id="menu-option-tutorial" class="click-pop-low">
+                <img
+                  class="landing-page-icon how-to-play-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576770900/realm-of-rantarctica/icons/FAQ_ydfqti.png"
+                  alt="how to play image"
+                />
+                <span>TUTORIAL</span>
+                <img
+                  class="landing-page-icon how-to-play-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576770900/realm-of-rantarctica/icons/FAQ_ydfqti.png"
+                  alt="how to play image"
+                />
+              </a>
+              <a href="#" id="menu-option-difficulty" class="click-pop-low">
+                <img
+                  class="landing-page-icon difficulty-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580636581/realm-of-rantarctica/icons/Upgrade_s2pmig.png"
+                  alt="set difficulty image"
+                />
+                <span>DIFFICULTY</span>
+                <img
+                  class="landing-page-icon difficulty-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580636581/realm-of-rantarctica/icons/Upgrade_s2pmig.png"
+                  alt="set difficulty image"
+                />
+              </a>
+              <div id="difficulty-setting-container" class="click-pop-low">
+                <a
+                  id="easy-difficulty"
+                  href="#"
+                  class="difficulty-btn selected-difficulty-btn click-pop-high"
+                  >EASY</a
+                >
+                <a
+                  id="medium-difficulty"
+                  href="#"
+                  class="difficulty-btn click-pop-high"
+                  >MEDIUM</a
+                >
+                <a
+                  id="hard-difficulty"
+                  href="#"
+                  class="difficulty-btn click-pop-high"
+                  >HARD</a
+                >
+              </div>
             </div>
-            <h5 id="currently-playing-heading">Currently Playing</h5>
-            <h6 id="currently-loaded-track"></h6>
+            <a
+              id="wondrouswebworks-logo"
+              class="click-pop-high"
+              href="https://github.com/wondrousWebWorks"
+              target="_blank"
+              ><img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699539/mp1-cape-safari/wondrous-large_rrqmc8.png"
+                alt="wondrousWebWorks logo"
+              />
+            </a>
+          </div>
+
+          <!-- Select Battleground Screen -->
+          <div id="select-battleground-screen">
+            <div id="select-battleground-heading-row" class="row">
+              <h2 id="select-battleground-heading" class="col-12">
+                SelecT BattlegrounD
+              </h2>
+            </div>
+            <div id="select-battleground-cards-container" class="row">
+              <div
+                id="bg-card-0"
+                class="card col-12 col-md-6 col-xl-4"
+                name="Random Level"
+              >
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,w_480/v1580554472/realm-of-rantarctica/backgrounds/random-level.png"
+                    alt="darkened image of enchanted forest"
+                  />
+                  <h5 class="card-title">Random Level</h5>
+                </div>
+              </div>
+
+              <div id="bg-card-1" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of forest"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-2" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of mountainous lake"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-3" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of eerie forest"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-4" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of haunted house"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-5" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of bamboo falls"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-6" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of an oasis mirage"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-7" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of a rainbow forest"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-8" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of twisted tree trunks"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-9" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of a dessert with a shipwreck"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-10" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of a rock and a sunset"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-11" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of a forest with a spider's nest"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-12" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of a crater with cactii"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-13" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of mossy rocks"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-14" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of canyons with cactii"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-15" class="card col-12 col-md-6 col-xl-4">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of a perilous mountain peaks"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+
+              <div id="bg-card-16" class="card col-12 col-md-6 d-xl-none">
+                <div class="card-body">
+                  <img
+                    class="card-img-top click-pop-low"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579820680/realm-of-rantarctica/characters/question-mark1.png"
+                    alt="image of an oasis mirage"
+                  />
+                  <h5 class="card-title"></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Battle Screen -->
+          <div id="battle-screen">
+            <h2 id="battle-info">FIGHT!!!</h2>
+            <div id="character-display-row" class="row">
+              <div id="player-sprite-col" class="col-5 sprite-col">
+                <img
+                  id="player-sprite"
+                  class="sprite"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png"
+                  alt="player sprite"
+                />
+              </div>
+              <div id="timer-col" class="col-2">
+                <h2 id="timer">0.0</h2>
+              </div>
+              <div id="ai-sprite-col" class="col-5 sprite-col">
+                <img
+                  id="ai-sprite"
+                  class="sprite"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/c_scale,h_325/v1578781031/realm-of-rantarctica/characters/Pngtree_question_mark_vector_icon_4236432_m6naqr.png"
+                  alt="AI sprite"
+                />
+              </div>
+            </div>
+            <div id="attributes-and-score-card-row" class="row">
+              <div class="col-6 col-sm-4 attributes-and-score-card-col">
+                <div
+                  id="player-attribute-container"
+                  class="battle-screen-bottom-row"
+                >
+                  <h3 id="player-sprite-name" class="sprite-name">PLAYER</h3>
+                  <div
+                    class="player-attribute battle-screen-info-item hit-points"
+                  >
+                    <p
+                      class="player-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      HIT POINTS
+                    </p>
+                    <p
+                      class="player-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="player-attribute battle-screen-info-item attack">
+                    <p
+                      class="player-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      ATTACK
+                    </p>
+                    <p
+                      class="player-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="player-attribute battle-screen-info-item armour">
+                    <p
+                      class="player-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      ARMOUR
+                    </p>
+                    <p
+                      class="player-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div
+                    class="player-attribute battle-screen-info-item regeneration"
+                  >
+                    <p
+                      class="player-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      REGENERATION
+                    </p>
+                    <p
+                      class="player-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="player-attribute battle-screen-info-item evasion">
+                    <p
+                      class="player-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      EVASION
+                    </p>
+                    <p
+                      class="player-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="player-attribute battle-screen-info-item magic">
+                    <p
+                      class="player-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      MAGIC
+                    </p>
+                    <p
+                      class="player-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="player-attribute battle-screen-info-item range">
+                    <p
+                      class="player-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      RANGE
+                    </p>
+                    <p
+                      class="player-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 order-2 col-sm-4 order-sm-1 attributes-and-score-card-col"
+              >
+                <div id="card-count-container" class="battle-screen-bottom-row">
+                  <div class="card-count-item battle-screen-info-item">
+                    <p
+                      class="card-count-player battle-screen-bottom-row-paragraph"
+                    >
+                      PLAYER CARDS
+                    </p>
+                    <p
+                      class="card-count-player-value battle-screen-bottom-row-paragraph"
+                    >
+                      10
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="card-count-item battle-screen-info-item">
+                    <p class="card-count-ai battle-screen-bottom-row-paragraph">
+                      AI CARDS
+                    </p>
+                    <p
+                      class="card-count-ai-value battle-screen-bottom-row-paragraph"
+                    >
+                      10
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-6 order-1 col-sm-4 order-sm-2 attributes-and-score-card-col"
+              >
+                <div
+                  id="ai-attribute-container"
+                  class="battle-screen-bottom-row"
+                >
+                  <h3 id="ai-sprite-name" class="sprite-name">AI</h3>
+                  <div class="ai-attribute battle-screen-info-item hit-points">
+                    <p
+                      class="ai-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      HIT POINTS
+                    </p>
+                    <p
+                      class="ai-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="ai-attribute battle-screen-info-item attack">
+                    <p
+                      class="ai-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      ATTACK
+                    </p>
+                    <p
+                      class="ai-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="ai-attribute battle-screen-info-item armour">
+                    <p
+                      class="ai-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      ARMOUR
+                    </p>
+                    <p
+                      class="ai-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div
+                    class="ai-attribute battle-screen-info-item regeneration"
+                  >
+                    <p
+                      class="ai-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      REGENERATION
+                    </p>
+                    <p
+                      class="ai-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="ai-attribute battle-screen-info-item evasion">
+                    <p
+                      class="ai-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      EVASION
+                    </p>
+                    <p
+                      class="ai-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="ai-attribute battle-screen-info-item magic">
+                    <p
+                      class="ai-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      MAGIC
+                    </p>
+                    <p
+                      class="ai-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                  <hr />
+                  <div class="ai-attribute battle-screen-info-item range">
+                    <p
+                      class="ai-attribute-name battle-screen-bottom-row-paragraph"
+                    >
+                      RANGE
+                    </p>
+                    <p
+                      class="ai-attribute-value battle-screen-bottom-row-paragraph"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post Battle Screen -->
+          <div id="post-battle-page">
+            <div id="post-battle-row" class="row">
+              <div id="post-battle-col" class="col">
+                <img
+                  id="post-battle-win-image"
+                  class="post-battle-image"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579560006/realm-of-rantarctica/other/crown.png"
+                  alt="image of crown"
+                />
+                <img
+                  id="post-battle-lose-image"
+                  class="post-battle-image"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1579560007/realm-of-rantarctica/other/tombstone.png"
+                  alt="image of tombstone"
+                />
+                <h2 id="post-battle-result">...</h2>
+                <p id="post-battle-win-message" class="post-battle-message">
+                  Congratulations! You are the undisputed ruler of Rantarctica!
+                  How will you use your new-found power? One day, someone will
+                  rise up to challenge your rule. Until then, rule wisely!
+                </p>
+                <p id="post-battle-lose-message" class="post-battle-message">
+                  You have been crushed by your enemies, and will have to suffer
+                  the afterlife with the knowledge that you've been humiliated
+                  in the ways of battle. Do not despair, however. Necromancers
+                  have been known to bring those worthy back from the dead. You
+                  may yet rule the Realm of Rantarctica!
+                </p>
+                <a
+                  href="index.html"
+                  id="play-again-button"
+                  class="click-pop-high"
+                >
+                  <img
+                    class="landing-page-icon"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580933327/realm-of-rantarctica/icons/Replay_rynwku.png"
+                    alt="play again image"
+                  />
+                  <span>PLAY AGAIN</span>
+                  <img
+                    class="landing-page-icon"
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1580933327/realm-of-rantarctica/icons/Replay_rynwku.png"
+                    alt="how to play image"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Sound Information Modal -->
-  <div class="modal fade" id="sound-info-modal" tabindex="-1" role="dialog" aria-labelledby="soundInfoModal"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="soundInfoModal">Please Note</h5>
-          <button type="button" data-dismiss="modal" aria-label="Close">
-            <img class="modal-close-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
-              alt="close icon">
-          </button>
-        </div>
-        <div class="modal-body">
-          <img
-            src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
-            alt="music icon">
-          <p>For a more immersive experience, please feel free to use the provided music and sound effects. You can
-            easily access the sound menu at any time
-            by clicking or tapping the above icon, which is located at the top left of the screen.</p>
-          <input id="show-or-hide-sound-info-modal" type="checkbox">
-          <label for="show-or-hide-sound-info-modal">Do not show again</label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tutorial Modal -->
-  <div class="modal fade" id="tutorial-modal" tabindex="-1" role="dialog" aria-labelledby="tutorialModal"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="tutorialModal">Tutorial</h5>
-          <button type="button" data-dismiss="modal" aria-label="Close">
-            <img class="modal-close-icon"
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
-              alt="close icon">
-          </button>
-        </div>
-        <div class="modal-body">
-          <div id="tutorial-1" class="tutorial">
-            <img
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1581074236/realm-of-rantarctica/other/tutorial-1.png"
-              alt="first tutorial image">
-            <h3>1. Select Difficulty</h3>
-            <p>Increase the difficulty by decreasing the amount of time per round.</p>
-            <ul>
-              <li>EASY: 8 seconds</li>
-              <li>MEDIUM: 4 seconds</li>
-              <li>HARD: 2 seconds</li>
-            </ul>
+    <!-- Information Modal -->
+    <div
+      class="modal fade"
+      id="info-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="loreModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loreModal">Lore</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close">
+              <img
+                class="modal-close-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
+                alt="close icon"
+              />
+            </button>
           </div>
-          <div id="tutorial-2" class="tutorial">
-            <img
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1581074240/realm-of-rantarctica/other/tutorial-2.png"
-              alt="second tutorial image">
-            <h3>2. Select a BattleGround</h3>
-            <p>A battleground can be selected by simply clicking/tapping on the desired battleground image. See all available battlegrounds by scrolling down on the screen. Clicking/tapping on <strong>Random Level</strong> will load a random battleground.</p>
-          </div>
-          <div id="tutorial-3" class="tutorial">
-            <img
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1581074237/realm-of-rantarctica/other/tutorial-3.png"
-              alt="third tutorial image">
-            <h3>3. Battle Screen</h3>
-            <p>The following can be seen on the Battle screen:</p> 
-            <ol>
-              <li>Player's character image</li>
-              <li>Timer</li>
-              <li>AI's character image</li>
-              <li>Battle info</li>
-              <li>Player's character name and attributes</li>
-              <li>AI's character name and attributes</li>
-              <li>Card Counts</li>
-            </ol>
-            <p>All characters have attributes, such as HIT POINTS, ATTACK, ARMOUR etc. Attribute values range from 0 to
-              100 (higher is better). Player attribute values
-              are displayed in white, while AI attribute values are <span>light blue</span>.</p><br>
-            <p>At the start of each round, AI attribute values are hidden and displayed as a question mark (?). The
-              player has to decide which of their character's attributes they believe
-              to be high enough to beat the AI character's attribute value.
+          <div class="modal-body">
+            <p>
+              Rantarctica... The most prized of all the realms in Lefluatan. A
+              place of magic, warriors and riches beyond imagining! Whoever
+              rules Rantarctica, rules the whole Lefluatanian continent.
             </p>
-            <p>Keep an eye on the timer and
-              ensure time doesn't run out before choosing
-              an attribute. Note that the AI's character and name are hidden until the player
-              selects an attribute for their character with which
-              to battle.</p>
-          </div>
-          <div id="tutorial-4" class="tutorial">
-            <img
-              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1581074238/realm-of-rantarctica/other/tutorial-4.png"
-              alt="fourth tutorial image">
-            <h3>4. Battle Screen: Play a Round</h3>
-            <ol>
-              <li>Click/tap selected attribute</li>
-              <li>AI attributes get displayed</li>
-              <li>AI's character name gets displayed</li>
-              <li>AI's character image gets displayed</li>
-              <li>Win or Lose message</li>
-            </ol>
-            <p>Once an attribute has been selected and clicked/tapped (highlighted in red), the AI character's attribute
-              values, image and name will be displayed, along with
-              a WIN or LOSE message. If the player wins, they get the AI's card which is added to their deck and vice
-              versa.
+            <p>
+              For thousands of years, a constant battle has raged for dominion
+              over the realm, with creatures from all races pitting their skills
+              against the best Rantarctica has to offer. Only the strongest can
+              rule, and there can only ever be one. No single ruler has ever
+              managed to reign for any length of time, but that might be about
+              to change...
             </p>
-            <p>Both the Player and AI start with 10 cards in their decks. The first to reduce the other deck's card
-              count to 0 WINS the game!</p>
+            <p>
+              A new commander has emerged in Rantarctica. An outsider, able to
+              unite those who were previously locked in continuous mortal
+              combat. Are things about to change? Will you be the Battle Lord to
+              rule them all? Will you rule the Realm of Rantarctica?
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-  <script src="assets/js/app.js" type="text/JavaScript"></script>
-</body>
+    <!-- Audio modal -->
+    <div
+      class="modal fade"
+      id="audio-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="audioModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="audioModal">Audio Settings</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close">
+              <img
+                class="modal-close-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
+                alt="close icon"
+              />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="music-vol-controls" class="audio-red-border">
+              <div class="audio-icon-and-heading">
+                <img
+                  class="audio-modal-heading-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
+                  alt="music icon"
+                />
+                <h5 class="audio-modal-sub-heading">Music Volume</h5>
+              </div>
+              <div class="vol-input-container">
+                <p>0</p>
+                <input
+                  id="music-vol-control"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="1"
+                />
+                <p>100</p>
+              </div>
+              <h4 id="current-music-vol"></h4>
+            </div>
+            <div id="sound-fx-vol-controls" class="audio-red-border">
+              <div class="audio-icon-and-heading">
+                <img
+                  class="audio-modal-heading-icon"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578344474/realm-of-rantarctica/icons/Sound_ON_l6hjwy.png"
+                  alt="sound icon"
+                />
+                <h5 class="audio-modal-sub-heading">Sound Volume</h5>
+              </div>
+              <div class="vol-input-container">
+                <p>0</p>
+                <input
+                  id="sound-fx-vol-control"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="20"
+                />
+                <p>100</p>
+              </div>
+              <h4 id="current-sound-fx-vol"></h4>
+            </div>
+            <div id="music-controls" class="audio-red-border">
+              <h5 class="audio-modal-sub-heading">Music Controls</h5>
+              <div id="music-control-icons">
+                <img
+                  id="previous-track"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576702889/realm-of-rantarctica/icons/Backward_c26yko.png"
+                  alt="previous track icon"
+                />
+                <img
+                  id="play-track"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576668266/realm-of-rantarctica/icons/Play_mixgfj.png"
+                  alt="play track icon"
+                />
+                <img
+                  id="pause-track"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1578344542/realm-of-rantarctica/icons/Pause_tubnpx.png"
+                  alt="pause track icon"
+                />
+                <img
+                  id="next-track"
+                  src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576702889/realm-of-rantarctica/icons/Forward_yumr3x.png"
+                  alt="next track icon"
+                />
+              </div>
+              <h5 id="currently-playing-heading">Currently Playing</h5>
+              <h6 id="currently-loaded-track"></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Sound Information Modal -->
+    <div
+      class="modal fade"
+      id="sound-info-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="soundInfoModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="soundInfoModal">Please Note</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close">
+              <img
+                class="modal-close-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
+                alt="close icon"
+              />
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576754821/realm-of-rantarctica/icons/Music_ON_lsmbv7.png"
+              alt="music icon"
+            />
+            <p>
+              For a more immersive experience, please feel free to use the
+              provided music and sound effects. You can easily access the sound
+              menu at any time by clicking or tapping the above icon, which is
+              located at the top left of the screen.
+            </p>
+            <input id="show-or-hide-sound-info-modal" type="checkbox" />
+            <label for="show-or-hide-sound-info-modal">Do not show again</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tutorial Modal -->
+    <div
+      class="modal fade"
+      id="tutorial-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="tutorialModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tutorialModal">Tutorial</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close">
+              <img
+                class="modal-close-icon"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1576701724/realm-of-rantarctica/icons/Close_ndfmin.png"
+                alt="close icon"
+              />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="tutorial-1" class="tutorial">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1581074236/realm-of-rantarctica/other/tutorial-1.png"
+                alt="first tutorial image"
+              />
+              <h3>1. Select Difficulty</h3>
+              <p>
+                Increase the difficulty by decreasing the amount of time per
+                round.
+              </p>
+              <ul>
+                <li>EASY: 8 seconds</li>
+                <li>MEDIUM: 4 seconds</li>
+                <li>HARD: 2 seconds</li>
+              </ul>
+            </div>
+            <div id="tutorial-2" class="tutorial">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1581074240/realm-of-rantarctica/other/tutorial-2.png"
+                alt="second tutorial image"
+              />
+              <h3>2. Select a BattleGround</h3>
+              <p>
+                A battleground can be selected by simply clicking/tapping on the
+                desired battleground image. See all available battlegrounds by
+                scrolling down on the screen. Clicking/tapping on
+                <strong>Random Level</strong> will load a random battleground.
+              </p>
+            </div>
+            <div id="tutorial-3" class="tutorial">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1581074237/realm-of-rantarctica/other/tutorial-3.png"
+                alt="third tutorial image"
+              />
+              <h3>3. Battle Screen</h3>
+              <p>The following can be seen on the Battle screen:</p>
+              <ol>
+                <li>Player's character image</li>
+                <li>Timer</li>
+                <li>AI's character image</li>
+                <li>Battle info</li>
+                <li>Player's character name and attributes</li>
+                <li>AI's character name and attributes</li>
+                <li>Card Counts</li>
+              </ol>
+              <p>
+                All characters have attributes, such as HIT POINTS, ATTACK,
+                ARMOUR etc. Attribute values range from 0 to 100 (higher is
+                better). Player attribute values are displayed in white, while
+                AI attribute values are <span>light blue</span>.
+              </p>
+              <br />
+              <p>
+                At the start of each round, AI attribute values are hidden and
+                displayed as a question mark (?). The player has to decide which
+                of their character's attributes they believe to be high enough
+                to beat the AI character's attribute value.
+              </p>
+              <p>
+                Keep an eye on the timer and ensure time doesn't run out before
+                choosing an attribute. Note that the AI's character and name are
+                hidden until the player selects an attribute for their character
+                with which to battle.
+              </p>
+            </div>
+            <div id="tutorial-4" class="tutorial">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1581074238/realm-of-rantarctica/other/tutorial-4.png"
+                alt="fourth tutorial image"
+              />
+              <h3>4. Battle Screen: Play a Round</h3>
+              <ol>
+                <li>Click/tap selected attribute</li>
+                <li>AI attributes get displayed</li>
+                <li>AI's character name gets displayed</li>
+                <li>AI's character image gets displayed</li>
+                <li>Win or Lose message</li>
+              </ol>
+              <p>
+                Once an attribute has been selected and clicked/tapped
+                (highlighted in red), the AI character's attribute values, image
+                and name will be displayed, along with a WIN or LOSE message. If
+                the player wins, they get the AI's card which is added to their
+                deck and vice versa.
+              </p>
+              <p>
+                Both the Player and AI start with 10 cards in their decks. The
+                first to reduce the other deck's card count to 0 WINS the game!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js" type="text/JavaScript"></script>
+  </body>
 </html>
