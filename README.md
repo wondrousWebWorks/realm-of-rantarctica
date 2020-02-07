@@ -320,6 +320,8 @@ Realm of Rantarctica was developed in Visual Studio Code, while git and GitHub w
 
 When any sound effect is played on click/tap, an error message is logged to the console stating that the play() promise was interrupted by a new load request.  Sounds effect and music playback perform as expected, despite the error log. Catching and handling the error might be incorporated in future.
 
+Further error messages are logged to the console when a user hovers over elements which should play a sound effect before interacting with the page in any other way.  Once the user interacts with the page - by clicking/tapping anywhere on the page for example - sound effects play as expected once the user has unmuted the sound-effects volume in the **Audio** modal.  This behaviour does not in any way affect the user experience, but may cause concern if observed in the console.  A work-around might be implemented in future.
+
 ## Credits
 
 - Image for README.md responsive layouts taken from [Am I Responsive?](http://ami.responsivedesign.is/)
