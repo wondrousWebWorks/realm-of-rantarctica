@@ -260,7 +260,7 @@ Realm of Rantarctica was developed in Visual Studio Code, while git and GitHub w
 - Ensure **git** is installed on your system and install it if necessary
 - Copy and paste the following code into your terminal in order to clone **Realm of Rantarctica**
 
-<pre><code>git clone https://github.com/wondrousWebWorks/realm-of-rantarctica.git</code></pre>
+`git clone https://github.com/wondrousWebWorks/realm-of-rantarctica.git`
 
 ## Bugs
 
