@@ -752,7 +752,7 @@ input[type=checkbox] {
   margin-right: .625rem;
 }
 
-/* How To Play Modal */
+/* Tutorial Modal */
 .tutorial {
     padding: 1.25rem;
     margin-bottom: 2.81rem;
@@ -773,7 +773,7 @@ input[type=checkbox] {
 }
 
 .tutorial ul, .tutorial ol {
-    width: 70%;
+    width: 100%;
     margin: .625rem auto;
     text-align: left;
 }
@@ -789,6 +789,12 @@ input[type=checkbox] {
 .tutorial p span {
     color: #80D2FF;
     font-weight: bold;
+}
+
+@media(max-width: 576px) {
+    .tutorial p, .tutorial li {
+        font-size: 1rem;
+    }
 }
 
 /* Select Battleground Screen */
