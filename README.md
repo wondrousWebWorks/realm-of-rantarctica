@@ -268,6 +268,7 @@ When any sound effect is played on click/tap, an error message is logged to the 
 
 ## Credits
 
+- Image for README.md responsive layouts taken from [Am I Responsive?](http://ami.responsivedesign.is/)
 - Royalty free music from [Fesliyan Studios](https://www.fesliyanstudios.com)
 - Code snippets for styling ranged inputs adapted from [BrennaOBrien](https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html)
 - Function to shuffle an array taken from [Daplie Labs](https://github.com/Daplie/knuth-shuffle/blob/master/index.js) on GitHub
