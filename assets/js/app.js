@@ -6,6 +6,7 @@ let aiShuffledDeck = [];
 let currentPlayerCardIndex = 0;
 let currentAICardIndex = 0;
 let isTimerRunning = true;
+let allowAttributeSelect = true;
 
 const musicElement = $( "#music" );
 const currentMusicVolElement = $( "#current-music-vol" );
@@ -227,6 +228,7 @@ $(document).ready(function() {
      * Loads and displays all info for each round
      */
     function loadRoundContent() {
+        allowAttributeSelect = true;
         isTimerRunning = true;
         displayCardCountValues();
 
@@ -280,6 +282,7 @@ $(document).ready(function() {
      * Handles logic when the player wins a round
      */
     function handleRoundWin() {
+        allowAttributeSelect = false;
         if (aiShuffledDeck.length > 1) {
             displayBattleInfo("YOU WIN!");
             
@@ -305,6 +308,7 @@ $(document).ready(function() {
      * Handles the logic when the player and AI draw a round
      */
     function handleRoundDraw() {
+        allowAttributeSelect = false;
         displayBattleInfo("DRAW!");
         
         if (currentPlayerCardIndex >= playerShuffledDeck.length -1) {
@@ -328,6 +332,7 @@ $(document).ready(function() {
      * Handles the logic when a player loses a round
      */
     function handleRoundLose() {
+        allowAttributeSelect = false;
         if (playerShuffledDeck.length > 1) {
             displayBattleInfo("YOU LOSE!");
   
@@ -358,22 +363,25 @@ $(document).ready(function() {
      */
     function cardValueClickEvent(e) {
         isTimerRunning = false;
-        writeValuesToCard(aiShuffledDeck, "ai", currentAICardIndex);
-        displaySpriteAndCharacterName(aiShuffledDeck, "ai", currentAICardIndex);
-      
-        const selectedAttributeClass = e.currentTarget.classList[2];
-        const selectedAttributeValue = parseInt(e.currentTarget.lastElementChild.innerText);
-        const targetAIAttribute = $( `#ai-attribute-container .${selectedAttributeClass}` );
-        const selectedAttributeAIValue = parseInt(targetAIAttribute[0].lastElementChild.innerText);
-      
-        if (selectedAttributeValue > selectedAttributeAIValue) {
-            handleRoundWin();
-        } else if (selectedAttributeValue === selectedAttributeAIValue) {
-            handleRoundDraw();
-        } else {
-            handleRoundLose();
+
+        if (allowAttributeSelect === true) {
+            writeValuesToCard(aiShuffledDeck, "ai", currentAICardIndex);
+            displaySpriteAndCharacterName(aiShuffledDeck, "ai", currentAICardIndex);
+          
+            const selectedAttributeClass = e.currentTarget.classList[2];
+            const selectedAttributeValue = parseInt(e.currentTarget.lastElementChild.innerText);
+            const targetAIAttribute = $( `#ai-attribute-container .${selectedAttributeClass}` );
+            const selectedAttributeAIValue = parseInt(targetAIAttribute[0].lastElementChild.innerText);
+          
+            if (selectedAttributeValue > selectedAttributeAIValue) {
+                handleRoundWin();
+            } else if (selectedAttributeValue === selectedAttributeAIValue) {
+                handleRoundDraw();
+            } else {
+                handleRoundLose();
+            }
         }
-      }
+    }
 
     /**
      * Loads the Post Battle screen
