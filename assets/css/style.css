@@ -902,6 +902,10 @@ input[type="checkbox"] {
     font-size: 4rem;
   }
 
+  #select-battleground-cards-container {
+    height: 83vh;
+  }
+
   #select-battleground-cards-container .card h5 {
     width: 70%;
     font-size: 1.3rem;
@@ -909,6 +913,11 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 1200px) and (max-height: 850px) {
+
+  #select-battleground-cards-container {
+    height: 80vh;
+  }
+
   #select-battleground-cards-container .card h5 {
     width: 70%;
   }
@@ -917,6 +926,10 @@ input[type="checkbox"] {
 @media (max-width: 768px) {
   #select-battleground-heading {
     font-size: 3.5rem;
+  }
+
+  #select-battleground-cards-container {
+    height: 83vh;
   }
 
   #select-battleground-cards-container .card h5 {
