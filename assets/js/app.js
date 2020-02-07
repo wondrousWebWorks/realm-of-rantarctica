@@ -465,8 +465,8 @@ $(document).ready(function() {
    * Sets the initial sound effect volume to 20%
    */
   function setInitialSoundFXVol() {
-    soundFXElement[0].volume = 0.2;
-    currentSoundFXVolElement.text("20");
+    soundFXElement[0].volume = 0;
+    currentSoundFXVolElement.text("0");
   }
 
   /**
