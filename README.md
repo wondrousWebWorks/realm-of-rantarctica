@@ -39,6 +39,13 @@ Welcome to my project! Realm of Rantarctica is an interactive game based on the 
     - [Languages](#languages)
     - [Libraries & Tools](#libraries--tools)
   - [Wireframes](#wireframes)
+    - [Differences Between Wireframes and Final Product](#differences-between-wireframes-and-final-product)
+      - [Landing Page](#landing-page)
+      - [Lore](#lore)
+      - [Tutorial](#tutorial)
+      - [Select Battleground Screen](#select-battleground-screen)
+      - [Battle Screen](#battle-screen)
+      - [Post Battle Result Screen](#post-battle-result-screen)
   - [Testing](#testing)
   - [Deployment](#deployment)
     - [The following steps were taken to deploy Realm of Rantarctica on GitHub Pages](#the-following-steps-were-taken-to-deploy-realm-of-rantarctica-on-github-pages)
@@ -224,7 +231,54 @@ I decided on using [this](https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7)
 
 ## Wireframes
 
-All wireframes were designed and produced using [Balsamiq Mockups 3](https://balsamiq.com/). Initially, a greyscale layout was created to optimised the position of elements, whereafter colours and imgaes listed in the **Colours** and **Images** sections above were added to deliver a much more defined representation of what the game should look like. Individual wireframes for desktop, mobile and tablet can be viewed [here](https://github.com/wondrousWebWorks/realm-of-rantarctica/tree/master/wireframes).
+All wireframes were designed and produced using [Balsamiq Mockups 3](https://balsamiq.com/). Initially, a greyscale layout was created to optimised the position of elements, whereafter colours and images listed in the **Colours** and **Images** sections above were added to deliver a much more defined representation of what the game should look like. Individual wireframes for desktop, mobile and tablet can be viewed [here](https://github.com/wondrousWebWorks/realm-of-rantarctica/tree/master/wireframes). There are some differences between the wireframes and the final product as tester feedback forced changes to the initial design. These changes are highlighted below.
+
+### Differences Between Wireframes and Final Product
+
+#### Landing Page
+
+- Menu changed from only being icon based to being button based to increase User Experience
+- Audio controls toggled with icon added to top left of the screen (displayed on all screens)
+- Exit button added to the top right of the screen (displayed on all screens)
+- wondrousWebWorks() logo moved to bottom left of the screen
+
+#### Lore
+
+- *How to Play* button removed as it was deemed unneccesary by testers
+
+#### Tutorial
+
+- Called *How to Play* in wireframes, but changed to reflect industry convention
+- Next button removed as vertical scrolling modal was used instead to improve UX
+- Tutorial sections use Amaranth Red border instead of Light Prussian Blue to provide clearer separation of sections
+- Tutorial images now mirror actual game content
+
+#### Select Battleground Screen
+
+- Audio controls replaced with toggle icon
+- Exit button added at top right of screen
+- Background name background colour changed to Maximum Yellow Red
+- Background name font color changed to Prussian Blue
+- Background name centered on background image
+- *Random Level* button removed and replaced with a background card fulfilling the same purpose
+- *Next* button removed as a container with vertical overflow to allow scrolling is used instead
+
+#### Battle Screen
+
+- *VS* text and surrounding bars replaced with timer to use screen estate more efficiently on smaller screens
+- *Battle Info* moved to a lower position on the screen to provide centered information to the player
+- *Player* and *AI Character Names* moved inside *Attribute* containers to localise character information
+- AI placeholder image changed to occupy less screen space
+- Timer changed to count down in tenths of a second
+- On small mobile devices, *Player* and *AI* attributes are not displayed in one container, but separately at all times
+- Horizontal rulers added between *Player* and *AI* attributes to increase legibility
+
+#### Post Battle Result Screen
+
+- Statistics contanier not incorporated due to time constraints
+- *Win* or *Lose* images displayed depending on the battle result
+- *Win* or *Lose* message displayed depending on the battle result
+- *Play Again* added to reload the page on click/tap instead of *Yes* and *No* button options
 
 ## Testing
 
